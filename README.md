@@ -45,7 +45,7 @@
   https://github.com/CycloneDX/cyclonedx-gomod
   
 ## Multi-Language
-* According to the home page of the following SBOM generation tool, this tool is capable to auto detect a few programming languages and generate SBOM for the project. Please refer to the following link.
+* According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
   https://github.com/microsoft/sbom-tool
 
 ## Additional Tools

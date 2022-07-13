@@ -43,6 +43,10 @@
 ### Gomod
 * To generate SBOM for Golang projects with gomod, use cyclonedx-gomod tool. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-gomod
+  
+## Multi-Language
+* According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
+  https://github.com/microsoft/sbom-tool
 
 ## Additional Tools
 * GitHub link to an SBOM tool repository 

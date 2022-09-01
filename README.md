@@ -45,8 +45,11 @@
   https://github.com/CycloneDX/cyclonedx-gomod
   
 ## Multi-Language
-* According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
+* Microsoft (Microsoft.Sbom.Tool) According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
   https://github.com/microsoft/sbom-tool
+
+* Syft (by Anchore) 
+  https://github.com/anchore/syft
 
 ## Additional Tools
 * GitHub link to an SBOM tool repository 
@@ -57,3 +60,9 @@
 
 * UI tool to generate SBOM
   https://democert.org/sbom/
+  
+* Snyk (via snyk2spdx optional tool) Convert the Snyk CLI output to SPDX format. Note according to the GitHub repository page: This repository is not in active developemnt and critical bug fixes only will be considered.
+  https://github.com/snyk-tech-services/snyk2spdx
+  
+* Fossa 
+  https://fossa.com/pricing

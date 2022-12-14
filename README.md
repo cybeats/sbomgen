@@ -38,6 +38,11 @@
 * Poetry
   To generate SBOM for Python Poetry projects, use CycloneDX Python SBOM Generation Tool. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-python
+  
+## Php
+### Composer
+* To generate SBOM for Php Composer projects, use CycloneDX PHP Composer Plugin. Please find instructions at the following link.
+  https://github.com/CycloneDX/cyclonedx-php-composer
 
 ## Go
 ### Gomod

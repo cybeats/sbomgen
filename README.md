@@ -56,6 +56,7 @@
 * To install the Mix task globally on your system, run `mix archive.install hex sbom`.
 * To see the commands help message, run `mix help sbom.cyclonedx`
 * To generate SBOM for your Elixir Mix projects, run `mix sbom.cyclonedx`
+* Please note that the tool may currently have limitations and the generated SBOM maybe not valid sometimes.
   
 ## Multi-Language
 * Microsoft (Microsoft.Sbom.Tool) According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.

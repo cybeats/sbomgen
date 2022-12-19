@@ -49,6 +49,14 @@
 * To generate SBOM for Golang projects with gomod, use cyclonedx-gomod tool. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-gomod
   
+## Elixir
+### Mix
+* To generate SBOM for Elixir Mix projects, use the Mix sbom tool. Please find it's home page here. 
+  https://hex.pm/packages/sbom
+* To install the Mix task globally on your system, run `mix archive.install hex sbom`.
+* To see the commands help message, run `mix help sbom.cyclonedx`
+* To generate SBOM for your Elixir Mix projects, run `mix sbom.cyclonedx`
+  
 ## Multi-Language
 * Microsoft (Microsoft.Sbom.Tool) According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
   https://github.com/microsoft/sbom-tool

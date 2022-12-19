@@ -57,6 +57,11 @@
 * To see the commands help message, run `mix help sbom.cyclonedx`
 * To generate SBOM for your Elixir Mix projects, run `mix sbom.cyclonedx`
 * Please note that the tool may currently have limitations and the generated SBOM maybe not valid sometimes.
+
+## Erlang
+### Rebar3
+* To generate SBOM for Erlang Rebar3 projects, use the following tool and find the instructions on its GitHub page.
+  https://github.com/voltone/rebar3_sbom
   
 ## Multi-Language
 * Microsoft (Microsoft.Sbom.Tool) According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.

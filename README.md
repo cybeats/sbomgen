@@ -96,7 +96,7 @@
 
   ```tar xvfJ linux-5.15.88.tar.xz```
   
-* Run the SBOM generation tool, we still need to be more accurate with the parameters passed to the tool. However, the following parameters were suffice for the SBOM generation.
+* Run the SBOM generation tool. We still need to be more accurate with the parameters passed to the tool. However, the following parameters were suffice for the SBOM generation.
 
   ```./sbom-tool generate -b ./linux-5.15.88 -bc ./linux-5.15.88 -pn kernel -pv 5.15.88 -ps linux.org -nsb https://kernel.org```
 

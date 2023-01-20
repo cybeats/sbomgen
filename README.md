@@ -103,3 +103,5 @@
 * Find the output SPDX file inside ./linux-5.15.88/_manifest/spdx_2.2/ folder, manifest.spdx.json will be the SPDX file in JSON format.
   
 * Optionally you can convert the manifest.spdx.json file into other SPDX format with SPDX Java tool https://github.com/spdx/tools-java.
+
+  ```java -jar tools-java-1.1.3-jar-with-dependencies.jar Convert manifest.spdx.json manifest.spdx JSON TAG```

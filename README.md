@@ -89,12 +89,16 @@
 ## Use Microsoft.Sbom.Tool to generate SPDX SBOM from Linux kernel source code.
 
 * Download the tool to your local environment from the tool's GitHub release page https://github.com/microsoft/sbom-tool and give execute permission to the downloaded executable file.
+
+  ```chmod +x ./sbom-tool```
   
 * Download and extract Linux kernel source code from The Linux Kernel Archives. In this document we were using long term version 5.15.88. 
+
+  ```tar xvfJ linux-5.15.88.tar.xz```
   
 * Run the SBOM generation tool, we still need to be more accurate with the parameters passed to the tool. However, the following parameters were suffice for the SBOM generation.
 
-  ```../sbom-tool generate -b ./linux-5.15.88 -bc ./linux-5.15.88 -pn kernel -pv 5.15.88 -ps linux.org -nsb https://kernel.org```
+  ```./sbom-tool generate -b ./linux-5.15.88 -bc ./linux-5.15.88 -pn kernel -pv 5.15.88 -ps linux.org -nsb https://kernel.org```
 
 * Find the output SPDX file inside ./linux-5.15.88/_manifest/spdx_2.2/ folder, manifest.spdx.json will be the SPDX file in JSON format.
   

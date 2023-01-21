@@ -66,7 +66,7 @@
 ## Multi-Language
 * Microsoft (Microsoft.Sbom.Tool) According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
   https://github.com/microsoft/sbom-tool
-
+  
 * Syft (by Anchore) 
   https://github.com/anchore/syft
 
@@ -85,3 +85,23 @@
   
 * Fossa 
   https://fossa.com/pricing
+
+## Use Microsoft.Sbom.Tool to generate SPDX SBOM from Linux kernel source code.
+
+* Download the tool to your local environment from the tool's GitHub release page https://github.com/microsoft/sbom-tool and give execute permission to the downloaded executable file.
+
+  ```chmod +x ./sbom-tool```
+  
+* Download and extract Linux kernel source code from The Linux Kernel Archives. In this document we were using long term version 5.15.88. 
+
+  ```tar xvfJ linux-5.15.88.tar.xz```
+  
+* Run the SBOM generation tool. We still need to be more accurate with the parameters passed to the tool. However, the following parameters were suffice for the SBOM generation.
+
+  ```./sbom-tool generate -b ./linux-5.15.88 -bc ./linux-5.15.88 -pn kernel -pv 5.15.88 -ps linux.org -nsb https://kernel.org```
+
+* Find the output SPDX file inside ./linux-5.15.88/_manifest/spdx_2.2/ folder, manifest.spdx.json will be the SPDX file in JSON format.
+  
+* Optionally you can convert the manifest.spdx.json file into other SPDX format with SPDX Java tool https://github.com/spdx/tools-java.
+
+  ```java -jar tools-java-1.1.3-jar-with-dependencies.jar Convert manifest.spdx.json manifest.spdx JSON TAG```

@@ -70,22 +70,6 @@
 * Syft (by Anchore) 
   https://github.com/anchore/syft
 
-## Additional Tools
-* GitHub link to an SBOM tool repository 
-  https://github.com/sbomtools
-
-* CERTCC SwiftBOM generator and demo tool
-  https://github.com/CERTCC/SBOM
-
-* UI tool to generate SBOM
-  https://democert.org/sbom/
-  
-* Snyk (via snyk2spdx optional tool) Convert the Snyk CLI output to SPDX format. Note according to the GitHub repository page: This repository is not in active developemnt and critical bug fixes only will be considered.
-  https://github.com/snyk-tech-services/snyk2spdx
-  
-* Fossa 
-  https://fossa.com/pricing
-
 ## Use Microsoft.Sbom.Tool to generate SPDX SBOM from Linux kernel source code.
 
 * Download the tool to your local environment from the tool's GitHub release page https://github.com/microsoft/sbom-tool and give execute permission to the downloaded executable file.
@@ -105,3 +89,29 @@
 * Optionally you can convert the manifest.spdx.json file into other SPDX format with SPDX Java tool https://github.com/spdx/tools-java.
 
   ```java -jar tools-java-1.1.3-jar-with-dependencies.jar Convert manifest.spdx.json manifest.spdx JSON TAG```
+  
+
+## Additional Tools
+* IBM SBOM Utility
+  https://github.com/CycloneDX/sbom-utility
+  
+* IBM License Scanner
+  https://github.com/CycloneDX/license-scanner
+  
+* GitHub CLI SBOM Extension
+  https://github.com/advanced-security/gh-sbom
+
+* GitHub link to an SBOM tool repository 
+  https://github.com/sbomtools
+
+* CERTCC SwiftBOM generator and demo tool
+  https://github.com/CERTCC/SBOM
+
+* UI tool to generate SBOM
+  https://democert.org/sbom/
+  
+* Snyk (via snyk2spdx optional tool) Convert the Snyk CLI output to SPDX format. Note according to the GitHub repository page: This repository is not in active developemnt and critical bug fixes only will be considered.
+  https://github.com/snyk-tech-services/snyk2spdx
+  
+* Fossa 
+  https://fossa.com/pricing

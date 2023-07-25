@@ -2,7 +2,6 @@
 
 ## Java
 ### Maven
-* Cybeats CLI Plugin & Jenkins Plugin
 * To generate SBOM for Java Maven projects, use Cyclonedx Maven Plugin. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-maven-plugin
 ### Gradle
@@ -13,7 +12,6 @@
 
 ## Node.js
 ### NPM
-* Cybeats CLI Plugin & Jenkins Plugin
 * To generate SBOM for Node.js NPM projects, use Cyclonedx Node Module. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-node-module
 * Yarn
@@ -62,6 +60,11 @@
 ### Rebar3
 * To generate SBOM for Erlang Rebar3 projects, use the following tool and find the instructions on its GitHub page.
   https://github.com/voltone/rebar3_sbom
+
+## Package or System
+### distro2sbom
+* To generate SBOM for package or system, please experiment with the following tool and find the instruction on its GitHub page.
+  https://github.com/anthonyharrison/distro2sbom
   
 ## Multi-Language
 * Microsoft (Microsoft.Sbom.Tool) According to the blog of the following SBOM generation tool, the tool is capable to auto-detect NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generate SBOM for the project. Please refer to the following link for more information.
@@ -69,6 +72,9 @@
   
 * Syft (by Anchore) 
   https://github.com/anchore/syft
+
+* Mend SBOM Generator
+  https://github.com/whitesource-ps/ws-sbom-generator
 
 ## Use Microsoft.Sbom.Tool to generate SPDX SBOM from Linux kernel source code.
 

@@ -73,6 +73,9 @@
 * Syft (by Anchore) 
   https://github.com/anchore/syft
 
+* Mend SBOM Generator
+  https://github.com/whitesource-ps/ws-sbom-generator
+
 ## Use Microsoft.Sbom.Tool to generate SPDX SBOM from Linux kernel source code.
 
 * Download the tool to your local environment from the tool's GitHub release page https://github.com/microsoft/sbom-tool and give execute permission to the downloaded executable file.

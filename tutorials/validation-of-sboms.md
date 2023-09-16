@@ -36,7 +36,7 @@ On the releases page, navigate to the latest release and download the release co
 
 ### SPDX
 
-Navigate to the cyclonedx-cli repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:
+Navigate to the tools-java repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:
 
 ```unzip tools-java<release-version>:.zip```
 

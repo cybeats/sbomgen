@@ -22,7 +22,7 @@ Testing done on Ubuntu 20.04 x86_64.
 
 ### CycloneDX
 
-Navigate to the cyclonedx-cli repository and click on the releases button.
+Navigate to the [cyclonedx-cli](https://github.com/CycloneDX/cyclonedx-cli) repository and click on the releases button.
 
 
 On the releases page, navigate to the latest release and download the release compatible with your system. Make the program executable with command(s):
@@ -36,7 +36,7 @@ On the releases page, navigate to the latest release and download the release co
 
 ### SPDX
 
-Navigate to the tools-java repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:
+Navigate to the [tools-java](https://github.com/spdx/tools-java) repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:
 
 ```unzip tools-java<release-version>:.zip```
 

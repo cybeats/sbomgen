@@ -48,7 +48,10 @@
   https://github.com/CycloneDX/cyclonedx-gomod
 
 ## Rust
+To generate SBOMs for Rust projects, you can use:
 
+* Cyclonedx-Rust-Cargo: https://github.com/CycloneDX/cyclonedx-rust-cargo.
+* Cargo-Sbom: https://github.com/psastras/sbom-rs.
   
 ## Elixir
 ### Mix

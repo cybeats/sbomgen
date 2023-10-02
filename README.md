@@ -14,8 +14,8 @@
 ### NPM
 * To generate SBOM for Node.js NPM projects, use Cyclonedx Node Module. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-node-module
-* Yarn
-  To generate SBOM for Node.js Yarn projects, use Cyclonedx Node Module. Please find instructions at the following link.
+### Yarn
+*  To generate SBOM for Node.js Yarn projects, use Cyclonedx Node Module. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-node-module
 
 
@@ -46,6 +46,12 @@
 ### Gomod
 * To generate SBOM for Golang projects with gomod, use cyclonedx-gomod tool. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-gomod
+
+## Rust
+To generate SBOMs for Rust projects, you can use:
+
+* Cyclonedx-Rust-Cargo: https://github.com/CycloneDX/cyclonedx-rust-cargo.
+* Cargo-Sbom: https://github.com/psastras/sbom-rs.
   
 ## Elixir
 ### Mix

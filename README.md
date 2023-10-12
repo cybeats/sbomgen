@@ -31,11 +31,22 @@
 
 ## Python
 ### Pip
-* To generate SBOM for Python Pip projects, use CycloneDX Python SBOM Generation Tool. Please find instructions at the following link.
+To generate SBOM for Python Pip projects, use:
+
+* CycloneDX Python SBOM Generation Tool. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-python
-* Poetry
-  To generate SBOM for Python Poetry projects, use CycloneDX Python SBOM Generation Tool. Please find instructions at the following link.
+
+* Jake. Please find instructions at the following link. https://github.com/sonatype-nexus-community/jake
+
+### Poetry
+  To generate SBOM for Python Poetry projects, use:
+  
+  * CycloneDX Python SBOM Generation Tool. Please find instructions at the following link.
   https://github.com/CycloneDX/cyclonedx-python
+
+  * Jake. Please find instructions at the following link. https://github.com/sonatype-nexus-community/jake 
+
+
   
 ## PHP
 ### Composer

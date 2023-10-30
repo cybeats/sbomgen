@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tutorial illustrates how to create an SBOM for Linux packages, using distro2sbom.
+This tutorial illustrates how to create an SBOM for a distribution, using distro2sbom.
 
 ## Requirements
 
@@ -55,14 +55,23 @@ Output:
 
 ## Usage
 
+To create an SBOM from your os distribution, run the command:
+
+```distro2sbom --distro auto --system --format json --output-file <output-file-name> --sbom <sbom-type>```
+
+With ```<sbom-type>``` being CycloneDX or SPDX.
+
+An SBOM file with your given name should appear in your working directory.
 
 
 ## Notes
 
+* Certain metadata information may be missing from the sbom.
 
 
 ## References
 
+Anthony Harrison. (2023). Distro2sbom. https://github.com/anthonyharrison/distro2SBOM/tree/main
 
 
 

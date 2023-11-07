@@ -75,4 +75,4 @@ Cyclonedx-conan does not appear to factor in c standard libraries e.g. glibc, bi
 
 * CycloneDX. (2023). cyclonedx-conan. https://github.com/CycloneDX/cyclonedx-conan
 
-* Keyword (text search): cpe:2.3:a:gnu:glibc:-:*:*:*:*:*:*:*. NVD. (n.d.). https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&isCpeNameSearch=true&seach_type=all&query=cpe:2.3:a:gnu:glibc:-:*:*:*:*:*:*:* 
+* Keyword (text search): cpe:2.3:**a**:gnu:glibc:-:*:*:*:*:*:*:*. NVD. (n.d.). https://shorturl.at/qCDI1

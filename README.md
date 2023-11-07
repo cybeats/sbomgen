@@ -64,15 +64,6 @@ To generate SBOMs for Rust projects, you can use:
 * Cyclonedx-Rust-Cargo: https://github.com/CycloneDX/cyclonedx-rust-cargo.
 * Cargo-Sbom: https://github.com/psastras/sbom-rs.
   
-## Elixir
-### Mix
-* To generate SBOM for Elixir Mix projects, use the Mix sbom tool. Please find it's home page here. 
-  https://hex.pm/packages/sbom
-* To install the Mix task globally on your system, run `mix archive.install hex sbom`.
-* To see the commands help message, run `mix help sbom.cyclonedx`
-* To generate SBOM for your Elixir Mix projects, run `mix sbom.cyclonedx`
-* Please note that the tool may currently have limitations and the generated SBOM maybe not valid sometimes.
-
 ## Erlang
 ### Rebar3
 * To generate SBOM for Erlang Rebar3 projects, use the following tool and find the instructions on its GitHub page.

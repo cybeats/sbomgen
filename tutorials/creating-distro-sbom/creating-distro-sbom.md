@@ -70,7 +70,7 @@ An SBOM file with your given name should appear in your working directory.
 
 * This tool also works for docker images (tested on image Ubuntu 22.04).
 
-* This tool's performance on ind
+* This tool's performance on the Raspberry Pi, appears to be buggy.
 
 
 

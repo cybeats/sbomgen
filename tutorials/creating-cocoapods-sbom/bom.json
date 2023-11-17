@@ -1,0 +1,62 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:d71890a0-b48e-46d1-8e3b-f4a96eb029cd",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-10-19T17:48:30Z",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-cocoapods",
+        "version": "1.1.2",
+        "hashes": [],
+        "externalReferences": []
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "Whisper",
+      "version": "1.5",
+      "licenses": []
+    },
+    "licenses": [],
+    "lifecycles": []
+  },
+  "components": [
+    {
+      "type": "library",
+      "author": "Hyper Interaktiv AS \u003Cios@hyper.no\u003E",
+      "publisher": "Hyper Interaktiv AS \u003Cios@hyper.no\u003E",
+      "name": "Whisper",
+      "version": "6.1.0",
+      "description": "Whisper is a component that will make the task of display messages and in-app notifications simple.",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6869ae85284ae2ba0aa4c7d8a826be6436409fed"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "properties": []
+          }
+        }
+      ],
+      "purl": "pkg:cocoapods/Whisper@6.1.0?file_name=..%2F..%2F",
+      "externalReferences": [
+        {
+          "url": "https://github.com/hyperoslo/Whisper",
+          "type": "website",
+          "hashes": []
+        }
+      ]
+    }
+  ],
+  "vulnerabilities": [],
+  "annotations": [],
+  "properties": [],
+  "formulation": []
+}

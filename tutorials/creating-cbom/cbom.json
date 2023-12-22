@@ -1,0 +1,399 @@
+{
+    "components": [
+        {
+            "bom-ref": "cryptography:algorithm:aa71afb9-c4cf-41eb-bb01-a3861b87a2d5",
+            "cryptoProperties": {
+                "algorithmProperties": {
+                    "padding": "unknown",
+                    "primitive": "unknown",
+                    "variant": "UNKNOWN"
+                },
+                "assetType": "algorithm",
+                "detectionContext": [
+                    {
+                        "additionalContext": "    makedirs(hass.config.path(DOMAIN), exist_ok=True)\n    with open(hass.config.path(DOMAIN, filename), \"w\", encoding=\"utf8\") as file_handle:\n        file_handle.write(asset.decode(\"utf-8\"))\n\n\n",
+                        "filePath": "homeassistant/components/bosch_shc/config_flow.py",
+                        "lineNumbers": [
+                            44,
+                            45,
+                            46,
+                            47,
+                            48
+                        ]
+                    },
+                    {
+                        "additionalContext": "    ctx = _get_default_ssl_context()\n    address = (host, port)\n    with socket.create_connection(address, timeout=TIMEOUT) as sock, ctx.wrap_socket(\n        sock, server_hostname=address[0]\n    ) as ssock:\n",
+                        "filePath": "homeassistant/components/cert_expiry/helper.py",
+                        "lineNumbers": [
+                            29,
+                            30,
+                            31,
+                            32,
+                            33
+                        ]
+                    },
+                    {
+                        "additionalContext": "    )\n\n    ssdp_socket.bind((\"\" if upnp_bind_multicast else host_ip_addr, BROADCAST_PORT))\n\n    loop = asyncio.get_event_loop()\n",
+                        "filePath": "homeassistant/components/emulated_hue/upnp.py",
+                        "lineNumbers": [
+                            169,
+                            170,
+                            171,
+                            172,
+                            173
+                        ]
+                    },
+                    {
+                        "additionalContext": "        sock.setblocking(False)\n\n        sock.bind((\"\", UDP_PORT))\n\n        await asyncio.get_running_loop().create_datagram_endpoint(\n",
+                        "filePath": "homeassistant/components/esphome/voice_assistant.py",
+                        "lineNumbers": [
+                            109,
+                            110,
+                            111,
+                            112,
+                            113
+                        ]
+                    },
+                    {
+                        "additionalContext": "        if self.push_secret != secret:\n            _LOGGER.error(\n                \"Received Foursquare push with invalid push secret: %s\", secret\n            )\n            return self.json_message(\"Incorrect secret\", HTTPStatus.BAD_REQUEST)\n",
+                        "filePath": "homeassistant/components/foursquare/__init__.py",
+                        "lineNumbers": [
+                            102,
+                            103,
+                            104,
+                            105,
+                            106
+                        ]
+                    },
+                    {
+                        "additionalContext": "    \"\"\"Check to see if a port is available.\"\"\"\n    try:\n        _get_test_socket().bind((\"\", port))\n    except OSError:\n        return False\n",
+                        "filePath": "homeassistant/components/homekit/util.py",
+                        "lineNumbers": [
+                            550,
+                            551,
+                            552,
+                            553,
+                            554
+                        ]
+                    },
+                    {
+                        "additionalContext": "            continue\n        try:\n            test_socket.bind((\"\", port))\n            return port\n        except OSError:\n",
+                        "filePath": "homeassistant/components/homekit/util.py",
+                        "lineNumbers": [
+                            575,
+                            576,
+                            577,
+                            578,
+                            579
+                        ]
+                    },
+                    {
+                        "additionalContext": "            _LOGGER.error(\n                \"Could not read SSL certificate from %s: %s\",\n                self.ssl_certificate,\n                error,\n            )\n",
+                        "filePath": "homeassistant/components/http/__init__.py",
+                        "lineNumbers": [
+                            432,
+                            433,
+                            434,
+                            435,
+                            436
+                        ]
+                    },
+                    {
+                        "additionalContext": "                raise HTTPBadRequest\n\n        if FILTERS.search(_recursive_unquote(request.path)):\n            _LOGGER.warning(\n                \"Filtered a potential harmful request to: %s\", request.raw_path\n",
+                        "filePath": "homeassistant/components/http/security_filter.py",
+                        "lineNumbers": [
+                            70,
+                            71,
+                            72,
+                            73,
+                            74
+                        ]
+                    },
+                    {
+                        "additionalContext": "# fmt: off\nFILTERS: Final = re.compile(\n    r\"(?:\"\n\n    # Common exploits\n",
+                        "filePath": "homeassistant/components/http/security_filter.py",
+                        "lineNumbers": [
+                            16,
+                            17,
+                            18,
+                            19,
+                            20
+                        ]
+                    },
+                    {
+                        "additionalContext": "\n            if self._ssl_context is not None:\n                sock = self._ssl_context.wrap_socket(\n                    sock, server_hostname=self._config[CONF_HOST]\n                )\n",
+                        "filePath": "homeassistant/components/tcp/common.py",
+                        "lineNumbers": [
+                            113,
+                            114,
+                            115,
+                            116,
+                            117
+                        ]
+                    },
+                    {
+                        "additionalContext": "    _LOGGER.warning(\"Client error (%s): %s\", code.value, message)\n    if code == HTTPStatus.BAD_REQUEST:\n        return web.Response(body=message, status=code)\n    return web.Response(status=code)\n\n",
+                        "filePath": "homeassistant/components/unifiprotect/views.py",
+                        "lineNumbers": [
+                            66,
+                            67,
+                            68,
+                            69,
+                            70
+                        ]
+                    },
+                    {
+                        "additionalContext": "                + \"url: [%s] \\nwith parameter: [%s] \\nwas: [%s]\"\n            )\n        else:\n        _LOGGER.error(\n            \"Invalid response: [%s] at url: [%s] with data [%s]\", res, url, data\n        )\n",
+                        "filePath": "homeassistant/components/xiaomi/device_tracker.py",
+                        "lineNumbers": [
+                            170,
+                            171,
+                            172,
+                            173,
+                            174,
+                            175,
+                            176,
+                            177
+                        ]
+                    },
+                    {
+                        "additionalContext": "            \"does not contain a dictionary\"\n        )\n        _LOGGER.error(msg)\n        raise HomeAssistantError(msg) from exc\n\n",
+                        "filePath": "homeassistant/config.py",
+                        "lineNumbers": [
+                            484,
+                            485,
+                            486,
+                            487,
+                            488
+                        ]
+                    },
+                    {
+                        "additionalContext": "        if not os.path.isfile(secret_path):\n            with open(secret_path, \"w\", encoding=\"utf8\") as secret_file:\n                secret_file.write(DEFAULT_SECRETS)\n\n        with open(version_path, \"w\", encoding=\"utf8\") as version_file:\n",
+                        "filePath": "homeassistant/config.py",
+                        "lineNumbers": [
+                            397,
+                            398,
+                            399,
+                            400,
+                            401
+                        ]
+                    },
+                    {
+                        "additionalContext": "                if skey in flatsecret:\n                    _LOGGER.error(\n                        \"Duplicated secrets in files %s and %s\", flatsecret[skey], sfn\n                    )\n                flatsecret[skey] = sfn\n",
+                        "filePath": "homeassistant/scripts/check_config.py",
+                        "lineNumbers": [
+                            152,
+                            153,
+                            154,
+                            155,
+                            156
+                        ]
+                    },
+                    {
+                        "additionalContext": "        for skey, sval in res[\"secrets\"].items():\n            if sval is None:\n                print(\" -\", skey + \":\", color(\"red\", \"not found\"))\n                continue\n            print(\" -\", skey + \":\", sval)\n\n    return len(res[\"except\"])\n",
+                        "filePath": "homeassistant/scripts/check_config.py",
+                        "lineNumbers": [
+                            161,
+                            162,
+                            163,
+                            164,
+                            165,
+                            166,
+                            167
+                        ]
+                    },
+                    {
+                        "additionalContext": "                _LOGGER.debug(\n                    \"Secret %s retrieved from secrets.yaml in folder %s\",\n                    secret,\n                    secret_dir,\n                )\n",
+                        "filePath": "homeassistant/util/yaml/loader.py",
+                        "lineNumbers": [
+                            68,
+                            69,
+                            70,
+                            71,
+                            72
+                        ]
+                    },
+                    {
+                        "additionalContext": "            return self._cache[secret_path]\n\n        _LOGGER.debug(\"Loading %s\", secret_path)\n        try:\n            secrets = load_yaml(str(secret_path))\n",
+                        "filePath": "homeassistant/util/yaml/loader.py",
+                        "lineNumbers": [
+                            80,
+                            81,
+                            82,
+                            83,
+                            84
+                        ]
+                    },
+                    {
+                        "additionalContext": "                            \" 'logger: %s' found\"\n                        ),\n                        logger,\n                    )\n                del secrets[\"logger\"]\n",
+                        "filePath": "homeassistant/util/yaml/loader.py",
+                        "lineNumbers": [
+                            97,
+                            98,
+                            99,
+                            100,
+                            101
+                        ]
+                    },
+                    {
+                        "additionalContext": "            return parse_yaml(conf_file, secrets)\n    except UnicodeDecodeError as exc:\n        _LOGGER.error(\"Unable to read file %s: %s\", fname, exc)\n        raise HomeAssistantError(exc) from exc\n\n",
+                        "filePath": "homeassistant/util/yaml/loader.py",
+                        "lineNumbers": [
+                            222,
+                            223,
+                            224,
+                            225,
+                            226
+                        ]
+                    },
+                    {
+                        "additionalContext": "}\nPACKAGE_REGEX = re.compile(\n    r\"^(?:--.+\\s)?([-_,\\.\\w\\d\\[\\]]+)(==|>=|<=|~=|!=|<|>|===)*(.*)$\"\n)\nPIP_REGEX = re.compile(r\"^(--.+\\s)?([-_\\.\\w\\d]+.*(?:==|>=|<=|~=|!=|<|>|===)?.*$)\")\n",
+                        "filePath": "script/hassfest/requirements.py",
+                        "lineNumbers": [
+                            23,
+                            24,
+                            25,
+                            26,
+                            27
+                        ]
+                    },
+                    {
+                        "additionalContext": "    \"\"\"Test the default setup.\"\"\"    )\n    aioclient_mock.get(\n        re.compile(\"api.foobot.io/v2/device/.*\"),\n        text=load_fixture(\"data.json\", \"foobot\"),\n    )\n",
+                        "filePath": "tests/components/foobot/test_sensor.py",
+                        "lineNumbers": [
+                            35,
+                            36,
+                            37,
+                            38,
+                            39,
+                            40,
+                            41,
+                            42,
+                            43
+                        ]
+                    },
+                    {
+                        "additionalContext": "\n    aioclient_mock.get(\n        re.compile(\"api.foobot.io/v2/owner/.*\"), exc=asyncio.TimeoutError()\n    )\n    with pytest.raises(PlatformNotReady):\n",
+                        "filePath": "tests/components/foobot/test_sensor.py",
+                        "lineNumbers": [
+                            67,
+                            68,
+                            69,
+                            70,
+                            71
+                        ]
+                    },
+                    {
+                        "additionalContext": "    errors = [HTTPStatus.BAD_REQUEST, HTTPStatus.UNAUTHORIZED, HTTPStatus.FORBIDDEN]\n    for error in errors:\n        aioclient_mock.get(re.compile(\"api.foobot.io/v2/owner/.*\"), status=error)\n        result = await foobot.async_setup_platform(\n            hass, VALID_CONFIG, fake_async_add_entities\n",
+                        "filePath": "tests/components/foobot/test_sensor.py",
+                        "lineNumbers": [
+                            81,
+                            82,
+                            83,
+                            84,
+                            85
+                        ]
+                    },
+                    {
+                        "additionalContext": "    errors = [HTTPStatus.TOO_MANY_REQUESTS, HTTPStatus.INTERNAL_SERVER_ERROR]\n    for error in errors:\n        aioclient_mock.get(re.compile(\"api.foobot.io/v2/owner/.*\"), status=error)\n        with pytest.raises(PlatformNotReady):\n            await foobot.async_setup_platform(\n",
+                        "filePath": "tests/components/foobot/test_sensor.py",
+                        "lineNumbers": [
+                            96,
+                            97,
+                            98,
+                            99,
+                            100
+                        ]
+                    },
+                    {
+                        "additionalContext": "        await hass.async_block_till_done()\n\n    assert \"https://this.url.is.way.too.long\" in caplog.text\n    assert \"German Umlaut\" in caplog.text\n\n",
+                        "filePath": "tests/components/zeroconf/test_init.py",
+                        "lineNumbers": [
+                            227,
+                            228,
+                            229,
+                            230,
+                            231
+                        ]
+                    }
+                ]
+            },
+            "name": "UNKNOWN",
+            "type": "crypto-asset"
+        }
+    ],
+    "dependencies": [
+        {
+            "dependsOn": [
+                "cryptography:algorithm:aa71afb9-c4cf-41eb-bb01-a3861b87a2d5"
+            ],
+            "ref": "bc03db58-2ce3-4880-8e0a-e11abfc84131"
+        },
+        {
+            "ref": "cryptography:algorithm:aa71afb9-c4cf-41eb-bb01-a3861b87a2d5"
+        }
+    ],
+    "metadata": {
+        "component": {
+            "bom-ref": "bc03db58-2ce3-4880-8e0a-e11abfc84131",
+            "name": "root",
+            "type": "application"
+        },
+        "timestamp": "2023-12-20T20:49:55.195572+00:00",
+        "tools": [
+            {
+                "externalReferences": [
+                    {
+                        "type": "build-system",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions"
+                    },
+                    {
+                        "type": "distribution",
+                        "url": "https://pypi.org/project/cyclonedx-python-lib/"
+                    },
+                    {
+                        "type": "documentation",
+                        "url": "https://cyclonedx.github.io/cyclonedx-python-lib/"
+                    },
+                    {
+                        "type": "issue-tracker",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues"
+                    },
+                    {
+                        "type": "license",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE"
+                    },
+                    {
+                        "type": "release-notes",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md"
+                    },
+                    {
+                        "type": "vcs",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib"
+                    },
+                    {
+                        "type": "website",
+                        "url": "https://cyclonedx.org"
+                    }
+                ],
+                "name": "cyclonedx-python-lib",
+                "vendor": "CycloneDX",
+                "version": "4.2.2"
+            },
+            {
+                "name": "CodeQL",
+                "vendor": "GitHub",
+                "version": "2.15.4"
+            },
+            {
+                "name": "codeql/python-queries",
+                "version": "0.9.5-dev+1b9f59efa7b498e426d224b2c7615e5d9aefd557"
+            }
+        ]
+    },
+    "serialNumber": "urn:uuid:ed4556a9-59dc-4f11-8bd9-bb13349963b4",
+    "version": 1,
+    "$schema": "https://raw.githubusercontent.com/IBM/CBOM/main/bom-1.4-cbom-1.0.schema.json",
+    "bomFormat": "CBOM",
+    "specVersion": "1.4-cbom-1.0"
+}

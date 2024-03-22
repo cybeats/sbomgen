@@ -1,0 +1,245 @@
+{
+  "components": [
+    {
+      "bom-ref": "e4905fcd-080d-4697-8fab-ce962a05d264",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "b9c5f98834e4af1dee7722337babaaf5"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "03d18084437fa585373437df8bed5ed4e49e36a2"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f1af55420bcde9e2c1951ebc8a1409119113f07629d23845876ad635bd5e86a8"
+        }
+      ],
+      "name": "helics_app",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "c7b62521-0195-451d-96c5-ba01b61aadcd",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "c864021a017d80b33d09711832610882"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "0d8a47d308a57c9dcb6778fb4cac5819cb2fab79"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d081e9130f11eeeed98d4190e280576b71eef2aa7613213045e4ffbae41827cd"
+        }
+      ],
+      "name": "helics_broker",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "f7a7d0a9-5feb-4486-bd7c-b3140e455ad9",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "f96b6bb03313c2a4f747fd29b4638ac7"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "ef43f0ab22e5e5192dab9c285974c087c5aba41f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "81af069820c470fe4f94112c0faf21047350a54d5de31f799d65b5d006b533dd"
+        }
+      ],
+      "name": "helics_broker_server",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "4e68527f-34f2-4c61-afcf-5fcd2708d85e",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "7c1e5fa78ed93898b67c5283aeef416c"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "fdcb90ce1df5f94d740b6427bfb1c668a5247e4e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7c6134af7c81b021abe857f768f9a0bc186972da42c196f3b065c9bed94f9f12"
+        }
+      ],
+      "name": "helics_connector",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "fc6a4460-3776-4616-994c-033d15ada897",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "08a5659316c2f201f271c4b5c171eb56"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "759952f415b81995226b6702757adbc680f973d5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5b09b8d1fd6a613073c99d00d26f0b2a52c1608fceee69e0805bdd6c366188be"
+        }
+      ],
+      "name": "helics_player",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "d4773340-3885-4447-a115-f033a21fad68",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "a8aba717bcd9b029f765b830d3ed608e"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "067cc4f1def9324ff08e4c6965d6a19af167ff68"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "385aef880b2580f44bc3970f6097276c8c1909afddda725561f8d2faa5a39802"
+        }
+      ],
+      "name": "helics_recorder",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "1f82d156-262e-4d6d-94ba-c6119f84082b",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "776cacbb64eeb5aaa353b7b125d6e5a6"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "51cb753aed1972a0f8ada198e86e7c28a478a040"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7aa5ccc4b7ebc5758d06b0ff78340e1e43cedea2982b2d896d77a87758911c39"
+        }
+      ],
+      "name": "libfmt.a",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "c8e61e70-0b86-4f59-8b61-e7aef8c2efd5",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "0147be4a86ffa1c188a4cb7f56c0e7f1"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "6d2e4d48b55d25cca65db02b6fbe27d270be96a1"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e9d57cf203e4b63e144ed4a8121b5299311ce2ddc968f4df5555405bf7c41320"
+        }
+      ],
+      "name": "libhelics.so.3.5.1",
+      "type": "file",
+      "version": ""
+    },
+    {
+      "bom-ref": "e60b77c1-5284-42d8-b704-347583f03b29",
+      "copyright": {},
+      "description": "",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "f544830b9f361041603eb9bf814b07fe"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "d09f01830e2cb2519fbcfb3b40d85cde7faf85c5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "28c61639b0a8297c4e7f003ad2f3b82aa13f3397b48b34a3ca495d3bb6ef323d"
+        }
+      ],
+      "name": "libzmq.so.5.2.5",
+      "type": "file",
+      "version": ""
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "1f82d156-262e-4d6d-94ba-c6119f84082b"
+    },
+    {
+      "ref": "4e68527f-34f2-4c61-afcf-5fcd2708d85e"
+    },
+    {
+      "ref": "c7b62521-0195-451d-96c5-ba01b61aadcd"
+    },
+    {
+      "ref": "c8e61e70-0b86-4f59-8b61-e7aef8c2efd5"
+    },
+    {
+      "ref": "d4773340-3885-4447-a115-f033a21fad68"
+    },
+    {
+      "ref": "e4905fcd-080d-4697-8fab-ce962a05d264"
+    },
+    {
+      "ref": "e60b77c1-5284-42d8-b704-347583f03b29"
+    },
+    {
+      "ref": "f7a7d0a9-5feb-4486-bd7c-b3140e455ad9"
+    },
+    {
+      "ref": "fc6a4460-3776-4616-994c-033d15ada897"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2024-03-22T17:57:54.321781+00:00",
+    "tools": [
+      {
+        "name": "Surfactant",
+        "version": "0.0.0rc4"
+      }
+    ]
+  },
+  "serialNumber": "urn:uuid:bc4885bf-4b74-4361-9e55-b177b343e135",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5"
+}

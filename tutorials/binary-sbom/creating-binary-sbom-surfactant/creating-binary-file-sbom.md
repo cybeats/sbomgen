@@ -1,4 +1,4 @@
-# Creating SBOMs From Binary Files
+# Creating SBOMs From Binary Files Using Sufactant
 
 ## Introduction
 

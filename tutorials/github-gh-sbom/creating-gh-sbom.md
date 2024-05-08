@@ -1,8 +1,8 @@
 # Creating SBOMs Using The GitHub GH SBOM Utility
 
-
 ## Introduction
 
+This tutorial illustrates how to create SBOMs using the GitHub gh CLI sbom extension.
 ## Requirements
 
 GitHub gh CLI.

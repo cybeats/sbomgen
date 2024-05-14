@@ -81,8 +81,6 @@ To generate SBOMs for Rust projects, you can use:
 * Syft (by Anchore) 
   https://github.com/anchore/syft
 
-* Mend SBOM Generator
-  https://github.com/whitesource-ps/ws-sbom-generator
 
 ## Use Microsoft.Sbom.Tool to generate SPDX SBOM from Linux kernel source code.
 
@@ -123,9 +121,3 @@ To generate SBOMs for Rust projects, you can use:
 
 * UI tool to generate SBOM
   https://democert.org/sbom/
-  
-* Snyk (via snyk2spdx optional tool) Convert the Snyk CLI output to SPDX format. Note according to the GitHub repository page: This repository is not in active developemnt and critical bug fixes only will be considered.
-  https://github.com/snyk-tech-services/snyk2spdx
-  
-* Fossa 
-  https://fossa.com/pricing

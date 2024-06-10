@@ -1,0 +1,927 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "SBOM-SPDX-5e430f74-d4bf-46bf-9bbd-a39305f13540",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2024-06-06T16:38:02Z",
+    "creators": [
+      "Tool: bom-v0.6.0"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://example.com/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550",
+      "name": "registry.k8s.io/kube-apiserver@sha256:90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/kube-apiserver@sha256%3A90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550?arch=arm\u0026mediaType=application%2Fvnd.docker.distribution.manifest.v2%2Bjson\u0026os=linux\u0026repository_url=registry.k8s.io",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-e22627995baab6ae75a6fe15f45c2ce5be4e40ff1cc7a60866120c92b00a9a3c",
+      "name": "sha256:e22627995baab6ae75a6fe15f45c2ce5be4e40ff1cc7a60866120c92b00a9a3c",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b23008c5ca7febfc2c81ece3c265232df56b4f4fab76668fa0845664145358228464be72e469a68f4c1b59fedd5ed9befbdd09d5d8f0d48098642e5752c7f145"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "93e651574d33c6313eba5e793f2cc0c2236918f9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e22627995baab6ae75a6fe15f45c2ce5be4e40ff1cc7a60866120c92b00a9a3c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f-a3ac71c1-bfdf-4982-8efe-cf76526ac14c",
+      "name": "tzdata",
+      "versionInfo": "2021a-0+deb10u1",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: GNU Libc Maintainers (debian-glibc@lists.debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/tzdata@2021a-0%2Bdeb10u1?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a",
+      "name": "sha256:3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2d9d46172a1ed1f274d805e5169851b69aedcb21"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f8182c7b6b8914168cc13455a47c8200297988b071202face5a9a1579b2a796ab6f87bec1c496e4f878e502b84afe21fb1233003345121d4b157a07491241c4e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118-9738d50c-4b0b-49e6-b6f0-c39dc8ba13d2",
+      "name": "tzdata",
+      "versionInfo": "2021a-0+deb10u1",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: GNU Libc Maintainers (debian-glibc@lists.debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/tzdata@2021a-0%2Bdeb10u1?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c",
+      "name": "registry.k8s.io/kube-apiserver@sha256:1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/kube-apiserver@sha256%3A1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c?arch=amd64\u0026mediaType=application%2Fvnd.docker.distribution.manifest.v2%2Bjson\u0026os=linux\u0026repository_url=registry.k8s.io",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63-95e0496c-ba76-403a-bb4d-f21e24ec8c15",
+      "name": "base-files",
+      "versionInfo": "10.3+deb10u8",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Santiago Vila (sanvila@debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/base-files@10.3%2Bdeb10u8?arch=amd64",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118-cab05105-8150-422f-bbf0-f85111fb87df",
+      "name": "netbase",
+      "versionInfo": "5.6",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Marco d'Itri (md@linux.it)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/netbase@5.6?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573-6823a519-7b27-4a58-9442-fb4a21d62896",
+      "name": "tzdata",
+      "versionInfo": "2021a-0+deb10u1",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: GNU Libc Maintainers (debian-glibc@lists.debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/tzdata@2021a-0%2Bdeb10u1?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63-550ce340-ca93-4c9b-b132-abf77a0b15a5",
+      "name": "netbase",
+      "versionInfo": "5.6",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Marco d'Itri (md@linux.it)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/netbase@5.6?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "name": "registry.k8s.io/kube-apiserver@sha256:828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "registry.k8s.io/kube-apiserver@sha256:828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/kube-apiserver@sha256%3A828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9?mediaType=application%2Fvnd.docker.distribution.manifest.list.v2%2Bjson\u0026repository_url=registry.k8s.io",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573-c1eb849a-91c4-42b3-9e6e-e1883a97826c",
+      "name": "base-files",
+      "versionInfo": "10.3+deb10u8",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Santiago Vila (sanvila@debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/base-files@10.3%2Bdeb10u8?arch=ppc64el",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f-d5b7168e-7315-4e7d-9a63-7a0b74ea8a5a",
+      "name": "base-files",
+      "versionInfo": "10.3+deb10u8",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Santiago Vila (sanvila@debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/base-files@10.3%2Bdeb10u8?arch=arm64",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118-6092eb40-51a6-48aa-beb4-1ef1d691202a",
+      "name": "base-files",
+      "versionInfo": "10.3+deb10u8",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Santiago Vila (sanvila@debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/base-files@10.3%2Bdeb10u8?arch=armhf",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63",
+      "name": "sha256:1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "102229161a044503a3c321e2a24c44ecfff0c78da1156a1d4bb8b81a805ad5b05444f95eb7c0ec45b121bf5c41ebe95a44d23c74d076be5e3c26c75a3e2b17d0"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "534068417edf7d2637546e8aaa3a3dd8d2af3137"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a-c699f7e7-a930-4423-b291-768bca9fd93d",
+      "name": "netbase",
+      "versionInfo": "5.6",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Marco d'Itri (md@linux.it)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/netbase@5.6?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118",
+      "name": "sha256:fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "70c446204eb6a1546ee2ea81291882b7dd113ba3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "d22f69435f0d8e522185b330853766460370f8e563051e53a34c22643214933b6e8e7b1e0baeac3162bc8d889ea36dcb43e203fdf0eb32070137c43cfaa52a83"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a-d02caaa9-5563-4e78-9c4c-e7cd70614d91",
+      "name": "tzdata",
+      "versionInfo": "2021a-0+deb10u1",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: GNU Libc Maintainers (debian-glibc@lists.debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/tzdata@2021a-0%2Bdeb10u1?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-4c7874e1b4304c89603fdb8c74a468246f31689c3ac770bbb6edbce8a05d1518",
+      "name": "sha256:4c7874e1b4304c89603fdb8c74a468246f31689c3ac770bbb6edbce8a05d1518",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "608c48c5899030c5743f300ec71bc7fa24ac40c6"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4c7874e1b4304c89603fdb8c74a468246f31689c3ac770bbb6edbce8a05d1518"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "020644ae5779be7cb28288736f16c1526d051e1f2248b4f955a9f5722f19ee74b655fc6ab0f3f6ed5eeea67a034f280d801d7adaa6d848174de42438e4130bbd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-b8779a060fb8a25d7a6a053841c095e20cb2b3ecab043c97a448220750a4feb6",
+      "name": "sha256:b8779a060fb8a25d7a6a053841c095e20cb2b3ecab043c97a448220750a4feb6",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c785bbd81c86fc6753b9c8f65ae4bc248f7ac0af"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b8779a060fb8a25d7a6a053841c095e20cb2b3ecab043c97a448220750a4feb6"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e54d6b85885de0e577f70ca62e79d7cf1f6374f5a7d604b502694b993fc3ad539cfc4197999ec827f7fcce7eb50a1fcfc011675a875dc5d7cbf4efeccf2b6e0c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a",
+      "name": "registry.k8s.io/kube-apiserver@sha256:1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/kube-apiserver@sha256%3A1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a?arch=arm64\u0026mediaType=application%2Fvnd.docker.distribution.manifest.v2%2Bjson\u0026os=linux\u0026repository_url=registry.k8s.io",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-f1880506fee229fec70e8fb619b1c44e8f76da6efac2b94360b1cb6babccec81",
+      "name": "sha256:f1880506fee229fec70e8fb619b1c44e8f76da6efac2b94360b1cb6babccec81",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2b8566cbed2ffc83a3f83299fa76213749f773919f3728b4fdfd6fdbdf41d2ca04425c6743fd7a968601e17a617c4f03eeef42c3889d633d4be1622a0a513b43"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6e91c0c414f8697735349686a5a627360aee08e9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f1880506fee229fec70e8fb619b1c44e8f76da6efac2b94360b1cb6babccec81"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-516ffb9776933757f8ad77ca2108416bbb66991d4fa09ef6082e02e658139b1c",
+      "name": "sha256:516ffb9776933757f8ad77ca2108416bbb66991d4fa09ef6082e02e658139b1c",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a5729911bb7e93f3dbf1a5af20c2e54d420862c8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "516ffb9776933757f8ad77ca2108416bbb66991d4fa09ef6082e02e658139b1c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0738be51c66f7362a5012f3552d24639fb90e2ed72e9894157e6ee7ec3d685c410c46e81df7ee368585c68a76abaed836c4f27494882d0e9885c358f911eabf1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-d94d38b8f0e658999324c43619f271918fbe5499c838092760ec8b466d1271b2",
+      "name": "sha256:d94d38b8f0e658999324c43619f271918fbe5499c838092760ec8b466d1271b2",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d94d38b8f0e658999324c43619f271918fbe5499c838092760ec8b466d1271b2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ed4dc64ab72347e3afd20d7bd2031a7ce7547c25b2984a8800e9554945a2672ffa991cd24239c88704a3017a577eb15fb01bb13b0edbcbee9da56869a6051971"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "90a47f5423d33709170eb717291013f38146933e"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f",
+      "name": "sha256:94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "63d3bc66cba306157acb9f72c2a60da783529498239380484b86f55820f9aa93ee7f4ad06c228f08245885c8bbbf2bf106b4b01efc9bc42cd7defe7856b21a12"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "926c2a62569723d0e19f5f2766f7eac4d42ac8bb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db",
+      "name": "registry.k8s.io/kube-apiserver@sha256:a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/kube-apiserver@sha256%3Aa2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db?arch=ppc64le\u0026mediaType=application%2Fvnd.docker.distribution.manifest.v2%2Bjson\u0026os=linux\u0026repository_url=registry.k8s.io",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63-2f99b5fc-b90a-42bf-abc0-e96f3a6f4b89",
+      "name": "tzdata",
+      "versionInfo": "2021a-0+deb10u1",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: GNU Libc Maintainers (debian-glibc@lists.debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/tzdata@2021a-0%2Bdeb10u1?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148",
+      "name": "registry.k8s.io/kube-apiserver@sha256:4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/kube-apiserver@sha256%3A4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148?arch=s390x\u0026mediaType=application%2Fvnd.docker.distribution.manifest.v2%2Bjson\u0026os=linux\u0026repository_url=registry.k8s.io",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-be05ad970ab3a7b85667d5e1b55adbb9f44c471440771b5ea7cdda3f27b46d6c",
+      "name": "sha256:be05ad970ab3a7b85667d5e1b55adbb9f44c471440771b5ea7cdda3f27b46d6c",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "be05ad970ab3a7b85667d5e1b55adbb9f44c471440771b5ea7cdda3f27b46d6c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9036bd7b64f7161c7880d73eca2ccd860e221ec1d206379b67f878b6b4a26bed01ed503bc7f036f0651a471d616222e3b1e86434d82e3c4fe7abb56544cebc1e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e4d74adb45950e0d46996f3d895962bbab87896c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-445448f241039e3e1dd30dbcc6b6833a4be555d75b9eb0569b0af19c68de9435",
+      "name": "sha256:445448f241039e3e1dd30dbcc6b6833a4be555d75b9eb0569b0af19c68de9435",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "322857ea17c8d10b97a27792914318afd771b5c2"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "445448f241039e3e1dd30dbcc6b6833a4be555d75b9eb0569b0af19c68de9435"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e4d156cd33e2557ef6449bccd554f72a8d9db767b892ad925a6d76cf37d3600ebdc245abfa2d7a3f268094fb0e85fe512b381bb34e423a3680873fd7659564ea"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573-8e3cb975-913b-4d29-8bdf-42db43196018",
+      "name": "netbase",
+      "versionInfo": "5.6",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Marco d'Itri (md@linux.it)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/netbase@5.6?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573",
+      "name": "sha256:e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "852b590e4be1e53e219889164b6dc3d6dad76026420382ad5bd720d2288097a0881f3e53d8c6456f1a455067e7805a649d864a1e90af6fa7b9b0841b67690a42"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4605f3306d725e32c705cb41bfaa30d9e8468794"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f-8777c7a9-d76d-4119-945e-0b2da5de8cf5",
+      "name": "netbase",
+      "versionInfo": "5.6",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Marco d'Itri (md@linux.it)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/netbase@5.6?arch=all",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a-c035cfdd-e9f2-4f09-8625-c6e6a1b18fe9",
+      "name": "base-files",
+      "versionInfo": "10.3+deb10u8",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "supplier": "Person: Santiago Vila (sanvila@debian.org)",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:deb/distroless/base-files@10.3%2Bdeb10u8?arch=s390x",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-b0b8efccaa8e9cb1915e29801319e534a06c378a8bdb07b8217ccbd252bf5471",
+      "name": "sha256:b0b8efccaa8e9cb1915e29801319e534a06c378a8bdb07b8217ccbd252bf5471",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0b8efccaa8e9cb1915e29801319e534a06c378a8bdb07b8217ccbd252bf5471"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "33f5e15389ec0838879ecba031b29a97ae6631efd22faa7b36f79c24d727596e6fbaf6f93ce92e40add0e98cd56b10ab2315e274f8f6f69e7538b64cbd861e12"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a25239ee30b7308976e13ac844e99be91d0dbaeb"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-927d2ec5eb05e518d20b0a106d1b7838945232890a704fa92faa076bd9f23bcb",
+      "name": "sha256:927d2ec5eb05e518d20b0a106d1b7838945232890a704fa92faa076bd9f23bcb",
+      "versionInfo": "",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "927d2ec5eb05e518d20b0a106d1b7838945232890a704fa92faa076bd9f23bcb"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0a498483df6e9b09b157088dc485154f0fd38cf62847fdc6817dbd0139372a5ac4e271147052f629845e63ad89b7e17106be8b037d69711093847a9d2549dd99"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "52808f0b3b1e522cc8a89a4ffba8ebbe22a09bd7"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-927d2ec5eb05e518d20b0a106d1b7838945232890a704fa92faa076bd9f23bcb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-b8779a060fb8a25d7a6a053841c095e20cb2b3ecab043c97a448220750a4feb6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a-c035cfdd-e9f2-4f09-8625-c6e6a1b18fe9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a-c699f7e7-a930-4423-b291-768bca9fd93d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a-d02caaa9-5563-4e78-9c4c-e7cd70614d91"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-d94d38b8f0e658999324c43619f271918fbe5499c838092760ec8b466d1271b2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-f1880506fee229fec70e8fb619b1c44e8f76da6efac2b94360b1cb6babccec81"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63-95e0496c-ba76-403a-bb4d-f21e24ec8c15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63-550ce340-ca93-4c9b-b132-abf77a0b15a5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1435e167151f90b7f4abfd416726751c46b8672cc7288507fab7cfa5a05b866c-sha256-1af65bcd238635a21b6d734fcb46e33c2d9aee44c497f9b1fd7472fa0c827c63-2f99b5fc-b90a-42bf-abc0-e96f3a6f4b89"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118-6092eb40-51a6-48aa-beb4-1ef1d691202a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118-cab05105-8150-422f-bbf0-f85111fb87df"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-90cbf8d0444fe5fad4e06d37d42c6d202bf27edc5d931c337b6aadf749d03550-sha256-fb65b51ecbb097a89071e7ca9cdf38996564349dac9ce4ccaf4d340b6dfef118-9738d50c-4b0b-49e6-b6f0-c39dc8ba13d2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-b0b8efccaa8e9cb1915e29801319e534a06c378a8bdb07b8217ccbd252bf5471"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-e22627995baab6ae75a6fe15f45c2ce5be4e40ff1cc7a60866120c92b00a9a3c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f-d5b7168e-7315-4e7d-9a63-7a0b74ea8a5a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f-8777c7a9-d76d-4119-945e-0b2da5de8cf5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-1a495c62bc2e2f2209e3a8c5fe6c364878d55418c802a7543edadeb1728d987a-sha256-94d37f7b8d0ebf4aafc73b0a52fef453d4eb76a8d5388adf11839a45d7f80a6f-a3ac71c1-bfdf-4982-8efe-cf76526ac14c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-516ffb9776933757f8ad77ca2108416bbb66991d4fa09ef6082e02e658139b1c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-4c7874e1b4304c89603fdb8c74a468246f31689c3ac770bbb6edbce8a05d1518"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-be05ad970ab3a7b85667d5e1b55adbb9f44c471440771b5ea7cdda3f27b46d6c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-445448f241039e3e1dd30dbcc6b6833a4be555d75b9eb0569b0af19c68de9435"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-registry.k8s.io-kube-apiserver-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148-sha256-3327b5ee77a2dc75f0f09408706f6b929be6fc6d958b020b02f0e99c27473a3a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserverC64sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9-registry.k8s.io-kube-apiserverC64sha256-4dc554858e54ad2ae7cd1990d1fb11e1c516fbffd9f17f8a4f98ead0b5eae148",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-828fefd9598ed865d45364d1be859c87aabfa445b03b350e3440d143bd21bca9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573-c1eb849a-91c4-42b3-9e6e-e1883a97826c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573-8e3cb975-913b-4d29-8bdf-42db43196018"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-registry.k8s.io-kube-apiserver-a2199aece7bf28ca30233895803984edd45cab59b054eeade5ea398185d995db-sha256-e688d1af0eefdaf089cbc9d3ce20b7826c6113c4105ced3a6cdb004cb470d573-6823a519-7b27-4a58-9442-fb4a21d62896"
+    }
+  ]
+}

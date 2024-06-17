@@ -1,0 +1,21 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:581e086c-0ef8-41f3-869a-fc6892eadd3c",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2024-06-14T12:55:10Z",
+    "tools" : {
+      "services" : [
+        {
+          "provider" : {
+            "name" : "IBM Research"
+          },
+          "name" : "SonarQube Crypto Scanner Plugin",
+          "version" : "1.1.3"
+        }
+      ]
+    }
+  },
+  "dependencies" : [ ]
+}

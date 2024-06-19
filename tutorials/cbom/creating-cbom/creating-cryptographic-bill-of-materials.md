@@ -1,6 +1,6 @@
 ## Introduction
 
-This tutorial illustrates how to create a Cryptographic Bill Of Materials (CBOM) from software projects using the Cryptobom Forge ool. 
+This tutorial illustrates how to create a Cryptographic Bill Of Materials (CBOM) from software projects using the Cryptobom Forge tool. 
 
 ## Requirements
 

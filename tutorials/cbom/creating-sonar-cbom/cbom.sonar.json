@@ -1,0 +1,78 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:72139774-9c59-4c20-9b9f-0005394158d2",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2024-06-19T16:41:28Z",
+    "tools" : {
+      "services" : [
+        {
+          "provider" : {
+            "name" : "IBM Research"
+          },
+          "name" : "SonarQube Crypto Scanner Plugin",
+          "version" : "1.1.3"
+        }
+      ]
+    }
+  },
+  "components" : [
+    {
+      "name" : "rsa-2048",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "tests/test_ssl.py",
+            "line" : 444,
+            "offset" : 10,
+            "additionalContext" : "generate_private_key"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "other",
+          "parameterSetIdentifier" : "2048",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.2.840.113549.1.1.1"
+      },
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e0549c2c-aeb1-4862-8d34-555daedeb081"
+    },
+    {
+      "name" : "key:rsa-2048",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "location" : "tests/test_ssl.py",
+            "line" : 444,
+            "offset" : 10,
+            "additionalContext" : "generate_private_key"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "related-crypto-material",
+        "relatedCryptoMaterialProperties" : {
+          "type" : "private-key",
+          "size" : 2048
+        }
+      },
+      "type" : "cryptographic-asset",
+      "bom-ref" : "098b2562-8352-49bf-b0d0-d14f2c7786c5"
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "098b2562-8352-49bf-b0d0-d14f2c7786c5",
+      "dependsOn" : [
+        "e0549c2c-aeb1-4862-8d34-555daedeb081"
+      ]
+    }
+  ]
+}

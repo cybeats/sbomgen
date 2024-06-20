@@ -1,6 +1,6 @@
 ## Introduction
 
-This tutorial illustrates how to create a Cryptographic Bill Of Materials (CBOM) from software projects using the Cryptobom Forge ool. 
+This tutorial illustrates how to create a Cryptographic Bill Of Materials (CBOM) from software projects using the Cryptobom Forge tool. 
 
 ## Requirements
 
@@ -76,7 +76,7 @@ To analyze the database we can create a ```codeql-results``` directory for the a
 export CODEQL_SUITES_PATH=$HOME/<path-to-codeql-repo>/codeql-repo/python/ql/src/codeql-suites
 export RESULTS_FOLDER=codeql-results
 
-codeql database analyze codeqldb $CODEQL_SUITES_PATH python-code-scanning.qls  --format=sarifv2.1.0  --output=$RESULTS_FOLDER python-code-scanning.sarif
+codeql database analyze codeqldb $CODEQL_SUITES_PATH/python-code-scanning.qls  --format=sarifv2.1.0  --output=$RESULTS_FOLDER python-code-scanning.sarif
 
 ```
 
@@ -90,6 +90,14 @@ Once the above commands have been executed, run:
 
 A "cbom.json" file will be created inside your project directory.
 
+
+## Troubleshooting
+
+### No Encryption Found / False Negative
+
+* Run codeql analysis with the ```--sarif-add-snippets``` flag.
+
+* Use the ```<language>-security-experimental.qls``` (e.g. ```python-security-experimental.qls```) as the query suite, as opposed to the ```<language>-code-scanning.qls``` suite.
 
 ## References
 * Santander Security. (2023). Cryptobom Forge Tool. https://github.com/santandersecurityresearch/cryptobom-forge

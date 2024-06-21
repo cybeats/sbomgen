@@ -16,6 +16,9 @@ Run the command:
 
 ```dotnet tool install --global CycloneDX```
 
+Note: You may need to add the ```./dotnet/tools``` directory to your PATH. e.g. ```export PATH="$PATH:/location/of/.dotnet/tools"```
+
+
 Verify installation with the command:
 
 

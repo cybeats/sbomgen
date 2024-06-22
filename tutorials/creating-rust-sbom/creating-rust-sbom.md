@@ -81,7 +81,20 @@ Navigate to the Rust project that you wish to create the SBOM for.
 
 Run:
 
-```cargo sbom --output-format cyclone_dx_json_1_4 > sbom.json```
+```cargo sbom --output-format <sbom-format>```
+
+This outputs an sbom to the terminal in one of the predetermined formats:
+
+* ```spdx_json_2_3```
+* ```cyclone_dx_json_1_4```
+
+This output can be redirected to a file via:
+
+```cargo sbom --output-format <sbom-format> > <filename>```
+
+#### Notes
+
+* The SPDX output may feature license outputs that are not part of the SPDX License List, e.g. "MIT/Apache-2.0" (incorrect) as opposed to "MIT OR Apache-2.0" (correct).
 
 ### Cyclonedx-rust-cargo
 
@@ -98,6 +111,8 @@ You should see an output "bom.json" in any folder containing rust source files.
 * In multi folder/multi module projects, a separate SBOM file is created in the root of each module. If this is not desirable, the cargo-sbom CLI may be more applicable.
 
 * Error messages may be seen, however an sbom is still built. This appears to be a [known issue](https://github.com/CycloneDX/cyclonedx-rust-cargo/compare/main...ctron:cyclonedx-rust-cargo:feature/improve_logs_1).
+
+
 
 ## References
 

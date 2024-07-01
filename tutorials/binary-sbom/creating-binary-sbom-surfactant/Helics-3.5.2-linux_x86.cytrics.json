@@ -3,489 +3,29 @@
   "hardware": [],
   "software": [
     {
-      "UUID": "f030e069-4263-4d9d-96f8-a182daf4aa50",
+      "UUID": "c5541236-fe7a-4715-985d-f2bf7b9d6d75",
       "name": null,
-      "size": 8060576,
-      "fileName": [
-        "helics_broker"
-      ],
-      "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/bin/helics_broker"
-      ],
-      "containerPath": [],
-      "captureTime": 1711065826,
-      "version": "",
-      "vendor": [],
-      "description": "",
-      "sha1": "0d8a47d308a57c9dcb6778fb4cac5819cb2fab79",
-      "sha256": "d081e9130f11eeeed98d4190e280576b71eef2aa7613213045e4ffbae41827cd",
-      "md5": "c864021a017d80b33d09711832610882",
-      "relationshipAssertion": "Unknown",
-      "comments": "",
-      "metadata": [
-        {
-          "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
-          "fileInfo": {
-            "mode": "-rwxr-xr-x",
-            "hidden": false
-          }
-        },
-        {
-          "OS": "Linux",
-          "elfIdent": {
-            "EI_CLASS": 2,
-            "EI_DATA": 1,
-            "EI_VERSION": 1,
-            "EI_OSABI": 3,
-            "EI_ABIVERSION": 0,
-            "E_MACHINE": 62
-          },
-          "elfDependencies": [
-            "librt.so.1",
-            "libzmq.so.5",
-            "libm.so.6",
-            "libpthread.so.0",
-            "libc.so.6",
-            "ld-linux-x86-64.so.2"
-          ],
-          "elfRpath": [
-            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
-          ],
-          "elfRunpath": [],
-          "elfSoname": [],
-          "elfInterpreter": [
-            "/lib64/ld-linux-x86-64.so.2"
-          ],
-          "elfDynamicFlags": [],
-          "elfDynamicFlags1": [],
-          "elfGnuRelro": true,
-          "elfComment": [
-            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
-            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
-          ],
-          "elfNote": [
-            {
-              "sectionName": ".note.ABI-tag",
-              "name": "GNU",
-              "type": "NT_GNU_ABI_TAG",
-              "os": "ELF_NOTE_OS_LINUX",
-              "abi": "2.6.18"
-            },
-            {
-              "sectionName": ".note.gnu.build-id",
-              "name": "GNU",
-              "type": "NT_GNU_BUILD_ID",
-              "desc": "373c3dc95e7341f0b4f689482cb30986e8a3d9a8"
-            }
-          ],
-          "elfOsAbi": "ELFOSABI_LINUX",
-          "elfHumanArch": "x64",
-          "elfArchNumber": 62,
-          "elfArchitecture": "EM_X86_64",
-          "elfIsExe": true,
-          "elfIsLib": false,
-          "elfIsRel": false,
-          "elfIsCore": false
-        }
-      ],
-      "supplementaryFiles": [],
-      "provenance": null,
-      "recordedInstitution": "LLNL",
-      "components": []
-    },
-    {
-      "UUID": "2627fd78-e172-432d-874c-c5826da18c09",
-      "name": null,
-      "size": 6962968,
-      "fileName": [
-        "helics_recorder"
-      ],
-      "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/bin/helics_recorder"
-      ],
-      "containerPath": [],
-      "captureTime": 1711065826,
-      "version": "",
-      "vendor": [],
-      "description": "",
-      "sha1": "067cc4f1def9324ff08e4c6965d6a19af167ff68",
-      "sha256": "385aef880b2580f44bc3970f6097276c8c1909afddda725561f8d2faa5a39802",
-      "md5": "a8aba717bcd9b029f765b830d3ed608e",
-      "relationshipAssertion": "Unknown",
-      "comments": "",
-      "metadata": [
-        {
-          "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
-          "fileInfo": {
-            "mode": "-rwxr-xr-x",
-            "hidden": false
-          }
-        },
-        {
-          "OS": "Linux",
-          "elfIdent": {
-            "EI_CLASS": 2,
-            "EI_DATA": 1,
-            "EI_VERSION": 1,
-            "EI_OSABI": 3,
-            "EI_ABIVERSION": 0,
-            "E_MACHINE": 62
-          },
-          "elfDependencies": [
-            "librt.so.1",
-            "libzmq.so.5",
-            "libm.so.6",
-            "libpthread.so.0",
-            "libc.so.6",
-            "ld-linux-x86-64.so.2"
-          ],
-          "elfRpath": [
-            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
-          ],
-          "elfRunpath": [],
-          "elfSoname": [],
-          "elfInterpreter": [
-            "/lib64/ld-linux-x86-64.so.2"
-          ],
-          "elfDynamicFlags": [],
-          "elfDynamicFlags1": [],
-          "elfGnuRelro": true,
-          "elfComment": [
-            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
-            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
-          ],
-          "elfNote": [
-            {
-              "sectionName": ".note.ABI-tag",
-              "name": "GNU",
-              "type": "NT_GNU_ABI_TAG",
-              "os": "ELF_NOTE_OS_LINUX",
-              "abi": "2.6.18"
-            },
-            {
-              "sectionName": ".note.gnu.build-id",
-              "name": "GNU",
-              "type": "NT_GNU_BUILD_ID",
-              "desc": "9f609f17172a4bfcd8d4275f8c6272f7c30bc20a"
-            }
-          ],
-          "elfOsAbi": "ELFOSABI_LINUX",
-          "elfHumanArch": "x64",
-          "elfArchNumber": 62,
-          "elfArchitecture": "EM_X86_64",
-          "elfIsExe": true,
-          "elfIsLib": false,
-          "elfIsRel": false,
-          "elfIsCore": false
-        }
-      ],
-      "supplementaryFiles": [],
-      "provenance": null,
-      "recordedInstitution": "LLNL",
-      "components": []
-    },
-    {
-      "UUID": "47a7f4d6-a091-4640-bd4f-db7650a2f7dc",
-      "name": null,
-      "size": 7071520,
-      "fileName": [
-        "helics_connector"
-      ],
-      "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/bin/helics_connector"
-      ],
-      "containerPath": [],
-      "captureTime": 1711065826,
-      "version": "",
-      "vendor": [],
-      "description": "",
-      "sha1": "fdcb90ce1df5f94d740b6427bfb1c668a5247e4e",
-      "sha256": "7c6134af7c81b021abe857f768f9a0bc186972da42c196f3b065c9bed94f9f12",
-      "md5": "7c1e5fa78ed93898b67c5283aeef416c",
-      "relationshipAssertion": "Unknown",
-      "comments": "",
-      "metadata": [
-        {
-          "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
-          "fileInfo": {
-            "mode": "-rwxr-xr-x",
-            "hidden": false
-          }
-        },
-        {
-          "OS": "Linux",
-          "elfIdent": {
-            "EI_CLASS": 2,
-            "EI_DATA": 1,
-            "EI_VERSION": 1,
-            "EI_OSABI": 3,
-            "EI_ABIVERSION": 0,
-            "E_MACHINE": 62
-          },
-          "elfDependencies": [
-            "librt.so.1",
-            "libzmq.so.5",
-            "libm.so.6",
-            "libpthread.so.0",
-            "libc.so.6",
-            "ld-linux-x86-64.so.2"
-          ],
-          "elfRpath": [
-            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
-          ],
-          "elfRunpath": [],
-          "elfSoname": [],
-          "elfInterpreter": [
-            "/lib64/ld-linux-x86-64.so.2"
-          ],
-          "elfDynamicFlags": [],
-          "elfDynamicFlags1": [],
-          "elfGnuRelro": true,
-          "elfComment": [
-            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
-            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
-          ],
-          "elfNote": [
-            {
-              "sectionName": ".note.ABI-tag",
-              "name": "GNU",
-              "type": "NT_GNU_ABI_TAG",
-              "os": "ELF_NOTE_OS_LINUX",
-              "abi": "2.6.18"
-            },
-            {
-              "sectionName": ".note.gnu.build-id",
-              "name": "GNU",
-              "type": "NT_GNU_BUILD_ID",
-              "desc": "28eadbfa1e3e9775a3b6a5da697812213a535e14"
-            }
-          ],
-          "elfOsAbi": "ELFOSABI_LINUX",
-          "elfHumanArch": "x64",
-          "elfArchNumber": 62,
-          "elfArchitecture": "EM_X86_64",
-          "elfIsExe": true,
-          "elfIsLib": false,
-          "elfIsRel": false,
-          "elfIsCore": false
-        }
-      ],
-      "supplementaryFiles": [],
-      "provenance": null,
-      "recordedInstitution": "LLNL",
-      "components": []
-    },
-    {
-      "UUID": "78e17d03-2814-42e4-a509-95b9238dd779",
-      "name": null,
-      "size": 7584992,
-      "fileName": [
-        "helics_app"
-      ],
-      "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/bin/helics_app"
-      ],
-      "containerPath": [],
-      "captureTime": 1711065826,
-      "version": "",
-      "vendor": [],
-      "description": "",
-      "sha1": "03d18084437fa585373437df8bed5ed4e49e36a2",
-      "sha256": "f1af55420bcde9e2c1951ebc8a1409119113f07629d23845876ad635bd5e86a8",
-      "md5": "b9c5f98834e4af1dee7722337babaaf5",
-      "relationshipAssertion": "Unknown",
-      "comments": "",
-      "metadata": [
-        {
-          "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
-          "fileInfo": {
-            "mode": "-rwxr-xr-x",
-            "hidden": false
-          }
-        },
-        {
-          "OS": "Linux",
-          "elfIdent": {
-            "EI_CLASS": 2,
-            "EI_DATA": 1,
-            "EI_VERSION": 1,
-            "EI_OSABI": 3,
-            "EI_ABIVERSION": 0,
-            "E_MACHINE": 62
-          },
-          "elfDependencies": [
-            "librt.so.1",
-            "libzmq.so.5",
-            "libm.so.6",
-            "libpthread.so.0",
-            "libc.so.6",
-            "ld-linux-x86-64.so.2"
-          ],
-          "elfRpath": [
-            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
-          ],
-          "elfRunpath": [],
-          "elfSoname": [],
-          "elfInterpreter": [
-            "/lib64/ld-linux-x86-64.so.2"
-          ],
-          "elfDynamicFlags": [],
-          "elfDynamicFlags1": [],
-          "elfGnuRelro": true,
-          "elfComment": [
-            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
-            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
-          ],
-          "elfNote": [
-            {
-              "sectionName": ".note.ABI-tag",
-              "name": "GNU",
-              "type": "NT_GNU_ABI_TAG",
-              "os": "ELF_NOTE_OS_LINUX",
-              "abi": "2.6.18"
-            },
-            {
-              "sectionName": ".note.gnu.build-id",
-              "name": "GNU",
-              "type": "NT_GNU_BUILD_ID",
-              "desc": "c6266b796dfc58801f451b245feab4fb145196be"
-            }
-          ],
-          "elfOsAbi": "ELFOSABI_LINUX",
-          "elfHumanArch": "x64",
-          "elfArchNumber": 62,
-          "elfArchitecture": "EM_X86_64",
-          "elfIsExe": true,
-          "elfIsLib": false,
-          "elfIsRel": false,
-          "elfIsCore": false
-        }
-      ],
-      "supplementaryFiles": [],
-      "provenance": null,
-      "recordedInstitution": "LLNL",
-      "components": []
-    },
-    {
-      "UUID": "72532fc7-671f-4cd3-8604-9d1e36173526",
-      "name": null,
-      "size": 8005160,
-      "fileName": [
-        "helics_broker_server"
-      ],
-      "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/bin/helics_broker_server"
-      ],
-      "containerPath": [],
-      "captureTime": 1711065826,
-      "version": "",
-      "vendor": [],
-      "description": "",
-      "sha1": "ef43f0ab22e5e5192dab9c285974c087c5aba41f",
-      "sha256": "81af069820c470fe4f94112c0faf21047350a54d5de31f799d65b5d006b533dd",
-      "md5": "f96b6bb03313c2a4f747fd29b4638ac7",
-      "relationshipAssertion": "Unknown",
-      "comments": "",
-      "metadata": [
-        {
-          "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
-          "fileInfo": {
-            "mode": "-rwxr-xr-x",
-            "hidden": false
-          }
-        },
-        {
-          "OS": "Linux",
-          "elfIdent": {
-            "EI_CLASS": 2,
-            "EI_DATA": 1,
-            "EI_VERSION": 1,
-            "EI_OSABI": 3,
-            "EI_ABIVERSION": 0,
-            "E_MACHINE": 62
-          },
-          "elfDependencies": [
-            "librt.so.1",
-            "libzmq.so.5",
-            "libm.so.6",
-            "libpthread.so.0",
-            "libc.so.6",
-            "ld-linux-x86-64.so.2"
-          ],
-          "elfRpath": [
-            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
-          ],
-          "elfRunpath": [],
-          "elfSoname": [],
-          "elfInterpreter": [
-            "/lib64/ld-linux-x86-64.so.2"
-          ],
-          "elfDynamicFlags": [],
-          "elfDynamicFlags1": [],
-          "elfGnuRelro": true,
-          "elfComment": [
-            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
-            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
-          ],
-          "elfNote": [
-            {
-              "sectionName": ".note.ABI-tag",
-              "name": "GNU",
-              "type": "NT_GNU_ABI_TAG",
-              "os": "ELF_NOTE_OS_LINUX",
-              "abi": "2.6.18"
-            },
-            {
-              "sectionName": ".note.gnu.build-id",
-              "name": "GNU",
-              "type": "NT_GNU_BUILD_ID",
-              "desc": "eb33226d07fc1c69eca9cc460d83885d32b8dd86"
-            }
-          ],
-          "elfOsAbi": "ELFOSABI_LINUX",
-          "elfHumanArch": "x64",
-          "elfArchNumber": 62,
-          "elfArchitecture": "EM_X86_64",
-          "elfIsExe": true,
-          "elfIsLib": false,
-          "elfIsRel": false,
-          "elfIsCore": false
-        }
-      ],
-      "supplementaryFiles": [],
-      "provenance": null,
-      "recordedInstitution": "LLNL",
-      "components": []
-    },
-    {
-      "UUID": "1064a4a7-4b21-4fbe-b570-ae797ebdc1d5",
-      "name": null,
-      "size": 6954568,
+      "size": 6975848,
       "fileName": [
         "helics_player"
       ],
       "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/bin/helics_player"
+        "/helics_player"
       ],
       "containerPath": [],
-      "captureTime": 1711065826,
+      "captureTime": 1719323919,
       "version": "",
       "vendor": [],
       "description": "",
-      "sha1": "759952f415b81995226b6702757adbc680f973d5",
-      "sha256": "5b09b8d1fd6a613073c99d00d26f0b2a52c1608fceee69e0805bdd6c366188be",
-      "md5": "08a5659316c2f201f271c4b5c171eb56",
+      "sha1": "fd7460399b5745eac91b4fc12ae5557a7baca342",
+      "sha256": "47951dfbaf83389d0cb3e1ab35dfe070ab19142caa07eaf1c0a01ead65c9cccd",
+      "md5": "f60d5eb3954d691fec12c5eba6bf9e88",
       "relationshipAssertion": "Unknown",
       "comments": "",
       "metadata": [
         {
           "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
+          "collectionPlatform": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
           "fileInfo": {
             "mode": "-rwxr-xr-x",
             "hidden": false
@@ -502,8 +42,8 @@
             "E_MACHINE": 62
           },
           "elfDependencies": [
-            "librt.so.1",
             "libzmq.so.5",
+            "librt.so.1",
             "libm.so.6",
             "libpthread.so.0",
             "libc.so.6",
@@ -536,7 +76,7 @@
               "sectionName": ".note.gnu.build-id",
               "name": "GNU",
               "type": "NT_GNU_BUILD_ID",
-              "desc": "b51be84fdb764b1e1b8859af4a822f3d59d7b566"
+              "desc": "293da026e7bcd45bac7fc22464dc366ed560b980"
             }
           ],
           "elfOsAbi": "ELFOSABI_LINUX",
@@ -555,29 +95,29 @@
       "components": []
     },
     {
-      "UUID": "8be594a3-bb89-4ab0-a942-11be956721c0",
+      "UUID": "acdb51ce-0dd4-4ae4-aad1-ed5ecf02ad2a",
       "name": null,
-      "size": 2664144,
+      "size": 7597152,
       "fileName": [
-        "libzmq.so.5.2.5"
+        "helics_app"
       ],
       "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/lib64/libzmq.so.5.2.5"
+        "/helics_app"
       ],
       "containerPath": [],
-      "captureTime": 1711065826,
+      "captureTime": 1719323919,
       "version": "",
       "vendor": [],
       "description": "",
-      "sha1": "d09f01830e2cb2519fbcfb3b40d85cde7faf85c5",
-      "sha256": "28c61639b0a8297c4e7f003ad2f3b82aa13f3397b48b34a3ca495d3bb6ef323d",
-      "md5": "f544830b9f361041603eb9bf814b07fe",
+      "sha1": "7d9dafafc3efbe573f54ba1045139423972c4b42",
+      "sha256": "e431ecda729499b5401aa0da1c5a14aabca469b18f6d715c4f248b3dde4fe52b",
+      "md5": "3c67a1ffebde127de6b40d7c1109a500",
       "relationshipAssertion": "Unknown",
       "comments": "",
       "metadata": [
         {
           "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
+          "collectionPlatform": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
           "fileInfo": {
             "mode": "-rwxr-xr-x",
             "hidden": false
@@ -594,92 +134,8 @@
             "E_MACHINE": 62
           },
           "elfDependencies": [
-            "librt.so.1",
-            "libm.so.6",
-            "libpthread.so.0",
-            "libc.so.6",
-            "ld-linux-x86-64.so.2"
-          ],
-          "elfRpath": [
-            "/hbb/lib"
-          ],
-          "elfRunpath": [],
-          "elfSoname": [
-            "libzmq.so.5"
-          ],
-          "elfInterpreter": [],
-          "elfDynamicFlags": [],
-          "elfDynamicFlags1": [],
-          "elfGnuRelro": true,
-          "elfComment": [
-            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
-            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
-          ],
-          "elfNote": [
-            {
-              "sectionName": ".note.gnu.build-id",
-              "name": "GNU",
-              "type": "NT_GNU_BUILD_ID",
-              "desc": "e816860838b44cba75e9edc673734efc02610c85"
-            }
-          ],
-          "elfOsAbi": "ELFOSABI_LINUX",
-          "elfHumanArch": "x64",
-          "elfArchNumber": 62,
-          "elfArchitecture": "EM_X86_64",
-          "elfIsExe": false,
-          "elfIsLib": true,
-          "elfIsRel": false,
-          "elfIsCore": false
-        }
-      ],
-      "supplementaryFiles": [],
-      "provenance": null,
-      "recordedInstitution": "LLNL",
-      "components": []
-    },
-    {
-      "UUID": "c38abb3a-133c-4361-af1d-b778e161add7",
-      "name": null,
-      "size": 7519640,
-      "fileName": [
-        "libhelics.so.3.5.1"
-      ],
-      "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/lib64/libhelics.so.3.5.1"
-      ],
-      "containerPath": [],
-      "captureTime": 1711065826,
-      "version": "",
-      "vendor": [],
-      "description": "",
-      "sha1": "6d2e4d48b55d25cca65db02b6fbe27d270be96a1",
-      "sha256": "e9d57cf203e4b63e144ed4a8121b5299311ce2ddc968f4df5555405bf7c41320",
-      "md5": "0147be4a86ffa1c188a4cb7f56c0e7f1",
-      "relationshipAssertion": "Unknown",
-      "comments": "",
-      "metadata": [
-        {
-          "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
-          "fileInfo": {
-            "mode": "-rwxr-xr-x",
-            "hidden": false
-          }
-        },
-        {
-          "OS": "Linux",
-          "elfIdent": {
-            "EI_CLASS": 2,
-            "EI_DATA": 1,
-            "EI_VERSION": 1,
-            "EI_OSABI": 3,
-            "EI_ABIVERSION": 0,
-            "E_MACHINE": 62
-          },
-          "elfDependencies": [
-            "librt.so.1",
             "libzmq.so.5",
+            "librt.so.1",
             "libm.so.6",
             "libpthread.so.0",
             "libc.so.6",
@@ -689,10 +145,10 @@
             "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
           ],
           "elfRunpath": [],
-          "elfSoname": [
-            "libhelics.so.3"
+          "elfSoname": [],
+          "elfInterpreter": [
+            "/lib64/ld-linux-x86-64.so.2"
           ],
-          "elfInterpreter": [],
           "elfDynamicFlags": [],
           "elfDynamicFlags1": [],
           "elfGnuRelro": true,
@@ -702,18 +158,25 @@
           ],
           "elfNote": [
             {
+              "sectionName": ".note.ABI-tag",
+              "name": "GNU",
+              "type": "NT_GNU_ABI_TAG",
+              "os": "ELF_NOTE_OS_LINUX",
+              "abi": "2.6.18"
+            },
+            {
               "sectionName": ".note.gnu.build-id",
               "name": "GNU",
               "type": "NT_GNU_BUILD_ID",
-              "desc": "8d71e65389c9be7b8985aef441d476da40d3f9bb"
+              "desc": "f0a0a4abe1c9574401e0d42a0cde7dda2a24c7b2"
             }
           ],
           "elfOsAbi": "ELFOSABI_LINUX",
           "elfHumanArch": "x64",
           "elfArchNumber": 62,
           "elfArchitecture": "EM_X86_64",
-          "elfIsExe": false,
-          "elfIsLib": true,
+          "elfIsExe": true,
+          "elfIsLib": false,
           "elfIsRel": false,
           "elfIsCore": false
         }
@@ -724,33 +187,366 @@
       "components": []
     },
     {
-      "UUID": "c5c665e7-279d-4491-b3e0-6fac3f2e2724",
+      "UUID": "660e238c-5544-4cc0-8395-55864c34dad6",
       "name": null,
-      "size": 270726,
+      "size": 8021232,
       "fileName": [
-        "libfmt.a"
+        "helics_broker_server"
       ],
       "installPath": [
-        "/Path/To/Helics-3.5.1-Linux-x86_64/lib64/libfmt.a"
+        "/helics_broker_server"
       ],
       "containerPath": [],
-      "captureTime": 1711065826,
+      "captureTime": 1719323919,
       "version": "",
       "vendor": [],
       "description": "",
-      "sha1": "51cb753aed1972a0f8ada198e86e7c28a478a040",
-      "sha256": "7aa5ccc4b7ebc5758d06b0ff78340e1e43cedea2982b2d896d77a87758911c39",
-      "md5": "776cacbb64eeb5aaa353b7b125d6e5a6",
+      "sha1": "546172d3d254c66e8957124b87ea0c4c9ca2a46c",
+      "sha256": "410f48faa877fc7e6dc1717ccc676a0b91ce262a2b1f329ffab09cead9731e36",
+      "md5": "9256cb6f9cee97b2285c938258ad9f00",
       "relationshipAssertion": "Unknown",
       "comments": "",
       "metadata": [
         {
           "collectedBy": "Surfactant",
-          "collectionPlatform": "Linux-5.15.0-100-generic-x86_64-with-glibc2.31",
+          "collectionPlatform": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
           "fileInfo": {
-            "mode": "-rw-r--r--",
+            "mode": "-rwxr-xr-x",
             "hidden": false
           }
+        },
+        {
+          "OS": "Linux",
+          "elfIdent": {
+            "EI_CLASS": 2,
+            "EI_DATA": 1,
+            "EI_VERSION": 1,
+            "EI_OSABI": 3,
+            "EI_ABIVERSION": 0,
+            "E_MACHINE": 62
+          },
+          "elfDependencies": [
+            "libzmq.so.5",
+            "librt.so.1",
+            "libm.so.6",
+            "libpthread.so.0",
+            "libc.so.6",
+            "ld-linux-x86-64.so.2"
+          ],
+          "elfRpath": [
+            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
+          ],
+          "elfRunpath": [],
+          "elfSoname": [],
+          "elfInterpreter": [
+            "/lib64/ld-linux-x86-64.so.2"
+          ],
+          "elfDynamicFlags": [],
+          "elfDynamicFlags1": [],
+          "elfGnuRelro": true,
+          "elfComment": [
+            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
+          ],
+          "elfNote": [
+            {
+              "sectionName": ".note.ABI-tag",
+              "name": "GNU",
+              "type": "NT_GNU_ABI_TAG",
+              "os": "ELF_NOTE_OS_LINUX",
+              "abi": "2.6.18"
+            },
+            {
+              "sectionName": ".note.gnu.build-id",
+              "name": "GNU",
+              "type": "NT_GNU_BUILD_ID",
+              "desc": "206d9d2dea9c756c3b4463ddc1da912ffc926d94"
+            }
+          ],
+          "elfOsAbi": "ELFOSABI_LINUX",
+          "elfHumanArch": "x64",
+          "elfArchNumber": 62,
+          "elfArchitecture": "EM_X86_64",
+          "elfIsExe": true,
+          "elfIsLib": false,
+          "elfIsRel": false,
+          "elfIsCore": false
+        }
+      ],
+      "supplementaryFiles": [],
+      "provenance": null,
+      "recordedInstitution": "LLNL",
+      "components": []
+    },
+    {
+      "UUID": "704f6e95-60f9-46bc-8195-eab2b2a6b826",
+      "name": null,
+      "size": 8076696,
+      "fileName": [
+        "helics_broker"
+      ],
+      "installPath": [
+        "/helics_broker"
+      ],
+      "containerPath": [],
+      "captureTime": 1719323919,
+      "version": "",
+      "vendor": [],
+      "description": "",
+      "sha1": "3ced3918f7ddb79b92c5e4873b66c89c611281bc",
+      "sha256": "25d049773777bd792c3821a98bab710ae4e5b474045f22ba91b519a72c21bd32",
+      "md5": "bfd1790007efdd73182a81de91f19e22",
+      "relationshipAssertion": "Unknown",
+      "comments": "",
+      "metadata": [
+        {
+          "collectedBy": "Surfactant",
+          "collectionPlatform": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
+          "fileInfo": {
+            "mode": "-rwxr-xr-x",
+            "hidden": false
+          }
+        },
+        {
+          "OS": "Linux",
+          "elfIdent": {
+            "EI_CLASS": 2,
+            "EI_DATA": 1,
+            "EI_VERSION": 1,
+            "EI_OSABI": 3,
+            "EI_ABIVERSION": 0,
+            "E_MACHINE": 62
+          },
+          "elfDependencies": [
+            "libzmq.so.5",
+            "librt.so.1",
+            "libm.so.6",
+            "libpthread.so.0",
+            "libc.so.6",
+            "ld-linux-x86-64.so.2"
+          ],
+          "elfRpath": [
+            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
+          ],
+          "elfRunpath": [],
+          "elfSoname": [],
+          "elfInterpreter": [
+            "/lib64/ld-linux-x86-64.so.2"
+          ],
+          "elfDynamicFlags": [],
+          "elfDynamicFlags1": [],
+          "elfGnuRelro": true,
+          "elfComment": [
+            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
+          ],
+          "elfNote": [
+            {
+              "sectionName": ".note.ABI-tag",
+              "name": "GNU",
+              "type": "NT_GNU_ABI_TAG",
+              "os": "ELF_NOTE_OS_LINUX",
+              "abi": "2.6.18"
+            },
+            {
+              "sectionName": ".note.gnu.build-id",
+              "name": "GNU",
+              "type": "NT_GNU_BUILD_ID",
+              "desc": "d3de65c5af61c8967e07bda7c459ea3d177d8f49"
+            }
+          ],
+          "elfOsAbi": "ELFOSABI_LINUX",
+          "elfHumanArch": "x64",
+          "elfArchNumber": 62,
+          "elfArchitecture": "EM_X86_64",
+          "elfIsExe": true,
+          "elfIsLib": false,
+          "elfIsRel": false,
+          "elfIsCore": false
+        }
+      ],
+      "supplementaryFiles": [],
+      "provenance": null,
+      "recordedInstitution": "LLNL",
+      "components": []
+    },
+    {
+      "UUID": "b76cc150-23c7-40ce-8977-ea8a01b6908d",
+      "name": null,
+      "size": 7088704,
+      "fileName": [
+        "helics_connector"
+      ],
+      "installPath": [
+        "/helics_connector"
+      ],
+      "containerPath": [],
+      "captureTime": 1719323919,
+      "version": "",
+      "vendor": [],
+      "description": "",
+      "sha1": "75c0f9ac1a88796a9e2970e708794636179e3a84",
+      "sha256": "a6e8fb3bca4c36c1d72f0c9b80464ea7f1f1f3c14f5756cf01b752df61f20d97",
+      "md5": "00afd704d1e3b8c5b22cf91a433fab67",
+      "relationshipAssertion": "Unknown",
+      "comments": "",
+      "metadata": [
+        {
+          "collectedBy": "Surfactant",
+          "collectionPlatform": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
+          "fileInfo": {
+            "mode": "-rwxr-xr-x",
+            "hidden": false
+          }
+        },
+        {
+          "OS": "Linux",
+          "elfIdent": {
+            "EI_CLASS": 2,
+            "EI_DATA": 1,
+            "EI_VERSION": 1,
+            "EI_OSABI": 3,
+            "EI_ABIVERSION": 0,
+            "E_MACHINE": 62
+          },
+          "elfDependencies": [
+            "libzmq.so.5",
+            "librt.so.1",
+            "libm.so.6",
+            "libpthread.so.0",
+            "libc.so.6",
+            "ld-linux-x86-64.so.2"
+          ],
+          "elfRpath": [
+            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
+          ],
+          "elfRunpath": [],
+          "elfSoname": [],
+          "elfInterpreter": [
+            "/lib64/ld-linux-x86-64.so.2"
+          ],
+          "elfDynamicFlags": [],
+          "elfDynamicFlags1": [],
+          "elfGnuRelro": true,
+          "elfComment": [
+            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
+          ],
+          "elfNote": [
+            {
+              "sectionName": ".note.ABI-tag",
+              "name": "GNU",
+              "type": "NT_GNU_ABI_TAG",
+              "os": "ELF_NOTE_OS_LINUX",
+              "abi": "2.6.18"
+            },
+            {
+              "sectionName": ".note.gnu.build-id",
+              "name": "GNU",
+              "type": "NT_GNU_BUILD_ID",
+              "desc": "eaf2ce34ba0449833664d628ba8b90280af8f552"
+            }
+          ],
+          "elfOsAbi": "ELFOSABI_LINUX",
+          "elfHumanArch": "x64",
+          "elfArchNumber": 62,
+          "elfArchitecture": "EM_X86_64",
+          "elfIsExe": true,
+          "elfIsLib": false,
+          "elfIsRel": false,
+          "elfIsCore": false
+        }
+      ],
+      "supplementaryFiles": [],
+      "provenance": null,
+      "recordedInstitution": "LLNL",
+      "components": []
+    },
+    {
+      "UUID": "66236be2-8791-47e7-93f2-34593f453c06",
+      "name": null,
+      "size": 6980208,
+      "fileName": [
+        "helics_recorder"
+      ],
+      "installPath": [
+        "/helics_recorder"
+      ],
+      "containerPath": [],
+      "captureTime": 1719323919,
+      "version": "",
+      "vendor": [],
+      "description": "",
+      "sha1": "6ab718501a4ae6e636c2f576e47df4af28ed7d6e",
+      "sha256": "2cc9311bf22f1c29cec4830b93d3b1df9d8f84b47c2c905cbf99c1b83b4be9c3",
+      "md5": "4a4a5bdc9a3d4122ede1f050869c5be2",
+      "relationshipAssertion": "Unknown",
+      "comments": "",
+      "metadata": [
+        {
+          "collectedBy": "Surfactant",
+          "collectionPlatform": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
+          "fileInfo": {
+            "mode": "-rwxr-xr-x",
+            "hidden": false
+          }
+        },
+        {
+          "OS": "Linux",
+          "elfIdent": {
+            "EI_CLASS": 2,
+            "EI_DATA": 1,
+            "EI_VERSION": 1,
+            "EI_OSABI": 3,
+            "EI_ABIVERSION": 0,
+            "E_MACHINE": 62
+          },
+          "elfDependencies": [
+            "libzmq.so.5",
+            "librt.so.1",
+            "libm.so.6",
+            "libpthread.so.0",
+            "libc.so.6",
+            "ld-linux-x86-64.so.2"
+          ],
+          "elfRpath": [
+            "/hbb/lib:$ORIGIN:$ORIGIN/../lib64:/usr/local/bin:/usr/local/lib64"
+          ],
+          "elfRunpath": [],
+          "elfSoname": [],
+          "elfInterpreter": [
+            "/lib64/ld-linux-x86-64.so.2"
+          ],
+          "elfDynamicFlags": [],
+          "elfDynamicFlags1": [],
+          "elfGnuRelro": true,
+          "elfComment": [
+            "GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+            "GCC: (GNU) 8.3.1 20190311 (Red Hat 8.3.1-3)"
+          ],
+          "elfNote": [
+            {
+              "sectionName": ".note.ABI-tag",
+              "name": "GNU",
+              "type": "NT_GNU_ABI_TAG",
+              "os": "ELF_NOTE_OS_LINUX",
+              "abi": "2.6.18"
+            },
+            {
+              "sectionName": ".note.gnu.build-id",
+              "name": "GNU",
+              "type": "NT_GNU_BUILD_ID",
+              "desc": "7b95380271644a5aa0af38d43778271b97eae13a"
+            }
+          ],
+          "elfOsAbi": "ELFOSABI_LINUX",
+          "elfHumanArch": "x64",
+          "elfArchNumber": 62,
+          "elfArchitecture": "EM_X86_64",
+          "elfIsExe": true,
+          "elfIsLib": false,
+          "elfIsRel": false,
+          "elfIsCore": false
         }
       ],
       "supplementaryFiles": [],

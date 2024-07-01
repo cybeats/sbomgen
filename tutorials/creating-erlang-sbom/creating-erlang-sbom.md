@@ -31,7 +31,9 @@ A bom.xml should appear in your directory.
 
 * Ensure that you have at least Erlang version 25, lower versions do not work, and result in crashes.
 
-* The only output format available appears to be xml.
+* The only output format available appears to be xml. However, this output can be converted to JSON.
+
+* This generator may create SBOMs with flawed serial numbers, rendering the SBOM invalid.
 
 ## References
 

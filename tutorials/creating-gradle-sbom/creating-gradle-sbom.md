@@ -77,6 +77,10 @@ tasks.cyclonedxBom {
 }
 ```
 
+## Notes
+
+* Some licenses of the SBOMs generated may be out of specification.
+
 ## References
 
 * https://github.com/CycloneDX/cyclonedx-gradle-plugin

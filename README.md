@@ -111,9 +111,6 @@ To generate SBOMs for Rust projects, you can use:
 
 * A CBOM can be created using the SonarQube [Sonar Cryptography Plugin](https://github.com/IBM/sonar-cryptography).
 
-## SBOM Conversion
-* SBOMS can be converted from one format to another (e.g. CycloneDX to SPDX) using the [sbom-convert](https://github.com/protobom/sbom-convert) CLI.
-
 ## SBOM Validation
 Validation of SBOMs can be performed with:
 * The [CycloneDX](https://github.com/CycloneDX/cyclonedx-cli) CLI

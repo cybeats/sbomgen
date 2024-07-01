@@ -128,6 +128,10 @@ To save these outputs to a file, run:
 
 ```gh sbom | jq > <sbom-file-name>```
 
+## Notes
+
+* When creating SBOMs in SPDX format, gh sbom may produce purls with the less common packages ```github``` and/or ```githubactions```.
+
 ## References
 
 * https://github.com/cli/cli

@@ -121,6 +121,7 @@ SBOMs can be created from containers using the following tools:
 * [Tern](https://github.com/tern-tools/tern)
 * [Syft](https://github.com/anchore/syft)
 * [Bom](https://github.com/kubernetes-sigs/bom) (Kubernates)
+* [Docker Scout SBOM](https://docs.docker.com/reference/cli/docker/scout/sbom/)
 
 ## Binary Files
 SBOMs can be created from binary files using the following tools:

@@ -1,0 +1,217 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "docker",
+ "documentNamespace": "https://docker.com/docker-scout/fs/docker-b5965fc9-1387-44af-b8a0-40ae53569ff0",
+ "creationInfo": {
+  "creators": [
+   "Organization: Docker, Inc",
+   "Tool: docker-scout-1.8.0"
+  ],
+  "created": "2024-07-03T20:11:34Z"
+ },
+ "packages": [
+  {
+   "name": "checkout",
+   "SPDXID": "SPDXRef-Package-580ca32056d3a83c994d36ee88b88288",
+   "versionInfo": "4",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:github/actions/checkout@4"
+    }
+   ]
+  },
+  {
+   "name": "create-pull-request",
+   "SPDXID": "SPDXRef-Package-c0a3885d7a1455642363416e81318120",
+   "versionInfo": "6",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:github/peter-evans/create-pull-request@6"
+    }
+   ]
+  },
+  {
+   "name": "release-drafter",
+   "SPDXID": "SPDXRef-Package-a1d6b348f58f7004e965fe94ab4f0c42",
+   "versionInfo": "6",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:github/release-drafter/release-drafter@6"
+    }
+   ]
+  },
+  {
+   "name": "github-app-token",
+   "SPDXID": "SPDXRef-Package-278c790dcdaab277a55f0a5db09de438",
+   "versionInfo": "2",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:github/tibdex/github-app-token@2"
+    }
+   ]
+  },
+  {
+   "name": "updatecli-action",
+   "SPDXID": "SPDXRef-Package-bd26e89cd8f4aa7c63b33a7e69c16ccc",
+   "versionInfo": "2.61.0",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:github/updatecli/updatecli-action@2.61.0"
+    }
+   ]
+  },
+  {
+   "name": "my-happy-plugin/my-happy-plugin",
+   "SPDXID": "SPDXRef-Package-8c7318359176d9d3db52f80f8020db86",
+   "versionInfo": "1.1",
+   "supplier": "NOASSERTION",
+   "originator": "NOASSERTION",
+   "downloadLocation": "",
+   "filesAnalyzed": false,
+   "licenseConcluded": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/my-happy-plugin/my-happy-plugin@1.1"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "fileName": "/.github/workflows/release-drafter.yml",
+   "SPDXID": "SPDXRef-File-576611836d78b3ad582441f84e803901",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": ""
+  },
+  {
+   "fileName": "/.github/workflows/sync-plugin-manager.yml",
+   "SPDXID": "SPDXRef-File-beb817728b4b0a27a8fd4d8c91dd0737",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": ""
+  },
+  {
+   "fileName": "/.github/workflows/updatecli.yaml",
+   "SPDXID": "SPDXRef-File-b2e9ee40cd8a0b0b73562d5a10e3c8e2",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": ""
+  },
+  {
+   "fileName": "/tests/plugins-cli/custom-war/WEB-INF/plugins/my-happy-plugin.hpi",
+   "SPDXID": "SPDXRef-File-d3bfa20afa5c27e78a31caa0ed8ed6d6",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": ""
+  }
+ ],
+ "relationships": [
+  {
+   "spdxElementId": "SPDXRef-DOCUMENT",
+   "relatedSpdxElement": "SPDXRef-DOCUMENT",
+   "relationshipType": "DESCRIBES"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-580ca32056d3a83c994d36ee88b88288",
+   "relatedSpdxElement": "SPDXRef-File-beb817728b4b0a27a8fd4d8c91dd0737",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-580ca32056d3a83c994d36ee88b88288",
+   "relatedSpdxElement": "SPDXRef-File-b2e9ee40cd8a0b0b73562d5a10e3c8e2",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-c0a3885d7a1455642363416e81318120",
+   "relatedSpdxElement": "SPDXRef-File-beb817728b4b0a27a8fd4d8c91dd0737",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-a1d6b348f58f7004e965fe94ab4f0c42",
+   "relatedSpdxElement": "SPDXRef-File-576611836d78b3ad582441f84e803901",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-278c790dcdaab277a55f0a5db09de438",
+   "relatedSpdxElement": "SPDXRef-File-beb817728b4b0a27a8fd4d8c91dd0737",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-bd26e89cd8f4aa7c63b33a7e69c16ccc",
+   "relatedSpdxElement": "SPDXRef-File-b2e9ee40cd8a0b0b73562d5a10e3c8e2",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-8c7318359176d9d3db52f80f8020db86",
+   "relatedSpdxElement": "SPDXRef-File-d3bfa20afa5c27e78a31caa0ed8ed6d6",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  }
+ ]
+}

@@ -2,7 +2,17 @@
 
 ## Introduction
 
-This document illustrates the generation of an SBOM from a maven project utilizing the cyclonedx-maven-plugin. The maven project used here is onedev
+This document illustrates the generation of an SBOM from a maven project utilizing the cyclonedx-maven-plugin. The maven project used here is onedev.
+
+## Contents
+* [Install repo](#install-repo)
+* [Alter pom.xml](#alter-pomxml)
+* [Build](#build)
+* [Conclusion](#conclusion)
+* [Troubleshooting](#troubleshooting)
+    * [Environment](#environment)
+    * [Build Failure](#build-failure)
+* [References](#references)
 
 ## Install repo
 

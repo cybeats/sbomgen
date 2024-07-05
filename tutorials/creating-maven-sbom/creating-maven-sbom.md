@@ -84,7 +84,7 @@ SBOMs were generated on two computers, both running Java version 11.0.20.1, with
 
 ## References
 
-* CycloneDX (2023). CycloneDX-maven-plugin (Version 2.7.9). https://github.com/CycloneDX/cyclonedx-maven-plugin 
+* CycloneDX (2023). CycloneDX-maven-plugin (Version 2.7.9). [https://github.com/CycloneDX/cyclonedx-maven-plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin)
 
 * Theonedev (2023). Onedev (Version 9.1.5). https://github.com/theonedev/onedev/tree/main 
 

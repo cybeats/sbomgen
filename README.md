@@ -3,9 +3,6 @@ Tutorials of these tools are featured in the ```tutorials/``` folder.
 
 
 ## Table of Contents
-<details>
-<summary>Contents</summary>
-
 * [Java](#java)
 
 * [Node.js](#nodejs)
@@ -41,33 +38,35 @@ Tutorials of these tools are featured in the ```tutorials/``` folder.
 * [Microsoft Sbom Tool](#use-microsoft-sbom-tool-to-generate-spdx-sbom-from-linux-kernel-source-code)
 
 * [Additional Tools](#additional-tools)
-</details>
+
 
 ## Java
+
 ### Maven
-* To generate SBOM for Java Maven projects, use [Cyclonedx Maven Plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin).
+* To generate SBOM for Java Maven projects, use [Cyclonedx Maven Plugin](tutorials/creating-maven-sbom/creating-maven-sbom.md).
 
 ### Gradle
-* To generate SBOM for Java Gradle projects, use [Cyclonedx Gradle Plugin](https://github.com/CycloneDX/cyclonedx-gradle-plugin ). 
+* To generate SBOM for Java Gradle projects, use [Cyclonedx Gradle Plugin](tutorials/creating-gradle-sbom/creating-gradle-sbom.md). 
 
 ## Node.js
 ### NPM
-* To generate SBOM for Node.js NPM projects, use [Cyclonedx Node Module](https://github.com/CycloneDX/cyclonedx-node-module).
+* To generate SBOM for Node.js NPM projects, use [Cyclonedx Node Module](tutorials/creating-npm-sbom/creating-npm-sbom.md).
 ### Yarn
 *  To generate SBOM for Node.js Yarn projects, use [Cyclonedx Node Yarn Module](https://github.com/CycloneDX/cyclonedx-node-yarn). 
 
 
 ## Objective-C/Swift
 ### Cocoapod
-* To generate SBOM for cocoapod projects, use [Cyclonedx Cocoapod Plugin](https://github.com/CycloneDX/cyclonedx-cocoapods). 
+* To generate SBOM for cocoapod projects, use [Cyclonedx Cocoapod Plugin](tutorials/creating-cocoapods-sbom/creating-cocoapods-sbom.md). 
   
 
 ## .NET
 ### NuGet
-* To generate SBOM for .NET NuGet projects, use the [Cyclonedx module for .NET](https://github.com/CycloneDX/cyclonedx-dotnet). 
+* To generate SBOM for .NET NuGet projects, use the [Cyclonedx module for .NET](tutorials/creating-csharp-sbom/creating-csharp-sbom.md). 
 
 ## Python
 To generate SBOM for Python projects, use:
+
 * CycloneDX [Python SBOM Generation Tool](https://github.com/CycloneDX/cyclonedx-python).
 * [Jake](https://github.com/sonatype-nexus-community/jake). 
 
@@ -127,30 +126,3 @@ SBOMs can be created from containers using the following tools:
 SBOMs can be created from binary files using the following tools:
 * [Blint](https://github.com/owasp-dep-scan/blint)
 * [Surfactant](https://github.com/LLNL/Surfactant)
-
-## Use Microsoft Sbom Tool to generate SPDX SBOM from Linux kernel source code
-* Download the tool to your local environment from the tool's GitHub release page https://github.com/microsoft/sbom-tool and give execute permission to the downloaded executable file.
-
-  ```chmod +x ./sbom-tool```
-  
-* Download and extract Linux kernel source code from The Linux Kernel Archives. In this document we were using long term version 5.15.88. 
-
-  ```tar xvfJ linux-5.15.88.tar.xz```
-  
-* Run the SBOM generation tool. We still need to be more accurate with the parameters passed to the tool. However, the following parameters were suffice for the SBOM generation.
-
-  ```./sbom-tool generate -b ./linux-5.15.88 -bc ./linux-5.15.88 -pn kernel -pv 5.15.88 -ps linux.org -nsb https://kernel.org```
-
-* Find the output SPDX file inside ./linux-5.15.88/_manifest/spdx_2.2/ folder, manifest.spdx.json will be the SPDX file in JSON format.
-  
-* Optionally you can convert the manifest.spdx.json file into other SPDX format with SPDX Java tool https://github.com/spdx/tools-java.
-
-  ```java -jar tools-java-1.1.3-jar-with-dependencies.jar Convert manifest.spdx.json manifest.spdx JSON TAG```
-  
-
-## Additional Tools
-* [IBM SBOM Utility](https://github.com/CycloneDX/sbom-utility)
-* [IBM License Scanner](https://github.com/CycloneDX/license-scanner)
-* [GitHub link to an SBOM tool repository](https://github.com/sbomtools)
-* [CERTCC SwiftBOM generator and demo tool](https://github.com/CERTCC/SBOM)
-* [UI tool to generate SBOM](https://democert.org/sbom/)

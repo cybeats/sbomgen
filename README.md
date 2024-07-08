@@ -1,3 +1,4 @@
+![Cybeats Logo](images/cybeats_logo.svg) 
 # List of SBOM Generation Tools
 Tutorials of these tools are featured in the ```tutorials/``` folder.
 

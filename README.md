@@ -1,4 +1,5 @@
-![Cybeats Logo](images/cybeats_logo.svg) 
+<img src="images/cybeats_logo.svg" class="center" height="200" width="1000">
+
 # List of SBOM Generation Tools
 Tutorials of these tools are featured in the ```tutorials/``` folder.
 

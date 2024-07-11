@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMS For Rust Projects | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMS For Rust Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-rust-sbom/creating-rust-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-rust-sbom/creating-rust-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMS For Rust Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMS For Rust Projects","url":"http://localhost:4000/tutorials/creating-rust-sbom/creating-rust-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-for-rust-projects">Creating SBOMS For Rust Projects</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to produce an SBOM using Rust projects using the Cargo-Sbom and Cyclonedx-Rust-Cargo CLIs.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>
+    <p><a href="https://www.rust-lang.org/tools/install">Rust language</a></p>
+  </li>
+  <li>
+    <p>Cargo</p>
+  </li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="cargo-sbom">Cargo SBOM</h3>
+
+<p>Run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo install cargo-sbom</code></p>
+
+<p>To verify installation, run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo sbom --help</code></p>
+
+<p>You should see the resultant output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create software bill of materials (SBOM) for Rust
+
+Usage: cargo sbom [OPTIONS]
+
+Options:
+      --cargo-package &lt;CARGO_PACKAGE&gt;
+          The specific package (in a Cargo workspace) to generate an SBOM for. If not specified this is all packages in the workspace.
+      --output-format &lt;OUTPUT_FORMAT&gt;
+          The SBOM output format. [default: spdx_json_2_3] [possible values: spdx_json_2_3, cyclone_dx_json_1_4]
+      --project-directory &lt;PROJECT_DIRECTORY&gt;
+          The directory to the Cargo project. [default: .]
+  -h, --help
+          Print help
+  -V, --version
+          Print version
+
+</code></pre></div></div>
+
+<h3 id="cyclonedx-rust-cargo">Cyclonedx-Rust-Cargo</h3>
+
+<p>Run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo install cargo-cyclonedx</code></p>
+
+<p>To verify installation, run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo cyclonedx --help</code></p>
+
+<p>You should see the resultant output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Creates a CycloneDX Software Bill-of-Materials (SBOM) for Rust project
+
+Usage: cargo cyclonedx [OPTIONS]
+
+Options:
+      --manifest-path &lt;PATH&gt;             Path to Cargo.toml
+  -f, --format &lt;FORMAT&gt;                  Output BOM format: json, xml
+  -v, --verbose...                       Use verbose output (-vv very verbose/build.rs output)
+  -q, --quiet                            No output printed to stdout
+  -a, --all                              List all dependencies instead of only top-level ones
+      --top-level                        List only top-level dependencies (default)
+      --output-cdx                       Prepend file extension with .cdx
+      --output-pattern &lt;PATTERN&gt;         Prefix patterns to use for the filename: bom, package
+      --output-prefix &lt;FILENAME_PREFIX&gt;  Custom prefix string to use for the filename
+  -h, --help                             Print help
+
+</code></pre></div></div>
+<h2 id="usage">Usage</h2>
+
+<h3 id="cargo-sbom-1">Cargo SBOM</h3>
+
+<p>Navigate to the Rust project that you wish to create the SBOM for.</p>
+
+<p>Run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo sbom --output-format &lt;sbom-format&gt;</code></p>
+
+<p>This outputs an sbom to the terminal in one of the predetermined formats:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">spdx_json_2_3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cyclone_dx_json_1_4</code></li>
+</ul>
+
+<p>This output can be redirected to a file via:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo sbom --output-format &lt;sbom-format&gt; &gt; &lt;filename&gt;</code></p>
+
+<h4 id="notes">Notes</h4>
+
+<ul>
+  <li>The SPDX output may feature license outputs that are not part of the SPDX License List, e.g. “MIT/Apache-2.0” (incorrect) as opposed to “MIT OR Apache-2.0” (correct).</li>
+</ul>
+
+<h3 id="cyclonedx-rust-cargo-1">Cyclonedx-rust-cargo</h3>
+
+<p>Navigate to the Rust project that you wish to create the SBOM for.</p>
+
+<p>Run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo cyclonedx -f json -a</code></p>
+
+<p>You should see an output “bom.json” in any folder containing rust source files.</p>
+
+<h4 id="notes-1">Notes</h4>
+
+<ul>
+  <li>
+    <p>In multi folder/multi module projects, a separate SBOM file is created in the root of each module. If this is not desirable, the cargo-sbom CLI may be more applicable.</p>
+  </li>
+  <li>
+    <p>Error messages may be seen, however an sbom is still built. This appears to be a <a href="https://github.com/CycloneDX/cyclonedx-rust-cargo/compare/main...ctron:cyclonedx-rust-cargo:feature/improve_logs_1">known issue</a>.</p>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>
+    <p>CycloneDX. (2023). cyclonedx-rust-cargo. https://github.com/CycloneDX/cyclonedx-rust-cargo</p>
+  </li>
+  <li>
+    <p>Psastras. (2023). cargo-sbom. https://github.com/psastras/sbom-rs</p>
+  </li>
+</ul>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-rust-sbom/creating-rust-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs from Erlang Projects | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs from Erlang Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-erlang-sbom/creating-erlang-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-erlang-sbom/creating-erlang-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs from Erlang Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs from Erlang Projects","url":"http://localhost:4000/tutorials/creating-erlang-sbom/creating-erlang-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-from-erlang-projects">Creating SBOMs from Erlang Projects</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to produce an SBOM from Erlang projects using the Rebar3_Sbom plugin.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>
+    <p>Erlang 25</p>
+  </li>
+  <li>
+    <p>Rebar3</p>
+  </li>
+</ul>
+
+<h2 id="installation-and-usage">Installation and Usage</h2>
+
+<p>Navigate to your Erlang project.</p>
+
+<p>Copy and paste:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{plugins, [rebar3_sbom]}.
+</code></pre></div></div>
+<p>into your rebar.config file.</p>
+
+<p>Then run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">rebar3 sbom</code></p>
+
+<p>A bom.xml should appear in your directory.</p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>Ensure that you have at least Erlang version 25, lower versions do not work, and result in crashes.</p>
+  </li>
+  <li>
+    <p>The only output format available appears to be xml. However, this output can be converted to JSON.</p>
+  </li>
+  <li>
+    <p>This generator may create SBOMs with flawed serial numbers, rendering the SBOM invalid.</p>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>
+    <p>Voltone. (2022). Rebar3_sbom. https://github.com/voltone/rebar3_sbom</p>
+  </li>
+  <li>
+    <p>Erlang. (2023). Rebar3. https://github.com/erlang/rebar3</p>
+  </li>
+  <li>
+    <p>Erlang and elixir packages download. Erlang Solutions. (2023, September 13). https://www.erlang-solutions.com/downloads/</p>
+  </li>
+  <li>
+    <p>Voltone, Afa, &amp; Maxlapshin. (2022, July 18). Rebar3_sbom: Rebar3 plugin to generate CycloneDX sbom. Erlang Forums. https://erlangforums.com/t/rebar3-sbom-rebar3-plugin-to-generate-cyclonedx-sbom/1655</p>
+  </li>
+</ul>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-erlang-sbom/creating-erlang-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

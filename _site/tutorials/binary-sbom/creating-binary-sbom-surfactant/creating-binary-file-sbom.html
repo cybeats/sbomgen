@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs From Binary Files Using Sufactant | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs From Binary Files Using Sufactant" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/binary-sbom/creating-binary-sbom-surfactant/creating-binary-file-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/binary-sbom/creating-binary-sbom-surfactant/creating-binary-file-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs From Binary Files Using Sufactant" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs From Binary Files Using Sufactant","url":"http://localhost:4000/tutorials/binary-sbom/creating-binary-sbom-surfactant/creating-binary-file-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-from-binary-files-using-sufactant">Creating SBOMs From Binary Files Using Sufactant</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to create an SBOM from binary files (PE, ELF, MSI) using the Surfactant CLI.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>
+    <p>Python3</p>
+  </li>
+  <li>
+    <p>Pip</p>
+  </li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Install Surfactant by running:</p>
+
+<p><code class="language-plaintext highlighter-rouge">pip install surfactant</code></p>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="configuration-file">Configuration File</h3>
+
+<p>Surfactant requires a configuration file to generate an SBOM. A basic configuration file can be created via the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">surfactant create-config input-folder-path -o output-configuration-file-name.json</code></p>
+
+<p>This results in a basic configuration file akin to that shown below:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"extractPaths"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"input-folder-path"</span><span class="p">],</span><span class="w">
+        </span><span class="nl">"installPrefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This file should be modified to point to the location of selected binaries within that you wish to include in your SBOM, for example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"extractPaths"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"input-folder-path/subpath-to-binary-folder-1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"input-folder-path/subpath-to-binary-folder-2"</span><span class="p">],</span><span class="w">
+        </span><span class="nl">"installPrefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="generating-an-sbom">Generating an SBOM</h3>
+
+<p>With a configuration file created, an SBOM can be created via the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">surfactant generate &lt;configuration-file-pathname&gt; &lt;output-file-pathname&gt; --output_format &lt;output-format&gt;</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">output-format</code> can be one of:</p>
+
+<ul>
+  <li>cytrics</li>
+  <li>csv</li>
+  <li>cyclonedx</li>
+  <li>spdx</li>
+</ul>
+
+<p>An SBOM of your designated format will be created.</p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>This SBOM generator, in addition to having the capacity to output SBOMs in CycloneDX and SPDX, generates SBOMs in CyTRICS, a BOM format created by the Office of Cybersecurity, Energy Security, and Emergency Response of the US Department of Energy.</p>
+  </li>
+  <li>
+    <p>The SPDX generation functionality of this tool may not be reliable.</p>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>
+    <p>https://github.com/LLNL/Surfactant</p>
+  </li>
+  <li>
+    <p>https://www.energy.gov/ceser/cybersecurity-testing-resilient-industrial-control-systems</p>
+  </li>
+</ul>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/binary-sbom/creating-binary-sbom-surfactant/creating-binary-file-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

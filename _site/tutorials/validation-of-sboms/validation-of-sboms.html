@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Validation of SBOMs | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Validation of SBOMs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/validation-of-sboms/validation-of-sboms.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/validation-of-sboms/validation-of-sboms.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Validation of SBOMs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Validation of SBOMs","url":"http://localhost:4000/tutorials/validation-of-sboms/validation-of-sboms.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="validation-of-sboms">Validation of SBOMs</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>SBOM validation is used to ensure an SBOM file meets its format’s specifications. This tutorial concerns the validation of CycloneDX and SPDX SBOMs via the tools cyclonedx-cli and SPDX tools-java.</p>
+
+<h2 id="system-prerequisites">System Prerequisite(s)</h2>
+
+<ul>
+  <li>
+    <p>Zip</p>
+  </li>
+  <li>
+    <p>Java</p>
+  </li>
+</ul>
+
+<h2 id="notes">Note(s)</h2>
+
+<p>Testing done on Ubuntu 20.04 x86_64.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="cyclonedx">CycloneDX</h3>
+
+<p>Navigate to the <a href="https://github.com/CycloneDX/cyclonedx-cli">cyclonedx-cli</a> repository and click on the releases button.</p>
+
+<p>On the releases page, navigate to the latest release and download the release compatible with your system. Make the program executable with command(s):</p>
+
+<ul>
+  <li>
+    <p>Linux/Unix: <code class="language-plaintext highlighter-rouge">chmod +x program</code></p>
+  </li>
+  <li>
+    <p>Windows: Program can be run as is</p>
+  </li>
+</ul>
+
+<h3 id="spdx">SPDX</h3>
+
+<p>Navigate to the <a href="https://github.com/spdx/tools-java">tools-java</a> repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:</p>
+
+<p><code class="language-plaintext highlighter-rouge">unzip tools-java&lt;release-version&gt;:.zip</code></p>
+
+<h2 id="running">Running</h2>
+
+<p>Navigate to the directory  you downloaded the programs to.</p>
+
+<h3 id="cyclonedx-1">CycloneDX</h3>
+
+<p>To ensure correct installation first run:</p>
+
+<pre><code class="language-./cyclonedx-your_os-your_architecture ```">
+
+(e.g. cyclonedx-linux-x64)
+
+
+You should receive the output:
+</code></pre>
+
+<hr />
+<p>/ <strong>__/_  __</strong><strong><em>/ /</em></strong>  <strong>__  ___  / __ \ |/ /   / __</strong>/ /   /  <em>/
+ / /   / / / / <strong>_/ / __ \/ __ \/ _ \/ / / /   /   / /   / /    / /<br />
+/ /</strong></em>/ /<em>/ / /<strong>/ / /_/ / / / /  __/ /_/ /   |   / /</strong></em>/ /<strong>__/ / <br />
+_</strong><em>/_</em>, /_<strong>/<em>/_</em></strong>/<em>/ /</em>/_<strong>/</strong><strong><em>/</em>/|<em>|   _</em></strong>/<strong>__<em>/</em></strong>/ <br />
+     /<em>__</em>/</p>
+
+<p>Required command was not provided.</p>
+
+<p>cyclonedx-linux-x64</p>
+
+<p>Usage:
+  cyclonedx-linux-x64 [options] [command]</p>
+
+<p>Options:
+  –version       Show version information
+  -?, -h, –help  Show help and usage information</p>
+
+<p>Commands:
+  add                         Add information to a BOM (currently supports files)
+  analyze                     Analyze a BOM file
+  convert                     Convert between different BOM formats
+  diff <from-file> <to-file>  Generate a BOM diff
+  keygen                      Generates an RSA public/private key pair for BOM signing
+  merge                       Merge two or more BOMs
+  sign                        Sign a BOM or file
+  validate                    Validate a BOM
+  verify                      Verify signatures for BOMs and files</to-file></from-file></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+To use, run the command 
+
+
+```./cyclonedx-your_os-your_architecture validate --input-file &lt;sbom-file-name.json&gt; --input-format json```
+
+
+Successful validation will result in output:
+
+
+</code></pre></div></div>
+<p>BOM validated successfully. </p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+Failure will output the reason for the failure, and the output
+
+
+</code></pre></div></div>
+<p>BOM is not valid.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+### SPDX
+
+
+To ensure correct installation first run:
+
+
+```java -jar tools-java-1.1.7-jar-with-dependencies.jar```
+
+You should receive the output:
+</code></pre></div></div>
+<p>Usage: java -jar spdx-tools-jar-with-dependencies.jar <function> <parameters> 
+function                 parameter                         example 
+------------------------------------------------------------------------------------------------------------------- 
+Convert         inputFile outputFile [fromType] [toType]   Examples/SPDXTagExample.tag TagToSpreadsheet.xls 
+SPDXViewer      inputFile                                  TestFiles/SPDXRdfExample.rdf 
+Verify          inputFile [type]                           TestFiles/SPDXRdfExample.rdf 
+CompareDocs     output.xlsx doc1 doc2 ... docN 
+GenerateVerificationCode sourceDirectory
+Version
+MatchingStandardLicenses licenseTextFile</parameters></function></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+To use, run the command:
+
+
+```java -jar tools-java-1.1.7-jar-with-dependencies.jar Verify &lt;sbom-file-name.spdx&gt;```
+
+
+Successful validation will result in output 
+
+
+</code></pre></div></div>
+<p>This SPDX Document is valid.
+```</p>
+
+<p>Failure will output the reason for the failure. </p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>
+    <p>CycloneDX. (2023). cyclonedx-cli. https://github.com/CycloneDX/cyclonedx-cli</p>
+  </li>
+  <li>
+    <p>Spdx. (2023). tools-java. https://github.com/spdx/tools-java</p>
+  </li>
+</ul>
+
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/validation-of-sboms/validation-of-sboms.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

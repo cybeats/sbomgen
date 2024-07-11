@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Note: CycloneDX-Conan is now archived as of 02/10/2023 | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Note: CycloneDX-Conan is now archived as of 02/10/2023" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-c-sbom/creating-c-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-c-sbom/creating-c-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Note: CycloneDX-Conan is now archived as of 02/10/2023" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Note: CycloneDX-Conan is now archived as of 02/10/2023","url":"http://localhost:4000/tutorials/creating-c-sbom/creating-c-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="note-cyclonedx-conan-is-now-archived-as-of-02102023">Note: CycloneDX-Conan is now archived as of 02/10/2023</h1>
+
+<h1 id="creation-of-sboms-from-cc-using-conan-and-cyclonedx-conan">Creation of SBOMs From C/C++, Using Conan and CycloneDX-Conan</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to create an SBOM from a conan based c/c++ project, using cyclonedx-conan.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>
+    <p>A C/C++ compiler e.g. gcc, clang.</p>
+  </li>
+  <li>
+    <p>A C/C++ build tool e.g. Make, Cmake.</p>
+  </li>
+  <li>
+    <p>Python3.</p>
+  </li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Install Conan with the following command</p>
+
+<p><code class="language-plaintext highlighter-rouge">pip install conan</code></p>
+
+<p>Install CycloneDX-Conan with the following command</p>
+
+<p><code class="language-plaintext highlighter-rouge">pip install cyclonedx-conan</code></p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Navigate to the C/C++ Conan project in question and run the command</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-conan --output s&lt;sbom-name.json&gt; &lt;directory-(if current directory, use “.”)&gt;</code></p>
+
+<h2 id="notes">Notes</h2>
+
+<p>The directory of the C/C++ Conan project must contain a Conanfile (conanfile.txt or conanfile.py)</p>
+
+<p>An ad-hoc creation of an SBOM may be implemented on C/C++ projects my creating a conanfile.txt and entering the required dependencies and generator as long as they are recognized by Conan, without needing a Conan project. However, this methods efficacy and efficiency must be further investigated.</p>
+
+<p>e.g.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[requires]
+gsl/2.7
+openssl/3.0.2
+poco/1.10.1
+zlib/1.2.12
+
+
+[generators]
+make
+</code></pre></div></div>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Cyclonedx-conan does not appear to factor in c standard libraries e.g. glibc, bionic, etc. These libraries have their own set of vulnerabilities (glibc for example, has 99 according to nist, as of 25 September 2023). This creates the potential for a piece of software to appear to have less vulnerabilities than it actually has.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>
+    <p>CycloneDX. (2023). cyclonedx-conan. https://github.com/CycloneDX/cyclonedx-conan</p>
+  </li>
+  <li>
+    <p>Keyword (text search): cpe:2.3:<strong>a</strong>:gnu:glibc:-:<em>:</em>:<em>:</em>:<em>:</em>:*. NVD. (n.d.). https://shorturl.at/qCDI1</p>
+  </li>
+</ul>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-c-sbom/creating-c-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

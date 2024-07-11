@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs from Ruby Projects | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs from Ruby Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-ruby-sbom/creating-ruby-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-ruby-sbom/creating-ruby-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs from Ruby Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs from Ruby Projects","url":"http://localhost:4000/tutorials/creating-ruby-sbom/creating-ruby-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-from-ruby-projects">Creating SBOMs from Ruby Projects</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to produce an SBOM from Ruby projects using the Cyclonedx-Ruby-Gem CLI.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>Ruby</li>
+  <li>Gem Dependency Manager</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Install CycloneDX-Ruby with the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gem install cyclonedx-ruby</code></p>
+
+<p>Verify installation with the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-ruby -h</code></p>
+
+<p>You should see the resultant output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usage: cyclonedx-ruby [options]
+    -v, --[no-]verbose               Run verbosely
+    -p, --path path                  (Required) Path to Ruby project directory
+    -o, --output bom_file_path       (Optional) Path to output the bom.xml file to
+    -h, --help                       Show help message
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Navigate to a Ruby project.</p>
+
+<p>Run the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-ruby -p .</code></p>
+
+<p>A “bom.xml” file should appear in the same directory.</p>
+
+<p>Alternatively, the <code class="language-plaintext highlighter-rouge">-p</code> and <code class="language-plaintext highlighter-rouge">-o</code> flags can be used to select a project folder path, and output the SBOM to a custom file path, respectively.</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>Certain metadata components of the produced SBOM may be missing, such as SBOM type, Package type, Name and Version.</p>
+
+<h2 id="references">References</h2>
+
+<p>CycloneDX. (2023). CycloneDX-Ruby-Gem. https://github.com/CycloneDX/cyclonedx-ruby-gem</p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-ruby-sbom/creating-ruby-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

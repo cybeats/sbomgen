@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs Using The GitHub GH SBOM Utility | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs Using The GitHub GH SBOM Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/multi-lang/github-gh-sbom/creating-gh-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/multi-lang/github-gh-sbom/creating-gh-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs Using The GitHub GH SBOM Utility" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs Using The GitHub GH SBOM Utility","url":"http://localhost:4000/tutorials/multi-lang/github-gh-sbom/creating-gh-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-using-the-github-gh-sbom-utility">Creating SBOMs Using The GitHub GH SBOM Utility</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to create SBOMs using the GitHub gh CLI sbom extension.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>GitHub gh CLI.</p>
+
+<p>gh sbom plugin.</p>
+
+<p>jq. (optional)</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="installing-github-gh-cli">Installing GitHub gh CLI</h3>
+
+<h4 id="linux">Linux</h4>
+
+<p><strong>Debian and Debian Based Distros e.g. Ubuntu</strong></p>
+
+<p>Run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(type -p wget &gt;/dev/null || (sudo apt update &amp;&amp; sudo apt-get install wget -y)) \
+&amp;&amp; sudo mkdir -p -m 755 /etc/apt/keyrings \
+&amp;&amp; wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg &gt; /dev/null \
+&amp;&amp; sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+&amp;&amp; echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list &gt; /dev/null \
+&amp;&amp; sudo apt update \
+&amp;&amp; sudo apt install gh -y
+</code></pre></div></div>
+
+<p>then run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt install gh
+</code></pre></div></div>
+
+<p><strong>Fedora and Fedora based Distros, e.g. Red Hat</strong></p>
+
+<p>Run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dnf install 'dnf-command(config-manager)'
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh
+</code></pre></div></div>
+
+<h4 id="windows">Windows</h4>
+
+<p>Run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">winget install --id GitHub.cli</code></p>
+
+<p>or</p>
+
+<p><code class="language-plaintext highlighter-rouge">choco install gh</code></p>
+
+<p>or</p>
+
+<p><code class="language-plaintext highlighter-rouge">scoop install gh</code></p>
+
+<h4 id="osx">OSX</h4>
+
+<p>Run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">brew install gh</code></p>
+
+<p>or</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo port install gh</code></p>
+
+<p>or</p>
+
+<p><code class="language-plaintext highlighter-rouge">conda install gh --channel conda-forge</code></p>
+
+<p>or</p>
+
+<p><code class="language-plaintext highlighter-rouge">spack install gh</code></p>
+
+<h3 id="installing-gh-sbom-plugin">Installing gh sbom plugin</h3>
+
+<p>Run the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gh ext install advanced-security/gh-sbom</code></p>
+
+<p>Verify install by running:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gh sbom -h</code></p>
+
+<p>You should see the result:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usage of &lt;location-of-gh-sbom&gt;:
+  -c, --cyclonedx           Use CycloneDX SBOM format. Default is to use SPDX.
+  -l, --license             Include license information from clearlydefined.io for CycloneDX format (SPDX always includes license information).
+  -r, --repository string   Repository to query. Current directory used by default.
+pflag: help requested
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Navigate to a GitHub repository in question.</p>
+
+<p>Run the command:
+<code class="language-plaintext highlighter-rouge">gh sbom</code></p>
+
+<p>Default output is SPDX.</p>
+
+<p>To create a more human readable output, run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gh sbom | jq</code></p>
+
+<p>For CycloneDX formatted outputs, run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gh sbom -c | jq</code></p>
+
+<p>These will generate JSON formatted and indented SBOMs printed to your terminal.</p>
+
+<p>To save these outputs to a file, run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gh sbom | jq &gt; &lt;sbom-file-name&gt;</code></p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>When creating SBOMs in SPDX format, gh sbom may produce purls with the less common packages <code class="language-plaintext highlighter-rouge">github</code> and/or <code class="language-plaintext highlighter-rouge">githubactions</code>.</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>
+    <p>https://github.com/cli/cli</p>
+  </li>
+  <li>
+    <p>https://github.com/advanced-security/gh-sbom</p>
+  </li>
+</ul>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/multi-lang/github-gh-sbom/creating-gh-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs from npm Projects | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs from npm Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-npm-sbom/creating-npm-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-npm-sbom/creating-npm-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs from npm Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs from npm Projects","url":"http://localhost:4000/tutorials/creating-npm-sbom/creating-npm-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-from-npm-projects">Creating SBOMs from npm Projects</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>SBOMs can be created from npm based projects. This tutorial illustrates how to create a CycloneDX  SBOM from an npm project using the cyclonedx- node-npm cli.</p>
+
+<h2 id="notes">Note(s)</h2>
+
+<p>Testing done on Ubuntu 20.04 x86_64.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>node &gt;= 14</p>
+
+<p>npm 6 - 10</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Install the cli by the command</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm install --global @cyclonedx/cyclonedx-npm</code></p>
+
+<p>Alternatively, npx can be used via:</p>
+
+<p><code class="language-plaintext highlighter-rouge">npx --package @cyclonedx/cyclonedx-npm --call exit</code></p>
+
+<h2 id="running">Running</h2>
+
+<p>Navigate to the npm project folder. </p>
+
+<p>Create the SBOM  by running the following within the npm project:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-npm –output-file &lt;set-sbom-name.set-output-format&gt; –output-format &lt;set-output-format&gt;</code></p>
+
+<p>e.g.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-npm  –output-file project-sbom.json –output-format json</code></p>
+
+<p>The sbom file will be located in the folder. However, it is possible to specify another directory by specifying a full path in the –output-file flag.</p>
+
+<p>e.g.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-npm –output-file /home/directory-for-sboms/project-sbom.json –output-format json</code></p>
+
+<p>Note that cyclonedx-node-npm requires a manifest file, i.e. a package.json file.</p>
+
+<h2 id="references">References</h2>
+
+<p>CycloneDX. (2023). cyclonedx-node-npm. https://github.com/CycloneDX/cyclonedx-node-npm </p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-npm-sbom/creating-npm-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

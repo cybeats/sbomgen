@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs from PHP projects | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs from PHP projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-php-sbom/creating-php-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-php-sbom/creating-php-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs from PHP projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs from PHP projects","url":"http://localhost:4000/tutorials/creating-php-sbom/creating-php-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-from-php-projects">Creating SBOMs from PHP projects</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to produce an SBOM from PHP Composer projects using the Cyclonedx-Php-Composer CLI.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>PHP above version 8.1</li>
+  <li>Composer above version 2.3</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Run the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">composer global require cyclonedx/cyclonedx-php-composer</code></p>
+
+<p>Verify installation with the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">composer CycloneDX:make-sbom --help</code></p>
+
+<p>You should get the resultant output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Description:
+  Generate a CycloneDX Bill of Materials from a PHP Composer project.
+
+Usage:
+  CycloneDX:make-sbom [options] [--] [&lt;composer-file&gt;]
+
+Arguments:
+  composer-file                                       Path to Composer config file.
+                                                      [default: "composer.json" file in current working directory]
+
+Options:
+      --output-format=OUTPUT-FORMAT                   Which output format to use.
+                                                      {choices: "JSON", "XML"} [default: "XML"]
+      --output-file=OUTPUT-FILE                       Path to the output file.
+                                                      Set to "-" to write to STDOUT [default: "-"]
+      --omit=OMIT                                     Omit dependency types.
+                                                      {choices: "dev", "plugin"} (multiple values allowed)
+      --spec-version=SPEC-VERSION                     Which version of CycloneDX spec to use.
+                                                      {choices: "1.1", "1.2", "1.3", "1.4", "1.5"} [default: "1.4"]
+      --output-reproducible|--no-output-reproducible  Whether to go the extra mile and make the output reproducible.
+                                                      This might result in loss of time- and random-based-values.
+      --validate|--no-validate                        Formal validate the resulting BOM.
+      --mc-version=MC-VERSION                         Version of the main component.
+                                                      This will override auto-detection.
+  -h, --help                                          Display help for the given command. When no command is given display help for the list command
+  -q, --quiet                                         Do not output any message
+  -V, --version                                       Display this application version
+      --ansi|--no-ansi                                Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction                                Do not ask any interactive question
+      --profile                                       Display timing and memory usage information
+      --no-plugins                                    Whether to disable plugins.
+      --no-scripts                                    Skips the execution of all scripts defined in composer.json file.
+  -d, --working-dir=WORKING-DIR                       If specified, use the given directory as working directory.
+      --no-cache                                      Prevent use of the cache
+  -v|vv|vvv, --verbose                                Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug 
+
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Run the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">composer CycloneDX:make-sbom &lt;composer.json-file&gt; --output-format=&lt;output-format&gt; --output-file=&lt;filepath-to-sbom-name&gt;.&lt;output-format&gt; --spec-version=&lt;cyclonedx-specversion&gt;</code></p>
+
+<p>The resulting SBOM of your set filename, format and cyclonedx specversion will appear in the path designated.</p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>Tests done on Ubuntu 20.04.</p>
+  </li>
+  <li>
+    <p>Requirements</p>
+
+    <ul>
+      <li>PHP above version 8.1 and Composer above version 2.3 <strong>must</strong> be installed, or CycloneDX-PHP-Composer CLI <strong>will not work</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Troubleshooting:</p>
+
+    <ul>
+      <li>In case of installation error, try installing php8.2-xml</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<p>CycloneDX. (2023). CycloneDX-Php-Composer. https://github.com/CycloneDX/cyclonedx-php-composer</p>
+
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-php-sbom/creating-php-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

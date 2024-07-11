@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating SBOMs From Images Using Syft | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating SBOMs From Images Using Syft" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/containers/creating-syft-sbom/creating-syft-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/containers/creating-syft-sbom/creating-syft-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating SBOMs From Images Using Syft" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs From Images Using Syft","url":"http://localhost:4000/tutorials/containers/creating-syft-sbom/creating-syft-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creating-sboms-from-images-using-syft">Creating SBOMs From Images Using Syft</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to create an sbom from a container image using the Syft CLI.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<h3 id="all">All</h3>
+
+<p>A container software e.g.:</p>
+
+<ul>
+  <li>
+    <p>Docker</p>
+  </li>
+  <li>
+    <p>Podman</p>
+  </li>
+</ul>
+
+<h3 id="linux">Linux</h3>
+
+<ul>
+  <li>Curl</li>
+</ul>
+
+<h3 id="windows">Windows</h3>
+
+<ul>
+  <li>
+    <p>Chocolatey</p>
+  </li>
+  <li>
+    <p>Scoop</p>
+  </li>
+</ul>
+
+<h3 id="macos">MacOS</h3>
+
+<ul>
+  <li>Homebrew</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Run the following command:</p>
+
+<h3 id="linux-1">Linux</h3>
+
+<p><code class="language-plaintext highlighter-rouge">curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin</code></p>
+
+<h3 id="macos-1">MacOS</h3>
+
+<p><code class="language-plaintext highlighter-rouge">brew install syft</code></p>
+
+<h3 id="windows-1">Windows</h3>
+
+<p><code class="language-plaintext highlighter-rouge">choco install syft -y</code></p>
+
+<p>or</p>
+
+<p><code class="language-plaintext highlighter-rouge">scoop install syft</code></p>
+
+<h2 id="usage">Usage</h2>
+
+<p>To generate an SBOM, run the command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">syft &lt;image&gt;</code></p>
+
+<p>Where image is:</p>
+
+<ul>
+  <li>
+    <p>A remote image from a repository.</p>
+  </li>
+  <li>
+    <p>A local image dictionary.</p>
+  </li>
+  <li>
+    <p>A local compressed image dictionary.</p>
+  </li>
+</ul>
+
+<p>An SBOM will be printed to your terminal.</p>
+
+<p>To create an SBOM in a standardized SBOM format, use the <code class="language-plaintext highlighter-rouge">-o</code> flag:</p>
+
+<p><code class="language-plaintext highlighter-rouge">syft &lt;image&gt; -o &lt;format&gt;</code></p>
+
+<p>Where format is one of:</p>
+
+<ul>
+  <li>cyclonedx-json</li>
+  <li>cyclonedx-xml</li>
+  <li>spdx-json</li>
+  <li>spdx-tag-value</li>
+  <li>syft-json</li>
+  <li>syft-table</li>
+  <li>syft-text</li>
+  <li>github-json</li>
+</ul>
+
+<p>To output the SBOM to a file, run the above command but add <code class="language-plaintext highlighter-rouge">=&lt;output_file&gt;</code> to the <code class="language-plaintext highlighter-rouge">-o</code> format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">syft &lt;image&gt; -o &lt;format&gt;=&lt;output_file_name&gt;</code></p>
+
+<p>An SBOM file of your specified name and format will be created.</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>In Linux, sudo may be required.</p>
+
+<h2 id="references">References</h2>
+
+<p>https://github.com/anchore/syft</p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/containers/creating-syft-sbom/creating-syft-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

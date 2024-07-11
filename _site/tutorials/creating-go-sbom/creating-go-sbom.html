@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creation of SBOMs from Go Projects | sbomgen</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creation of SBOMs from Go Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of SBOM Generation Tools" />
+<meta property="og:description" content="List of SBOM Generation Tools" />
+<link rel="canonical" href="http://localhost:4000/tutorials/creating-go-sbom/creating-go-sbom.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/creating-go-sbom/creating-go-sbom.html" />
+<meta property="og:site_name" content="sbomgen" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creation of SBOMs from Go Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creation of SBOMs from Go Projects","url":"http://localhost:4000/tutorials/creating-go-sbom/creating-go-sbom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">sbomgen</a></h1>
+      
+
+      <h1 id="creation-of-sboms-from-go-projects">Creation of SBOMs from Go Projects</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial illustrates how to produce an SBOM using Go projects using the CycloneDX-Gomod CLI.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li><a href="https://go.dev/dl/">Go Language</a></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Navigate to the <a href="https://github.com/CycloneDX/cyclonedx-gomod/releases">releases</a> page of the CycloneDX-Gomod CLI and download the tar.gz file specified to your system.</p>
+
+<p>Unzip the file</p>
+
+<p>Inside the unzipped folder there should be three files:</p>
+
+<ul>
+  <li>
+    <p>A README.</p>
+  </li>
+  <li>
+    <p>A LICENSE file.*</p>
+  </li>
+  <li>
+    <p>The CycloneDX-Gomod binary.</p>
+  </li>
+</ul>
+
+<p>ensure the binary is executable, and optionally, place it in your computers PATH.</p>
+
+<p>verify the binary’s functionality by running:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-gomod --help</code></p>
+
+<p>the output should resemble</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>USAGE
+  cyclonedx-gomod &lt;SUBCOMMAND&gt; [FLAGS...] [&lt;ARG&gt;...]
+
+cyclonedx-gomod creates CycloneDX Software Bill of Materials (SBOM) from Go modules.
+
+Multiple subcommands are offered, each targeting different use cases:
+
+- SBOMs generated with "app" include only those modules that the target application
+  actually depends on. Modules required by tests or packages that are not imported
+  by the application are not included. Build constraints are evaluated, which enables
+  a very detailed view of what's really compiled into an application's binary.
+  
+- SBOMs generated with "mod" include the aggregate of modules required by all 
+  packages in the target module. This optionally includes modules required by
+  tests and test packages. Build constraints are NOT evaluated, allowing for 
+  a "whole picture" view on the target module's dependencies.
+
+- "bin" offers support for generating rudimentary SBOMs from binaries built with Go modules.
+
+Distributors of applications will typically use "app" and provide the resulting SBOMs
+alongside their application's binaries. This enables users to only consume SBOMs for
+artifacts that they actually use. For example, a Go module may include "server" and
+"client" applications, of which only the "client" is distributed to users. 
+Additionally, modules included in "client" may differ, depending on which platform 
+it was compiled for.
+
+Vendors or maintainers may choose to use "mod" for internal use, where it's too
+cumbersome to deal with many SBOMs for the same product. Possible use cases are: 
+- Tracking of component inventory
+- Tracking of third party component licenses
+- Continuous monitoring for vulnerabilities
+"mod" may also be used to generate SBOMs for libraries.
+
+SUBCOMMANDS
+  app      Generate SBOMs for applications
+  bin      Generate SBOMs for binaries
+  mod      Generate SBOMs for modules
+  version  Show version information
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Navigate to the Go project in question.</p>
+
+<p>There are three pathways to generating an SBOM using CycloneDX-Gomod; through an application (app), through a binary (bin) and through a go module (mod).</p>
+
+<h3 id="application">Application</h3>
+
+<p>To generate a json sbom run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-gomod app -json=true -output &lt;sbom-name&gt;.json [path-to-application (defaults to current directory)]</code></p>
+
+<h3 id="binary">Binary</h3>
+
+<p>This is use for binaries created from go projects.</p>
+
+<p>To generate a json sbom run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-gomod bin -json=true -output &lt;sbom-name&gt;.json [path-to-binary-file]</code></p>
+
+<h3 id="module">Module</h3>
+
+<p>This is for projects that are go modules, i.e. contain a go.mod file.</p>
+
+<p>To generate a json sbom run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cyclonedx-gomod mod -json=true -output &lt;sbom-name&gt;.json [path-to-module (defaults to current directory)]</code></p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>Testing done on Ubuntu 20.04</p>
+  </li>
+  <li>
+    <p>For applications, cyclonedx-gomod appears to want a “main” folder, and will throw errors otherwise. Usually, there is a go.mod file present so defaulting to using the mod pathway appears prudent.</p>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>CycloneDX. (2023). cyclonedx-gomod. https://github.com/CycloneDX/cyclonedx-gomod</li>
+</ul>
+
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/REestwick/sbomgen/edit/gh-pages/tutorials/creating-go-sbom/creating-go-sbom.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

@@ -1,0 +1,1175 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:eef23421-de26-452c-afd5-2562de7c85b7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-10-26T15:09:01Z",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "CycloneDX module for .NET",
+        "version": "2.9.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "CycloneDX@0.0.0",
+      "name": "CycloneDX",
+      "version": "0.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/CycloneDX.Core@5.4.0",
+      "author": "Patrick Dwyer \u0026 Steve Springett",
+      "name": "CycloneDX.Core",
+      "version": "5.4.0",
+      "description": "A .NET Standard library for CycloneDX bill-of-material documents.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "F04D1ADE82FEB4E6D2C7088981D69DBC28A30B9774110110FC0F6C59A6D93926396BA8855AFBDC5A548C0E46B1B4D9B2336F15D578EF05770CAC4F1FBF275201"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) OWASP Foundation",
+      "purl": "pkg:nuget/CycloneDX.Core@5.4.0",
+      "externalReferences": [
+        {
+          "url": "https://github.com/CycloneDX/cyclonedx-dotnet-library",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/CycloneDX/cyclonedx-dotnet-library.git",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/JetBrains.Annotations@2021.2.0",
+      "author": "JetBrains",
+      "name": "JetBrains.Annotations",
+      "version": "2021.2.0",
+      "description": "Annotations to increase accuracy of ReSharper code inspections",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "E4F1E8A7A6890B2116A2A5B4483346E1BDD0AC7B30D67B5C026B8596C5150A86868BB2D3EACA22D0E22E80DBCFEEEDAE755EC1C29258C8895ACFC3F9710517C5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:nuget/JetBrains.Annotations@2021.2.0",
+      "externalReferences": [
+        {
+          "url": "https://www.jetbrains.com/help/resharper/Code_Analysis__Code_Annotations.html",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/Json.More.Net@1.7.0",
+      "author": "Greg Dennis",
+      "name": "Json.More.Net",
+      "version": "1.7.0",
+      "description": "Provides extended functionality for the System.Text.Json namespace.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "677D37DD494B936EDCAF927952E568903460C8AB6802BEC38617D70445E63A05B8269131621752E16650D10D3E77BF18A89242E90BE6BEEBB760236F58551E1C"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://github.com/gregsdennis/json-everything/blob/master/LICENSE"
+          }
+        }
+      ],
+      "purl": "pkg:nuget/Json.More.Net@1.7.0",
+      "externalReferences": [
+        {
+          "url": "https://github.com/gregsdennis/json-everything",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/gregsdennis/json-everything",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/JsonPointer.Net@2.2.1",
+      "author": "Greg Dennis",
+      "name": "JsonPointer.Net",
+      "version": "2.2.1",
+      "description": "JSON Pointer built on the System.Text.Json namespace.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "A1A828A6E17B8CB1361F0654E76A970809C3217FD9EB0423D7EFD473FF27C051247B1FD487BAC67604995E86F69312F438635DF3CAAAAF8FAB1784AEF3729788"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://github.com/gregsdennis/json-everything/blob/master/LICENSE"
+          }
+        }
+      ],
+      "purl": "pkg:nuget/JsonPointer.Net@2.2.1",
+      "externalReferences": [
+        {
+          "url": "https://github.com/gregsdennis/json-everything",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/gregsdennis/json-everything",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/JsonSchema.Net@3.3.2",
+      "author": "Greg Dennis",
+      "name": "JsonSchema.Net",
+      "version": "3.3.2",
+      "description": "JSON Schema built on the System.Text.Json namespace.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "E1FF37CD302F9495FA84015C493D2684F2BAD93F56180D3FFC6E0E893DB9C74BDBAA3E42EAD351A5C656895350277F82E13EBEA0F4A0BDD2B332CE4220540503"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://github.com/gregsdennis/json-everything/blob/master/LICENSE"
+          }
+        }
+      ],
+      "purl": "pkg:nuget/JsonSchema.Net@3.3.2",
+      "externalReferences": [
+        {
+          "url": "https://github.com/gregsdennis/json-everything",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/gregsdennis/json-everything",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.2",
+      "author": "Nate McMaster",
+      "name": "McMaster.Extensions.CommandLineUtils",
+      "version": "4.0.2",
+      "description": "Command-line parsing API and utilities for console applications.\n\nCommonly used types:\n\nMcMaster.Extensions.CommandLineUtils.CommandLineApplication\nMcMaster.Extensions.CommandLineUtils.CommandOption\nMcMaster.Extensions.CommandLineUtils.IConsole\nMcMaster.Extensions.CommandLineUtils.Prompt\nMcMaster.Extensions.CommandLineUtils.ArgumentEscaper\n\n A community-maintained fork of Microsoft.Extensions.CommandLineUtils, plus many enhancements.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "D8767C2101E96F63267638ACD3C21AA9B3259A32E7EE49AAC5928CF84913A1F28262436ADC83482B19C870DCA5F734072BB3C9C7B4D23DCC779D83F7CF6B9316"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00A9 Nate McMaster",
+      "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.2",
+      "externalReferences": [
+        {
+          "url": "https://github.com/natemcmaster/CommandLineUtils",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/natemcmaster/CommandLineUtils.git",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/Newtonsoft.Json@13.0.1",
+      "author": "James Newton-King",
+      "name": "Newtonsoft.Json",
+      "version": "13.0.1",
+      "description": "Json.NET is a popular high-performance JSON framework for .NET",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "83731B662EAF05379A23F8446EF47BBC111349DD4358B7BD8B51383FE9CF637E2FE62F78CEA52A0D7BDD582DC6FBBB5837D4A7B1D53DCF37A0AE7473E21EE7B1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00A9 James Newton-King 2008",
+      "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+      "externalReferences": [
+        {
+          "url": "https://www.newtonsoft.com/json",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/JamesNK/Newtonsoft.Json",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.Common@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.Common",
+      "version": "6.7.0",
+      "description": "Common utilities and interfaces for all NuGet libraries.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "C71993059A817CC09AA2EE2B2452917986D3ADF4176F839F713F50C952CDD6711EDFA29D8AD465D14922D11D374558A634A793CCA8C1505E88E0265301EBB661"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.Common@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.Configuration@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.Configuration",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s configuration settings implementation.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "32A9242AD4461F767BDEFD56CA51A90CCA14AD594DAA810571A584D40A6E75BE8058962A1A1E2FC9950C757B22B6856989A90FDE288032DA6B87819F6BF0AFE9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.Configuration@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.DependencyResolver.Core@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.DependencyResolver.Core",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s PackageReference dependency resolver implementation.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "F12191ED417F03EB4081D4D122C877BFCAA0E3BC3D7DAAC0017BC795B63294BFAC151229DFAC861740B5B1732E0FF0C4225E862DCD8CFD475AC01F85A4783FB7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.Frameworks@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.Frameworks",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s understanding of target frameworks.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "C1E1B20E3557A782D4291F598CCAED777F09E8C9140B9C4F53D85C19D92C641074AFE6C998AA19E4D2500172C56CFDE6E4184F2D8225DFF68498F964095DB93A"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.Frameworks@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.LibraryModel@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.LibraryModel",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s types and interfaces for understanding dependencies.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "60F1CC995208E10AA34A1CCD517EB5AA0E2EFE3F66161043E622C30A793C520126896CD044B0C50AF5C299B4686339CB273DBDF79B03EE276DA96B2F3A1E189C"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.LibraryModel@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.Packaging@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.Packaging",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s understanding of packages. Reading nuspec, nupkgs and package signing.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8C47C6FDAF213614C349639A7418B49D945D4CEF8F5D1F7C8F8BBA46767AF0DCAEC382C7BE2117386D64A99BEB694DEE606B2C02825AB6414360033C9045FE59"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.Packaging@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.ProjectModel@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.ProjectModel",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s core types and interfaces for PackageReference-based restore, such as lock files, assets file and internal restore models.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "06785E6AECCE8E8D54FE10A0D23CA17E568D6DF7C26DF667AAE1DCD7CF959DE48034C079E0C83FC631CF2E26F1DD1E739DE43A1379F42B9D30B5F467B6B907F2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.ProjectModel@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.Protocol@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.Protocol",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s implementation for interacting with feeds. Contains functionality for all feed types.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "FEBFA2DE09956166BC28C1136A71B2682A8C3D52D3C1EF06AB36B99218838844C04DE18477ECBB7AB26CCBFA4BC01A67974FE3498A5FFA4C4FAB5EB1A227A3E8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.Protocol@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/NuGet.Versioning@6.7.0",
+      "author": "Microsoft",
+      "name": "NuGet.Versioning",
+      "version": "6.7.0",
+      "description": "NuGet\u0027s implementation of Semantic Versioning.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "699D3F15DF398EE2CAAE0D2B670E2B5890050EEBF4696DD2263DDFAB0A797AD91164EC073BFD75BE61A1D1E78C67B80C02F9E4B6FC5AC7B87955AC64965BF664"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/NuGet.Versioning@6.7.0",
+      "externalReferences": [
+        {
+          "url": "https://aka.ms/nugetprj",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/NuGet/NuGet.Client",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/protobuf-net@3.2.16",
+      "author": "Marc Gravell",
+      "name": "protobuf-net",
+      "version": "3.2.16",
+      "description": "Provides simple access to fast and efficient \u0022Protocol Buffers\u0022 serialization from .NET applications",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9386E8545FD921837FD45CE57A1ACC7D7D63731212707FAA09E0F45DA5AD4F522056938243AC445EDABA5BBA4B9473A618196BB156341B419985F2705D2DF739"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "See https://github.com/protobuf-net/protobuf-net",
+      "purl": "pkg:nuget/protobuf-net@3.2.16",
+      "externalReferences": [
+        {
+          "url": "https://github.com/protobuf-net/protobuf-net",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/protobuf-net/protobuf-net",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/protobuf-net.Core@3.2.16",
+      "author": "Marc Gravell",
+      "name": "protobuf-net.Core",
+      "version": "3.2.16",
+      "description": "Provides simple access to fast and efficient \u0022Protocol Buffers\u0022 serialization from .NET applications",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9A6F2A4DC70491F47E1321A613EA8DD1C29D562C003EFADE827EF8DB197C36C7B28991BC0EA7928DC76FD13E08E302096554DBA00F3466E8362397C7E2F14EA8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "See https://github.com/protobuf-net/protobuf-net",
+      "purl": "pkg:nuget/protobuf-net.Core@3.2.16",
+      "externalReferences": [
+        {
+          "url": "https://github.com/protobuf-net/protobuf-net",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/protobuf-net/protobuf-net",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Collections.Immutable@7.0.0",
+      "author": "Microsoft",
+      "name": "System.Collections.Immutable",
+      "version": "7.0.0",
+      "description": "This package provides collections that are thread safe and guaranteed to never change their contents, also known as immutable collections. Like strings, any methods that perform modifications will not change the existing instance but instead return a new instance. For efficiency reasons, the implementation uses a sharing mechanism to ensure that newly created instances share as much data as possible with the previous instance while ensuring that operations have a predictable time complexity.\n\nThe System.Collections.Immutable library is built-in as part of the shared framework in .NET Runtime. The package can be installed when you need to use it in other target frameworks.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "F084AFC9395D74B4F252C47B7D0E378E676D6B8B6033A68636B648B58805E3772DD22FF1DED05D3C8C8553D2E7685B29B753FE1CBB5A333F018ABE6422A3EBFA"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.Collections.Immutable@7.0.0",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
+      "author": "Microsoft",
+      "name": "System.ComponentModel.Annotations",
+      "version": "5.0.0",
+      "description": "Provides attributes that are used to define metadata for objects used as data sources.\n\nCommonly Used Types:\nSystem.ComponentModel.DataAnnotations.ValidationResult\nSystem.ComponentModel.DataAnnotations.IValidatableObject\nSystem.ComponentModel.DataAnnotations.ValidationAttribute\nSystem.ComponentModel.DataAnnotations.RequiredAttribute\nSystem.ComponentModel.DataAnnotations.StringLengthAttribute\nSystem.ComponentModel.DataAnnotations.DisplayAttribute\nSystem.ComponentModel.DataAnnotations.RegularExpressionAttribute\nSystem.ComponentModel.DataAnnotations.DataTypeAttribute\nSystem.ComponentModel.DataAnnotations.RangeAttribute\nSystem.ComponentModel.DataAnnotations.KeyAttribute\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "589AAC4C669701CE7910F1A327294F15788D3ECFF1D6DF5D9255651E5201C5411C2312286FAB111A6F549FB4DE864C8414CFAF2A365DEEB6F068C1FFCE7C353C"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
+      "externalReferences": [
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "website"
+        },
+        {
+          "url": "git://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Formats.Asn1@6.0.0",
+      "author": "Microsoft",
+      "name": "System.Formats.Asn1",
+      "version": "6.0.0",
+      "description": "Provides classes that can read and write the ASN.1 BER, CER, and DER data formats.\n\nCommonly Used Types:\nSystem.Formats.Asn1.AsnReader\nSystem.Formats.Asn1.AsnWriter",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "EB660FEB32E7BE616D148DEB8F26DBAE749E2BA8474026857C925FA0D850AAB1132413DE852B9C43123242CE56F861815BFAE94970FFD0DA8D5BB9ADB4859784"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.Formats.Asn1@6.0.0",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.IO.Abstractions@19.2.51",
+      "author": "Tatham Oddie \u0026 friends",
+      "name": "System.IO.Abstractions",
+      "version": "19.2.51",
+      "description": "A set of abstractions to help make file system interactions testable.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5E8E510054B74E300528F45A1DA2E2A2A87D359E97342357D8BB425DF5987DB9D4E2787DD65C1D83E96C9B05790F4C0A22B820DCB374445771043CF4B23748A5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00A9 Tatham Oddie \u0026 friends 2010-2022",
+      "purl": "pkg:nuget/System.IO.Abstractions@19.2.51",
+      "externalReferences": [
+        {
+          "url": "https://github.com/TestableIO/System.IO.Abstractions",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/TestableIO/System.IO.Abstractions",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+      "author": "Microsoft",
+      "name": "System.Runtime.CompilerServices.Unsafe",
+      "version": "6.0.0",
+      "description": "Provides the System.Runtime.CompilerServices.Unsafe class, which provides generic, low-level functionality for manipulating pointers.\n\nCommonly Used Types:\nSystem.Runtime.CompilerServices.Unsafe",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "D4057301BE4EC4936F24B9CE003B5EC4D99681AB6D9B65D5393DD38D04CDEC37784AAA12C1A8B50AC3767ED878DAE425749490773FEC01E734F93CF1045822B3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Security.Cryptography.Pkcs@6.0.4",
+      "author": "Microsoft",
+      "name": "System.Security.Cryptography.Pkcs",
+      "version": "6.0.4",
+      "description": "Provides support for PKCS and CMS algorithms.\n\nCommonly Used Types:\nSystem.Security.Cryptography.Pkcs.EnvelopedCms",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "DB8BBA63D2FF4B9BD7A35ABAA754296000EFD9DE8AC6585564C5A1241EC782FA193F12E56807E717E62522BB77F127C6034B43AF28FA62E599149D49290979A2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@6.0.4",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.4.0",
+      "author": "Microsoft",
+      "name": "System.Security.Cryptography.ProtectedData",
+      "version": "4.4.0",
+      "description": "Provides access to Windows Data Protection Api.\n\nCommonly Used Types:\nSystem.Security.Cryptography.DataProtectionScope\nSystem.Security.Cryptography.ProtectedData\n \n8321c729934c0f8be754953439b88e6e1c120c24 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5B011EC6F05DFB5EF27D8EDF712F9F04697E1C00C47C226E29E0C9A814FB0FA8FABCAC18BDF2F21AEAB6CBF326ACA3910BA99B630B61EE48E29CED663E14CBDE"
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation.  All rights reserved.",
+      "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.4.0",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Text.Encodings.Web@7.0.0",
+      "author": "Microsoft",
+      "name": "System.Text.Encodings.Web",
+      "version": "7.0.0",
+      "description": "Provides types for encoding and escaping strings for use in JavaScript, HyperText Markup Language (HTML), and uniform resource locators (URL).\n\nCommonly Used Types:\nSystem.Text.Encodings.Web.HtmlEncoder\nSystem.Text.Encodings.Web.UrlEncoder\nSystem.Text.Encodings.Web.JavaScriptEncoder",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "D164C15DF021A99D18ED0C39B6B7C0290B7F948D8F09BF07140B47BAE6403F1CB9A822C1504AABD7A6094367AD9FCF8CED1EA186B0662A51815EBBB37A3B0434"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.Text.Encodings.Web@7.0.0",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.Text.Json@7.0.2",
+      "author": "Microsoft",
+      "name": "System.Text.Json",
+      "version": "7.0.2",
+      "description": "Provides high-performance and low-allocating types that serialize objects to JavaScript Object Notation (JSON) text and deserialize JSON text to objects, with UTF-8 support built-in. Also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM), that is read-only, for random access of the JSON elements within a structured view of the data.\n\nThe System.Text.Json library is built-in as part of the shared framework in .NET Runtime. The package can be installed when you need to use it in other target frameworks.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "20AB3A9E729CB3E019F624986B5489341ACA89700B31F86F1A7945485B073C715D60B804FC6EA27C628A30D6D46015D1D1EFA0B75FB8842F620D0A95F749C648"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+      "purl": "pkg:nuget/System.Text.Json@7.0.2",
+      "externalReferences": [
+        {
+          "url": "https://dot.net/",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/dotnet/runtime",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/TestableIO.System.IO.Abstractions@19.2.51",
+      "author": "Tatham Oddie \u0026 friends",
+      "name": "TestableIO.System.IO.Abstractions",
+      "version": "19.2.51",
+      "description": "A set of abstractions to help make file system interactions testable.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "FD12FEDDDC075676E901BC341930459E76AB096548E88C15797246923F53A48761AB5361634D611B91F581D03A99F0C2DE419751F2FAE9391C31CFAFF0156B93"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00A9 Tatham Oddie \u0026 friends 2010-2022",
+      "purl": "pkg:nuget/TestableIO.System.IO.Abstractions@19.2.51",
+      "externalReferences": [
+        {
+          "url": "https://github.com/TestableIO/System.IO.Abstractions",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/TestableIO/System.IO.Abstractions",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:nuget/TestableIO.System.IO.Abstractions.Wrappers@19.2.51",
+      "author": "Tatham Oddie \u0026 friends",
+      "name": "TestableIO.System.IO.Abstractions.Wrappers",
+      "version": "19.2.51",
+      "description": "A set of abstractions to help make file system interactions testable.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "94D9F40ED1CDC624E998F69B6F56490705CECB41A0BD4358082FC53F063C50753A288F29C2BB037DB81148C5FCCADF9C486494B536B6122AE2F872CBF345AF20"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00A9 Tatham Oddie \u0026 friends 2010-2022",
+      "purl": "pkg:nuget/TestableIO.System.IO.Abstractions.Wrappers@19.2.51",
+      "externalReferences": [
+        {
+          "url": "https://github.com/TestableIO/System.IO.Abstractions",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/TestableIO/System.IO.Abstractions",
+          "type": "vcs"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CycloneDX@0.0.0",
+      "dependsOn": [
+        "pkg:nuget/CycloneDX.Core@5.4.0",
+        "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.2",
+        "pkg:nuget/NuGet.ProjectModel@6.7.0",
+        "pkg:nuget/NuGet.Protocol@6.7.0",
+        "pkg:nuget/System.IO.Abstractions@19.2.51"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/CycloneDX.Core@5.4.0",
+      "dependsOn": [
+        "pkg:nuget/JsonSchema.Net@3.3.2",
+        "pkg:nuget/System.Text.Json@7.0.2",
+        "pkg:nuget/protobuf-net@3.2.16"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/JetBrains.Annotations@2021.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Json.More.Net@1.7.0",
+      "dependsOn": [
+        "pkg:nuget/System.Text.Json@7.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/JsonPointer.Net@2.2.1",
+      "dependsOn": [
+        "pkg:nuget/Json.More.Net@1.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/JsonSchema.Net@3.3.2",
+      "dependsOn": [
+        "pkg:nuget/JetBrains.Annotations@2021.2.0",
+        "pkg:nuget/Json.More.Net@1.7.0",
+        "pkg:nuget/JsonPointer.Net@2.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.2",
+      "dependsOn": [
+        "pkg:nuget/System.ComponentModel.Annotations@5.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Newtonsoft.Json@13.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/NuGet.Common@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/NuGet.Frameworks@6.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.Configuration@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/NuGet.Common@6.7.0",
+        "pkg:nuget/System.Security.Cryptography.ProtectedData@4.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.DependencyResolver.Core@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/NuGet.Configuration@6.7.0",
+        "pkg:nuget/NuGet.LibraryModel@6.7.0",
+        "pkg:nuget/NuGet.Protocol@6.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.Frameworks@6.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/NuGet.LibraryModel@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/NuGet.Common@6.7.0",
+        "pkg:nuget/NuGet.Versioning@6.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.Packaging@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@13.0.1",
+        "pkg:nuget/NuGet.Configuration@6.7.0",
+        "pkg:nuget/NuGet.Versioning@6.7.0",
+        "pkg:nuget/System.Security.Cryptography.Pkcs@6.0.4"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.ProjectModel@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/NuGet.DependencyResolver.Core@6.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.Protocol@6.7.0",
+      "dependsOn": [
+        "pkg:nuget/NuGet.Packaging@6.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/NuGet.Versioning@6.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/protobuf-net.Core@3.2.16",
+      "dependsOn": [
+        "pkg:nuget/System.Collections.Immutable@7.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/protobuf-net@3.2.16",
+      "dependsOn": [
+        "pkg:nuget/protobuf-net.Core@3.2.16"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Collections.Immutable@7.0.0",
+      "dependsOn": [
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Formats.Asn1@6.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.IO.Abstractions@19.2.51",
+      "dependsOn": [
+        "pkg:nuget/TestableIO.System.IO.Abstractions@19.2.51",
+        "pkg:nuget/TestableIO.System.IO.Abstractions.Wrappers@19.2.51"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Security.Cryptography.Pkcs@6.0.4",
+      "dependsOn": [
+        "pkg:nuget/System.Formats.Asn1@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Text.Encodings.Web@7.0.0",
+      "dependsOn": [
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Text.Json@7.0.2",
+      "dependsOn": [
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+        "pkg:nuget/System.Text.Encodings.Web@7.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/TestableIO.System.IO.Abstractions.Wrappers@19.2.51",
+      "dependsOn": [
+        "pkg:nuget/TestableIO.System.IO.Abstractions@19.2.51"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/TestableIO.System.IO.Abstractions@19.2.51",
+      "dependsOn": []
+    }
+  ]
+}

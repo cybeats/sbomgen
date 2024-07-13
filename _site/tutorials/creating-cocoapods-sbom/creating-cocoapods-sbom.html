@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs from Cocoapods Projects","url":"http://localhost:4000/tutorials/creating-cocoapods-sbom/creating-cocoapods-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -65,15 +65,17 @@
 
 <p>Install cyclonedx-cocoapods via the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">gem install cyclonedx-cocoapods</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>cyclonedx-cocoapods
+</code></pre></div></div>
 
 <p>Verify installation with the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cyclonedx-cocoapods -h</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cyclonedx-cocoapods <span class="nt">-h</span>
+</code></pre></div></div>
 
 <p>You should get the output:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Generates a BOM with the given parameters. BOM component metadata is only generated if the component's name, version, and type are provided using the --name, --version, and --type parameters.
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Generates a BOM with the given parameters. BOM component metadata is only generated <span class="k">if </span>the component<span class="s1">'s name, version, and type are provided using the --name, --version, and --type parameters.
 [version 1.1.2]
 
 USAGE
@@ -95,12 +97,13 @@ OPTIONS
     -t, --type type                  Type of the component for which the BOM is generated (one of application|framework|library|container|operating-system|device|firmware|file)
     -g, --group group                Group of the component for which the BOM is generated
 
-</code></pre></div></div>
+</span></code></pre></div></div>
 <h2 id="usage">Usage</h2>
 
 <p>Navigate to the desired Cocoapods project, and run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cyclonedx-cocoapods</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cyclonedx-cocoapods
+</code></pre></div></div>
 
 <p>A “bom.xml” file will appear in the local directory. Alternatively, the <code class="language-plaintext highlighter-rouge">-o</code> flag can be used to output to a custom file path.</p>
 
@@ -108,16 +111,16 @@ OPTIONS
 
 <ul>
   <li>
-    <p>-n. SBOM name</p>
+    <p><code class="language-plaintext highlighter-rouge">-n</code>. SBOM name</p>
   </li>
   <li>
-    <p>-v. SBOM version</p>
+    <p><code class="language-plaintext highlighter-rouge">-v</code>. SBOM version</p>
   </li>
   <li>
-    <p>-t. SBOM type</p>
+    <p><code class="language-plaintext highlighter-rouge">-t</code>. SBOM type</p>
   </li>
   <li>
-    <p>-g. SBOM group</p>
+    <p><code class="language-plaintext highlighter-rouge">-g</code>. SBOM group</p>
   </li>
 </ul>
 
@@ -131,28 +134,25 @@ OPTIONS
   </li>
   <li>
     <p>In case of ActiveSupport Error:</p>
-
-    <ul>
-      <li>
-        <p>gem uninstall activesupport.</p>
-      </li>
-      <li>
-        <p>gem install activesupport -v 7.0.8.</p>
-      </li>
-    </ul>
   </li>
 </ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gem uninstall activesupport
+
+  gem <span class="nb">install </span>activesupport <span class="nt">-v</span> 7.0.8
+</code></pre></div></div>
 
 <h2 id="references">References</h2>
 
 <ul>
   <li>
-    <p>CycloneDX. (2023). CycloneDX-Cocoapods. https://github.com/CycloneDX/cyclonedx-cocoapods</p>
+    <p>CycloneDX. (2023). CycloneDX-Cocoapods. <a href="https://github.com/CycloneDX/cyclonedx-cocoapods">https://github.com/CycloneDX/cyclonedx-cocoapods</a></p>
   </li>
   <li>
-    <p>https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error</p>
+    <p>After updating cocoapods to 1.13.0 it throws error. Stack Overflow. (1AD). <a href="https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error">https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error</a></p>
   </li>
 </ul>
+
 
 
       

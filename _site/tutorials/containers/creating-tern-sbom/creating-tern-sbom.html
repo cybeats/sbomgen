@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Introduction","url":"http://localhost:4000/tutorials/containers/creating-tern-sbom/creating-tern-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -60,45 +60,47 @@
 
 <p>Install tern by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">pip install tern</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>tern
+</code></pre></div></div>
 
 <p>Verify installation by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern -h</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern <span class="nt">-h</span>
+</code></pre></div></div>
 
 <p>You should see:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usage: Tern [-h] [-q] [-l FILE] [-c] [-k] [-r] [-wd PATH] [-dr DRIVER_OPTION]
-            [-v]
-            {report,lock,debug} ...
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usage: Tern <span class="o">[</span><span class="nt">-h</span><span class="o">]</span> <span class="o">[</span><span class="nt">-q</span><span class="o">]</span> <span class="o">[</span><span class="nt">-l</span> FILE] <span class="o">[</span><span class="nt">-c</span><span class="o">]</span> <span class="o">[</span><span class="nt">-k</span><span class="o">]</span> <span class="o">[</span><span class="nt">-r</span><span class="o">]</span> <span class="o">[</span><span class="nt">-wd</span> PATH] <span class="o">[</span><span class="nt">-dr</span> DRIVER_OPTION]
+            <span class="o">[</span><span class="nt">-v</span><span class="o">]</span>
+            <span class="o">{</span>report,lock,debug<span class="o">}</span> ...
 
     Tern is a container image component curation tool. Tern retrieves
-    information about packages that are installed in a container image.
+    information about packages that are installed <span class="k">in </span>a container image.
     Learn more at https://github.com/tern-tools/tern
 
 positional arguments:
-  {report,lock,debug}   Subcommands
-    report              Create a BoM report. Run 'tern report -h' for report format options.
-    lock                Create an annotated Dockerfile that will pin the information it finds. Use this option to help achieve a more repeatable container image build.
-    debug               Debug pieces of operation by themselves. This is useful when debugging scripts entered into the command library or drivers used for mounting the container image layers.
+  <span class="o">{</span>report,lock,debug<span class="o">}</span>   Subcommands
+    report              Create a BoM report. Run <span class="s1">'tern report -h'</span> <span class="k">for </span>report format options.
+    lock                Create an annotated Dockerfile that will pin the information it finds. Use this option to <span class="nb">help </span>achieve a more repeatable container image build.
+    debug               Debug pieces of operation by themselves. This is useful when debugging scripts entered into the <span class="nb">command </span>library or drivers used <span class="k">for </span>mounting the container image layers.
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -q, --quiet           Silences the output to the terminal;Useful when logging behaviour unnecessary
-  -l FILE, --log-file FILE
+  <span class="nt">-h</span>, <span class="nt">--help</span>            show this <span class="nb">help </span>message and <span class="nb">exit</span>
+  <span class="nt">-q</span>, <span class="nt">--quiet</span>           Silences the output to the terminal<span class="p">;</span>Useful when logging behaviour unnecessary
+  <span class="nt">-l</span> FILE, <span class="nt">--log-file</span> FILE
                         Provide a custom file to write logs to.
                         Useful when writing logs to a different location.
-  -c, --clear-cache     Clear the cache before running
-  -k, --keep-wd         Keep the working directory after execution. Useful when debugging container images
-  -r, --redo            Repopulate the cache for found layers
-  -wd PATH, --working-dir PATH
+  <span class="nt">-c</span>, <span class="nt">--clear-cache</span>     Clear the cache before running
+  <span class="nt">-k</span>, <span class="nt">--keep-wd</span>         Keep the working directory after execution. Useful when debugging container images
+  <span class="nt">-r</span>, <span class="nt">--redo</span>            Repopulate the cache <span class="k">for </span>found layers
+  <span class="nt">-wd</span> PATH, <span class="nt">--working-dir</span> PATH
                         Change default working directory to specified absolute path.
-  -dr DRIVER_OPTION, --driver DRIVER_OPTION
+  <span class="nt">-dr</span> DRIVER_OPTION, <span class="nt">--driver</span> DRIVER_OPTION
                         Choose from the following storage drivers: 
-                        overlay2: Use the kernel's overlay2 storage driver
+                        overlay2: Use the kernel<span class="s1">'s overlay2 storage driver
                         fuse: Use the fuse-overlayfs system tool
                         If no option is given, the default method of applying container layers in userspace will be used.
-  -v, --version         show program's version number and exit
+  -v, --version         show program'</span>s version number and <span class="nb">exit</span>
 </code></pre></div></div>
 
 <h2 id="usage">Usage</h2>
@@ -107,48 +109,56 @@ optional arguments:
 
 <p>Create an SBOM file with tern by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -o &lt;output.file&gt; -i &lt;container:image&gt; -f &lt;output-format&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-o</span> &lt;output.file&gt; <span class="nt">-i</span> &lt;container:image&gt; <span class="nt">-f</span> &lt;output-format&gt;
+</code></pre></div></div>
 
 <p>with the <code class="language-plaintext highlighter-rouge">&lt;output-format&gt;</code> being one of:</p>
 
 <ul>
-  <li>spdxtagvalue</li>
-  <li>spdxjson</li>
-  <li>cyclonedxjson</li>
-  <li>json</li>
-  <li>yaml</li>
-  <li>html</li>
+  <li><code class="language-plaintext highlighter-rouge">spdxtagvalue</code></li>
+  <li><code class="language-plaintext highlighter-rouge">spdxjson</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cyclonedxjson</code></li>
+  <li><code class="language-plaintext highlighter-rouge">json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">yaml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">html</code></li>
 </ul>
 
 <p>You can create raw outputs to terminal by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -i &lt;container:image&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-i</span> &lt;container:image&gt;
+</code></pre></div></div>
 
 <p>You can create SBOM formatted outputs to terminal by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -i &lt;container:image&gt; -f &lt;output-format&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-i</span> &lt;container:image&gt; <span class="nt">-f</span> &lt;output-format&gt;
+</code></pre></div></div>
 
 <p>This raw output can be saved to a file by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -i &lt;container:image&gt; -o &lt;output.file&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-i</span> &lt;container:image&gt; <span class="nt">-o</span> &lt;output.file&gt;
+</code></pre></div></div>
 
 <h3 id="from-dockerfiles">From Dockerfiles</h3>
 
 <p>To create outputs SBOMs from Dockerfiles, run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -d &lt;path/to/Dockerfile&gt; -f &lt;output-format&gt; -o &lt;output-file&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-d</span> &lt;path/to/Dockerfile&gt; <span class="nt">-f</span> &lt;output-format&gt; <span class="nt">-o</span> &lt;output-file&gt;
+</code></pre></div></div>
 
 <p>For raw output to terminal:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -d &lt;path/to/Dockerfile&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-d</span> &lt;path/to/Dockerfile&gt;
+</code></pre></div></div>
 
 <p>For SBOM formatted output to terminal:</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -d &lt;path/to/Dockerfile&gt; -f &lt;output-format&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-d</span> &lt;path/to/Dockerfile&gt; <span class="nt">-f</span> &lt;output-format&gt;
+</code></pre></div></div>
 
 <p>For raw output to file</p>
 
-<p><code class="language-plaintext highlighter-rouge">tern report -d &lt;path/to/Dockerfile&gt; -o &lt;output-file&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tern report <span class="nt">-d</span> &lt;path/to/Dockerfile&gt; <span class="nt">-o</span> &lt;output-file&gt;
+</code></pre></div></div>
 
 <h2 id="notes">Notes</h2>
 
@@ -168,13 +178,13 @@ optional arguments:
 
 <ul>
   <li>
-    <p>https://github.com/tern-tools/tern</p>
+    <p>Tern-Tools. (n.d.). Tern-Tools/tern: Tern is a software composition analysis tool and python library that generates a software bill of materials for container images and dockerfiles. the SBOM that tern generates will give you a layer-by-layer view of what’s inside your container in a variety of formats including human-readable, JSON, HTML, SPDX and more. GitHub. <a href="https://github.com/tern-tools/tern">https://github.com/tern-tools/tern</a></p>
   </li>
   <li>
-    <p>https://github.com/containers/skopeo</p>
+    <p>Containers. (n.d.). Containers/Skopeo: Work with remote images registries - retrieving information, images, signing content. GitHub. <a href="https://github.com/containers/skopeo">https://github.com/containers/skopeo</a></p>
   </li>
   <li>
-    <p>https://cyclonedx.org/docs/1.3/</p>
+    <p>CycloneDX v1.3 JSON reference. OWASP CycloneDX Software Bill of Materials (SBOM) Standard. (n.d.). <a href="https://cyclonedx.org/docs/1.3/">https://cyclonedx.org/docs/1.3/</a></p>
   </li>
 </ul>
 

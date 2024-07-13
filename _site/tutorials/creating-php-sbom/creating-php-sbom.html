@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs from PHP projects","url":"http://localhost:4000/tutorials/creating-php-sbom/creating-php-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -58,49 +58,51 @@
 
 <p>Run the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">composer global require cyclonedx/cyclonedx-php-composer</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer global require cyclonedx/cyclonedx-php-composer
+</code></pre></div></div>
 
 <p>Verify installation with the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">composer CycloneDX:make-sbom --help</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer CycloneDX:make-sbom <span class="nt">--help</span>
+</code></pre></div></div>
 
 <p>You should get the resultant output:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Description:
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Description:
   Generate a CycloneDX Bill of Materials from a PHP Composer project.
 
 Usage:
-  CycloneDX:make-sbom [options] [--] [&lt;composer-file&gt;]
+  CycloneDX:make-sbom <span class="o">[</span>options] <span class="o">[</span><span class="nt">--</span><span class="o">]</span> <span class="o">[</span>&lt;composer-file&gt;]
 
 Arguments:
   composer-file                                       Path to Composer config file.
-                                                      [default: "composer.json" file in current working directory]
+                                                      <span class="o">[</span>default: <span class="s2">"composer.json"</span> file <span class="k">in </span>current working directory]
 
 Options:
-      --output-format=OUTPUT-FORMAT                   Which output format to use.
-                                                      {choices: "JSON", "XML"} [default: "XML"]
-      --output-file=OUTPUT-FILE                       Path to the output file.
-                                                      Set to "-" to write to STDOUT [default: "-"]
-      --omit=OMIT                                     Omit dependency types.
-                                                      {choices: "dev", "plugin"} (multiple values allowed)
-      --spec-version=SPEC-VERSION                     Which version of CycloneDX spec to use.
-                                                      {choices: "1.1", "1.2", "1.3", "1.4", "1.5"} [default: "1.4"]
-      --output-reproducible|--no-output-reproducible  Whether to go the extra mile and make the output reproducible.
-                                                      This might result in loss of time- and random-based-values.
-      --validate|--no-validate                        Formal validate the resulting BOM.
-      --mc-version=MC-VERSION                         Version of the main component.
+      <span class="nt">--output-format</span><span class="o">=</span>OUTPUT-FORMAT                   Which output format to use.
+                                                      <span class="o">{</span>choices: <span class="s2">"JSON"</span>, <span class="s2">"XML"</span><span class="o">}</span> <span class="o">[</span>default: <span class="s2">"XML"</span><span class="o">]</span>
+      <span class="nt">--output-file</span><span class="o">=</span>OUTPUT-FILE                       Path to the output file.
+                                                      Set to <span class="s2">"-"</span> to write to STDOUT <span class="o">[</span>default: <span class="s2">"-"</span><span class="o">]</span>
+      <span class="nt">--omit</span><span class="o">=</span>OMIT                                     Omit dependency types.
+                                                      <span class="o">{</span>choices: <span class="s2">"dev"</span>, <span class="s2">"plugin"</span><span class="o">}</span> <span class="o">(</span>multiple values allowed<span class="o">)</span>
+      <span class="nt">--spec-version</span><span class="o">=</span>SPEC-VERSION                     Which version of CycloneDX spec to use.
+                                                      <span class="o">{</span>choices: <span class="s2">"1.1"</span>, <span class="s2">"1.2"</span>, <span class="s2">"1.3"</span>, <span class="s2">"1.4"</span>, <span class="s2">"1.5"</span><span class="o">}</span> <span class="o">[</span>default: <span class="s2">"1.4"</span><span class="o">]</span>
+      <span class="nt">--output-reproducible</span>|--no-output-reproducible  Whether to go the extra mile and make the output reproducible.
+                                                      This might result <span class="k">in </span>loss of time- and random-based-values.
+      <span class="nt">--validate</span>|--no-validate                        Formal validate the resulting BOM.
+      <span class="nt">--mc-version</span><span class="o">=</span>MC-VERSION                         Version of the main component.
                                                       This will override auto-detection.
-  -h, --help                                          Display help for the given command. When no command is given display help for the list command
-  -q, --quiet                                         Do not output any message
-  -V, --version                                       Display this application version
-      --ansi|--no-ansi                                Force (or disable --no-ansi) ANSI output
-  -n, --no-interaction                                Do not ask any interactive question
-      --profile                                       Display timing and memory usage information
-      --no-plugins                                    Whether to disable plugins.
-      --no-scripts                                    Skips the execution of all scripts defined in composer.json file.
-  -d, --working-dir=WORKING-DIR                       If specified, use the given directory as working directory.
-      --no-cache                                      Prevent use of the cache
-  -v|vv|vvv, --verbose                                Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug 
+  <span class="nt">-h</span>, <span class="nt">--help</span>                                          Display <span class="nb">help </span><span class="k">for </span>the given command. When no <span class="nb">command </span>is given display <span class="nb">help </span><span class="k">for </span>the list <span class="nb">command</span>
+  <span class="nt">-q</span>, <span class="nt">--quiet</span>                                         Do not output any message
+  <span class="nt">-V</span>, <span class="nt">--version</span>                                       Display this application version
+      <span class="nt">--ansi</span>|--no-ansi                                Force <span class="o">(</span>or disable <span class="nt">--no-ansi</span><span class="o">)</span> ANSI output
+  <span class="nt">-n</span>, <span class="nt">--no-interaction</span>                                Do not ask any interactive question
+      <span class="nt">--profile</span>                                       Display timing and memory usage information
+      <span class="nt">--no-plugins</span>                                    Whether to disable plugins.
+      <span class="nt">--no-scripts</span>                                    Skips the execution of all scripts defined <span class="k">in </span>composer.json file.
+  <span class="nt">-d</span>, <span class="nt">--working-dir</span><span class="o">=</span>WORKING-DIR                       If specified, use the given directory as working directory.
+      <span class="nt">--no-cache</span>                                      Prevent use of the cache
+  <span class="nt">-v</span>|vv|vvv, <span class="nt">--verbose</span>                                Increase the verbosity of messages: 1 <span class="k">for </span>normal output, 2 <span class="k">for </span>more verbose output and 3 <span class="k">for </span>debug 
 
 </code></pre></div></div>
 
@@ -108,7 +110,8 @@ Options:
 
 <p>Run the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">composer CycloneDX:make-sbom &lt;composer.json-file&gt; --output-format=&lt;output-format&gt; --output-file=&lt;filepath-to-sbom-name&gt;.&lt;output-format&gt; --spec-version=&lt;cyclonedx-specversion&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer CycloneDX:make-sbom &lt;composer.json-file&gt; <span class="nt">--output-format</span><span class="o">=</span>&lt;output-format&gt; <span class="nt">--output-file</span><span class="o">=</span>&lt;filepath-to-sbom-name&gt;.&lt;output-format&gt; <span class="nt">--spec-version</span><span class="o">=</span>&lt;cyclonedx-specversion&gt;
+</code></pre></div></div>
 
 <p>The resulting SBOM of your set filename, format and cyclonedx specversion will appear in the path designated.</p>
 
@@ -136,7 +139,9 @@ Options:
 
 <h2 id="references">References</h2>
 
-<p>CycloneDX. (2023). CycloneDX-Php-Composer. https://github.com/CycloneDX/cyclonedx-php-composer</p>
+<ul>
+  <li>CycloneDX. (2023). CycloneDX-Php-Composer. <a href="https://github.com/CycloneDX/cyclonedx-php-composer">https://github.com/CycloneDX/cyclonedx-php-composer</a></li>
+</ul>
 
 
 

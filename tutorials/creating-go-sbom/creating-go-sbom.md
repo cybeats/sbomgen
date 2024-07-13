@@ -18,7 +18,7 @@ Inside the unzipped folder there should be three files:
 
 * A README.
 
-* A LICENSE file.*
+* A LICENSE file.
 
 * The CycloneDX-Gomod binary.
 
@@ -26,11 +26,13 @@ ensure the binary is executable, and optionally, place it in your computers PATH
 
 verify the binary's functionality by running:
 
-```cyclonedx-gomod --help```
+```bash
+cyclonedx-gomod --help
+```
 
 the output should resemble
 
-```
+```bash
 USAGE
   cyclonedx-gomod <SUBCOMMAND> [FLAGS...] [<ARG>...]
 
@@ -81,7 +83,9 @@ There are three pathways to generating an SBOM using CycloneDX-Gomod; through an
 
 To generate a json sbom run:
 
-```cyclonedx-gomod app -json=true -output <sbom-name>.json [path-to-application (defaults to current directory)]```
+```bash
+cyclonedx-gomod app -json=true -output <sbom-name>.json <path-to-application (defaults to current directory)>
+```
 
 ### Binary
 
@@ -89,7 +93,9 @@ This is use for binaries created from go projects.
 
 To generate a json sbom run:
 
-```cyclonedx-gomod bin -json=true -output <sbom-name>.json [path-to-binary-file]```
+```bash
+cyclonedx-gomod bin -json=true -output <sbom-name>.json <path-to-binary-file>
+```
 
 ### Module
 
@@ -97,7 +103,9 @@ This is for projects that are go modules, i.e. contain a go.mod file.
 
 To generate a json sbom run:
 
-```cyclonedx-gomod mod -json=true -output <sbom-name>.json [path-to-module (defaults to current directory)]``` 
+```bash
+cyclonedx-gomod mod -json=true -output <sbom-name>.json <path-to-module (defaults to current directory)>
+``` 
 
 
 ## Notes
@@ -109,5 +117,5 @@ To generate a json sbom run:
 
 ## References
 
-* CycloneDX. (2023). cyclonedx-gomod. https://github.com/CycloneDX/cyclonedx-gomod
+* CycloneDX. (2023). cyclonedx-gomod. [https://github.com/CycloneDX/cyclonedx-gomod](https://github.com/CycloneDX/cyclonedx-gomod)
 

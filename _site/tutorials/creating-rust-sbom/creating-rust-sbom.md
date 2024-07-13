@@ -16,11 +16,15 @@ This tutorial illustrates how to produce an SBOM using Rust projects using the C
 
 Run:
 
-```cargo install cargo-sbom```
+```bash
+cargo install cargo-sbom
+```
 
 To verify installation, run:
 
-```cargo sbom --help```
+```bash
+cargo sbom --help
+```
 
 You should see the resultant output:
 
@@ -47,11 +51,15 @@ Options:
 
 Run:
 
-```cargo install cargo-cyclonedx```
+```bash
+cargo install cargo-cyclonedx
+```
 
 To verify installation, run:
 
-```cargo cyclonedx --help```
+```bash
+cargo cyclonedx --help
+```
 
 You should see the resultant output:
 
@@ -81,7 +89,9 @@ Navigate to the Rust project that you wish to create the SBOM for.
 
 Run:
 
-```cargo sbom --output-format <sbom-format>```
+```bash
+cargo sbom --output-format <sbom-format>
+```
 
 This outputs an sbom to the terminal in one of the predetermined formats:
 
@@ -90,7 +100,9 @@ This outputs an sbom to the terminal in one of the predetermined formats:
 
 This output can be redirected to a file via:
 
-```cargo sbom --output-format <sbom-format> > <filename>```
+```bash
+cargo sbom --output-format <sbom-format> > <filename>
+```
 
 #### Notes
 
@@ -102,7 +114,9 @@ Navigate to the Rust project that you wish to create the SBOM for.
 
 Run:
 
-```cargo cyclonedx -f json -a```
+```bash
+cargo cyclonedx -f json -a
+```
 
 You should see an output "bom.json" in any folder containing rust source files.
 
@@ -116,6 +130,6 @@ You should see an output "bom.json" in any folder containing rust source files.
 
 ## References
 
-* CycloneDX. (2023). cyclonedx-rust-cargo. https://github.com/CycloneDX/cyclonedx-rust-cargo
+* CycloneDX. (2023). cyclonedx-rust-cargo. [https://github.com/CycloneDX/cyclonedx-rust-cargo](https://github.com/CycloneDX/cyclonedx-rust-cargo)
 
-* Psastras. (2023). cargo-sbom. https://github.com/psastras/sbom-rs
+* Psastras. (2023). cargo-sbom. [https://github.com/psastras/sbom-rs](https://github.com/psastras/sbom-rs)

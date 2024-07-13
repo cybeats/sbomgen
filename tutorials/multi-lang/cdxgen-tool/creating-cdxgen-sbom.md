@@ -162,4 +162,4 @@ Where ```type``` is one of the potential programming languages/frameworks (pytho
 
 ## References
 
-* https://github.com/CycloneDX/cdxgen
+* CycloneDX. (n.d.). CycloneDX/cdxgen: Creates CycloneDX Bill of materials (BOM) for your projects from source and container images. supports many languages and package managers. integrate in your CI/CD pipeline with automatic submission to dependency track server. slack: Https://cyclonedx.slack.com/archives/c04nffe1962. GitHub. [https://github.com/CycloneDX/cdxgen](https://github.com/CycloneDX/cdxgen)

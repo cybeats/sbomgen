@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creation of SBOM in Gradle Project Via The CycloneDX-Gradle-Plugin","url":"http://localhost:4000/tutorials/creating-gradle-sbom/creating-gradle-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -57,9 +57,9 @@
 
 <p>Navigate to the build.gradle file, and add the following:</p>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">plugins</span> <span class="p">{</span>
-    <span class="nf">id</span> <span class="p">(</span><span class="err">'</span><span class="n">org</span><span class="p">.</span><span class="n">cyclonedx</span><span class="p">.</span><span class="n">bom</span><span class="err">'</span><span class="p">)</span> <span class="n">version</span> <span class="err">'</span><span class="mf">1.8.2</span><span class="err">'</span>
-<span class="p">}</span>
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plugins</span> <span class="o">{</span>
+    <span class="n">id</span> <span class="o">(</span><span class="s1">'org.cyclonedx.bom'</span><span class="o">)</span> <span class="n">version</span> <span class="s1">'1.8.2'</span>
+<span class="o">}</span>
 </code></pre></div></div>
 
 <p>Note: if plugin section already exists, add the content of the above plugin section to the pre-existing plugin section.</p>
@@ -100,6 +100,7 @@
     <span class="n">componentVersion</span> <span class="o">=</span> <span class="s2">"2.0.0"</span>
 <span class="o">}</span>
 </code></pre></div></div>
+
 <p>Kotlin (build.gradle.kts)</p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tasks</span><span class="p">.</span><span class="nf">cyclonedxBom</span> <span class="p">{</span>
@@ -126,7 +127,7 @@
 <h2 id="references">References</h2>
 
 <ul>
-  <li>https://github.com/CycloneDX/cyclonedx-gradle-plugin</li>
+  <li>CycloneDX. (n.d.). CycloneDX/cyclonedx-gradle-plugin: Creates cyclonedx software bill of materials (SBOM) from Gradle Projects. GitHub. <a href="https://github.com/CycloneDX/cyclonedx-gradle-plugin">https://github.com/CycloneDX/cyclonedx-gradle-plugin</a></li>
 </ul>
 
 

@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs Using The GitHub GH SBOM Utility","url":"http://localhost:4000/tutorials/multi-lang/github-gh-sbom/creating-gh-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -65,71 +65,80 @@
 
 <p>Run:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(type -p wget &gt;/dev/null || (sudo apt update &amp;&amp; sudo apt-get install wget -y)) \
-&amp;&amp; sudo mkdir -p -m 755 /etc/apt/keyrings \
-&amp;&amp; wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg &gt; /dev/null \
-&amp;&amp; sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
-&amp;&amp; echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list &gt; /dev/null \
-&amp;&amp; sudo apt update \
-&amp;&amp; sudo apt install gh -y
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span><span class="nb">type</span> <span class="nt">-p</span> wget <span class="o">&gt;</span>/dev/null <span class="o">||</span> <span class="o">(</span><span class="nb">sudo </span>apt update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get <span class="nb">install </span>wget <span class="nt">-y</span><span class="o">))</span> <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">sudo mkdir</span> <span class="nt">-p</span> <span class="nt">-m</span> 755 /etc/apt/keyrings <span class="se">\</span>
+<span class="o">&amp;&amp;</span> wget <span class="nt">-qO-</span> https://cli.github.com/packages/githubcli-archive-keyring.gpg | <span class="nb">sudo tee</span> /etc/apt/keyrings/githubcli-archive-keyring.gpg <span class="o">&gt;</span> /dev/null <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">sudo chmod </span>go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"deb [arch=</span><span class="si">$(</span>dpkg <span class="nt">--print-architecture</span><span class="si">)</span><span class="s2"> signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/github-cli.list <span class="o">&gt;</span> /dev/null <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt update <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt <span class="nb">install </span>gh <span class="nt">-y</span>
 </code></pre></div></div>
 
 <p>then run:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
-sudo apt install gh
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>gh
 </code></pre></div></div>
 
 <p><strong>Fedora and Fedora based Distros, e.g. Red Hat</strong></p>
 
 <p>Run:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dnf install 'dnf-command(config-manager)'
-sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
-sudo dnf install gh
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install</span> <span class="s1">'dnf-command(config-manager)'</span>
+<span class="nb">sudo </span>dnf config-manager <span class="nt">--add-repo</span> https://cli.github.com/packages/rpm/gh-cli.repo
+<span class="nb">sudo </span>dnf <span class="nb">install </span>gh
 </code></pre></div></div>
 
 <h4 id="windows">Windows</h4>
 
 <p>Run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">winget install --id GitHub.cli</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>winget <span class="nb">install</span> <span class="nt">--id</span> GitHub.cli
+</code></pre></div></div>
 
 <p>or</p>
 
-<p><code class="language-plaintext highlighter-rouge">choco install gh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco <span class="nb">install </span>gh
+</code></pre></div></div>
 
 <p>or</p>
 
-<p><code class="language-plaintext highlighter-rouge">scoop install gh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scoop <span class="nb">install </span>gh
+</code></pre></div></div>
 
 <h4 id="osx">OSX</h4>
 
 <p>Run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">brew install gh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>gh
+</code></pre></div></div>
 
 <p>or</p>
 
-<p><code class="language-plaintext highlighter-rouge">sudo port install gh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>port <span class="nb">install </span>gh
+</code></pre></div></div>
 
 <p>or</p>
 
-<p><code class="language-plaintext highlighter-rouge">conda install gh --channel conda-forge</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>gh <span class="nt">--channel</span> conda-forge
+</code></pre></div></div>
 
 <p>or</p>
 
-<p><code class="language-plaintext highlighter-rouge">spack install gh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install </span>gh
+</code></pre></div></div>
 
 <h3 id="installing-gh-sbom-plugin">Installing gh sbom plugin</h3>
 
 <p>Run the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">gh ext install advanced-security/gh-sbom</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh ext <span class="nb">install </span>advanced-security/gh-sbom
+</code></pre></div></div>
 
 <p>Verify install by running:</p>
 
-<p><code class="language-plaintext highlighter-rouge">gh sbom -h</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh sbom <span class="nt">-h</span>
+</code></pre></div></div>
 
 <p>You should see the result:</p>
 
@@ -144,24 +153,29 @@ pflag: help requested
 
 <p>Navigate to a GitHub repository in question.</p>
 
-<p>Run the command:
-<code class="language-plaintext highlighter-rouge">gh sbom</code></p>
+<p>Run the command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh sbom
+</code></pre></div></div>
 
 <p>Default output is SPDX.</p>
 
 <p>To create a more human readable output, run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">gh sbom | jq</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh sbom | jq
+</code></pre></div></div>
 
 <p>For CycloneDX formatted outputs, run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">gh sbom -c | jq</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh sbom <span class="nt">-c</span> | jq
+</code></pre></div></div>
 
 <p>These will generate JSON formatted and indented SBOMs printed to your terminal.</p>
 
 <p>To save these outputs to a file, run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">gh sbom | jq &gt; &lt;sbom-file-name&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh sbom | jq <span class="o">&gt;</span> &lt;sbom-file-name&gt;
+</code></pre></div></div>
 
 <h2 id="notes">Notes</h2>
 
@@ -172,12 +186,8 @@ pflag: help requested
 <h2 id="references">References</h2>
 
 <ul>
-  <li>
-    <p>https://github.com/cli/cli</p>
-  </li>
-  <li>
-    <p>https://github.com/advanced-security/gh-sbom</p>
-  </li>
+  <li>Cli. (n.d.). CLI/CLI: GitHub’s Official Command Line Tool. GitHub. <a href="https://github.com/cli/cli">https://github.com/cli/cli</a></li>
+  <li>Gh-SBOM. (n.d.). Advanced-security/GH-sbom: Generate sboms with GH CLI. GitHub. <a href="https://github.com/advanced-security/gh-sbom">https://github.com/advanced-security/gh-sbom</a></li>
 </ul>
 
 

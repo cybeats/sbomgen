@@ -1,10 +1,8 @@
 # Creating SBOMs from Ruby Projects
 
-
 ## Introduction
 
 This tutorial illustrates how to produce an SBOM from Ruby projects using the Cyclonedx-Ruby-Gem CLI.
-
 
 ## Requirements
 
@@ -15,15 +13,19 @@ This tutorial illustrates how to produce an SBOM from Ruby projects using the Cy
 
 Install CycloneDX-Ruby with the command:
 
-```gem install cyclonedx-ruby ```
+```bash
+gem install cyclonedx-ruby
+```
 
 Verify installation with the command:
 
-```cyclonedx-ruby -h```
+```bash
+cyclonedx-ruby -h
+```
 
 You should see the resultant output:
 
-```
+```bash
 Usage: cyclonedx-ruby [options]
     -v, --[no-]verbose               Run verbosely
     -p, --path path                  (Required) Path to Ruby project directory
@@ -37,7 +39,9 @@ Navigate to a Ruby project.
 
 Run the command:
 
-```cyclonedx-ruby -p .```
+```bash
+cyclonedx-ruby -p .
+```
 
 
 A "bom.xml" file should appear in the same directory. 
@@ -48,10 +52,8 @@ Alternatively, the ```-p``` and ```-o``` flags can be used to select a project f
 
 ## Notes
 
-
-Certain metadata components of the produced SBOM may be missing, such as SBOM type, Package type, Name and Version.
-
+* Certain metadata components of the produced SBOM may be missing, such as SBOM type, Package type, Name and Version.
 
 ## References
 
-CycloneDX. (2023). CycloneDX-Ruby-Gem. https://github.com/CycloneDX/cyclonedx-ruby-gem
+* CycloneDX. (2023). CycloneDX-Ruby-Gem. [https://github.com/CycloneDX/cyclonedx-ruby-gem](https://github.com/CycloneDX/cyclonedx-ruby-gem)

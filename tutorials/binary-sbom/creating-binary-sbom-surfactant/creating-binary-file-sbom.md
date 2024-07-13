@@ -14,7 +14,9 @@ This tutorial illustrates how to create an SBOM from binary files (PE, ELF, MSI)
 
 Install Surfactant by running:
 
-```pip install surfactant```
+```bash
+pip install surfactant
+```
 
 
 ## Usage
@@ -23,7 +25,9 @@ Install Surfactant by running:
 
 Surfactant requires a configuration file to generate an SBOM. A basic configuration file can be created via the command:
 
-```surfactant create-config input-folder-path -o output-configuration-file-name.json```
+```bash
+surfactant create-config input-folder-path -o output-configuration-file-name.json
+```
 
 This results in a basic configuration file akin to that shown below:
 
@@ -53,7 +57,9 @@ This file should be modified to point to the location of selected binaries withi
 
 With a configuration file created, an SBOM can be created via the command:
 
-```surfactant generate <configuration-file-pathname> <output-file-pathname> --output_format <output-format>```
+```bash
+surfactant generate <configuration-file-pathname> <output-file-pathname> --output_format <output-format>
+```
 
 Where ```output-format``` can be one of:
 

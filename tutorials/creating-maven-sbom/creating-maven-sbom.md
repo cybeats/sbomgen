@@ -4,27 +4,19 @@
 
 This document illustrates the generation of an SBOM from a maven project utilizing the cyclonedx-maven-plugin. The maven project used here is onedev.
 
-## Contents
-* [Install repo](#install-repo)
-* [Alter pom.xml](#alter-pomxml)
-* [Build](#build)
-* [Conclusion](#conclusion)
-* [Troubleshooting](#troubleshooting)
-    * [Environment](#environment)
-    * [Build Failure](#build-failure)
-* [References](#references)
-
 ## Install repo
 
 Clone the repository onedev using the command:
 
-```git clone https://github.com/theonedev/onedev.git```
+```bash
+git clone https://github.com/theonedev/onedev.git
+```
 
 ## Alter pom.xml
 
 Open the pom.xml file of the project and add the following to the plugins section:
 
-```java
+```xml
 <plugin>
     <groupId>org.cyclonedx</groupId>
     <artifactId>cyclonedx-maven-plugin</artifactId>
@@ -58,7 +50,9 @@ Open the pom.xml file of the project and add the following to the plugins sectio
 Build and create the SBOM with the command
 
 
-```mvn clean install```
+```bash
+mvn clean install
+```
 
 ## Conclusion
 
@@ -74,8 +68,11 @@ SBOMs were generated on two computers, both running Java version 11.0.20.1, with
 ### Build Failure:
 
 * Delete directory “.m2” found in home directory with command 
-```rm -rf path/to/.m2```
-  (Ubuntu).
+
+```bash
+rm -rf path/to/.m2
+```
+(Ubuntu).
 
 * Ensure the correct parameters for the cyclonedx-maven-plugin are set, schema: 1.4, version: 2.7.9, name: onedev-cyclonedx. 
 
@@ -83,12 +80,15 @@ SBOMs were generated on two computers, both running Java version 11.0.20.1, with
 
 * Prior to running:
 
-    ```mvn clean install```
+    ```bash
+    mvn clean install
+    ```
 
     run
 
-
-    ```mvn clean -Dmaven.clean.failOnError=false```
+    ```bash
+    mvn clean -Dmaven.clean.failOnError=false
+    ```
 
 
 
@@ -96,5 +96,5 @@ SBOMs were generated on two computers, both running Java version 11.0.20.1, with
 
 * CycloneDX (2023). CycloneDX-maven-plugin (Version 2.7.9). [https://github.com/CycloneDX/cyclonedx-maven-plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin)
 
-* Theonedev (2023). Onedev (Version 9.1.5). https://github.com/theonedev/onedev/tree/main 
+* Theonedev (2023). Onedev (Version 9.1.5). [https://github.com/theonedev/onedev/tree/main](https://github.com/theonedev/onedev/tree/main)
 

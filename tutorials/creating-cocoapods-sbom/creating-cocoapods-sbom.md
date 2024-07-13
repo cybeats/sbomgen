@@ -16,15 +16,19 @@ This tutorial illustrates how to produce an SBOM from Cocoapods based projects u
 
 Install cyclonedx-cocoapods via the command:
 
-```gem install cyclonedx-cocoapods```
+```bash
+gem install cyclonedx-cocoapods
+```
 
 Verify installation with the command:
 
-```cyclonedx-cocoapods -h```
+```bash
+cyclonedx-cocoapods -h
+```
 
 You should get the output:
 
-```
+```bash
 Generates a BOM with the given parameters. BOM component metadata is only generated if the component's name, version, and type are provided using the --name, --version, and --type parameters.
 [version 1.1.2]
 
@@ -53,20 +57,22 @@ OPTIONS
 Navigate to the desired Cocoapods project, and run:
 
 
-```cyclonedx-cocoapods```
+```bash
+cyclonedx-cocoapods
+```
 
 A "bom.xml" file will appear in the local directory. Alternatively, the ```-o``` flag can be used to output to a custom file path.
 
 
 Additionally, SBOM metadata can be input via flags:
 
-* -n. SBOM name
+* ```-n```. SBOM name
 
-* -v. SBOM version
+* ```-v```. SBOM version
 
-* -t. SBOM type
+* ```-t```. SBOM type
 
-* -g. SBOM group
+* ```-g```. SBOM group
 
 
 Without these additions, the SBOM may be valid, but incomplete.
@@ -77,13 +83,16 @@ Without these additions, the SBOM may be valid, but incomplete.
 
 * In case of ActiveSupport Error:
 
-    * gem uninstall activesupport.
+```bash
+  gem uninstall activesupport
 
-    * gem install activesupport -v 7.0.8.
-
+  gem install activesupport -v 7.0.8
+```
 
 ## References
 
-* CycloneDX. (2023). CycloneDX-Cocoapods. https://github.com/CycloneDX/cyclonedx-cocoapods
+* CycloneDX. (2023). CycloneDX-Cocoapods. [https://github.com/CycloneDX/cyclonedx-cocoapods](https://github.com/CycloneDX/cyclonedx-cocoapods)
 
-* https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error 
+* After updating cocoapods to 1.13.0 it throws error. Stack Overflow. (1AD). [https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error](https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error)
+
+

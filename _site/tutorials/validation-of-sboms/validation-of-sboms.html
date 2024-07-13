@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Validation of SBOMs","url":"http://localhost:4000/tutorials/validation-of-sboms/validation-of-sboms.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -83,7 +83,8 @@
 
 <p>Navigate to the <a href="https://github.com/spdx/tools-java">tools-java</a> repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:</p>
 
-<p><code class="language-plaintext highlighter-rouge">unzip tools-java&lt;release-version&gt;:.zip</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip tools-java&lt;release-version&gt;:.zip
+</code></pre></div></div>
 
 <h2 id="running">Running</h2>
 
@@ -93,76 +94,71 @@
 
 <p>To ensure correct installation first run:</p>
 
-<pre><code class="language-./cyclonedx-your_os-your_architecture ```">
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./cyclonedx-your_os-your_architecture
+</code></pre></div></div>
 
-(e.g. cyclonedx-linux-x64)
+<p>e.g. cyclonedx-linux-x64</p>
 
+<p>You should receive the output:</p>
 
-You should receive the output:
-</code></pre>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+   ______           __                 ____ _  __    ________    ____
+  / ____/_  _______/ /___  ____  ___  / __ <span class="se">\ </span>|/ /   / ____/ /   /  _/
+ / /   / / / / ___/ / __ <span class="se">\/</span> __ <span class="se">\/</span> _ <span class="se">\/</span> / / /   /   / /   / /    / /  
+/ /___/ /_/ / /__/ / /_/ / / / /  __/ /_/ /   |   / /___/ /____/ /   
+<span class="se">\_</span>___/<span class="se">\_</span>_, /<span class="se">\_</span>__/_/<span class="se">\_</span>___/_/ /_/<span class="se">\_</span>__/_____/_/|_|   <span class="se">\_</span>___/_____/___/   
+     /____/                                                          
+        
 
-<hr />
-<p>/ <strong>__/_  __</strong><strong><em>/ /</em></strong>  <strong>__  ___  / __ \ |/ /   / __</strong>/ /   /  <em>/
- / /   / / / / <strong>_/ / __ \/ __ \/ _ \/ / / /   /   / /   / /    / /<br />
-/ /</strong></em>/ /<em>/ / /<strong>/ / /_/ / / / /  __/ /_/ /   |   / /</strong></em>/ /<strong>__/ / <br />
-_</strong><em>/_</em>, /_<strong>/<em>/_</em></strong>/<em>/ /</em>/_<strong>/</strong><strong><em>/</em>/|<em>|   _</em></strong>/<strong>__<em>/</em></strong>/ <br />
-     /<em>__</em>/</p>
+        
+Required <span class="nb">command </span>was not provided.
 
-<p>Required command was not provided.</p>
+cyclonedx-linux-x64
 
-<p>cyclonedx-linux-x64</p>
+Usage:
+  cyclonedx-linux-x64 <span class="o">[</span>options] <span class="o">[</span><span class="nb">command</span><span class="o">]</span>
 
-<p>Usage:
-  cyclonedx-linux-x64 [options] [command]</p>
+Options:
+  <span class="nt">--version</span>       Show version information
+  -?, <span class="nt">-h</span>, <span class="nt">--help</span>  Show <span class="nb">help </span>and usage information
 
-<p>Options:
-  –version       Show version information
-  -?, -h, –help  Show help and usage information</p>
-
-<p>Commands:
-  add                         Add information to a BOM (currently supports files)
+Commands:
+  add                         Add information to a BOM <span class="o">(</span>currently supports files<span class="o">)</span>
   analyze                     Analyze a BOM file
   convert                     Convert between different BOM formats
-  diff <from-file> <to-file>  Generate a BOM diff
-  keygen                      Generates an RSA public/private key pair for BOM signing
+  diff &lt;from-file&gt; &lt;to-file&gt;  Generate a BOM diff
+  keygen                      Generates an RSA public/private key pair <span class="k">for </span>BOM signing
   merge                       Merge two or more BOMs
   sign                        Sign a BOM or file
   validate                    Validate a BOM
-  verify                      Verify signatures for BOMs and files</to-file></from-file></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-To use, run the command 
-
-
-```./cyclonedx-your_os-your_architecture validate --input-file &lt;sbom-file-name.json&gt; --input-format json```
-
-
-Successful validation will result in output:
-
+  verify                      Verify signatures <span class="k">for </span>BOMs and files
 
 </code></pre></div></div>
-<p>BOM validated successfully. </p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
-Failure will output the reason for the failure, and the output
+<p>To use, run the command </p>
 
-
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./cyclonedx-your_os-your_architecture validate <span class="nt">--input-file</span> &lt;sbom-file-name.json&gt; <span class="nt">--input-format</span> json
 </code></pre></div></div>
-<p>BOM is not valid.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
+<p>Successful validation will result in output:</p>
 
-### SPDX
-
-
-To ensure correct installation first run:
-
-
-```java -jar tools-java-1.1.7-jar-with-dependencies.jar```
-
-You should receive the output:
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BOM validated successfully. 
 </code></pre></div></div>
-<p>Usage: java -jar spdx-tools-jar-with-dependencies.jar <function> <parameters> 
+
+<p>Failure will output the reason for the failure, and the output</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BOM is not valid.
+</code></pre></div></div>
+
+<h3 id="spdx-1">SPDX</h3>
+
+<p>To ensure correct installation first run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> tools-java-1.1.7-jar-with-dependencies.jar
+</code></pre></div></div>
+
+<p>You should receive the output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usage: java -jar spdx-tools-jar-with-dependencies.jar &lt;function&gt; &lt;parameters&gt; 
 function                 parameter                         example 
 ------------------------------------------------------------------------------------------------------------------- 
 Convert         inputFile outputFile [fromType] [toType]   Examples/SPDXTagExample.tag TagToSpreadsheet.xls 
@@ -171,33 +167,27 @@ Verify          inputFile [type]                           TestFiles/SPDXRdfExam
 CompareDocs     output.xlsx doc1 doc2 ... docN 
 GenerateVerificationCode sourceDirectory
 Version
-MatchingStandardLicenses licenseTextFile</parameters></function></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-To use, run the command:
-
-
-```java -jar tools-java-1.1.7-jar-with-dependencies.jar Verify &lt;sbom-file-name.spdx&gt;```
-
-
-Successful validation will result in output 
-
+MatchingStandardLicenses licenseTextFile
 
 </code></pre></div></div>
-<p>This SPDX Document is valid.
-```</p>
+
+<p>To use, run the command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> tools-java-1.1.7-jar-with-dependencies.jar Verify &lt;sbom-file-name.spdx&gt;
+</code></pre></div></div>
+
+<p>Successful validation will result in output </p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This SPDX Document is valid.
+</code></pre></div></div>
 
 <p>Failure will output the reason for the failure. </p>
 
 <h2 id="references">References</h2>
 
 <ul>
-  <li>
-    <p>CycloneDX. (2023). cyclonedx-cli. https://github.com/CycloneDX/cyclonedx-cli</p>
-  </li>
-  <li>
-    <p>Spdx. (2023). tools-java. https://github.com/spdx/tools-java</p>
-  </li>
+  <li>CycloneDX. (2023). cyclonedx-cli. https://github.com/CycloneDX/cyclonedx-cli</li>
+  <li>Spdx. (2023). tools-java. https://github.com/spdx/tools-java</li>
 </ul>
 
 

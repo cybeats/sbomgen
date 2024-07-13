@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMS For Rust Projects","url":"http://localhost:4000/tutorials/creating-rust-sbom/creating-rust-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -64,11 +64,13 @@
 
 <p>Run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo install cargo-sbom</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo <span class="nb">install </span>cargo-sbom
+</code></pre></div></div>
 
 <p>To verify installation, run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo sbom --help</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo sbom <span class="nt">--help</span>
+</code></pre></div></div>
 
 <p>You should see the resultant output:</p>
 
@@ -94,11 +96,13 @@ Options:
 
 <p>Run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo install cargo-cyclonedx</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo <span class="nb">install </span>cargo-cyclonedx
+</code></pre></div></div>
 
 <p>To verify installation, run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo cyclonedx --help</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo cyclonedx <span class="nt">--help</span>
+</code></pre></div></div>
 
 <p>You should see the resultant output:</p>
 
@@ -127,7 +131,8 @@ Options:
 
 <p>Run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo sbom --output-format &lt;sbom-format&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo sbom <span class="nt">--output-format</span> &lt;sbom-format&gt;
+</code></pre></div></div>
 
 <p>This outputs an sbom to the terminal in one of the predetermined formats:</p>
 
@@ -138,7 +143,8 @@ Options:
 
 <p>This output can be redirected to a file via:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo sbom --output-format &lt;sbom-format&gt; &gt; &lt;filename&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo sbom <span class="nt">--output-format</span> &lt;sbom-format&gt; <span class="o">&gt;</span> &lt;filename&gt;
+</code></pre></div></div>
 
 <h4 id="notes">Notes</h4>
 
@@ -152,7 +158,8 @@ Options:
 
 <p>Run:</p>
 
-<p><code class="language-plaintext highlighter-rouge">cargo cyclonedx -f json -a</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo cyclonedx <span class="nt">-f</span> json <span class="nt">-a</span>
+</code></pre></div></div>
 
 <p>You should see an output “bom.json” in any folder containing rust source files.</p>
 
@@ -171,10 +178,10 @@ Options:
 
 <ul>
   <li>
-    <p>CycloneDX. (2023). cyclonedx-rust-cargo. https://github.com/CycloneDX/cyclonedx-rust-cargo</p>
+    <p>CycloneDX. (2023). cyclonedx-rust-cargo. <a href="https://github.com/CycloneDX/cyclonedx-rust-cargo">https://github.com/CycloneDX/cyclonedx-rust-cargo</a></p>
   </li>
   <li>
-    <p>Psastras. (2023). cargo-sbom. https://github.com/psastras/sbom-rs</p>
+    <p>Psastras. (2023). cargo-sbom. <a href="https://github.com/psastras/sbom-rs">https://github.com/psastras/sbom-rs</a></p>
   </li>
 </ul>
 

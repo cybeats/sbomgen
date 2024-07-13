@@ -51,3 +51,7 @@ Download the Sonar Cryptography .jar file and place it into your SonarQube ```pl
 
 * https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/scanners/sonarscanner/
 
+* Anchore. (n.d.). Anchore/syft: CLI Tool and library for generating a software bill of materials from container images and filesystems. GitHub. [https://github.com/anchore/syft](https://github.com/anchore/syft)
+
+* 
+

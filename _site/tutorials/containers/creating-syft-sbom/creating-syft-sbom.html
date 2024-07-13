@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"List of SBOM Generation Tools","headline":"Creating SBOMs From Images Using Syft","url":"http://localhost:4000/tutorials/containers/creating-syft-sbom/creating-syft-sbom.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=4a9305dd5bc783a8a3e7d3d4dfaa1f0e32970f54">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1481bd57f2bd98144d286b157a673827e676eae">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -91,25 +91,30 @@
 
 <h3 id="linux-1">Linux</h3>
 
-<p><code class="language-plaintext highlighter-rouge">curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-sSfL</span> https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh <span class="nt">-s</span> <span class="nt">--</span> <span class="nt">-b</span> /usr/local/bin
+</code></pre></div></div>
 
 <h3 id="macos-1">MacOS</h3>
 
-<p><code class="language-plaintext highlighter-rouge">brew install syft</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>syft
+</code></pre></div></div>
 
 <h3 id="windows-1">Windows</h3>
 
-<p><code class="language-plaintext highlighter-rouge">choco install syft -y</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco <span class="nb">install </span>syft <span class="nt">-y</span>
+</code></pre></div></div>
 
 <p>or</p>
 
-<p><code class="language-plaintext highlighter-rouge">scoop install syft</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scoop <span class="nb">install </span>syft
+</code></pre></div></div>
 
 <h2 id="usage">Usage</h2>
 
 <p>To generate an SBOM, run the command:</p>
 
-<p><code class="language-plaintext highlighter-rouge">syft &lt;image&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>syft &lt;image&gt;
+</code></pre></div></div>
 
 <p>Where image is:</p>
 
@@ -129,24 +134,26 @@
 
 <p>To create an SBOM in a standardized SBOM format, use the <code class="language-plaintext highlighter-rouge">-o</code> flag:</p>
 
-<p><code class="language-plaintext highlighter-rouge">syft &lt;image&gt; -o &lt;format&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>syft &lt;image&gt; <span class="nt">-o</span> &lt;format&gt;
+</code></pre></div></div>
 
-<p>Where format is one of:</p>
+<p>Where <code class="language-plaintext highlighter-rouge">&lt;format&gt;</code> is one of:</p>
 
 <ul>
-  <li>cyclonedx-json</li>
-  <li>cyclonedx-xml</li>
-  <li>spdx-json</li>
-  <li>spdx-tag-value</li>
-  <li>syft-json</li>
-  <li>syft-table</li>
-  <li>syft-text</li>
-  <li>github-json</li>
+  <li><code class="language-plaintext highlighter-rouge">cyclonedx-json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cyclonedx-xml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">spdx-json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">spdx-tag-value</code></li>
+  <li><code class="language-plaintext highlighter-rouge">syft-json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">syft-table</code></li>
+  <li><code class="language-plaintext highlighter-rouge">syft-text</code></li>
+  <li><code class="language-plaintext highlighter-rouge">github-json</code></li>
 </ul>
 
 <p>To output the SBOM to a file, run the above command but add <code class="language-plaintext highlighter-rouge">=&lt;output_file&gt;</code> to the <code class="language-plaintext highlighter-rouge">-o</code> format:</p>
 
-<p><code class="language-plaintext highlighter-rouge">syft &lt;image&gt; -o &lt;format&gt;=&lt;output_file_name&gt;</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>syft &lt;image&gt; <span class="nt">-o</span> &lt;format&gt;<span class="o">=</span>&lt;output_file_name&gt;
+</code></pre></div></div>
 
 <p>An SBOM file of your specified name and format will be created.</p>
 
@@ -156,7 +163,9 @@
 
 <h2 id="references">References</h2>
 
-<p>https://github.com/anchore/syft</p>
+<ul>
+  <li>Anchore. (n.d.). Anchore/syft: CLI Tool and library for generating a software bill of materials from container images and filesystems. GitHub. <a href="https://github.com/anchore/syft">https://github.com/anchore/syft</a></li>
+</ul>
 
 
       

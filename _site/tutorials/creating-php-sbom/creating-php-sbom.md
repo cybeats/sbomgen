@@ -15,15 +15,19 @@ This tutorial illustrates how to produce an SBOM from PHP Composer projects usin
 
 Run the command:
 
-```composer global require cyclonedx/cyclonedx-php-composer```
+```bash
+composer global require cyclonedx/cyclonedx-php-composer
+```
 
 Verify installation with the command:
 
-```composer CycloneDX:make-sbom --help```
+```bash
+composer CycloneDX:make-sbom --help
+```
 
 You should get the resultant output:
 
-```
+```bash
 Description:
   Generate a CycloneDX Bill of Materials from a PHP Composer project.
 
@@ -66,7 +70,9 @@ Options:
 
 Run the command:
 
-```composer CycloneDX:make-sbom <composer.json-file> --output-format=<output-format> --output-file=<filepath-to-sbom-name>.<output-format> --spec-version=<cyclonedx-specversion>```
+```bash
+composer CycloneDX:make-sbom <composer.json-file> --output-format=<output-format> --output-file=<filepath-to-sbom-name>.<output-format> --spec-version=<cyclonedx-specversion>
+```
 
 The resulting SBOM of your set filename, format and cyclonedx specversion will appear in the path designated.
 
@@ -85,5 +91,5 @@ The resulting SBOM of your set filename, format and cyclonedx specversion will a
 
 ## References
 
-CycloneDX. (2023). CycloneDX-Php-Composer. https://github.com/CycloneDX/cyclonedx-php-composer
+* CycloneDX. (2023). CycloneDX-Php-Composer. [https://github.com/CycloneDX/cyclonedx-php-composer](https://github.com/CycloneDX/cyclonedx-php-composer)
 

@@ -19,7 +19,9 @@ Download and extract to the CodeQL folder, the CodeQL CLI release for your syste
 
 Git clone the CodeQL repo to the same CodeQL folder with:
 
-```git clone --recursive https://github.com/github/codeql.git <CodeQL-folder-name>```
+```bash
+git clone --recursive https://github.com/github/codeql.git <CodeQL-folder-name>
+```
 
 Add the CodeQL folder to your $PATH.
 
@@ -29,11 +31,15 @@ Download the release wheel for the Cryptobom Forge Tool found [here](https://git
 
 install the CLI by running the command:
 
-```pip install cryptobom_forge-{VERSION}-py3-none-any.whl```
+```bash
+pip install cryptobom_forge-{VERSION}-py3-none-any.whl
+```
 
 Alternatively, the CLI can be installed by cloning the repository, and running:
 
-```pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
 
 NOTE: You must have ssh enabled in git.
 
@@ -43,13 +49,19 @@ NOTE: You must have ssh enabled in git.
 
 Check configuration by running:
 
-```codeql resolve languages```
+```bash
+codeql resolve languages
+```
 
-```codeql resolve qlpacks```
+```bash
+codeql resolve qlpacks
+```
 
 Navigate to the directory of the project you wish to create a CBOM for.
 
-```codeql database create codeqldb --language=project-language```
+```bash
+codeql database create codeqldb --language=project-language
+```
 
 NOTE: Project language must be of the following:
 
@@ -68,11 +80,13 @@ In this tutorial, we will use Python and the ```python``` identifier. One can su
 
 To create a database for analysis within your project, run:
 
-```codeql database create codeqldb --language=python```
+```bash
+codeql database create codeqldb --language=python
+```
 
 To analyze the database we can create a ```codeql-results``` directory for the analysis output, then run:
 
-```
+```bash
 export CODEQL_SUITES_PATH=$HOME/<path-to-codeql-repo>/codeql-repo/python/ql/src/codeql-suites
 export RESULTS_FOLDER=codeql-results
 
@@ -85,7 +99,9 @@ codeql database analyze codeqldb $CODEQL_SUITES_PATH/python-code-scanning.qls  -
 Once the above commands have been executed, run:
 
 
-```generate-cbom codeql-results/python-code-scanning.sarif```
+```bash
+generate-cbom codeql-results/python-code-scanning.sarif
+```
 
 
 A "cbom.json" file will be created inside your project directory.

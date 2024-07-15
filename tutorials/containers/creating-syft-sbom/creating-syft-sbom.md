@@ -34,26 +34,36 @@ Run the following command:
 
 ### Linux
 
-```curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin```
+```bash
+curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+```
 
 ### MacOS
 
-```brew install syft```
+```bash
+brew install syft
+```
 
 ### Windows
 
-```choco install syft -y```
+```bash
+choco install syft -y
+```
 
 or
 
-```scoop install syft```
+```bash
+scoop install syft
+```
 
 
 ## Usage
 
 To generate an SBOM, run the command:
 
-```syft <image>```
+```bash
+syft <image>
+```
 
 Where image is:
 
@@ -67,22 +77,26 @@ An SBOM will be printed to your terminal.
 
 To create an SBOM in a standardized SBOM format, use the ```-o``` flag:
 
-```syft <image> -o <format>```
+```bash
+syft <image> -o <format>
+```
 
-Where format is one of:
+Where ```<format>``` is one of:
 
-* cyclonedx-json 
-* cyclonedx-xml 
-* spdx-json
-* spdx-tag-value
-* syft-json
-* syft-table
-* syft-text
-* github-json
+* ```cyclonedx-json``` 
+* ```cyclonedx-xml``` 
+* ```spdx-json```
+* ```spdx-tag-value```
+* ```syft-json```
+* ```syft-table```
+* ```syft-text```
+* ```github-json```
 
 To output the SBOM to a file, run the above command but add ```=<output_file>``` to the ```-o``` format:
 
-```syft <image> -o <format>=<output_file_name>```
+```bash
+syft <image> -o <format>=<output_file_name>
+```
 
 An SBOM file of your specified name and format will be created.
 
@@ -90,6 +104,6 @@ An SBOM file of your specified name and format will be created.
 
 In Linux, sudo may be required.
 
-## References
+## References 
 
-https://github.com/anchore/syft 
+* Anchore. (n.d.). Anchore/syft: CLI Tool and library for generating a software bill of materials from container images and filesystems. GitHub. [https://github.com/anchore/syft](https://github.com/anchore/syft) 

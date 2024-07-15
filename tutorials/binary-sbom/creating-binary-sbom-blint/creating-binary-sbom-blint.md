@@ -16,7 +16,9 @@ This tutorial illustrates how to create an SBOM from a binary file using the Bli
 
 Install Blint by running the command:
 
-```pip install blint```
+```bash
+pip install blint
+```
 
 verify installation by running:
 
@@ -24,7 +26,7 @@ blint -h
 
 You should see the resulting output:
 
-```
+```bash
 usage: blint [-h] [-i SRC_DIR_IMAGE [SRC_DIR_IMAGE ...]] [-o REPORTS_DIR] [--no-error] [--no-banner] [--no-reviews]
              [--suggest-fuzzable]
              {sbom} ...
@@ -55,13 +57,17 @@ sub-commands:
 
 For a basic SBOM run:
 
-```blint sbom -i </path/to/binary> -o <sbom_output_filename>```
+```bash
+blint sbom -i </path/to/binary> -o <sbom_output_filename>
+```
 
 ### Deep SBOM
 
 For a more extensive SBOM run:
 
-```blint sbom -i </path/to/binary> -o <sbom_output_filename> --deep```
+```bash
+blint sbom -i </path/to/binary> -o <sbom_output_filename> --deep
+```
 
 ## Notes
 

@@ -19,29 +19,39 @@ This tutorial concerns the creation of an SBOM using the Microsoft SBOM Tool.
 
 Run the command:
 
-```winget install Microsoft.SbomTool```
+```bash
+winget install Microsoft.SbomTool
+```
 
 or 
 
-```Invoke-WebRequest -Uri "https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-win-x64.exe" -OutFile "sbom-tool.exe"```
+```bash
+Invoke-WebRequest -Uri "https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-win-x64.exe" -OutFile "sbom-tool.exe"
+```
 
 
 ### Mac
 
 Run the command:
 
-```brew install sbom-tool```
+```bash
+brew install sbom-tool
+```
 
 or 
 
-```curl -Lo sbom-tool https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-osx-x64 chmod +x sbom-tool```
+```bash
+curl -Lo sbom-tool https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-osx-x64 chmod +x sbom-tool
+```
 
 ### Linux
 
 Run the command:
 
 
-```curl -Lo sbom-tool https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-linux-x64 chmod +x sbom-tool```
+```bash
+curl -Lo sbom-tool https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-linux-x64 chmod +x sbom-tool
+```
 
 
 
@@ -49,11 +59,13 @@ Note: When using Curl, ensure the downloaded binary is in a folder on your compu
 
 Verify installation by running:
 
-```sbom-tool -h```
+```bash
+sbom-tool -h
+```
 
 You should see the resultant output:
 
-```
+```bash
 The Sbom tool generates a SBOM for any build artifact.
 
 Usage - Microsoft.Sbom.Tool <action> -options
@@ -137,7 +149,9 @@ Actions
 
 To generate an SBOM run:
 
-```sbom-tool generate -b <drop path> -bc <build components path> -pn <package name> -pv <package version> -ps <package supplier> -nsb <namespace uri base>```
+```bash
+sbom-tool generate -b <drop path> -bc <build components path> -pn <package name> -pv <package version> -ps <package supplier> -nsb <namespace uri base>
+```
 
 With:
 
@@ -149,7 +163,6 @@ With:
 
 A folder named ```_manifest``` will be created in the ```drop path``` containing the spdx JSON SBOM and the SBOM file hash.
 
-
 ## References
 
-* https://github.com/microsoft/sbom-tool 
+* Microsoft. (n.d.). Microsoft/sbom-tool: The SBOM tool is a highly scalable and enterprise ready tool to create SPDX 2.2 compatible sboms for any variety of artifacts. GitHub. [https://github.com/microsoft/sbom-tool](https://github.com/microsoft/sbom-tool)

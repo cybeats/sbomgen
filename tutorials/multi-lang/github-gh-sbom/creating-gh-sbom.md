@@ -22,7 +22,7 @@ jq. (optional)
 
 Run:
 
-```
+```bash
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
 && sudo mkdir -p -m 755 /etc/apt/keyrings \
 && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
@@ -34,7 +34,7 @@ Run:
 
 then run:
 
-```
+```bash
 sudo apt update
 sudo apt install gh
 ```
@@ -44,7 +44,7 @@ sudo apt install gh
 
 Run:
 
-```
+```bash
 sudo dnf install 'dnf-command(config-manager)'
 sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 sudo dnf install gh
@@ -54,46 +54,64 @@ sudo dnf install gh
 
 Run:
 
-```winget install --id GitHub.cli```
+```bash
+winget install --id GitHub.cli
+```
 
 or
 
-```choco install gh```
+```bash
+choco install gh
+```
 
 or
 
-```scoop install gh```
+```bash
+scoop install gh
+```
 
 
 #### OSX
 
 Run:
 
-```brew install gh```
+```bash
+brew install gh
+```
 
 or
 
-```sudo port install gh```
+```bash
+sudo port install gh
+```
 
 or 
 
-```conda install gh --channel conda-forge```
+```bash
+conda install gh --channel conda-forge
+```
 
 or
 
 
-```spack install gh```
+```bash
+spack install gh
+```
 
 
 ### Installing gh sbom plugin
 
 Run the command:
 
-```gh ext install advanced-security/gh-sbom```
+```bash
+gh ext install advanced-security/gh-sbom
+```
 
 Verify install by running:
 
-```gh sbom -h```
+```bash
+gh sbom -h
+```
 
 You should see the result:
 
@@ -110,26 +128,38 @@ pflag: help requested
 Navigate to a GitHub repository in question.
 
 Run the command:
-```gh sbom```
+
+```bash
+gh sbom
+```
 
 Default output is SPDX.
 
 To create a more human readable output, run:
 
-```gh sbom | jq```
+```bash
+gh sbom | jq
+```
 
 For CycloneDX formatted outputs, run:
 
-```gh sbom -c | jq```
+```bash
+gh sbom -c | jq
+```
 
 These will generate JSON formatted and indented SBOMs printed to your terminal.
 
 To save these outputs to a file, run:
 
-```gh sbom | jq > <sbom-file-name>```
+```bash
+gh sbom | jq > <sbom-file-name>
+```
+
+## Notes
+
+* When creating SBOMs in SPDX format, gh sbom may produce purls with the less common packages ```github``` and/or ```githubactions```.
 
 ## References
 
-* https://github.com/cli/cli
-
-* https://github.com/advanced-security/gh-sbom
+* Cli. (n.d.). CLI/CLI: GitHub’s Official Command Line Tool. GitHub. [https://github.com/cli/cli](https://github.com/cli/cli)
+* Gh-SBOM. (n.d.). Advanced-security/GH-sbom: Generate sboms with GH CLI. GitHub. [https://github.com/advanced-security/gh-sbom](https://github.com/advanced-security/gh-sbom)

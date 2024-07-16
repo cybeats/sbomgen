@@ -19,20 +19,26 @@ This tutorial illustrates how to create an SBOM for Python projects using the Cy
 
 To install run:
 
-```pip install cyclonedx-bom```
+```bash
+pip install cyclonedx-bom
+```
 
 or 
 
-```poetry add cyclonedx-bom```
+```bash
+poetry add cyclonedx-bom
+```
 
 
 verify installation by running in the terminal:
 
-```cyclonedx-py --help```
+```bash
+cyclonedx-py --help
+```
 
 The resultant output should be:
 
-```
+```bash
 usage: cyclonedx-py [-h] (-c | -cj | -e | -p | -pip | -r) [-i FILE_PATH] [--format {xml,json}]
                     [--schema-version {1.4,1.3,1.2,1.1,1.0}] [-o FILE_PATH] [-F] [-pb] [-X]
 
@@ -81,19 +87,25 @@ verifying correct installation
 
 To install run:
 
-```pip install jake```
+```bash
+pip install jake
+```
 
 or
 
-```poetry add jake```
+```bash
+poetry add jake
+```
 
 verify installation by running in the terminal:
 
-```jake --help```
+```bash
+jake --help
+```
 
 The resultant output should be:
 
-```
+```bash
 usage: jake [-h] [-v] [-w] [-X]  ...
 
 Put your Python dependencies in a chokehold
@@ -122,31 +134,43 @@ Navigate to the Python project in question:
 
 To create an SBOM, run the following command:
 
-```cyclonedx-py -e --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>```
+```bash
+cyclonedx-py -e --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+```
 
 Additionally, the CycloneDX-Python tool allows the user to specify the manifest input used to build the SBOM e.g.
 
 #### Requirements.txt
 
-```cyclonedx-py -r --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>```
+```bash
+cyclonedx-py -r --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+```
 
 #### Poetry
 
-```cyclonedx-py -p --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>```
+```bash
+cyclonedx-py -p --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+```
 
 #### Pip
 
-```cyclonedx-py -pip --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>```
+```bash
+cyclonedx-py -pip --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+```
 
 #### Conda
 
-```cyclonedx-py -c --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>```
+```bash
+cyclonedx-py -c --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+```
 
 ### Jake
 
 To create an SBOM, run the following command:
 
-```jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>```
+```bash
+jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+```
 
 
 ## Notes
@@ -168,9 +192,9 @@ To create an SBOM, run the following command:
 
 ## References
 
-*  Sonatype-Nexus-Community. (2023). Jake. https://github.com/sonatype-nexus-community/jake
+* Sonatype-Nexus-Community. (2023). Jake. [https://github.com/sonatype-nexus-community/jake](https://github.com/sonatype-nexus-community/jake)
 
-* CycloneDX. (2023). CycloneDX-Python. https://github.com/CycloneDX/cyclonedx-python
+* CycloneDX. (2023). CycloneDX-Python. [https://github.com/CycloneDX/cyclonedx-python](https://github.com/CycloneDX/cyclonedx-python)
 
-* CycloneDX. (2023). cyclonedx-cli. https://github.com/CycloneDX/cyclonedx-cli
+* CycloneDX. (2023). cyclonedx-cli. [https://github.com/CycloneDX/cyclonedx-cli](https://github.com/CycloneDX/cyclonedx-cli)
 

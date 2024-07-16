@@ -15,16 +15,20 @@ This tutorial illustrates how to create SBOMs from containers using the tern CLI
 
 Install tern by running:
 
-```pip install tern```
+```bash
+pip install tern
+```
 
 
 Verify installation by running:
 
-``tern -h``
+```bash
+tern -h
+```
 
 You should see:
 
-```
+```bash
 usage: Tern [-h] [-q] [-l FILE] [-c] [-k] [-r] [-wd PATH] [-dr DRIVER_OPTION]
             [-v]
             {report,lock,debug} ...
@@ -64,47 +68,63 @@ optional arguments:
 
 Create an SBOM file with tern by running:
 
-```tern report -o <output.file> -i <container:image> -f <output-format>```
+```bash
+tern report -o <output.file> -i <container:image> -f <output-format>
+```
 
 with the ```<output-format>``` being one of:
 
-* spdxtagvalue
-* spdxjson
-* cyclonedxjson
-* json
-* yaml
-* html
+* ```spdxtagvalue```
+* ```spdxjson```
+* ```cyclonedxjson```
+* ```json```
+* ```yaml```
+* ```html```
 
 You can create raw outputs to terminal by running:
 
-```tern report -i <container:image>```
+```bash
+tern report -i <container:image>
+```
 
 You can create SBOM formatted outputs to terminal by running:
 
-```tern report -i <container:image> -f <output-format>```
+```bash
+tern report -i <container:image> -f <output-format>
+```
 
 This raw output can be saved to a file by running:
 
-```tern report -i <container:image> -o <output.file>```
+```bash
+tern report -i <container:image> -o <output.file>
+```
 
 
 ### From Dockerfiles
 
 To create outputs SBOMs from Dockerfiles, run:
 
-```tern report -d <path/to/Dockerfile> -f <output-format> -o <output-file>```
+```bash
+tern report -d <path/to/Dockerfile> -f <output-format> -o <output-file>
+```
 
 For raw output to terminal:
 
-```tern report -d <path/to/Dockerfile>```
+```bash
+tern report -d <path/to/Dockerfile>
+```
 
 For SBOM formatted output to terminal:
 
-```tern report -d <path/to/Dockerfile> -f <output-format>```
+```bash
+tern report -d <path/to/Dockerfile> -f <output-format>
+```
 
 For raw output to file
 
-```tern report -d <path/to/Dockerfile> -o <output-file>```
+```bash
+tern report -d <path/to/Dockerfile> -o <output-file>
+```
 
 ## Notes
 
@@ -116,8 +136,8 @@ For raw output to file
 
 ## References
 
-* https://github.com/tern-tools/tern
+* Tern-Tools. (n.d.). Tern-Tools/tern: Tern is a software composition analysis tool and python library that generates a software bill of materials for container images and dockerfiles. the SBOM that tern generates will give you a layer-by-layer view of what’s inside your container in a variety of formats including human-readable, JSON, HTML, SPDX and more. GitHub. [https://github.com/tern-tools/tern](https://github.com/tern-tools/tern)
 
-* https://github.com/containers/skopeo
+* Containers. (n.d.). Containers/Skopeo: Work with remote images registries - retrieving information, images, signing content. GitHub. [https://github.com/containers/skopeo](https://github.com/containers/skopeo)
 
-* https://cyclonedx.org/docs/1.3/
+* CycloneDX v1.3 JSON reference. OWASP CycloneDX Software Bill of Materials (SBOM) Standard. (n.d.). [https://cyclonedx.org/docs/1.3/](https://cyclonedx.org/docs/1.3/) 

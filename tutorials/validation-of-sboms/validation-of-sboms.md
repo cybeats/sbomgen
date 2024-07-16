@@ -38,7 +38,9 @@ On the releases page, navigate to the latest release and download the release co
 
 Navigate to the [tools-java](https://github.com/spdx/tools-java) repository and click on the releases button. On the releases page, navigate to the latest release and download the release compatible with your system. Unzip the .zip file by running the following:
 
-```unzip tools-java<release-version>:.zip```
+```bash
+unzip tools-java<release-version>:.zip
+```
 
 
 
@@ -52,15 +54,15 @@ Navigate to the directory  you downloaded the programs to.
 
 To ensure correct installation first run:
 
+```bash
+./cyclonedx-your_os-your_architecture
+```
 
-```./cyclonedx-your_os-your_architecture ```
-
-
-(e.g. cyclonedx-linux-x64)
-
+e.g. cyclonedx-linux-x64
 
 You should receive the output:
-```  
+
+```bash
 
    ______           __                 ____ _  __    ________    ____
   / ____/_  _______/ /___  ____  ___  / __ \ |/ /   / ____/ /   /  _/
@@ -97,14 +99,14 @@ Commands:
 
 To use, run the command 
 
-
-```./cyclonedx-your_os-your_architecture validate --input-file <sbom-file-name.json> --input-format json```
-
+```bash
+./cyclonedx-your_os-your_architecture validate --input-file <sbom-file-name.json> --input-format json
+```
 
 Successful validation will result in output:
 
 
-```
+```bash
 BOM validated successfully. 
 ```
 
@@ -112,19 +114,17 @@ BOM validated successfully. 
 Failure will output the reason for the failure, and the output
 
 
-```
+```bash
 BOM is not valid.
 ```
 
-
-
 ### SPDX
-
 
 To ensure correct installation first run:
 
-
-```java -jar tools-java-1.1.7-jar-with-dependencies.jar```
+```bash
+java -jar tools-java-1.1.7-jar-with-dependencies.jar
+```
 
 You should receive the output:
 ```
@@ -143,18 +143,16 @@ MatchingStandardLicenses licenseTextFile
 
 To use, run the command:
 
-
-```java -jar tools-java-1.1.7-jar-with-dependencies.jar Verify <sbom-file-name.spdx>```
-
+```bash
+java -jar tools-java-1.1.7-jar-with-dependencies.jar Verify <sbom-file-name.spdx>
+```
 
 Successful validation will result in output 
 
 
-```
+```bash
 This SPDX Document is valid.
 ```
-
-
 
 Failure will output the reason for the failure. 
 
@@ -163,7 +161,5 @@ Failure will output the reason for the failure. 
 
 
 * CycloneDX. (2023). cyclonedx-cli. https://github.com/CycloneDX/cyclonedx-cli
-
-
 * Spdx. (2023). tools-java. https://github.com/spdx/tools-java
 

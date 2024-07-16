@@ -13,7 +13,7 @@ This document illustrates how to produce an SBOM from Gradle projects using the 
 
 Navigate to the build.gradle file, and add the following:
 
-```kotlin
+```groovy
 plugins {
     id ('org.cyclonedx.bom') version '1.8.2'
 }
@@ -59,6 +59,7 @@ cyclonedxBom {
     componentVersion = "2.0.0"
 }
 ```
+
 Kotlin (build.gradle.kts)
 
 ```kotlin
@@ -77,6 +78,10 @@ tasks.cyclonedxBom {
 }
 ```
 
+## Notes
+
+* Some licenses of the SBOMs generated may be out of specification.
+
 ## References
 
-* https://github.com/CycloneDX/cyclonedx-gradle-plugin
+* CycloneDX. (n.d.). CycloneDX/cyclonedx-gradle-plugin: Creates cyclonedx software bill of materials (SBOM) from Gradle Projects. GitHub. [https://github.com/CycloneDX/cyclonedx-gradle-plugin](https://github.com/CycloneDX/cyclonedx-gradle-plugin) 

@@ -1,0 +1,152 @@
+{
+  "components": [
+    {
+      "bom-ref": "df4e6c20-a6d4-4822-863b-6bc80532307f",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "3c67a1ffebde127de6b40d7c1109a500"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "7d9dafafc3efbe573f54ba1045139423972c4b42"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e431ecda729499b5401aa0da1c5a14aabca469b18f6d715c4f248b3dde4fe52b"
+        }
+      ],
+      "name": "helics_app",
+      "type": "file"
+    },
+    {
+      "bom-ref": "5daefce6-7f4a-4bc2-9f19-47b4418bedd9",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "bfd1790007efdd73182a81de91f19e22"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "3ced3918f7ddb79b92c5e4873b66c89c611281bc"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "25d049773777bd792c3821a98bab710ae4e5b474045f22ba91b519a72c21bd32"
+        }
+      ],
+      "name": "helics_broker",
+      "type": "file"
+    },
+    {
+      "bom-ref": "180247eb-6d0e-43fe-bb73-a813c5242546",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "9256cb6f9cee97b2285c938258ad9f00"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "546172d3d254c66e8957124b87ea0c4c9ca2a46c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "410f48faa877fc7e6dc1717ccc676a0b91ce262a2b1f329ffab09cead9731e36"
+        }
+      ],
+      "name": "helics_broker_server",
+      "type": "file"
+    },
+    {
+      "bom-ref": "ca1469ac-9beb-4fe2-8f54-110284c7d2d4",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "00afd704d1e3b8c5b22cf91a433fab67"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "75c0f9ac1a88796a9e2970e708794636179e3a84"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a6e8fb3bca4c36c1d72f0c9b80464ea7f1f1f3c14f5756cf01b752df61f20d97"
+        }
+      ],
+      "name": "helics_connector",
+      "type": "file"
+    },
+    {
+      "bom-ref": "0a41786d-3889-44bd-b1b1-11ba7db571ad",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "f60d5eb3954d691fec12c5eba6bf9e88"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "fd7460399b5745eac91b4fc12ae5557a7baca342"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "47951dfbaf83389d0cb3e1ab35dfe070ab19142caa07eaf1c0a01ead65c9cccd"
+        }
+      ],
+      "name": "helics_player",
+      "type": "file"
+    },
+    {
+      "bom-ref": "ed7ffe19-f6f2-41b2-9ed0-cf8b71b86b36",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "4a4a5bdc9a3d4122ede1f050869c5be2"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "6ab718501a4ae6e636c2f576e47df4af28ed7d6e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2cc9311bf22f1c29cec4830b93d3b1df9d8f84b47c2c905cbf99c1b83b4be9c3"
+        }
+      ],
+      "name": "helics_recorder",
+      "type": "file"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "0a41786d-3889-44bd-b1b1-11ba7db571ad"
+    },
+    {
+      "ref": "180247eb-6d0e-43fe-bb73-a813c5242546"
+    },
+    {
+      "ref": "5daefce6-7f4a-4bc2-9f19-47b4418bedd9"
+    },
+    {
+      "ref": "ca1469ac-9beb-4fe2-8f54-110284c7d2d4"
+    },
+    {
+      "ref": "df4e6c20-a6d4-4822-863b-6bc80532307f"
+    },
+    {
+      "ref": "ed7ffe19-f6f2-41b2-9ed0-cf8b71b86b36"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2024-06-25T13:58:24.747812+00:00",
+    "tools": [
+      {
+        "name": "Surfactant",
+        "version": "0.0.0rc6"
+      }
+    ]
+  },
+  "serialNumber": "urn:uuid:a0240078-939d-446b-9051-49c7f8ff3453",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5"
+}

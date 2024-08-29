@@ -6,7 +6,7 @@ This tutorial illustrates how to create an SBOM from Yarn projects using the Cyc
 
 ## Requirements
 
-* Yarn package manager >= 3>= 3.
+* Yarn package manager >= 3.
 * Node >= 18.
 ## Installation
 
@@ -115,6 +115,4 @@ An SBOM with the given filename will be created in your working directory.
 
 ## References
 
-* https://github.com/CycloneDX/cyclonedx-node-yarn
-
-* 
+* CycloneDX. (n.d.). CycloneDX/cyclonedx-node-yarn: Create cyclonedx software bill of materials (SBOM) from node.js yarn projects. GitHub. https://github.com/CycloneDX/cyclonedx-node-yarn

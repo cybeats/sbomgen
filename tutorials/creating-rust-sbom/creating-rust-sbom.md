@@ -126,6 +126,81 @@ You should see an output "bom.json" in any folder containing rust source files.
 
 * Error messages may be seen, however an sbom is still built. This appears to be a [known issue](https://github.com/CycloneDX/cyclonedx-rust-cargo/compare/main...ctron:cyclonedx-rust-cargo:feature/improve_logs_1).
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #json-container2 {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./cargo-sbom.cdx.json">cargo-sbom (json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display"></pre>
+    </div>
+    <h3>
+        <a href="./cargo-sbom.cdx.xml">cargo-sbom (xml)</a>
+    </h3>
+    <div id="xml-container">
+        <pre id="xml-display"></pre>
+    </div>
+        <h3>
+        <a href="./sbom-rs.cdx.json">sbom-rs (json)</a>
+    </h3>
+    <div id="json-container2">
+        <pre id="json-display2"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+    display_json('./cargo-sbom.cdx.json', 'json-display');
+    display_xml('./cargo-sbom.cdx.xml', 'xml-display');
+    display_json('./sbom-rs.cdx.json', 'json-display2');
+    </script>
+</body>
+</html>
 
 
 ## References

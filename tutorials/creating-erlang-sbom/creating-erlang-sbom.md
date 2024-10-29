@@ -37,6 +37,63 @@ A bom.xml should appear in your directory.
 
 * This generator may create SBOMs with flawed serial numbers, rendering the SBOM invalid.
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./bom.xml">erlang sbom (xml)</a>
+    </h3>
+    <div id="xml-container">
+        <pre id="xml-display"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching XML:', error));
+        }
+    display_xml('./bom.xml', 'xml-display');
+    </script>
+</body>
+</html>
+
+
 ## References
 
 * Voltone. (2022). Rebar3_sbom. [https://github.com/voltone/rebar3_sbom](https://github.com/voltone/rebar3_sbom)

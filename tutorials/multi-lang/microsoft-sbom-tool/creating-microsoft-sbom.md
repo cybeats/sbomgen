@@ -163,6 +163,63 @@ With:
 
 A folder named ```_manifest``` will be created in the ```drop path``` containing the spdx JSON SBOM and the SBOM file hash.
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./manifest.spdx.json">sbom-tool (json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+    display_json('./manifest.spdx.json', 'json-display');
+    </script>
+</body>
+</html>
+
+
 ## References
 
 * Microsoft. (n.d.). Microsoft/sbom-tool: The SBOM tool is a highly scalable and enterprise ready tool to create SPDX 2.2 compatible sboms for any variety of artifacts. GitHub. [https://github.com/microsoft/sbom-tool](https://github.com/microsoft/sbom-tool)

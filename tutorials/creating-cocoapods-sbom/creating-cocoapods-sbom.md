@@ -89,6 +89,70 @@ Without these additions, the SBOM may be valid, but incomplete.
   gem install activesupport -v 7.0.8
 ```
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./bom.json">cyclonedx-cocoapods (json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display"></pre>
+    </div>
+    <h3>
+        <a href="./bom.xml">cyclonedx-cocoapods (xml)</a>
+    </h3>
+    <div id="xml-container">
+        <pre id="xml-display"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+    display_json('./bom.json', 'json-display');
+    display_xml('./bom.xml', 'xml-display');
+    </script>
+</body>
+</html>
+
+
 ## References
 
 * CycloneDX. (2023). CycloneDX-Cocoapods. [https://github.com/CycloneDX/cyclonedx-cocoapods](https://github.com/CycloneDX/cyclonedx-cocoapods)

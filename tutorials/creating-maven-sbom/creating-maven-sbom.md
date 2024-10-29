@@ -113,7 +113,7 @@ rm -rf path/to/.m2
 </head>
 <body>
     <h3>
-        <a href="./onedev-cyclonedx.json">Onedev</a>
+        <a href="./onedev-cyclonedx.json">onedev</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

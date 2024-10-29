@@ -1,0 +1,17 @@
+#json-container {
+    height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid #ccc; /* Optional: add a border for visibility */
+    padding: 10px;
+}
+#xml-container {
+    height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid #ccc; /* Optional: add a border for visibility */
+    padding: 10px;
+}
+pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

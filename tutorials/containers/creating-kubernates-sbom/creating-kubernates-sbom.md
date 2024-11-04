@@ -128,7 +128,7 @@ An sbom with the designated name and format will be created.
 </head>
 <body>
     <h3>
-        <a href="./spdx.json">kubernates sbom (json)</a>
+        <a href="./spdx.json">kubernates sbom</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

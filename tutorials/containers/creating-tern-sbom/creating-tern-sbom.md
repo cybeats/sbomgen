@@ -163,7 +163,7 @@ tern report -d <path/to/Dockerfile> -o <output-file>
 </head>
 <body>
     <h3>
-        <a href="./debian-tern-sbom-cdx.json">debian (json)</a>
+        <a href="./debian-tern-sbom-cdx.json">debian</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

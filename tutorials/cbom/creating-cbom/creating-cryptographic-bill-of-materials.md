@@ -144,7 +144,7 @@ A "cbom.json" file will be created inside your project directory.
 </head>
 <body>
     <h3>
-        <a href="./cryptobom.json">cryptobom (json)</a>
+        <a href="./cryptobom.json">cryptobom</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

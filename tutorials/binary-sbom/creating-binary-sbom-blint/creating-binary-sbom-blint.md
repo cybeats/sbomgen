@@ -80,6 +80,69 @@ blint sbom -i </path/to/binary> -o <sbom_output_filename> --deep
     ```
     While this format is not invalid in regards to the CycloneDX JSON Schema, note that "file" is not a known PURL type. This may affect SBOM analysis.
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./systemd_sbom.json">systemd (json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display1"></pre>
+    </div>
+    <h3>
+        <a href="./systemd_sbom_deep.json">systemd deep (json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display2"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching XML:', error));
+        }
+    display_json('./systemd_sbom.json', 'json-display1');
+    display_json('./systemd_sbom_deep.json', 'json-display2');
+    </script>
+</body>
+</html>
+
 ## References
 
 * https://github.com/owasp-dep-scan/blint

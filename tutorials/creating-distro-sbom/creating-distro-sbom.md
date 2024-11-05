@@ -106,7 +106,7 @@ An SBOM file with your given name should appear in your working directory.
 </head>
 <body>
     <h3>
-        <a href="./sbom_distro.json">distro Ubuntu (json)</a>
+        <a href="./sbom_distro.json">distro Ubuntu</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

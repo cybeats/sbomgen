@@ -189,7 +189,7 @@ Where ```type``` is one of the potential programming languages/frameworks (pytho
 </head>
 <body>
     <h3>
-        <a href="./bom.json">cdxgen (json)</a>
+        <a href="./bom.json">cdxgen</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

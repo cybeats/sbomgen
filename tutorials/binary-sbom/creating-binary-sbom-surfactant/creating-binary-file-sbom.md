@@ -76,6 +76,69 @@ An SBOM of your designated format will be created.
 
 * The SPDX generation functionality of this tool may not be reliable.
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./Helics-3.5.2-linux_x86.cdx.json">Helics (cyclonedx-json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display1"></pre>
+    </div>
+    <h3>
+        <a href="./Helics-3.5.2-linux_x86.cytrics.json">Helics (cytrics-json)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display2"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching XML:', error));
+        }
+    display_json('Helics-3.5.2-linux_x86.cdx.json', 'json-display1');
+    display_json('Helics-3.5.2-linux_x86.cytrics.json', 'json-display2');
+    </script>
+</body>
+</html>
+
 ## References
 
 * https://github.com/LLNL/Surfactant 

@@ -66,7 +66,7 @@ A bom.xml should appear in your directory.
 </head>
 <body>
     <h3>
-        <a href="./bom.xml">erlang sbom (xml)</a>
+        <a href="./bom.xml">erlang sbom</a>
     </h3>
     <div id="xml-container">
         <pre id="xml-display"></pre>

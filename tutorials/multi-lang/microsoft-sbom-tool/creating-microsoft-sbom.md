@@ -192,7 +192,7 @@ A folder named ```_manifest``` will be created in the ```drop path``` containing
 </head>
 <body>
     <h3>
-        <a href="./manifest.spdx.json">sbom-tool (json)</a>
+        <a href="./manifest.spdx.json">sbom-tool</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

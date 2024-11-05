@@ -72,7 +72,7 @@ Download the Sonar Cryptography .jar file and place it into your SonarQube ```pl
 </head>
 <body>
     <h3>
-        <a href="./cbom.sonar.json">sonarqube (json)</a>
+        <a href="./cbom.sonar.json">sonarqube</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

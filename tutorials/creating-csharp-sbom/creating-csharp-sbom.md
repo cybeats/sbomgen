@@ -127,7 +127,7 @@ The resultant output will be a folder in the path that you specified, containing
 </head>
 <body>
     <h3>
-        <a href="./bom.json">cyclonedx-dotnet (json)</a>
+        <a href="./bom.json">cyclonedx-dotnet</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

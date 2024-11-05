@@ -188,13 +188,13 @@ gh sbom | jq > <sbom-file-name>
 </head>
 <body>
     <h3>
-        <a href="./gh_sbom.cdx.json">gh-sbom (json)</a>
+        <a href="./gh_sbom.cdx.json">gh-sbom cdx (json)</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>
     </div>
     <h3>
-        <a href="./gh_sbom.spdx.json">gh-sbom (json)</a>
+        <a href="./gh_sbom.spdx.json">gh-sbom spdx (json)</a>
     </h3>
     <div id="xml-container">
         <pre id="xml-display"></pre>

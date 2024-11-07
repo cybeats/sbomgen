@@ -115,6 +115,63 @@ A "cbom.json" file will be created inside your project directory.
 
 * Use the ```<language>-security-experimental.qls``` (e.g. ```python-security-experimental.qls```) as the query suite, as opposed to the ```<language>-code-scanning.qls``` suite.
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./cryptobom.json">cryptobom</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display"></pre>
+    </div>
+    <script>
+        function display_json(url, elementid){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching XML:', error));
+        }
+    display_json('./cryptobom.json', 'json-display');
+    </script>
+</body>
+</html>
+
+
 ## References
 * Santander Security. (2023). Cryptobom Forge Tool. https://github.com/santandersecurityresearch/cryptobom-forge
 

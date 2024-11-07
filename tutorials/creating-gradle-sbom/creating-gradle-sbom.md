@@ -82,6 +82,46 @@ tasks.cyclonedxBom {
 
 * Some licenses of the SBOMs generated may be out of specification.
 
+## SBOM
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty JSON Display</title>
+    <style>
+        #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <a href="./bom.json">cyclonedx-gradle-plugin</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display"></pre>
+    </div>
+    <script>
+        fetch('./bom.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('json-display').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    </script>
+</body>
+</html>
+
+
 ## References
 
 * CycloneDX. (n.d.). CycloneDX/cyclonedx-gradle-plugin: Creates cyclonedx software bill of materials (SBOM) from Gradle Projects. GitHub. [https://github.com/CycloneDX/cyclonedx-gradle-plugin](https://github.com/CycloneDX/cyclonedx-gradle-plugin) 

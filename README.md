@@ -41,6 +41,10 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 
 * To generate SBOM for Node.js NPM projects, use [Cyclonedx Node Module](tutorials/creating-npm-sbom/creating-npm-sbom.md).
 
+### Yarn
+ 
+* To generate SBOM for Node.js Yarn projects, use [Cyclonedx Yarn Module](tutorials/creating-yarn-sbom/creating-yarn-sbom.md).
+
 ## Objective-C/Swift
 
 ### Cocoapod

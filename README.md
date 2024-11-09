@@ -1,4 +1,4 @@
-<img src="images/cybeats_logo.svg" class="center" height="200" width="1000">
+<img src="images/cybeats.logo.svg" class="center" height="150" width="1000">
 
 # List of SBOM Generation Tools
 

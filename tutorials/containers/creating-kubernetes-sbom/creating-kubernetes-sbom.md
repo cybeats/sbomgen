@@ -1,12 +1,12 @@
-# Creating SBOMs from Kubernates using BOM CLI
+# Creating SBOMs from Kubernetes using BOM CLI
 
 ## Introduction
 
-This tutorial illustrates how to create an SBOM from a kubernates project using the ```bom``` CLI.
+This tutorial illustrates how to create an SBOM from a kubernetes project using the ```bom``` CLI.
 
 ## Requirements
 
-* Kubernates.
+* Kubernetes.
 * Bom CLI.
 * Go language or cURL.
 
@@ -128,7 +128,7 @@ An sbom with the designated name and format will be created.
 </head>
 <body>
     <h3>
-        <a href="./spdx.json">kubernates sbom</a>
+        <a href="./spdx.json">kubernetes sbom</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>

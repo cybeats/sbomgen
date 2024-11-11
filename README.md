@@ -1,4 +1,4 @@
-<img src="images/cybeats_logo.svg" class="center" height="200" width="1000">
+<img src="images/cybeats.logo.svg" class="center" height="100" width="900">
 
 # List of SBOM Generation Tools
 
@@ -119,7 +119,7 @@ SBOMs can be created from containers using the following tools:
 
 * [Tern](tutorials/containers/creating-tern-sbom/creating-tern-sbom.md)
 * [Syft](tutorials/containers/creating-syft-sbom/creating-syft-sbom.md)
-* [Bom](tutorials/containers/creating-kubernates-sbom/creating-kubernates-sbom.md) (Kubernates)
+* [Bom](tutorials/containers/creating-kubernetes-sbom/creating-kubernetes-sbom.md) (Kubernetes)
 * [Docker Scout SBOM](tutorials/containers/creating-docker-sbom/creating-docker-sboms.md)
 
 ## Binary Files

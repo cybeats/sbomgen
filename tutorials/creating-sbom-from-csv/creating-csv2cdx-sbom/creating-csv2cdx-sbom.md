@@ -296,6 +296,6 @@ Further functionality for the SBOM output can be implemented through the followi
 
 ## References
 
-* https://github.com/cybeats/csv2cdx
-* https://pipx.pypa.io/stable/
+* Cybeats. (n.d.). Cybeats/csv2cdx: Script to transfrom CSV SBOM documents to CycloneDX SBOM documents. GitHub. https://github.com/cybeats/csv2cdx 
+* Install and run python applications in isolated environments. pipx. (n.d.). https://pipx.pypa.io/stable/
 

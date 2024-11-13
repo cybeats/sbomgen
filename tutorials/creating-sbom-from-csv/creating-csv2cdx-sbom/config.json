@@ -1,0 +1,53 @@
+{
+    "bom-ref": null,
+    "name": "name",
+    "version": "version",
+    "type": null,
+    "group": null,
+    "publisher": "organization",
+    "purl": "purl",
+    "mime type": null,
+    "description": "description",
+    "author": "author",
+    "cpe": "cpe",
+    "swid": null,
+    "pedigree": null,
+    "components": null,
+    "evidence": null,
+    "releaseNotes": null,
+    "copyright": null,
+    "supplier": null,
+    "licenses": [
+        {
+            "license_name": "license1",
+            "license_url": null,
+            "license_id": null
+        },
+        {
+            "license_name": "license2",
+            "license_url": null,
+            "license_id": null
+        },
+        {
+            "license_name": null,
+            "license_url": null,
+            "license_id": null
+        }
+    ],
+    "hashes": [
+        {
+            "hash_alg": "hash1alg",
+            "hash_content": "hash1content"
+        },
+        {
+            "hash_alg": "hash2alg",
+            "hash_content": "hash2content"
+        }
+    ],
+    "externalReferences": [
+        {
+            "er_type": null,
+            "er_url": null
+        }
+    ]
+}

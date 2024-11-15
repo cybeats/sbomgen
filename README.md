@@ -1,4 +1,4 @@
-<img src="images/cybeats.logo.svg" class="center" height="100" width="900">
+<img src="images/cybeats.logo.svg" id="object1" alt="cybeats_logo" height="100" width="900">
 
 # List of SBOM Generation Tools
 
@@ -24,6 +24,7 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 * [Binary Files](#binary-files)
 * [Microsoft Sbom Tool](#use-microsoft-sbom-tool-to-generate-spdx-sbom-from-linux-kernel-source-code)
 * [Additional Tools](#additional-tools)
+* [CSV Conversion](#csv-conversion)
 
 ## Java
 
@@ -128,3 +129,10 @@ SBOMs can be created from binary files using the following tools:
 
 * [Blint](tutorials/binary-sbom/creating-binary-sbom-blint/creating-binary-sbom-blint.md)
 * [Surfactant](tutorials/binary-sbom/creating-binary-sbom-surfactant/creating-binary-file-sbom.md)
+
+
+## CSV Conversion
+
+* SBOMs can be created from CSV/Excel documents using the [CSV2CDX](tutorials/creating-sbom-from-csv/creating-csv2cdx-sbom/creating-csv2cdx-sbom.md) tool.
+
+* VEXs can be created from CSV/Excel documents using the [CSV2VEX](tutorials/creating-sbom-from-csv/creating-csv2vex-vex/creating-csv2vex-vex.md) tool.

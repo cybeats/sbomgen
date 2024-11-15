@@ -1,0 +1,2207 @@
+{
+    "metadata": {
+        "timestamp": "2024-11-14T22:01:01.227913+00:00",
+        "tools": [
+            {
+                "name": "csv2vex",
+                "vendor": "Cybeats Technologies",
+                "version": "0.1.0"
+            },
+            {
+                "externalReferences": [
+                    {
+                        "type": "build-system",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions"
+                    },
+                    {
+                        "type": "distribution",
+                        "url": "https://pypi.org/project/cyclonedx-python-lib/"
+                    },
+                    {
+                        "type": "documentation",
+                        "url": "https://cyclonedx-python-library.readthedocs.io/"
+                    },
+                    {
+                        "type": "issue-tracker",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues"
+                    },
+                    {
+                        "type": "license",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE"
+                    },
+                    {
+                        "type": "release-notes",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md"
+                    },
+                    {
+                        "type": "vcs",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib"
+                    },
+                    {
+                        "type": "website",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/#readme"
+                    }
+                ],
+                "name": "cyclonedx-python-lib",
+                "vendor": "CycloneDX",
+                "version": "7.6.2"
+            }
+        ]
+    },
+    "serialNumber": "urn:uuid:ede93eee-167e-47bf-a6ab-999ce4163183",
+    "version": 1,
+    "vulnerabilities": [
+        {
+            "advisories": [
+                {
+                    "title": "Michael Schmitt",
+                    "url": "fields.com"
+                }
+            ],
+            "bom-ref": "BomRef.4483974322100295.5489007557709505",
+            "created": "1993-04-29T00:00:00-04:00",
+            "cwes": [
+                74,
+                192,
+                230
+            ],
+            "description": "Sister own dog day. School own push official mother including teacher. Phone audience program kind themselves.",
+            "detail": "Knowledge store its attorney. Much usually pull money box decide. Reduce home history around nation. Development hot feel.",
+            "id": "00226c67-77b3-4630-a3b9-f80b81aec873",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "nicholas baker"
+                },
+                {
+                    "name": "random2",
+                    "value": "pamela sanders"
+                },
+                {
+                    "name": "random3",
+                    "value": "jeremy blake"
+                }
+            ],
+            "published": "2015-07-16T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Deborah Navarro",
+                        "url": "wilson.info"
+                    }
+                }
+            ],
+            "recommendation": "Republican cup bar behavior sing energy throw like. Such manager well trade meeting young outside. At stock task money special. Always win beat hospital. How culture book against. Take apply half successful environmental since.",
+            "updated": "2008-08-13T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Mrs. Lori Ritter PhD",
+                    "url": "hernandez-wolf.net"
+                }
+            ],
+            "bom-ref": "BomRef.047770659157231665.018807250740256243",
+            "created": "1988-03-22T00:00:00-05:00",
+            "cwes": [
+                39,
+                140,
+                309
+            ],
+            "description": "Whether cut risk personal. List nor game partner card fact. Single past until serious. Assume organization real section film list reach. Suddenly while speech send avoid phone major often. Among cut fish machine development group.",
+            "detail": "Full matter wonder body adult address first. Season build thousand benefit player worker. Military decade to professor page arm reveal.",
+            "id": "05900327-7006-4d5a-afe0-b599d7cbe951",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "erika short"
+                },
+                {
+                    "name": "random2",
+                    "value": "keith perkins"
+                },
+                {
+                    "name": "random3",
+                    "value": "kevin richard"
+                }
+            ],
+            "published": "2012-12-07T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Adam Moore",
+                        "url": "compton.com"
+                    }
+                }
+            ],
+            "recommendation": "Imagine top road sit feeling girl. Relate help care bank effect reality itself political. Indeed ten much enough protect statement. Even money use society. Now nearly wish rule draw apply price news. Voice buy reach bed reality best appear.",
+            "updated": "1972-06-24T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Molly Lowery",
+                    "url": "taylor.com"
+                }
+            ],
+            "bom-ref": "BomRef.7999520863109765.3266188530962608",
+            "created": "1993-12-12T00:00:00-05:00",
+            "cwes": [
+                1,
+                263,
+                423
+            ],
+            "description": "Surface marriage right. During speak seven reduce get contain moment. Often none leader wife drug threat painting. Eye deal discussion coach director respond. Finish year citizen event event.",
+            "detail": "Employee allow thank government minute bill effect. Prevent recent form agree everybody daughter that. Four clearly citizen music ever hospital medical generation. Tell nature notice own human. Administration commercial grow agent ball car. Information story child usually southern.",
+            "id": "0bfe5ccc-13b8-49f9-9a1c-66cd2988c796",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "debbie jones"
+                },
+                {
+                    "name": "random2",
+                    "value": "pamela davenport"
+                },
+                {
+                    "name": "random3",
+                    "value": "john haas"
+                }
+            ],
+            "published": "2019-05-27T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Grant Nichols",
+                        "url": "perez.net"
+                    }
+                }
+            ],
+            "recommendation": "Instead act out new price religious response. Management manager letter kind suggest him push. Front learn indeed. Defense mean dinner though crime let effort member.",
+            "updated": "2010-08-11T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Johnny Hayes",
+                    "url": "odonnell.info"
+                }
+            ],
+            "bom-ref": "BomRef.3786154213451747.7653689808276339",
+            "created": "1973-05-10T00:00:00-04:00",
+            "cwes": [
+                72,
+                149,
+                194
+            ],
+            "description": "Different section second alone represent if Mr. Themselves marriage product behind cost. Bank TV traditional official source street. Research dream current answer lay.",
+            "detail": "Lay money enough present born generation fish. Watch degree newspaper. Training keep prevent less several. Shoulder some they letter prove its lawyer. Group yes factor chance determine. Bag capital movie leg surface reason.",
+            "id": "0caa7f8f-871e-48b6-bfd6-81538d213be6",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "teresa wheeler"
+                },
+                {
+                    "name": "random2",
+                    "value": "cheryl scott"
+                },
+                {
+                    "name": "random3",
+                    "value": "krista woodard"
+                }
+            ],
+            "published": "2005-06-05T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Kevin Williams",
+                        "url": "cooper.com"
+                    }
+                }
+            ],
+            "recommendation": "Participant big whatever also. President kind performance within. Four western hit hard phone range strong.",
+            "updated": "1979-01-12T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Mr. Aaron Miranda DDS",
+                    "url": "wright.com"
+                }
+            ],
+            "bom-ref": "BomRef.31609638896155956.0016787649699793183",
+            "created": "2008-12-23T00:00:00-05:00",
+            "cwes": [
+                286,
+                330,
+                454
+            ],
+            "description": "Strong enjoy blue late television can. Less letter tend perform remember. Popular drive truth address some so large hit. Positive decade seat.",
+            "detail": "Democrat indicate result cut itself follow name. Ever eye believe join teacher table. Road hard public concern.",
+            "id": "0f0008e0-1e08-4aa5-acce-a9f836f41412",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "annette mcdonald"
+                },
+                {
+                    "name": "random2",
+                    "value": "kristopher thomas"
+                },
+                {
+                    "name": "random3",
+                    "value": "kari robbins"
+                }
+            ],
+            "published": "1985-06-07T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Kyle Schmidt",
+                        "url": "mitchell-bowen.info"
+                    }
+                }
+            ],
+            "recommendation": "Community four true on. Deep drop member talk level example can. Congress floor by.",
+            "updated": "2010-11-11T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Brian Singh",
+                    "url": "cohen-sanders.com"
+                }
+            ],
+            "bom-ref": "BomRef.8338380668425189.953077211408776",
+            "created": "1978-10-24T00:00:00-04:00",
+            "cwes": [
+                108,
+                291,
+                317
+            ],
+            "description": "Individual sport decision. Government over notice prepare station six. To effect recently receive test bad ask. State for event career.",
+            "detail": "Political where practice cup do just. Generation situation authority cultural vote red response. Inside right eight remember authority determine give. Common society eat skill. Ten girl behind among but eye address. Should financial man add practice.",
+            "id": "1023af06-abb6-4553-85f0-40e50e4aa90d",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "sharon franklin"
+                },
+                {
+                    "name": "random2",
+                    "value": "michelle jackson"
+                },
+                {
+                    "name": "random3",
+                    "value": "bradley cohen"
+                }
+            ],
+            "published": "2015-01-30T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Melissa Fleming",
+                        "url": "duran-mathews.com"
+                    }
+                }
+            ],
+            "recommendation": "Mind collection group vote become. Close my now pattern mission industry. Against box student prove. Police the American. Top save Republican head. Hotel be reality another soon. Bank network poor whole a expert store.",
+            "updated": "1972-05-13T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Benjamin Williams",
+                    "url": "henry-cortez.info"
+                }
+            ],
+            "bom-ref": "BomRef.6563093858561145.2501138262002043",
+            "created": "2002-11-17T00:00:00-05:00",
+            "cwes": [
+                112,
+                356,
+                483
+            ],
+            "description": "Beat part tell pull lot return oil. Record form purpose southern perform agreement trial power. Character hand summer action true art year. Peace culture trial laugh.",
+            "detail": "Until indeed in character maintain. Word study society month me. Project age within. Dark charge certain beat. Amount someone study test mother collection. Cell explain customer of water reason nothing.",
+            "id": "11bc6d2b-4292-4659-83ff-dfdfada35e85",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "megan martin"
+                },
+                {
+                    "name": "random2",
+                    "value": "deborah white"
+                },
+                {
+                    "name": "random3",
+                    "value": "wayne mayer"
+                }
+            ],
+            "published": "1994-08-08T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Danielle Smith",
+                        "url": "decker.org"
+                    }
+                }
+            ],
+            "recommendation": "Growth need black many year. Issue important gas buy human determine check. Reflect visit rise. Paper without education common production.",
+            "updated": "2015-09-10T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Alexander Turner",
+                    "url": "fritz-newman.com"
+                }
+            ],
+            "bom-ref": "BomRef.9894801140164927.9570637519428912",
+            "created": "1975-05-12T00:00:00-04:00",
+            "cwes": [
+                92,
+                141,
+                390
+            ],
+            "description": "Fund back cultural attack attack throughout. End this provide team small point. Face compare expert prepare grow near. Old last reality these. Along why all dinner.",
+            "detail": "Reach his know community international artist. Rich detail create entire fill item reason. Such explain article action indeed research cell new.",
+            "id": "13bf78ff-3946-4202-ba79-720546f9e0a6",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "marcus george"
+                },
+                {
+                    "name": "random2",
+                    "value": "shawn kaiser"
+                },
+                {
+                    "name": "random3",
+                    "value": "raymond brown"
+                }
+            ],
+            "published": "2008-05-21T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Monique Bates",
+                        "url": "hunt.net"
+                    }
+                }
+            ],
+            "recommendation": "Forget result you why hold significant. Read environmental by smile high class. Interest read commercial above.",
+            "updated": "1973-08-11T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Kevin Lopez",
+                    "url": "allen.com"
+                }
+            ],
+            "bom-ref": "BomRef.009803100052123703.5912654516727012",
+            "created": "2017-01-02T00:00:00-05:00",
+            "cwes": [
+                33,
+                235,
+                374
+            ],
+            "description": "Today audience reality top ago bad memory. Test fear everybody information answer learn. Level eye then Mr. All conference company expert weight. Lawyer church hot bar.",
+            "detail": "Political talk wonder development real risk. Raise oil film next push pass scene. Free live relationship group by. Size minute where be treat those.",
+            "id": "189c36f1-36f8-4946-ad48-f0187282da01",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "penny tran"
+                },
+                {
+                    "name": "random2",
+                    "value": "bridget berry"
+                },
+                {
+                    "name": "random3",
+                    "value": "steven reese"
+                }
+            ],
+            "published": "1976-03-30T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Nicole Jackson",
+                        "url": "bruce.com"
+                    }
+                }
+            ],
+            "recommendation": "Three but full become. Individual sign style claim particular at wide. Manage success film thus in firm power process. Officer difference others office weight cup never expert.",
+            "updated": "2020-01-12T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Steven Gallagher",
+                    "url": "hernandez-lawson.net"
+                }
+            ],
+            "bom-ref": "BomRef.974995628603864.6655853895448316",
+            "created": "2022-01-18T00:00:00-05:00",
+            "cwes": [
+                219,
+                359,
+                386
+            ],
+            "description": "Tend similar child fund mother hair. Difficult science hospital friend agree although. Physical tough however. Door game home change realize past. Join inside front foot true season today.",
+            "detail": "Party way to analysis energy. Miss free themselves tend manager street position. Man animal particularly food wish stuff reason. Provide everybody let family news very message. Wonder development move western. Beautiful final production challenge avoid. Forget everything country would radio foreign common.",
+            "id": "1bf3e263-12a2-4631-98c8-430ba071a00a",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "latoya hill"
+                },
+                {
+                    "name": "random2",
+                    "value": "amber carpenter"
+                },
+                {
+                    "name": "random3",
+                    "value": "johnny ellis"
+                }
+            ],
+            "published": "1977-06-12T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Daniel Johnson",
+                        "url": "sims.com"
+                    }
+                }
+            ],
+            "recommendation": "North Mr sound few hair. Series budget draw glass. Lot member case reason remember. State stage particular many.",
+            "updated": "1994-04-16T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Tamara Cochran",
+                    "url": "guerra.com"
+                }
+            ],
+            "bom-ref": "BomRef.2581552402336105.5914962494418285",
+            "created": "1980-02-24T00:00:00-05:00",
+            "cwes": [
+                26,
+                272,
+                477
+            ],
+            "description": "Red remember tough direction fund compare bit either. Issue give series. Provide eye apply style center see receive. Guess something study. Commercial may hot responsibility million. Like produce trade eye like particular former.",
+            "detail": "Much represent cell laugh office should staff. Accept again relationship happy. Prepare leave management price. Skill four after everybody.",
+            "id": "204e7a56-f530-40d3-af5a-aa4d36f279c8",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "martha haynes"
+                },
+                {
+                    "name": "random2",
+                    "value": "kimberly green"
+                },
+                {
+                    "name": "random3",
+                    "value": "jonathan ford"
+                }
+            ],
+            "published": "2017-05-30T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Lawrence Bradford",
+                        "url": "ortiz.com"
+                    }
+                }
+            ],
+            "recommendation": "Walk own race own place any likely. Despite yeah level remember rate minute. Reduce visit although performance situation. American still back according.",
+            "updated": "2017-05-20T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Deborah Perez",
+                    "url": "holmes.info"
+                }
+            ],
+            "bom-ref": "BomRef.7003024836310597.36563440134841163",
+            "created": "1996-04-02T00:00:00-05:00",
+            "cwes": [
+                61,
+                182,
+                470
+            ],
+            "description": "Game structure source plant. Defense plant increase inside agreement meeting again. President between opportunity remember later three third. Until task do water. Yeah again dinner foreign. Act person service ago learn.",
+            "detail": "Pull new care general industry medical. Collection over chair official customer box. Begin sing Republican once special write drive. Hundred special song best happy of until. Hospital beautiful small always. Research same wall next soon discussion several.",
+            "id": "21e87bb9-1c8d-4310-ab49-8222309ee46a",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "david mckinney"
+                },
+                {
+                    "name": "random2",
+                    "value": "christopher christian"
+                },
+                {
+                    "name": "random3",
+                    "value": "katie sloan"
+                }
+            ],
+            "published": "1976-01-04T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Lisa Harris",
+                        "url": "gray.com"
+                    }
+                }
+            ],
+            "recommendation": "Dinner certain realize over country. Tonight student yes especially part today within. House kid military because daughter. Technology direction against network. Very peace win if spend operation.",
+            "updated": "2004-07-23T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Michele Park",
+                    "url": "mullins.com"
+                }
+            ],
+            "bom-ref": "BomRef.5640058773174847.4527300097188337",
+            "created": "1985-11-24T00:00:00-05:00",
+            "cwes": [
+                286,
+                299,
+                380
+            ],
+            "description": "Share number address real their travel figure. Six through turn structure. Growth everybody according southern while. Travel bag despite doctor.",
+            "detail": "Stop give trip ahead recognize protect. Customer Republican not summer. Near police performance raise second see. City station majority. Range group hope think. Red turn upon debate we meet.",
+            "id": "2af6cbd7-bff5-4140-a959-55f12bc2a4e3",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "beth castro"
+                },
+                {
+                    "name": "random2",
+                    "value": "shannon peters"
+                },
+                {
+                    "name": "random3",
+                    "value": "antonio landry"
+                }
+            ],
+            "published": "1973-06-08T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Richard Rivera",
+                        "url": "lewis.com"
+                    }
+                }
+            ],
+            "recommendation": "Mean cell sell attack impact. Look out show its smile. Option action walk boy raise whom. Performance remain fall per generation tell sound.",
+            "updated": "1989-02-17T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Dana Anderson",
+                    "url": "myers-cline.com"
+                }
+            ],
+            "bom-ref": "BomRef.7726385910788478.4295662584816563",
+            "created": "1981-09-15T00:00:00-04:00",
+            "cwes": [
+                186,
+                254,
+                315
+            ],
+            "description": "Quite boy major board history pick. Kind agreement space laugh. Operation hot onto future.",
+            "detail": "Use ask industry choose example then. Large control learn any loss. Professional feel source international themselves action back once. Some hold others key individual important position. Go movement bar brother person leave rest.",
+            "id": "3085046e-570b-4254-a815-2dd38d837524",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "stephen blair"
+                },
+                {
+                    "name": "random2",
+                    "value": "richard rodriguez"
+                },
+                {
+                    "name": "random3",
+                    "value": "dr. johnny wallace"
+                }
+            ],
+            "published": "1971-07-25T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Donna Lopez",
+                        "url": "costa.info"
+                    }
+                }
+            ],
+            "recommendation": "Science could cover difficult. Teach wind national image piece quality now trip. Author carry accept sport himself team.",
+            "updated": "1996-11-23T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Becky Middleton",
+                    "url": "shaffer.com"
+                }
+            ],
+            "bom-ref": "BomRef.7506791558805654.3524418768840589",
+            "created": "1984-12-19T00:00:00-05:00",
+            "cwes": [
+                12,
+                379,
+                459
+            ],
+            "description": "See right evening season that. Tax daughter your team. War early action west.",
+            "detail": "Sell energy color market. Thing thing city art economic. Thousand nature allow that professional ability establish entire. Street catch really any room plant. Source middle population together describe live. Parent nice sign short.",
+            "id": "3aebd1c8-9600-4d7e-8538-6b6a70d1f41e",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "kelly alexander"
+                },
+                {
+                    "name": "random2",
+                    "value": "jeanette smith"
+                },
+                {
+                    "name": "random3",
+                    "value": "wendy kirby"
+                }
+            ],
+            "published": "1986-08-17T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Tina Lloyd",
+                        "url": "hutchinson-randall.info"
+                    }
+                }
+            ],
+            "recommendation": "Accept he project rule in. Computer pay town give allow. Resource yeah night able somebody later.",
+            "updated": "2000-04-06T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Donna Powell",
+                    "url": "rojas.com"
+                }
+            ],
+            "bom-ref": "BomRef.07288133489959281.9926814503742144",
+            "created": "1988-11-30T00:00:00-05:00",
+            "cwes": [
+                416,
+                424,
+                475
+            ],
+            "description": "College simply particular have Mrs country name. Car woman land can. Certainly senior inside already family low.",
+            "detail": "Draw skill minute the police onto. Station policy nation someone court still movie. After girl develop baby attention own science.",
+            "id": "3c557698-c495-40d9-853c-428366f477ab",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "brian wallace"
+                },
+                {
+                    "name": "random2",
+                    "value": "jenna dunlap"
+                },
+                {
+                    "name": "random3",
+                    "value": "erika contreras"
+                }
+            ],
+            "published": "2000-05-06T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Scott Zimmerman",
+                        "url": "garrett.biz"
+                    }
+                }
+            ],
+            "recommendation": "Order poor necessary field television site discover. Suffer technology attention return. Him degree young save shoulder. Direction matter walk learn pattern position debate. So child wonder view money forward.",
+            "updated": "1970-05-31T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Darren Holmes",
+                    "url": "cox.com"
+                }
+            ],
+            "bom-ref": "BomRef.9848761210538547.5429588357364908",
+            "created": "1975-10-21T00:00:00-04:00",
+            "cwes": [
+                106,
+                414,
+                476
+            ],
+            "description": "Represent general go blue. Watch writer able boy else others design. Record speech level black ready rule dark. Expert energy old report. White table Democrat decade card specific. Herself light record set little give only.",
+            "detail": "Cup gun some. Answer us few after. Street money every office production. Who item others adult particularly letter letter still. Nation up apply marriage.",
+            "id": "40fb8c30-ec40-4d96-92eb-63ae107d78cc",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "jessica olson"
+                },
+                {
+                    "name": "random2",
+                    "value": "marissa barnes"
+                },
+                {
+                    "name": "random3",
+                    "value": "derrick olson"
+                }
+            ],
+            "published": "2005-10-24T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Chad Lopez",
+                        "url": "murray-scott.com"
+                    }
+                }
+            ],
+            "recommendation": "Fact there tonight case field wind. Ability remain guy hit notice. Exist heart seven person evidence call. Strategy population adult identify product compare use.",
+            "updated": "1974-08-05T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Tony Ewing",
+                    "url": "meyer.com"
+                }
+            ],
+            "bom-ref": "BomRef.46560127323572364.6528682650569481",
+            "created": "2020-05-03T00:00:00-04:00",
+            "cwes": [
+                288,
+                395,
+                457
+            ],
+            "description": "Civil plan drop learn else minute white. Time certain price issue while actually project. Chair paper medical table answer child hear world. Against detail cut attorney.",
+            "detail": "Most quite agreement. Who born parent yeah dinner ask food. Company discussion machine responsibility age south choose.",
+            "id": "4785c51c-d965-4ca9-ac03-4671aee5d2ad",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "calvin stewart"
+                },
+                {
+                    "name": "random2",
+                    "value": "john taylor"
+                },
+                {
+                    "name": "random3",
+                    "value": "jonathan herrera"
+                }
+            ],
+            "published": "2021-01-01T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Briana Mack",
+                        "url": "hernandez.com"
+                    }
+                }
+            ],
+            "recommendation": "Relate not huge anything manage. Be those kid cost contain pull her. End young describe impact song. Require shake central. Animal important Congress child. Whose our hair bill cut street officer.",
+            "updated": "1979-12-30T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Amber Hill",
+                    "url": "fox-jones.net"
+                }
+            ],
+            "bom-ref": "BomRef.3827671824876273.12427605541645814",
+            "created": "2005-12-16T00:00:00-05:00",
+            "cwes": [
+                234,
+                242,
+                473
+            ],
+            "description": "Once away evidence role word message. But myself safe today base race. Option campaign management they growth try. There agreement have government. Edge between his hotel from artist serious.",
+            "detail": "Summer film enjoy imagine window. Then moment name too serious baby. Letter drug lead. College weight in option. No figure with project soon education similar do.",
+            "id": "4935b442-b88b-4601-aeaa-e2a6505d4568",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "ryan gonzalez"
+                },
+                {
+                    "name": "random2",
+                    "value": "travis williams"
+                },
+                {
+                    "name": "random3",
+                    "value": "cindy mcconnell dds"
+                }
+            ],
+            "published": "1989-04-28T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Michael Larsen",
+                        "url": "riley.com"
+                    }
+                }
+            ],
+            "recommendation": "Report write time artist. Through anything painting learn arm. Anything whose simply view. Interest environment during. Science wear usually perform dog.",
+            "updated": "1989-12-20T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Amy Stevens",
+                    "url": "ball.com"
+                }
+            ],
+            "bom-ref": "BomRef.5071452269646697.4377241345386992",
+            "created": "1972-07-31T00:00:00-04:00",
+            "cwes": [
+                259,
+                340,
+                382
+            ],
+            "description": "Fight take fill let city course player. Very treat visit learn stage. Talk available together although prove small.",
+            "detail": "Short mean recently kid recent near reality. Author Mrs carry southern expert determine. Top individual support church maybe expert few. Executive radio general fish understand unit.",
+            "id": "4955c4b4-a7ad-4f03-ba38-ab5ab1595e74",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "judy park"
+                },
+                {
+                    "name": "random2",
+                    "value": "leslie allen"
+                },
+                {
+                    "name": "random3",
+                    "value": "tiffany gonzalez"
+                }
+            ],
+            "published": "1999-04-23T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Ryan Chavez",
+                        "url": "hess-boyd.net"
+                    }
+                }
+            ],
+            "recommendation": "Despite travel ten each couple summer. Month respond win event use. Hundred final without most help girl.",
+            "updated": "1985-05-12T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Jeffrey Mcguire",
+                    "url": "smith-wells.net"
+                }
+            ],
+            "bom-ref": "BomRef.2768179349732621.35016648551130325",
+            "created": "1982-09-18T00:00:00-04:00",
+            "cwes": [
+                98,
+                193,
+                276
+            ],
+            "description": "Tonight executive compare strong main. Unit north admit series up less local. Series interview allow would. Nice focus above financial magazine half have truth.",
+            "detail": "Site whatever could state big almost far professional. Office wish stage nation hope like. Senior ever which. General phone room. Rich these feeling.",
+            "id": "4d877532-66cd-4119-bf55-89f37a086b76",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "melissa mccoy"
+                },
+                {
+                    "name": "random2",
+                    "value": "amy clark"
+                },
+                {
+                    "name": "random3",
+                    "value": "lisa johnston"
+                }
+            ],
+            "published": "2023-05-13T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Sabrina Davis",
+                        "url": "ford.com"
+                    }
+                }
+            ],
+            "recommendation": "Resource right big special beyond. Movie despite another indicate history almost reality develop. Actually human approach medical build yard her.",
+            "updated": "2001-11-15T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Sherri Pruitt",
+                    "url": "mcdonald-mora.org"
+                }
+            ],
+            "bom-ref": "BomRef.9170021050784213.6495900462222202",
+            "created": "2012-11-13T00:00:00-05:00",
+            "cwes": [
+                23,
+                50,
+                423
+            ],
+            "description": "Art suddenly me reach or. Happy family south structure next himself. Operation miss change center bit whether western. Teacher professor because specific pay. Shoulder statement between.",
+            "detail": "Else nearly study choose born already able. Boy listen serve often table left major. Today decide front partner send. Be use nice eat set. Say knowledge positive see them activity impact. Hit actually grow trade.",
+            "id": "5537ccf5-6004-414c-87aa-7bbc7fbf70e9",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "amanda newman"
+                },
+                {
+                    "name": "random2",
+                    "value": "karen ramirez"
+                },
+                {
+                    "name": "random3",
+                    "value": "matthew bridges"
+                }
+            ],
+            "published": "1971-07-25T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Amber Munoz",
+                        "url": "davis.com"
+                    }
+                }
+            ],
+            "recommendation": "Job would teach. Occur safe hard commercial. Teacher picture expect safe any provide green. Think range American wish action world. Pm pretty evidence value simple.",
+            "updated": "1986-12-18T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Jennifer Davidson",
+                    "url": "robinson.org"
+                }
+            ],
+            "bom-ref": "BomRef.7764729850681378.70132505258183",
+            "created": "1998-03-27T00:00:00-05:00",
+            "cwes": [
+                135,
+                203,
+                480
+            ],
+            "description": "Religious top while resource owner. They second point physical. Between remember throughout trouble wife second. Option nor when. Artist direction wait everyone.",
+            "detail": "Former doctor cause perhaps continue if gas. Step them follow. Ground able her.",
+            "id": "5d2e38ac-e280-4bfd-bba4-fce53bcaadc1",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "jonathan bolton"
+                },
+                {
+                    "name": "random2",
+                    "value": "brandon cortez"
+                },
+                {
+                    "name": "random3",
+                    "value": "penny rodriguez"
+                }
+            ],
+            "published": "2024-01-25T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Debra Barker",
+                        "url": "fernandez.org"
+                    }
+                }
+            ],
+            "recommendation": "Officer cost most act commercial leave. Life kid leg actually skill. Song clear town situation decade talk campaign. Year central role star design. And detail history baby also fight which their. Just television east bad worry government option ten. Sure throughout he field story suffer.",
+            "updated": "2024-01-30T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Paul Wright",
+                    "url": "mcdonald-doyle.com"
+                }
+            ],
+            "bom-ref": "BomRef.4988294363254048.20788662919764367",
+            "created": "1994-06-25T00:00:00-04:00",
+            "cwes": [
+                53,
+                285,
+                445
+            ],
+            "description": "Old establish television. Never total employee father. Newspaper ever more. Son financial option rise evidence call theory. Political floor bad old little including lose this.",
+            "detail": "Indicate parent responsibility boy walk such inside six. Arrive rise sister she figure remember six. Nor unit ago property tell woman art. Look pay heavy with. Two exist truth court.",
+            "id": "5fa36ef4-23b2-47e2-b220-8e5efe23160f",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "tanya murphy"
+                },
+                {
+                    "name": "random2",
+                    "value": "philip kirk"
+                },
+                {
+                    "name": "random3",
+                    "value": "tammy moore"
+                }
+            ],
+            "published": "2000-06-15T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Dylan Martin",
+                        "url": "parker.com"
+                    }
+                }
+            ],
+            "recommendation": "Four sometimes carry government performance shake never. Event less than career. Table life politics necessary east form.",
+            "updated": "2018-06-28T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Andrea Smith",
+                    "url": "patterson.com"
+                }
+            ],
+            "bom-ref": "BomRef.33380982685464644.09728793176784811",
+            "created": "1993-08-16T00:00:00-04:00",
+            "cwes": [
+                186,
+                287,
+                468
+            ],
+            "description": "In pass step up up staff. Upon service senior other experience college successful. Fish make up appear camera around pick. Reflect current director quickly.",
+            "detail": "Prove same really meet. Program experience rest though nor whole. Often from issue tax expert. War how soon war think there. Nice travel still nearly fight decision individual candidate. Month military then past letter.",
+            "id": "5fcb4272-3112-42ec-b3d1-9e0c7eac7645",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "dakota bishop"
+                },
+                {
+                    "name": "random2",
+                    "value": "angela schwartz"
+                },
+                {
+                    "name": "random3",
+                    "value": "john robinson"
+                }
+            ],
+            "published": "2014-12-07T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Douglas Williams",
+                        "url": "singh.biz"
+                    }
+                }
+            ],
+            "recommendation": "Manage sell her grow. Run executive mind long add spend. Adult avoid five identify choose age throughout. Truth impact produce brother event. Audience can enough develop agreement wall cause.",
+            "updated": "1972-07-21T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Lance Lewis",
+                    "url": "mendez-harris.com"
+                }
+            ],
+            "bom-ref": "BomRef.8974368482172849.9409496391859099",
+            "created": "1976-03-30T00:00:00-05:00",
+            "cwes": [
+                29,
+                349,
+                403
+            ],
+            "description": "Better friend put senior hot. Education three box decade quickly. Law during property all child. Also exactly color paper score deep way.",
+            "detail": "Cut word vote day interest another. Day base join media discussion. Culture already win possible range expert. Speak civil government white game worker throughout.",
+            "id": "64484841-c17a-4cbb-b1f8-93f29424d95a",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "laura ryan"
+                },
+                {
+                    "name": "random2",
+                    "value": "jennifer allen"
+                },
+                {
+                    "name": "random3",
+                    "value": "susan thomas"
+                }
+            ],
+            "published": "1973-10-27T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Holly Murphy",
+                        "url": "davis.info"
+                    }
+                }
+            ],
+            "recommendation": "Yeah system score factor training home minute. Record though international save for ground run kid. Movie grow cover hear move collection grow. Whose serious full protect we. Then including spend class treat this. Thank Congress school.",
+            "updated": "2006-01-03T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Laura Mosley",
+                    "url": "hernandez.com"
+                }
+            ],
+            "bom-ref": "BomRef.37721441573855496.4101778703322694",
+            "created": "1979-07-05T00:00:00-04:00",
+            "cwes": [
+                405,
+                407,
+                497
+            ],
+            "description": "Especially form magazine stay could property. Later national impact cell. Avoid stop expect respond near economy. Wind involve play floor remember. Pressure girl enter time early key sense.",
+            "detail": "Theory course lay begin. Drug most against hit while natural sport green. Southern next new. Heart during action respond interesting. Possible sport coach reveal dog others. Audience forget citizen report wish unit bill. Land range forget pass.",
+            "id": "651bb69b-0fa6-46a0-8072-2785177af197",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "christopher reed"
+                },
+                {
+                    "name": "random2",
+                    "value": "angelica fisher"
+                },
+                {
+                    "name": "random3",
+                    "value": "shelby carrillo"
+                }
+            ],
+            "published": "1998-09-21T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Mr. Alexander Allen Jr.",
+                        "url": "johnson.com"
+                    }
+                }
+            ],
+            "recommendation": "Wrong accept seek four. Cost your star grow structure life. Commercial provide go. Price ago drug itself spring.",
+            "updated": "2008-12-02T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Michelle Martinez",
+                    "url": "huffman-james.info"
+                }
+            ],
+            "bom-ref": "BomRef.4547209314601359.28864505453236033",
+            "created": "2021-04-22T00:00:00-04:00",
+            "cwes": [
+                17,
+                97,
+                452
+            ],
+            "description": "Debate water dog skin pass. Shake gun true Democrat reason ability time. Soon know across offer thought continue character certain. Recent management something situation board report.",
+            "detail": "Voice hospital professional. Discuss institution yeah leave. School sign unit trouble. Some teach most mother. Wear sort practice hundred Mr long.",
+            "id": "75595093-b06c-4dad-a63c-ebc9019d51a8",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "emily hall"
+                },
+                {
+                    "name": "random2",
+                    "value": "stephanie harrison"
+                },
+                {
+                    "name": "random3",
+                    "value": "michelle torres"
+                }
+            ],
+            "published": "2004-04-10T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Amy Pineda",
+                        "url": "vargas.info"
+                    }
+                }
+            ],
+            "recommendation": "Beat many friend set court. Still discuss play member. Finish very person forget these set. Bit main purpose probably. Room surface law room against.",
+            "updated": "2018-07-31T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Tara Evans",
+                    "url": "stevens-perez.net"
+                }
+            ],
+            "bom-ref": "BomRef.3824437064760602.1473851959527328",
+            "created": "2007-03-03T00:00:00-05:00",
+            "cwes": [
+                51,
+                250,
+                412
+            ],
+            "description": "Direction large nearly radio. Site affect their show care. Him stay carry protect begin. All rest report then. Whole model question dinner few. Prepare might news.",
+            "detail": "Marriage street herself rather. Spend letter finish leg law. Law security general road wait wind card.",
+            "id": "772906fc-5c37-4eca-bcb7-c7e300438674",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "denise murphy"
+                },
+                {
+                    "name": "random2",
+                    "value": "david le"
+                },
+                {
+                    "name": "random3",
+                    "value": "clinton dennis"
+                }
+            ],
+            "published": "2018-02-13T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Charles Anderson",
+                        "url": "brown-davis.com"
+                    }
+                }
+            ],
+            "recommendation": "Describe particularly indicate return. Serve like price four everything crime imagine. Oil various your five appear eye care. Though dinner including everybody PM rich community. Whatever green effort company on drive. Voice building bar mouth off organization investment near. Religious describe surface suffer evening agreement.",
+            "updated": "1998-06-04T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "James Bradley",
+                    "url": "oconnell-wang.com"
+                }
+            ],
+            "bom-ref": "BomRef.25345450063285346.7552149056317353",
+            "created": "2022-07-31T00:00:00-04:00",
+            "cwes": [
+                89,
+                152,
+                414
+            ],
+            "description": "North usually reflect serve board type accept. Relationship size guy want. About form get forget.",
+            "detail": "City always six fear mother lead remember. Month attack camera girl throw form. Day article discover live major safe from.",
+            "id": "883d29fe-7111-42af-9381-4270942d36e1",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "ann cook md"
+                },
+                {
+                    "name": "random2",
+                    "value": "thomas mcgee"
+                },
+                {
+                    "name": "random3",
+                    "value": "pamela molina"
+                }
+            ],
+            "published": "2014-08-10T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Julie Gray",
+                        "url": "ruiz-carter.info"
+                    }
+                }
+            ],
+            "recommendation": "Change property test crime. May for national people choose beyond. Certain economy win pressure gas member.",
+            "updated": "1973-10-09T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "David Rice",
+                    "url": "harris.com"
+                }
+            ],
+            "bom-ref": "BomRef.9103118292811729.15763868753749954",
+            "created": "1992-08-24T00:00:00-04:00",
+            "cwes": [
+                97,
+                146,
+                168
+            ],
+            "description": "These why result open tonight include town difference. Key two around foot nice visit hair smile. Military establish paper. Own meet big ground cell teach market. Television series baby house general. Board small moment establish call.",
+            "detail": "High guess size television born business. Your good low last now animal wait. Build at whom agree mission particular summer.",
+            "id": "90e39d1c-5436-4e4d-bb23-e61f14079f9a",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "christian phillips"
+                },
+                {
+                    "name": "random2",
+                    "value": "laura marsh"
+                },
+                {
+                    "name": "random3",
+                    "value": "sandra lopez"
+                }
+            ],
+            "published": "1976-12-06T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Brianna Mason",
+                        "url": "davis.com"
+                    }
+                }
+            ],
+            "recommendation": "Hard nation interesting determine couple glass particular must. Report kind contain modern. Bill size human else two. Seat result kid price voice over somebody half. Only agency rock soldier.",
+            "updated": "1983-09-09T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Katherine Brown",
+                    "url": "dixon.com"
+                }
+            ],
+            "bom-ref": "BomRef.3260926772761865.5898547878701134",
+            "created": "1978-09-10T00:00:00-04:00",
+            "cwes": [
+                245,
+                296,
+                317
+            ],
+            "description": "Option maintain mission first discover different language this. Nature nation hour Democrat hope. Contain general writer record pretty. Middle artist information rich beautiful reality others. Chance affect nice painting difference. Growth eight Congress foot week key coach policy.",
+            "detail": "Must wind yard through yourself. Smile sound short hand part whom rest forward. First do where animal perform best. Wind work capital discuss and accept.",
+            "id": "92c6b33a-ced0-495a-860f-537fe491dc0d",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "kelly griffin"
+                },
+                {
+                    "name": "random2",
+                    "value": "brandi johnson"
+                },
+                {
+                    "name": "random3",
+                    "value": "gerald mora"
+                }
+            ],
+            "published": "2004-12-25T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "James Spears",
+                        "url": "johnson-kline.com"
+                    }
+                }
+            ],
+            "recommendation": "Believe specific like. Bar whatever parent business consider maybe box let. Attorney create down be.",
+            "updated": "2003-03-27T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Jeremy Munoz",
+                    "url": "robinson.com"
+                }
+            ],
+            "bom-ref": "BomRef.5256298546745816.4973724488200595",
+            "created": "2000-07-08T00:00:00-04:00",
+            "cwes": [
+                209,
+                225,
+                357
+            ],
+            "description": "Open however benefit help site different produce modern. However see short according whole relationship her. Collection hour upon senior. Stuff move little song people imagine. Source account owner great. Send design enter interview.",
+            "detail": "Through stock teach though growth. Card skill relate rich cover home time. Pattern cell across prepare smile exist sure. Line personal end against almost always.",
+            "id": "9c9c8995-50e3-4695-85de-880e7b39dce7",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "gregory newton"
+                },
+                {
+                    "name": "random2",
+                    "value": "rhonda rosales"
+                },
+                {
+                    "name": "random3",
+                    "value": "lindsay vega"
+                }
+            ],
+            "published": "2001-12-20T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Julie Booth",
+                        "url": "james.biz"
+                    }
+                }
+            ],
+            "recommendation": "Professional huge way. Move rate four mind year individual that ever. Open safe parent section man have particularly beat. Produce walk yourself relationship. Control figure drop trade behavior by involve. Heavy left simple.",
+            "updated": "2013-04-28T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Matthew Robinson",
+                    "url": "higgins.net"
+                }
+            ],
+            "bom-ref": "BomRef.522252926425023.013378053653244182",
+            "created": "2018-01-17T00:00:00-05:00",
+            "cwes": [
+                160,
+                242,
+                427
+            ],
+            "description": "Apply most financial involve trade. Detail authority positive street. Article official sister ground.",
+            "detail": "Of more well indeed. Mention human play agency do. Coach federal according just.",
+            "id": "a45d45ff-5863-42e7-a27c-e41daf4e7966",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "claire castro"
+                },
+                {
+                    "name": "random2",
+                    "value": "erik casey"
+                },
+                {
+                    "name": "random3",
+                    "value": "michael hunt"
+                }
+            ],
+            "published": "1976-07-25T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Gabriella Schmitt",
+                        "url": "nelson.com"
+                    }
+                }
+            ],
+            "recommendation": "Bill week affect effect. Quality throw defense just stock young community. Specific manager rest let everybody public while point. Guess another prevent store Democrat opportunity. Range result realize accept should suffer. Star ok fly own.",
+            "updated": "1975-02-14T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Hannah Ferrell",
+                    "url": "hull.info"
+                }
+            ],
+            "bom-ref": "BomRef.87163410777644.5265091878416258",
+            "created": "2024-08-08T00:00:00-04:00",
+            "cwes": [
+                222,
+                262,
+                284
+            ],
+            "description": "Number build prove he near. Control tough fine person owner above create window. Throw building factor sometimes time in but. Kind tough shake few well business star page.",
+            "detail": "Head lead step can improve recognize blue check. Interesting serious learn alone development. Right himself small Democrat parent white itself team. Usually wonder exactly himself. As policy purpose task picture however.",
+            "id": "ae9d95e5-2b8b-46c4-9252-8d735cda9313",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "joseph jackson"
+                },
+                {
+                    "name": "random2",
+                    "value": "david williams"
+                },
+                {
+                    "name": "random3",
+                    "value": "shelly patrick"
+                }
+            ],
+            "published": "2017-05-20T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Andrea Farrell",
+                        "url": "barry-boyd.biz"
+                    }
+                }
+            ],
+            "recommendation": "Suddenly partner decision say that. Standard sea million good wonder raise chair. Common story economic tell land.",
+            "updated": "1970-11-04T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Emily Hayes",
+                    "url": "martin.net"
+                }
+            ],
+            "bom-ref": "BomRef.9052945415314289.5108009844440466",
+            "created": "2018-04-25T00:00:00-04:00",
+            "cwes": [
+                178,
+                303,
+                427
+            ],
+            "description": "Partner to score feeling tax green. Social government whether. South believe help view call. Ten central yes because reveal trip.",
+            "detail": "According short week community poor. It remember system record staff them. Several community director. Peace contain method determine find between begin. Partner relate article result star study. Decide weight huge relate.",
+            "id": "b10ab846-66bd-41e3-9490-1997f697d314",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "erika west"
+                },
+                {
+                    "name": "random2",
+                    "value": "angelica serrano"
+                },
+                {
+                    "name": "random3",
+                    "value": "kyle roberts"
+                }
+            ],
+            "published": "1990-03-14T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "David Morris",
+                        "url": "castaneda.com"
+                    }
+                }
+            ],
+            "recommendation": "Owner boy meet long kitchen ground leg. Nearly sense available your seven tough special. Effort ask respond. Language kitchen rule environment drug anyone statement. Statement ok address. His election great watch itself senior.",
+            "updated": "2024-04-30T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Lauren Davis",
+                    "url": "mendez.com"
+                }
+            ],
+            "bom-ref": "BomRef.1634753878976427.3828728775982181",
+            "created": "1979-08-23T00:00:00-04:00",
+            "cwes": [
+                96,
+                377,
+                392
+            ],
+            "description": "Difference can reflect imagine score dark beat. Source that wish yes attention. Management film certain seven. Leg out change service remember nation direction. Sell environment how conference peace.",
+            "detail": "Heavy experience sing reduce push. Fire on on use occur can. Pm evening as office director defense middle. Foreign understand push along bar management forget. Future how weight pull seek bank.",
+            "id": "ba66988a-97e0-4aed-88a4-37a097d5d6b7",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "stacy stone"
+                },
+                {
+                    "name": "random2",
+                    "value": "rachel morgan"
+                },
+                {
+                    "name": "random3",
+                    "value": "kayla hall"
+                }
+            ],
+            "published": "2016-12-24T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Michael Ramirez",
+                        "url": "king-andrews.com"
+                    }
+                }
+            ],
+            "recommendation": "Usually stand eat choice degree. Truth everybody arm store budget authority degree result. Face lawyer court Republican. Mind window difference miss card.",
+            "updated": "2022-07-14T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Lawrence Hernandez",
+                    "url": "williams.com"
+                }
+            ],
+            "bom-ref": "BomRef.7795941942340749.09709258175833768",
+            "created": "2012-07-28T00:00:00-04:00",
+            "cwes": [
+                38,
+                161,
+                313
+            ],
+            "description": "Best compare along decade station particularly seek off. Party course cell study. Along improve else woman time official.",
+            "detail": "Or maybe real money listen. Activity on case drive purpose citizen hope. Best pick identify six develop. Job head movement movement picture seem must itself. Court four conference play herself enjoy source. Seek vote president imagine know shake method.",
+            "id": "c177f6bb-e3cc-4096-8a7b-0a9c837dd44f",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "nicole mendez"
+                },
+                {
+                    "name": "random2",
+                    "value": "lori moore"
+                },
+                {
+                    "name": "random3",
+                    "value": "marie wilson"
+                }
+            ],
+            "published": "1997-06-09T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Danny Lopez",
+                        "url": "tran.com"
+                    }
+                }
+            ],
+            "recommendation": "Firm money Congress human require. Agency already human pay lose history husband. Last would full face. Address father activity condition your voice necessary. Fall picture whether practice agree long.",
+            "updated": "1996-01-18T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Elizabeth Johnson",
+                    "url": "robinson-reeves.com"
+                }
+            ],
+            "bom-ref": "BomRef.4631117242021332.8453343015072302",
+            "created": "2017-09-14T00:00:00-04:00",
+            "cwes": [
+                12,
+                180,
+                264
+            ],
+            "description": "In not stand thus Mrs security. Step central policy center religious father. Behind half four cover crime give third. Become thus size property tell subject arm. Of pattern card government your.",
+            "detail": "Quite race center successful evening happy. Science hear hold outside class help. Impact she act consider develop drug skin.",
+            "id": "c2107f74-f010-4e17-b174-bc434c52415b",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "deborah stevens"
+                },
+                {
+                    "name": "random2",
+                    "value": "jennifer cuevas"
+                },
+                {
+                    "name": "random3",
+                    "value": "heather nicholson"
+                }
+            ],
+            "published": "2015-12-08T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Brian Bryant",
+                        "url": "dickerson-riley.com"
+                    }
+                }
+            ],
+            "recommendation": "Give personal hand. Hotel summer run health rate meet. Street rise both.",
+            "updated": "2020-11-11T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Gabriel Edwards",
+                    "url": "duran.com"
+                }
+            ],
+            "bom-ref": "BomRef.04673612153273854.2302720551839047",
+            "created": "1975-12-29T00:00:00-05:00",
+            "cwes": [
+                20,
+                107,
+                226
+            ],
+            "description": "Election become center participant heart. Able positive about surface factor morning. Official campaign outside end institution bar. Edge improve especially laugh staff save hand protect. Moment shake land you candidate down. Final music enough contain so feel decision.",
+            "detail": "Situation attack recently group admit. Popular partner beat occur. Indeed clear blood. World husband picture marriage. Small TV long least. Report her economy officer small.",
+            "id": "c6841bea-92af-45ff-9d62-b0c847309ebe",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "lawrence wolfe"
+                },
+                {
+                    "name": "random2",
+                    "value": "darren allen md"
+                },
+                {
+                    "name": "random3",
+                    "value": "carolyn roberts"
+                }
+            ],
+            "published": "2017-09-10T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Lori Patterson",
+                        "url": "poole.com"
+                    }
+                }
+            ],
+            "recommendation": "Candidate religious so news individual. Consider debate beyond assume. Research piece everything whether from. Management together until behavior century now sense. Move spring consider health reveal want.",
+            "updated": "2006-06-26T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Kyle Lane",
+                    "url": "smith-young.info"
+                }
+            ],
+            "bom-ref": "BomRef.4881598238204903.3736656108894778",
+            "created": "1983-12-03T00:00:00-05:00",
+            "cwes": [
+                23,
+                62,
+                116
+            ],
+            "description": "Responsibility company court always region. Hear grow beyond recent hospital. Far arrive clear resource. Manage bill feel once nation future. Certain song cut still stock suddenly. Talk beyond charge season scientist country.",
+            "detail": "Mean stop development top strategy. Note up these blue cell. Cold middle half according.",
+            "id": "c9320576-298b-4a6c-afad-181ee0b7262e",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "jill king"
+                },
+                {
+                    "name": "random2",
+                    "value": "william arnold"
+                },
+                {
+                    "name": "random3",
+                    "value": "edward brown"
+                }
+            ],
+            "published": "1985-11-13T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Susan Thomas",
+                        "url": "day.com"
+                    }
+                }
+            ],
+            "recommendation": "Street material American. Point such for talk certainly according. His her environmental protect guess culture today. Attack grow someone lot everyone imagine. Drive whether although.",
+            "updated": "2019-02-27T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Deborah Taylor",
+                    "url": "rogers.com"
+                }
+            ],
+            "bom-ref": "BomRef.07356326809397196.30828213977463004",
+            "created": "1976-11-30T00:00:00-05:00",
+            "cwes": [
+                39,
+                145,
+                359
+            ],
+            "description": "Public people many past hit however step. Never hit today dream. Argue size former push describe knowledge trouble light.",
+            "detail": "Front company option. Way interview blood. Effort stop suffer. Knowledge sometimes wall little. Establish forward travel. Hit his above determine whose. Little sound country meeting agency commercial soon perform.",
+            "id": "c9342f34-757b-4d5c-8e8b-54d83ca29ffb",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "christopher alexander"
+                },
+                {
+                    "name": "random2",
+                    "value": "emily west"
+                },
+                {
+                    "name": "random3",
+                    "value": "tanya williams"
+                }
+            ],
+            "published": "1996-10-22T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Sherry Mack",
+                        "url": "liu.com"
+                    }
+                }
+            ],
+            "recommendation": "Part event find poor notice soldier. Note speech high drop military church record. Method current pressure. First analysis ground reach. Their growth buy do international. Enter morning as force able.",
+            "updated": "2003-04-03T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Kevin Williams",
+                    "url": "ross-avila.com"
+                }
+            ],
+            "bom-ref": "BomRef.5223470994881906.8137452654232685",
+            "created": "2011-06-02T00:00:00-04:00",
+            "cwes": [
+                336,
+                412,
+                431
+            ],
+            "description": "Too purpose often every miss. Real school cup could former source certainly. Class foreign help arm then themselves. Civil party issue sure interest this economic.",
+            "detail": "Gas couple understand she let study exist. Along social drop look. Player find large thousand bring.",
+            "id": "cb82f895-41b2-4874-ab58-3e25e909e5fb",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "sharon barnes"
+                },
+                {
+                    "name": "random2",
+                    "value": "paula adams"
+                },
+                {
+                    "name": "random3",
+                    "value": "peter alvarez"
+                }
+            ],
+            "published": "1989-04-13T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Matthew Parker",
+                        "url": "rodgers.org"
+                    }
+                }
+            ],
+            "recommendation": "Responsibility fund response south. Team where artist visit explain can glass. Real usually occur series military front. By call red medical people far program court. Stand course someone team.",
+            "updated": "1990-03-21T00:00:00-05:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Rachel Daniels",
+                    "url": "jones-mason.com"
+                }
+            ],
+            "bom-ref": "BomRef.527976122421334.45684742125215694",
+            "created": "2002-12-11T00:00:00-05:00",
+            "cwes": [
+                64,
+                128,
+                279
+            ],
+            "description": "Last kind manager tough morning property. What surface impact first against head office. Power wife push. News fish wish.",
+            "detail": "Play specific born growth trip investment. Prove too everything across check visit anyone. Exactly lay surface front less plant commercial. Several manage long feeling conference star.",
+            "id": "d00281d8-7390-46da-9c92-698fb943da87",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "david carlson dds"
+                },
+                {
+                    "name": "random2",
+                    "value": "amanda rivera"
+                },
+                {
+                    "name": "random3",
+                    "value": "kevin wilson"
+                }
+            ],
+            "published": "1985-10-19T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Randy Lewis",
+                        "url": "kim.com"
+                    }
+                }
+            ],
+            "recommendation": "Lot wait official get type. Fall development else yet. To include store measure. Within seem serve they. Beautiful movement us still. Prove able enjoy describe purpose bank.",
+            "updated": "1981-05-07T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Kelly Joyce",
+                    "url": "evans-lloyd.com"
+                }
+            ],
+            "bom-ref": "BomRef.4405600702981528.060069390107205134",
+            "created": "2009-09-10T00:00:00-04:00",
+            "cwes": [
+                132,
+                171,
+                377
+            ],
+            "description": "Hear prevent science once season. Top deep PM note itself issue. First commercial subject hot pay should. Else they fast federal huge Congress present.",
+            "detail": "Common couple audience. Before help reflect school bag spend serve lawyer. New drive produce relationship begin husband federal.",
+            "id": "d858576c-596c-4469-8392-323cf053ffc8",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "benjamin bradley"
+                },
+                {
+                    "name": "random2",
+                    "value": "zachary ray"
+                },
+                {
+                    "name": "random3",
+                    "value": "christopher smith"
+                }
+            ],
+            "published": "2006-06-17T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "David Wallace",
+                        "url": "macdonald-gibson.com"
+                    }
+                }
+            ],
+            "recommendation": "Very get than. Oil short not upon without lay above. Imagine decision above challenge coach somebody grow. Involve stock deep listen difference. Decide without chair issue account herself you art.",
+            "updated": "1974-08-07T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Mr. Sergio Lewis",
+                    "url": "ray.com"
+                }
+            ],
+            "bom-ref": "BomRef.635122524325755.10130583711357821",
+            "created": "2011-12-08T00:00:00-05:00",
+            "cwes": [
+                48,
+                68,
+                172
+            ],
+            "description": "Exist threat require save. Politics since never language. Action government learn strong. Police surface lawyer thought. Safe property old activity heavy final. Ready develop citizen system majority ready.",
+            "detail": "Sure indeed north usually. Believe address study politics series father. Billion alone series perhaps prevent court. Our follow perform mouth throughout miss.",
+            "id": "ec15d151-d5e4-4933-9863-cb34de7f9ac5",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "sierra harrison"
+                },
+                {
+                    "name": "random2",
+                    "value": "michelle smith"
+                },
+                {
+                    "name": "random3",
+                    "value": "teresa robbins"
+                }
+            ],
+            "published": "2010-08-12T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Joshua Walker",
+                        "url": "arroyo-bryant.biz"
+                    }
+                }
+            ],
+            "recommendation": "Per such community human left model someone nation. Wide gun work although later. Note product us look beat. Past soon property decade. Raise bar body social believe.",
+            "updated": "2022-08-29T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Christopher Bruce",
+                    "url": "ryan-hughes.info"
+                }
+            ],
+            "bom-ref": "BomRef.6091768183703512.6115514353110649",
+            "created": "1983-06-17T00:00:00-04:00",
+            "cwes": [
+                490,
+                495
+            ],
+            "description": "Analysis whose do young knowledge decide detail. Act beyond event key. Past question interest couple. Wind would Democrat occur keep. Final woman would. Similar participant party would first popular onto.",
+            "detail": "Professional manage evening child morning card. Four see himself politics become. Reduce raise this cold.",
+            "id": "f374889e-0043-46f9-a98f-416d59ee51e8",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "leah fisher"
+                },
+                {
+                    "name": "random2",
+                    "value": "kelsey reed"
+                },
+                {
+                    "name": "random3",
+                    "value": "amy gutierrez"
+                }
+            ],
+            "published": "2001-06-07T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Gabrielle Collins PhD",
+                        "url": "myers.biz"
+                    }
+                }
+            ],
+            "recommendation": "No smile responsibility gun production reality. Third medical instead itself their sure relationship. Almost whose which know bank officer.",
+            "updated": "2008-09-21T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Jackie Gomez",
+                    "url": "carrillo.org"
+                }
+            ],
+            "bom-ref": "BomRef.4609568589522507.8240656218140068",
+            "created": "1997-01-15T00:00:00-05:00",
+            "cwes": [
+                69,
+                72,
+                335
+            ],
+            "description": "Sea week material organization matter quite future cup. Wish everything she yes network. Other best close wall.",
+            "detail": "Test must beyond. Ahead like hit price option focus but. Staff paper know enough live.",
+            "id": "f407f5b9-bed5-434a-a536-92c2bda6aaad",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "sherri dyer"
+                },
+                {
+                    "name": "random2",
+                    "value": "cameron wright"
+                },
+                {
+                    "name": "random3",
+                    "value": "jordan wells"
+                }
+            ],
+            "published": "1999-10-01T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Shelby Garza",
+                        "url": "stanton.biz"
+                    }
+                }
+            ],
+            "recommendation": "Shake surface decide quickly change. Deep measure water worker cause enter. Kind image civil alone oil choice compare. Take key sister least. Method here same Mr eight too.",
+            "updated": "1974-06-22T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Donna Frazier",
+                    "url": "lawrence-trevino.com"
+                }
+            ],
+            "bom-ref": "BomRef.7074151732329339.5567670405692441",
+            "created": "1995-02-14T00:00:00-05:00",
+            "cwes": [
+                100,
+                222,
+                331
+            ],
+            "description": "Reason each lot value lose doctor. Word author compare standard. Their rule sport onto. Money certain low community list bag house. Water sister top blood sea sign.",
+            "detail": "How measure design station. Issue include quickly your like. According forget piece paper able Mrs. Air include never project think skin soon. Mean never page not hot.",
+            "id": "f85a84c2-60bb-41d5-808d-5e3fa4ccff16",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "ralph collins"
+                },
+                {
+                    "name": "random2",
+                    "value": "nicole beck"
+                },
+                {
+                    "name": "random3",
+                    "value": "steven ramos"
+                }
+            ],
+            "published": "2023-10-22T00:00:00-04:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Lisa Miller",
+                        "url": "rasmussen-nguyen.com"
+                    }
+                }
+            ],
+            "recommendation": "Civil civil second least baby opportunity. Expert court customer organization together. Fall health bit just. Short establish prevent could suddenly. Alone nor force movement important. Identify specific despite unit worry grow myself cold.",
+            "updated": "1989-05-09T00:00:00-04:00"
+        },
+        {
+            "advisories": [
+                {
+                    "title": "Brenda Harvey",
+                    "url": "jackson-lindsey.com"
+                }
+            ],
+            "bom-ref": "BomRef.9754751010059067.7215936662998859",
+            "created": "2004-09-13T00:00:00-04:00",
+            "cwes": [
+                25,
+                362,
+                490
+            ],
+            "description": "Must behind market. Spend find thing others million for. Program project write management start. Few maintain magazine agency newspaper that. Trial though sound everybody firm why instead hand.",
+            "detail": "War baby free assume despite operation sound sea. Yeah story three develop member forget. Meet among student authority need or security. Meet as use civil record animal.",
+            "id": "fa6591e3-d389-4a47-ba10-3251689b27a9",
+            "properties": [
+                {
+                    "name": "random1",
+                    "value": "troy nelson"
+                },
+                {
+                    "name": "random2",
+                    "value": "natalie gilbert"
+                },
+                {
+                    "name": "random3",
+                    "value": "stephen austin"
+                }
+            ],
+            "published": "2019-12-11T00:00:00-05:00",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "Kevin Vasquez",
+                        "url": "dalton.com"
+                    }
+                }
+            ],
+            "recommendation": "Suffer range role. Hotel line participant factor every. Help their measure shake.",
+            "updated": "2009-05-23T00:00:00-04:00"
+        }
+    ],
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5"
+}

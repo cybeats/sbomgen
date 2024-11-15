@@ -1,6 +1,4 @@
-<html>
-<img src="images/cybeats.logo.svg" alt="cybeats_logo" height="100" width="900">
-</html>
+<img src="images/cybeats.logo.svg" id="object1" alt="cybeats_logo" height="100" width="900">
 
 # List of SBOM Generation Tools
 
@@ -136,3 +134,5 @@ SBOMs can be created from binary files using the following tools:
 ## CSV Conversion
 
 * SBOMs can be created from CSV/Excel documents using the [CSV2CDX](tutorials/creating-sbom-from-csv/creating-csv2cdx-sbom/creating-csv2cdx-sbom.md) tool.
+
+* VEXs can be created from CSV/Excel documents using the [CSV2VEX](tutorials/creating-sbom-from-csv/creating-csv2vex-vex/creating-csv2vex-vex.md) tool.

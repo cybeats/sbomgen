@@ -1,4 +1,8 @@
+<!-- <html>
 <img src="images/cybeats.logo.svg" id="object1" alt="cybeats_logo" height="100" width="900">
+</html> -->
+
+<br>
 
 # List of SBOM Generation Tools
 

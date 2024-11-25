@@ -1,0 +1,89 @@
+{
+  "bom_ref": null,
+  "id": "id",
+  "source": {
+    "url": null,
+    "name": null
+  },
+  "references": [
+    {
+      "id": null,
+      "source": {
+        "url": null,
+        "name": null
+      }
+    }
+  ],
+  "ratings": [
+    {
+      "source": {
+        "url": "sourceurl",
+        "name": "sourcename"
+      },
+      "score": null,
+      "severity": null,
+      "method": null,
+      "vector": null,
+      "justification": null
+    }
+  ],
+  "cwes": "cwes",
+  "description": "description",
+  "detail": "detail",
+  "recommendation": "recommendation",
+  "workaround": null,
+  "advisories": [
+    {
+      "title": "advisorytitle",
+      "url": "advisoryurl"
+    }
+  ],
+  "created": "created",
+  "published": "published",
+  "updated": "updated",
+  "rejected": "rejected",
+  "credits": {
+    "organizations": [
+      {
+        "bom-ref": null,
+        "name": null,
+        "urls": null,
+        "contact": [
+          {
+            "bom-ref": null,
+            "name": null,
+            "email": null,
+            "phone": null
+          }
+        ]
+      }
+    ],
+    "individuals": [
+      {
+        "bom-ref": null,
+        "name": null,
+        "email": null,
+        "phone": null
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": null,
+      "version": null
+    }
+  ],
+  "analysis": {
+    "state": null,
+    "justification": null,
+    "detail": null,
+    "response": []
+  },
+  "affects": [
+    {
+      "ref": null,
+      "versions": []
+    }
+  ],
+  "properties": ["random1", "random2", "random3"]
+}

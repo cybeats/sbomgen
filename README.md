@@ -104,6 +104,7 @@ To generate SBOMs for Rust projects, you can use:
 
 * A Cryptographic Bill of Materials (CBOM) can be created using the [cryptobom-forge](tutorials/cbom/creating-cbom/creating-cryptographic-bill-of-materials.md) CLI.
 * A CBOM can be created using the SonarQube [Sonar Cryptography Plugin](tutorials/cbom/creating-sonar-cbom/creating-sonarqube-cbom.md).
+* A CBOM can be created from GitHub repositories, using the IBM [CBOMkit](tutorials/cbom/creating-cbomkit-cbom/creating-cbomkit-cbom.md).
 
 ## SBOM Validation
 

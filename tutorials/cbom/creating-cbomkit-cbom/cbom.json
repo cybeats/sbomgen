@@ -1,50 +1,1307 @@
 {
   "version": 1,
   "metadata": {
-    "tools": {
-      "services": [
-        {
-          "name": "Sonar Cryptography Plugin",
-          "version": "1.3.2",
-          "provider": {
-            "name": "IBM"
-          }
-        }
-      ]
-    },
-    "timestamp": "2024-11-20T05:18:17Z",
+    "timestamp": "2024-11-30T23:26:32Z",
     "properties": [
       {
-        "name": "git-url",
-        "value": "https://github.com/REestwick/test-crypto"
+        "name": "gitUrl",
+        "value": "https://github.com/keycloak/keycloak"
       },
       {
-        "name": "git-branch",
+        "name": "revision",
         "value": "main"
       },
       {
         "name": "commit",
-        "value": "6d3adf80497752deac894fbb016bed28a0fcf25a"
-      },
-      {
-        "name": "purl",
-        "value": "pkg:github/REestwick/test-crypto"
+        "value": "faf36dd2f061fe0c0392b5b731f3fdaf7c33c34b"
       }
     ]
   },
   "bomFormat": "CycloneDX",
   "components": [
     {
-      "name": "SHA256",
+      "name": "key@6ea68b96-b293-4a62-a905-e002184bf558",
       "type": "cryptographic-asset",
-      "bom-ref": "3469f5da-3e7d-4bb5-aa10-d2d29d10227f",
+      "bom-ref": "6ea68b96-b293-4a62-a905-e002184bf558",
       "evidence": {
         "occurrences": [
           {
-            "line": 3,
-            "offset": 6,
-            "location": "test_crypto/__main__.py",
-            "additionalContext": "generate_key"
+            "line": 136,
+            "offset": 28,
+            "location": "core/src/main/java/org/keycloak/jose/jwk/JWKParser.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "ECDH",
+      "type": "cryptographic-asset",
+      "bom-ref": "27e15871-4eef-4b76-9a90-128d6bb07500",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 208,
+            "offset": 36,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.KeyAgreement#getInstance(Ljava/lang/String;)Ljavax/crypto/KeyAgreement;"
+          },
+          {
+            "line": 183,
+            "offset": 36,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.KeyAgreement#getInstance(Ljava/lang/String;)Ljavax/crypto/KeyAgreement;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.3.132.1.12",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "key-agree"
+        }
+      }
+    },
+    {
+      "name": "SHA1",
+      "type": "cryptographic-asset",
+      "bom-ref": "52ce4eb7-53dd-4b31-b407-fa507fa87f25",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 334,
+            "offset": 21,
+            "location": "federation/sssd/src/main/java/org/freedesktop/dbus/connections/SASL.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 378,
+            "offset": 17,
+            "location": "federation/sssd/src/main/java/org/freedesktop/dbus/connections/SASL.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 45,
+            "offset": 41,
+            "location": "server-spi-private/src/main/java/org/keycloak/protocol/saml/util/ArtifactBindingUtils.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "parameterSetIdentifier": "160"
+        }
+      }
+    },
+    {
+      "name": "EC-secp521r1",
+      "type": "cryptographic-asset",
+      "bom-ref": "45c87528-3b11-4bce-aa04-2ecf69aa8845",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 152,
+            "offset": 47,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.10045.2.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "curve": "secp521r1",
+          "primitive": "pke",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "secret-key@4001d0af-57a6-4f6d-8762-f4ec07db3d99",
+      "type": "cryptographic-asset",
+      "bom-ref": "4001d0af-57a6-4f6d-8762-f4ec07db3d99",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 169,
+            "offset": 31,
+            "location": "core/src/main/java/org/keycloak/jose/jwe/enc/AesCbcHmacShaEncryptionProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "EdDSA",
+      "type": "cryptographic-asset",
+      "bom-ref": "4ee105b4-4e11-4c1d-bcff-b785d733e71d",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 133,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEddsaKeyProviderFactory.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 50,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEddsaKeyProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "signature",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "RAW",
+      "type": "cryptographic-asset",
+      "bom-ref": "e7c0c094-da3e-461e-888e-f73d22d99fcf",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 159,
+            "offset": 35,
+            "location": "server-spi/src/main/java/org/keycloak/models/utils/HmacOTP.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "other",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "HMAC-SHA256",
+      "type": "cryptographic-asset",
+      "bom-ref": "39c6afe6-7def-4bb9-a0cd-501ef787dc81",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 208,
+            "offset": 32,
+            "location": "server-spi-private/src/main/java/org/keycloak/models/utils/KeycloakModelUtils.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "mac",
+          "cryptoFunctions": [
+            "keygen",
+            "tag"
+          ]
+        }
+      }
+    },
+    {
+      "name": "RSA-2048",
+      "type": "cryptographic-asset",
+      "bom-ref": "fff51834-a098-49c2-b946-8f3718e25498",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 103,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/RSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 122,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/RSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 136,
+            "offset": 28,
+            "location": "core/src/main/java/org/keycloak/jose/jwk/JWKParser.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.113549.1.1.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "pke",
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "parameterSetIdentifier": "2048"
+        }
+      }
+    },
+    {
+      "name": "key@c5de5ffc-504a-4f49-abbe-189204571a37",
+      "type": "cryptographic-asset",
+      "bom-ref": "c5de5ffc-504a-4f49-abbe-189204571a37",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 192,
+            "offset": 34,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@82f78875-54e8-4d29-a38a-5aff7b337b11",
+      "type": "cryptographic-asset",
+      "bom-ref": "82f78875-54e8-4d29-a38a-5aff7b337b11",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 204,
+            "offset": 36,
+            "location": "crypto/fips1402/src/main/java/org/keycloak/crypto/fips/BCFIPSEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "secret-key@bf6d647e-ec72-4581-8fc6-99ff7496b119",
+      "type": "cryptographic-asset",
+      "bom-ref": "bf6d647e-ec72-4581-8fc6-99ff7496b119",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 159,
+            "offset": 35,
+            "location": "server-spi/src/main/java/org/keycloak/models/utils/HmacOTP.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@b890bf64-03c9-4934-9b5c-e6c7e902c1da",
+      "type": "cryptographic-asset",
+      "bom-ref": "b890bf64-03c9-4934-9b5c-e6c7e902c1da",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 141,
+            "offset": 38,
+            "location": "crypto/fips1402/src/main/java/org/keycloak/crypto/fips/BCFIPSEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "DSA",
+      "type": "cryptographic-asset",
+      "bom-ref": "e7d49ec5-a820-4d78-982c-cb9771d1ede5",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 211,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/DSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 234,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/DSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.10040.4.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "signature",
+          "cryptoFunctions": [
+            "keygen"
+          ],
+          "parameterSetIdentifier": "2048"
+        }
+      }
+    },
+    {
+      "name": "secret-key@de8fc5c6-ff24-453c-963b-24687e123093",
+      "type": "cryptographic-asset",
+      "bom-ref": "de8fc5c6-ff24-453c-963b-24687e123093",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 152,
+            "offset": 31,
+            "location": "core/src/main/java/org/keycloak/jose/jwe/enc/AesGcmEncryptionProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "Ed25519",
+      "type": "cryptographic-asset",
+      "bom-ref": "d93a654d-e5a2-4555-bab3-e62e1d01a683",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 159,
+            "offset": 47,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.3.101.112",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "curve": "Edwards25519",
+          "primitive": "signature",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "key@6c37f8e4-903b-41fd-a007-f2ef6857a8ea",
+      "type": "cryptographic-asset",
+      "bom-ref": "6c37f8e4-903b-41fd-a007-f2ef6857a8ea",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 211,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/DSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@82d3afc2-c5e5-4d2b-a2d6-659568ac8373",
+      "type": "cryptographic-asset",
+      "bom-ref": "82d3afc2-c5e5-4d2b-a2d6-659568ac8373",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 59,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEcdsaKeyProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "EC",
+      "type": "cryptographic-asset",
+      "bom-ref": "c8ee8431-1bf3-416c-b856-5f3ae50d6523",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 59,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEcdsaKeyProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 115,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/AbstractGeneratedEcKeyProviderFactory.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 57,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEcdhKeyProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 54,
+            "offset": 38,
+            "location": "services/src/main/java/org/keycloak/keys/AbstractEcKeyProviderFactory.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          },
+          {
+            "line": 192,
+            "offset": 34,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          },
+          {
+            "line": 132,
+            "offset": 38,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          },
+          {
+            "line": 199,
+            "offset": 36,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 80,
+            "offset": 36,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCECDSACryptoProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 85,
+            "offset": 36,
+            "location": "crypto/fips1402/src/main/java/org/keycloak/crypto/fips/BCFIPSECDSACryptoProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 141,
+            "offset": 38,
+            "location": "crypto/fips1402/src/main/java/org/keycloak/crypto/fips/BCFIPSEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          },
+          {
+            "line": 204,
+            "offset": 36,
+            "location": "crypto/fips1402/src/main/java/org/keycloak/crypto/fips/BCFIPSEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyFactory;"
+          },
+          {
+            "line": 125,
+            "offset": 38,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          },
+          {
+            "line": 138,
+            "offset": 15,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/WildFlyElytronProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "pke",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "key@42ad06dc-2506-4d28-be7f-21509adfa022",
+      "type": "cryptographic-asset",
+      "bom-ref": "42ad06dc-2506-4d28-be7f-21509adfa022",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 192,
+            "offset": 34,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@121f9b0e-7e76-42a8-af38-2f18fdeb2256",
+      "type": "cryptographic-asset",
+      "bom-ref": "121f9b0e-7e76-42a8-af38-2f18fdeb2256",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 133,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEddsaKeyProviderFactory.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@3d857708-72cf-4f2f-8735-e9df20afd67c",
+      "type": "cryptographic-asset",
+      "bom-ref": "3d857708-72cf-4f2f-8735-e9df20afd67c",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 103,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/RSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "secret-key@09b0878f-5951-42d5-8489-994ddc4cd646",
+      "type": "cryptographic-asset",
+      "bom-ref": "09b0878f-5951-42d5-8489-994ddc4cd646",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 170,
+            "offset": 32,
+            "location": "core/src/main/java/org/keycloak/jose/jwe/enc/AesCbcHmacShaEncryptionProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@d791d086-6de4-4279-a66c-8fdaffd31ef0",
+      "type": "cryptographic-asset",
+      "bom-ref": "d791d086-6de4-4279-a66c-8fdaffd31ef0",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 192,
+            "offset": 34,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "EC-secp384r1",
+      "type": "cryptographic-asset",
+      "bom-ref": "7f233971-6edc-44d7-b2cb-7a6ffff271dd",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 148,
+            "offset": 47,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.10045.2.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "curve": "secp384r1",
+          "primitive": "pke",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "key@9ed2c844-7f9f-4373-9069-9090c329c1a7",
+      "type": "cryptographic-asset",
+      "bom-ref": "9ed2c844-7f9f-4373-9069-9090c329c1a7",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 115,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/AbstractGeneratedEcKeyProviderFactory.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@5d85ea16-61f0-4cc9-91a1-20e3c97f5b56",
+      "type": "cryptographic-asset",
+      "bom-ref": "5d85ea16-61f0-4cc9-91a1-20e3c97f5b56",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 192,
+            "offset": 34,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "AES",
+      "type": "cryptographic-asset",
+      "bom-ref": "63ddf4ff-d19e-4520-bea6-2f60cd668105",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 38,
+            "offset": 28,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/AesKeyWrapAlgorithmProvider.java",
+            "additionalContext": "org.bouncycastle.crypto.engines.AESWrapEngine#<init>()V"
+          },
+          {
+            "line": 45,
+            "offset": 28,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/AesKeyWrapAlgorithmProvider.java",
+            "additionalContext": "org.bouncycastle.crypto.engines.AESWrapEngine#<init>()V"
+          },
+          {
+            "line": 86,
+            "offset": 32,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "org.bouncycastle.crypto.engines.AESWrapEngine#<init>()V"
+          },
+          {
+            "line": 119,
+            "offset": 32,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "org.bouncycastle.crypto.engines.AESWrapEngine#<init>()V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "2.16.840.1.101.3.4.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "other",
+          "cryptoFunctions": [
+            "decapsulate"
+          ],
+          "parameterSetIdentifier": "128"
+        }
+      }
+    },
+    {
+      "name": "key@87daad50-6feb-4aaf-88e9-d26655f7694e",
+      "type": "cryptographic-asset",
+      "bom-ref": "87daad50-6feb-4aaf-88e9-d26655f7694e",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 199,
+            "offset": 36,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "SHA512",
+      "type": "cryptographic-asset",
+      "bom-ref": "930464a9-acfd-42ce-9fb5-cd2ec37d4fc2",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 159,
+            "offset": 47,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "2.16.840.1.101.3.4.2.3",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "parameterSetIdentifier": "512"
+        }
+      }
+    },
+    {
+      "name": "secret-key@e8594048-9a2d-4426-935b-bce9c13f9d93",
+      "type": "cryptographic-asset",
+      "bom-ref": "e8594048-9a2d-4426-935b-bce9c13f9d93",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 208,
+            "offset": 32,
+            "location": "server-spi-private/src/main/java/org/keycloak/models/utils/KeycloakModelUtils.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@34091cfa-a85b-47d4-8994-439452eeafab",
+      "type": "cryptographic-asset",
+      "bom-ref": "34091cfa-a85b-47d4-8994-439452eeafab",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 50,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEddsaKeyProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "secret-key@874caecd-e9cc-49bf-b7a0-35ef6245ffa8",
+      "type": "cryptographic-asset",
+      "bom-ref": "874caecd-e9cc-49bf-b7a0-35ef6245ffa8",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 80,
+            "offset": 44,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@8382aa1f-2861-4e1c-ac56-ac7f5f702b09",
+      "type": "cryptographic-asset",
+      "bom-ref": "8382aa1f-2861-4e1c-ac56-ac7f5f702b09",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 57,
+            "offset": 28,
+            "location": "services/src/main/java/org/keycloak/keys/GeneratedEcdhKeyProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@5237e3c0-ee5c-47cf-b235-d3d4b15d6eac",
+      "type": "cryptographic-asset",
+      "bom-ref": "5237e3c0-ee5c-47cf-b235-d3d4b15d6eac",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 138,
+            "offset": 15,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/WildFlyElytronProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "TLS",
+      "type": "cryptographic-asset",
+      "bom-ref": "5a3a2a58-477e-454c-8f8f-23bcda32d107",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 262,
+            "offset": 29,
+            "location": "adapters/saml/core/src/main/java/org/keycloak/adapters/cloned/HttpClientBuilder.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 425,
+            "offset": 25,
+            "location": "quarkus/tests/junit5/src/main/java/org/keycloak/it/utils/RawKeycloakDistribution.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 385,
+            "offset": 29,
+            "location": "quarkus/runtime/src/main/java/org/keycloak/quarkus/runtime/storage/infinispan/CacheManagerFactory.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 62,
+            "offset": 44,
+            "location": "services/src/main/java/org/keycloak/truststore/JSSETruststoreConfigurator.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 66,
+            "offset": 22,
+            "location": "testsuite/integration-arquillian/util/src/main/java/org/keycloak/testsuite/utils/tls/TLSUtils.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 98,
+            "offset": 36,
+            "location": "testsuite/integration-arquillian/tests/base/src/main/java/org/keycloak/testsuite/util/MutualTLSUtils.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 174,
+            "offset": 28,
+            "location": "testsuite/integration-arquillian/tests/base/src/main/java/org/keycloak/testsuite/arquillian/containers/InfinispanServerDeployableContainer.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 411,
+            "offset": 25,
+            "location": "testsuite/integration-arquillian/tests/base/src/main/java/org/keycloak/testsuite/arquillian/containers/AbstractQuarkusDeployableContainer.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "line": 532,
+            "offset": 32,
+            "location": "testsuite/utils/src/main/java/org/keycloak/testsuite/KeycloakServer.java",
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls"
+        }
+      }
+    },
+    {
+      "name": "key@93188946-a4f7-4703-b318-f5b44758fb01",
+      "type": "cryptographic-asset",
+      "bom-ref": "93188946-a4f7-4703-b318-f5b44758fb01",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 132,
+            "offset": 38,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "HMACSHA2",
+      "type": "cryptographic-asset",
+      "bom-ref": "aa9f9f9d-a3ad-4220-98c9-ee2468d33782",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 170,
+            "offset": 32,
+            "location": "core/src/main/java/org/keycloak/jose/jwe/enc/AesCbcHmacShaEncryptionProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "other",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      }
+    },
+    {
+      "name": "key@4c1101ca-b911-4d68-90ff-ca0458563f1f",
+      "type": "cryptographic-asset",
+      "bom-ref": "4c1101ca-b911-4d68-90ff-ca0458563f1f",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 234,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/DSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "MGF1",
+      "type": "cryptographic-asset",
+      "bom-ref": "85433bc2-69dc-416a-9460-ebde9ed54f6d",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 188,
+            "offset": 48,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/WildFlyElytronProvider.java",
+            "additionalContext": "java.security.spec.PSSParameterSpec#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;II)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.113549.1.1.8",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "other"
+        }
+      }
+    },
+    {
+      "name": "key@7fc0361a-44c4-435c-bf2c-5752736c0e51",
+      "type": "cryptographic-asset",
+      "bom-ref": "7fc0361a-44c4-435c-bf2c-5752736c0e51",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 80,
+            "offset": 36,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCECDSACryptoProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "secret-key@968a4de8-2d40-43fe-95d1-5b7589b6899f",
+      "type": "cryptographic-asset",
+      "bom-ref": "968a4de8-2d40-43fe-95d1-5b7589b6899f",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 115,
+            "offset": 31,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "secret-key@4180ba3c-0e8a-4572-8df2-f08905d53c3f",
+      "type": "cryptographic-asset",
+      "bom-ref": "4180ba3c-0e8a-4572-8df2-f08905d53c3f",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 288,
+            "offset": 34,
+            "location": "saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "AES128-CBC-PKCS5",
+      "type": "cryptographic-asset",
+      "bom-ref": "3eadba2e-61c9-4ac8-9252-2c55cabb3ff6",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 143,
+            "offset": 15,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/WildFlyElytronProvider.java",
+            "additionalContext": "javax.crypto.Cipher#getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "2.16.840.1.101.3.4.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "mode": "cbc",
+          "padding": "pkcs5",
+          "primitive": "block-cipher",
+          "parameterSetIdentifier": "128"
+        }
+      }
+    },
+    {
+      "name": "AES128-GCM",
+      "type": "cryptographic-asset",
+      "bom-ref": "6475662f-1028-4ded-9e46-fd438818efe3",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 148,
+            "offset": 15,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/WildFlyElytronProvider.java",
+            "additionalContext": "javax.crypto.Cipher#getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "2.16.840.1.101.3.4.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "mode": "gcm",
+          "primitive": "ae",
+          "parameterSetIdentifier": "128"
+        }
+      }
+    },
+    {
+      "name": "ConcatenationKDF",
+      "type": "cryptographic-asset",
+      "bom-ref": "aa5f4c4a-ac63-4c2f-9ce2-fb9a26e41547",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 157,
+            "offset": 46,
+            "location": "crypto/default/src/main/java/org/keycloak/crypto/def/BCEcdhEsAlgorithmProvider.java",
+            "additionalContext": "org.bouncycastle.crypto.agreement.kdf.ConcatenationKDFGenerator#<init>(Lorg/bouncycastle/crypto/Digest;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "kdf"
+        }
+      }
+    },
+    {
+      "name": "SHA256",
+      "type": "cryptographic-asset",
+      "bom-ref": "a8fb4eb9-33e2-44ad-90f8-0f0246d263dd",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 114,
+            "offset": 27,
+            "location": "services/src/main/java/org/keycloak/services/util/MtlsHoKTokenUtil.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 230,
+            "offset": 27,
+            "location": "services/src/main/java/org/keycloak/services/clientpolicy/executor/PKCEEnforcerExecutor.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 254,
+            "offset": 31,
+            "location": "services/src/main/java/org/keycloak/services/resources/account/LinkedAccountsResource.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 256,
+            "offset": 25,
+            "location": "services/src/main/java/org/keycloak/services/resources/IdentityBrokerService.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 119,
+            "offset": 31,
+            "location": "services/src/main/java/org/keycloak/protocol/oid4vc/issuance/signing/vcdm/Ed255192018Suite.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 89,
+            "offset": 21,
+            "location": "services/src/main/java/org/keycloak/protocol/oidc/mappers/SHA256PairwiseSubMapper.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 85,
+            "offset": 19,
+            "location": "services/src/main/java/org/keycloak/protocol/oidc/par/endpoints/AbstractParEndpoint.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 37,
+            "offset": 41,
+            "location": "services/src/main/java/org/keycloak/protocol/docker/DockerKeyIdentifier.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 138,
+            "offset": 31,
+            "location": "testsuite/integration-arquillian/tests/base/src/main/java/org/keycloak/testsuite/util/MutualTLSUtils.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 88,
+            "offset": 32,
+            "location": "operator/src/main/java/org/keycloak/operator/controllers/WatchedResources.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 118,
+            "offset": 17,
+            "location": "server-spi-private/src/main/java/org/keycloak/broker/provider/AbstractIdentityProvider.java",
+            "additionalContext": "java.security.MessageDigest#getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+          },
+          {
+            "line": 208,
+            "offset": 32,
+            "location": "server-spi-private/src/main/java/org/keycloak/models/utils/KeycloakModelUtils.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
           }
         ]
       },
@@ -61,41 +1318,16 @@
       }
     },
     {
-      "name": "AES128-CBC-PKCS7",
+      "name": "key@608292ee-0d0d-491c-90ec-68dda5d76e7b",
       "type": "cryptographic-asset",
-      "bom-ref": "c1084652-e585-4708-8670-f5c9ce8f69bd",
+      "bom-ref": "608292ee-0d0d-491c-90ec-68dda5d76e7b",
       "evidence": {
         "occurrences": [
           {
-            "line": 3,
-            "offset": 6,
-            "location": "test_crypto/__main__.py",
-            "additionalContext": "generate_key"
-          }
-        ]
-      },
-      "cryptoProperties": {
-        "oid": "2.16.840.1.101.3.4.1.2",
-        "assetType": "algorithm",
-        "algorithmProperties": {
-          "mode": "cbc",
-          "padding": "pkcs7",
-          "primitive": "block-cipher",
-          "parameterSetIdentifier": "128"
-        }
-      }
-    },
-    {
-      "name": "secret-key@c7b165bf-d9f8-45bf-927e-9d7b1c708c6d",
-      "type": "cryptographic-asset",
-      "bom-ref": "c7b165bf-d9f8-45bf-927e-9d7b1c708c6d",
-      "evidence": {
-        "occurrences": [
-          {
-            "line": 3,
-            "offset": 6,
-            "location": "test_crypto/__main__.py",
-            "additionalContext": "generate_key"
+            "line": 85,
+            "offset": 36,
+            "location": "crypto/fips1402/src/main/java/org/keycloak/crypto/fips/BCFIPSECDSACryptoProvider.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
           }
         ]
       },
@@ -107,50 +1339,207 @@
       }
     },
     {
-      "name": "HMAC-SHA256",
+      "name": "key@ca488c38-23f4-422f-8944-7f367394ce9b",
       "type": "cryptographic-asset",
-      "bom-ref": "fb2800fc-c8c4-42b9-88e0-f5028f82f563",
+      "bom-ref": "ca488c38-23f4-422f-8944-7f367394ce9b",
       "evidence": {
         "occurrences": [
           {
-            "line": 3,
-            "offset": 6,
-            "location": "test_crypto/__main__.py",
-            "additionalContext": "generate_key"
+            "line": 125,
+            "offset": 38,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
           }
         ]
       },
       "cryptoProperties": {
-        "assetType": "algorithm",
-        "algorithmProperties": {
-          "primitive": "mac",
-          "cryptoFunctions": [
-            "tag"
-          ]
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
         }
       }
     },
     {
-      "name": "Fernet",
+      "name": "key@61742d07-2817-4447-8f4e-636c628fda3b",
       "type": "cryptographic-asset",
-      "bom-ref": "487871eb-f944-4845-b711-6a510492ad17",
+      "bom-ref": "61742d07-2817-4447-8f4e-636c628fda3b",
       "evidence": {
         "occurrences": [
           {
-            "line": 3,
-            "offset": 6,
-            "location": "test_crypto/__main__.py",
-            "additionalContext": "generate_key"
+            "line": 159,
+            "offset": 47,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java"
           }
         ]
       },
       "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "AES128",
+      "type": "cryptographic-asset",
+      "bom-ref": "5185943a-08f4-49a4-88b5-58a6e83260ff",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 288,
+            "offset": 34,
+            "location": "saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          },
+          {
+            "line": 152,
+            "offset": 31,
+            "location": "core/src/main/java/org/keycloak/jose/jwe/enc/AesGcmEncryptionProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          },
+          {
+            "line": 169,
+            "offset": 31,
+            "location": "core/src/main/java/org/keycloak/jose/jwe/enc/AesCbcHmacShaEncryptionProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          },
+          {
+            "line": 80,
+            "offset": 44,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          },
+          {
+            "line": 113,
+            "offset": 42,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          },
+          {
+            "line": 115,
+            "offset": 31,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "2.16.840.1.101.3.4.1",
         "assetType": "algorithm",
         "algorithmProperties": {
-          "primitive": "ae",
+          "primitive": "block-cipher",
           "cryptoFunctions": [
-            "decrypt",
-            "encrypt",
+            "keygen"
+          ],
+          "parameterSetIdentifier": "128"
+        }
+      }
+    },
+    {
+      "name": "secret-key@08cefa56-e8e5-4b83-ab07-0a074c0edad3",
+      "type": "cryptographic-asset",
+      "bom-ref": "08cefa56-e8e5-4b83-ab07-0a074c0edad3",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 113,
+            "offset": 42,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/ElytronEcdhEsAlgorithmProvider.java",
+            "additionalContext": "javax.crypto.spec.SecretKeySpec#<init>([BLjava/lang/String;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "RSASSA-PSS",
+      "type": "cryptographic-asset",
+      "bom-ref": "a4346aa4-73fb-4f6a-aef5-15862d47623d",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 184,
+            "offset": 32,
+            "location": "crypto/elytron/src/main/java/org/keycloak/crypto/elytron/WildFlyElytronProvider.java",
+            "additionalContext": "java.security.Signature#getInstance(Ljava/lang/String;)Ljava/security/Signature;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.113549.1.1.10",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "signature"
+        }
+      }
+    },
+    {
+      "name": "key@a243f791-364b-4a26-931f-42a5a3dfc44b",
+      "type": "cryptographic-asset",
+      "bom-ref": "a243f791-364b-4a26-931f-42a5a3dfc44b",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 54,
+            "offset": 38,
+            "location": "services/src/main/java/org/keycloak/keys/AbstractEcKeyProviderFactory.java",
+            "additionalContext": "java.security.KeyPairGenerator#getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "key@ba452ae1-4540-4cbc-8655-b107f32c4775",
+      "type": "cryptographic-asset",
+      "bom-ref": "ba452ae1-4540-4cbc-8655-b107f32c4775",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 122,
+            "offset": 39,
+            "location": "saml-core-api/src/main/java/org/keycloak/dom/xmlsec/w3/xmldsig/RSAKeyValueType.java",
+            "additionalContext": "java.security.KeyFactory#getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "type": "secret-key"
+        }
+      }
+    },
+    {
+      "name": "EC-secp256r1",
+      "type": "cryptographic-asset",
+      "bom-ref": "ff9ca936-938e-4a81-8ebd-6dd6f02e317c",
+      "evidence": {
+        "occurrences": [
+          {
+            "line": 144,
+            "offset": 47,
+            "location": "testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers/src/main/java/org/keycloak/testsuite/rest/resource/TestingOIDCEndpointsApplicationResource.java"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "oid": "1.2.840.10045.2.1",
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "curve": "secp256r1",
+          "primitive": "pke",
+          "cryptoFunctions": [
             "keygen"
           ]
         }
@@ -160,24 +1549,221 @@
   "specVersion": "1.6",
   "dependencies": [
     {
-      "ref": "c7b165bf-d9f8-45bf-927e-9d7b1c708c6d",
+      "ref": "874caecd-e9cc-49bf-b7a0-35ef6245ffa8",
       "dependsOn": [
-        "487871eb-f944-4845-b711-6a510492ad17"
+        "5185943a-08f4-49a4-88b5-58a6e83260ff"
       ]
     },
     {
-      "ref": "fb2800fc-c8c4-42b9-88e0-f5028f82f563",
+      "ref": "5d85ea16-61f0-4cc9-91a1-20e3c97f5b56",
       "dependsOn": [
-        "3469f5da-3e7d-4bb5-aa10-d2d29d10227f"
+        "7f233971-6edc-44d7-b2cb-7a6ffff271dd"
       ]
     },
     {
-      "ref": "487871eb-f944-4845-b711-6a510492ad17",
+      "ref": "a4346aa4-73fb-4f6a-aef5-15862d47623d",
       "dependsOn": [
-        "c1084652-e585-4708-8670-f5c9ce8f69bd",
-        "fb2800fc-c8c4-42b9-88e0-f5028f82f563"
+        "85433bc2-69dc-416a-9460-ebde9ed54f6d"
+      ]
+    },
+    {
+      "ref": "4001d0af-57a6-4f6d-8762-f4ec07db3d99",
+      "dependsOn": [
+        "5185943a-08f4-49a4-88b5-58a6e83260ff"
+      ]
+    },
+    {
+      "ref": "7fc0361a-44c4-435c-bf2c-5752736c0e51",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "3d857708-72cf-4f2f-8735-e9df20afd67c",
+      "dependsOn": [
+        "fff51834-a098-49c2-b946-8f3718e25498"
+      ]
+    },
+    {
+      "ref": "08cefa56-e8e5-4b83-ab07-0a074c0edad3",
+      "dependsOn": [
+        "5185943a-08f4-49a4-88b5-58a6e83260ff"
+      ]
+    },
+    {
+      "ref": "5237e3c0-ee5c-47cf-b235-d3d4b15d6eac",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "a243f791-364b-4a26-931f-42a5a3dfc44b",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "d791d086-6de4-4279-a66c-8fdaffd31ef0",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "121f9b0e-7e76-42a8-af38-2f18fdeb2256",
+      "dependsOn": [
+        "4ee105b4-4e11-4c1d-bcff-b785d733e71d"
+      ]
+    },
+    {
+      "ref": "9ed2c844-7f9f-4373-9069-9090c329c1a7",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "ba452ae1-4540-4cbc-8655-b107f32c4775",
+      "dependsOn": [
+        "fff51834-a098-49c2-b946-8f3718e25498"
+      ]
+    },
+    {
+      "ref": "968a4de8-2d40-43fe-95d1-5b7589b6899f",
+      "dependsOn": [
+        "5185943a-08f4-49a4-88b5-58a6e83260ff"
+      ]
+    },
+    {
+      "ref": "61742d07-2817-4447-8f4e-636c628fda3b",
+      "dependsOn": [
+        "d93a654d-e5a2-4555-bab3-e62e1d01a683"
+      ]
+    },
+    {
+      "ref": "87daad50-6feb-4aaf-88e9-d26655f7694e",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "ca488c38-23f4-422f-8944-7f367394ce9b",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "6ea68b96-b293-4a62-a905-e002184bf558",
+      "dependsOn": [
+        "fff51834-a098-49c2-b946-8f3718e25498"
+      ]
+    },
+    {
+      "ref": "608292ee-0d0d-491c-90ec-68dda5d76e7b",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "34091cfa-a85b-47d4-8994-439452eeafab",
+      "dependsOn": [
+        "4ee105b4-4e11-4c1d-bcff-b785d733e71d"
+      ]
+    },
+    {
+      "ref": "e8594048-9a2d-4426-935b-bce9c13f9d93",
+      "dependsOn": [
+        "39c6afe6-7def-4bb9-a0cd-501ef787dc81"
+      ]
+    },
+    {
+      "ref": "c5de5ffc-504a-4f49-abbe-189204571a37",
+      "dependsOn": [
+        "45c87528-3b11-4bce-aa04-2ecf69aa8845"
+      ]
+    },
+    {
+      "ref": "09b0878f-5951-42d5-8489-994ddc4cd646",
+      "dependsOn": [
+        "aa9f9f9d-a3ad-4220-98c9-ee2468d33782"
+      ]
+    },
+    {
+      "ref": "82f78875-54e8-4d29-a38a-5aff7b337b11",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "bf6d647e-ec72-4581-8fc6-99ff7496b119",
+      "dependsOn": [
+        "e7c0c094-da3e-461e-888e-f73d22d99fcf"
+      ]
+    },
+    {
+      "ref": "39c6afe6-7def-4bb9-a0cd-501ef787dc81",
+      "dependsOn": [
+        "a8fb4eb9-33e2-44ad-90f8-0f0246d263dd"
+      ]
+    },
+    {
+      "ref": "42ad06dc-2506-4d28-be7f-21509adfa022",
+      "dependsOn": [
+        "ff9ca936-938e-4a81-8ebd-6dd6f02e317c"
+      ]
+    },
+    {
+      "ref": "93188946-a4f7-4703-b318-f5b44758fb01",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "d93a654d-e5a2-4555-bab3-e62e1d01a683",
+      "dependsOn": [
+        "930464a9-acfd-42ce-9fb5-cd2ec37d4fc2"
+      ]
+    },
+    {
+      "ref": "8382aa1f-2861-4e1c-ac56-ac7f5f702b09",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "de8fc5c6-ff24-453c-963b-24687e123093",
+      "dependsOn": [
+        "5185943a-08f4-49a4-88b5-58a6e83260ff"
+      ]
+    },
+    {
+      "ref": "4c1101ca-b911-4d68-90ff-ca0458563f1f",
+      "dependsOn": [
+        "e7d49ec5-a820-4d78-982c-cb9771d1ede5"
+      ]
+    },
+    {
+      "ref": "6c37f8e4-903b-41fd-a007-f2ef6857a8ea",
+      "dependsOn": [
+        "e7d49ec5-a820-4d78-982c-cb9771d1ede5"
+      ]
+    },
+    {
+      "ref": "b890bf64-03c9-4934-9b5c-e6c7e902c1da",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "82d3afc2-c5e5-4d2b-a2d6-659568ac8373",
+      "dependsOn": [
+        "c8ee8431-1bf3-416c-b856-5f3ae50d6523"
+      ]
+    },
+    {
+      "ref": "4180ba3c-0e8a-4572-8df2-f08905d53c3f",
+      "dependsOn": [
+        "5185943a-08f4-49a4-88b5-58a6e83260ff"
       ]
     }
   ],
-  "serialNumber": "urn:uuid:98fa3595-4109-4b8c-a8ca-092016e48558"
+  "serialNumber": "urn:uuid:4d918457-1821-4278-b4a4-c76986b83a68"
 }

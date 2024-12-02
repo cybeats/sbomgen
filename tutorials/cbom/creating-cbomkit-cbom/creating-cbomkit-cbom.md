@@ -36,6 +36,16 @@ To create a CBOM, navigate to the "Generate a new CBOM" section:
 
 Then, paste the URL of the git repo in question. Then, click "Scan".
 
+Advanced settings are accessed via clicking the "Advanced options" checkbox. The advanced options are:
+
+* Scan: Where specific branches and folders can be specified.
+    
+    ![scan](./images/scan.png)
+
+* Authentication: Where repo authentication can be specified via username and password or through a personal access token (PAT).
+    
+    ![authenticate](./images/authenticate.png)
+
 After the scan is completed, the output will look similar to the following:
 
 ![result](./images/result.png)
@@ -44,10 +54,10 @@ To download the created CBOM, navigate to the "Download CBOM" button on the righ
 
 ![download](./images/download.png)
 
-The generated CBOM JSON file will be downloaded to your systems downloads folder.
+The generated ```cbom.json``` file will be downloaded to your system's default downloads folder.
 ## Notes
 
-* the requirement ```docker-compose``` is a seperate program to the subcommand, ```docker compose```. It will have to be installed seperately.
+* The requirement ```docker-compose``` is separate to the subcommand, ```docker compose```. 
 
 ## SBOM
 
@@ -78,7 +88,7 @@ The generated CBOM JSON file will be downloaded to your systems downloads folder
 </head>
 <body>
     <h3>
-        <a href="./cbom.json">test-crypto</a>
+        <a href="./cbom.json">keycloak</a>
     </h3>
     <div id="json-container">
         <pre id="json-display"></pre>
@@ -108,4 +118,4 @@ The generated CBOM JSON file will be downloaded to your systems downloads folder
 
 ## References
 
-* IBM. (2024, November 21). GitHub - IBM/cbomkit: A toolset for dealing with Cryptography Bill of Materials (CBOM). GitHub. https://github.com/IBM/cbomkit
+* IBM. (2024, November 21). GitHub - IBM/cbomkit: A toolset for dealing with Cryptography Bill of Materials (CBOM). GitHub. [https://github.com/IBM/cbomkit](https://github.com/IBM/cbomkit)

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tutorial illustrates how to create a cryptography bill of materials (CBOM) from git projects using the IBM CBOMkit application
+This tutorial illustrates how to create a cryptography bill of materials (CBOM) from git projects using the IBM CBOMkit application.
 
 ## Requirements
 
@@ -118,4 +118,4 @@ The generated ```cbom.json``` file will be downloaded to your system's default d
 
 ## References
 
-* IBM. (2024, November 21). GitHub - IBM/cbomkit: A toolset for dealing with Cryptography Bill of Materials (CBOM). GitHub. [https://github.com/IBM/cbomkit](https://github.com/IBM/cbomkit)
+* IBM. (2024, November 21). GitHub - IBM/cbomkit: A toolset for dealing with Cryptography Bill of Materials (CBOM). GitHub. [https://github.com/IBM/cbomkit](https://github.com/IBM/cbomkit).

@@ -115,7 +115,9 @@ A "cbom.json" file will be created inside your project directory.
 
 * Use the ```<language>-security-experimental.qls``` (e.g. ```python-security-experimental.qls```) as the query suite, as opposed to the ```<language>-code-scanning.qls``` suite.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a Cryptographic Bill of Materials (CBOM) of the homeassistant core codebase, created with Cryptobom Forge.
 
 <html lang="en">
 <head>
@@ -173,6 +175,6 @@ A "cbom.json" file will be created inside your project directory.
 
 
 ## References
-* Santander Security. (2023). Cryptobom Forge Tool. https://github.com/santandersecurityresearch/cryptobom-forge
+* Santander Security. (2023). Cryptobom Forge Tool. [https://github.com/santandersecurityresearch/cryptobom-forge](https://github.com/santandersecurityresearch/cryptobom-forge)
 
-* GitHub. (2023). Releases. https://github.com/github/codeql-action/releases
+* GitHub. (2023). Releases. [https://github.com/github/codeql-action/releases](https://github.com/github/codeql-action/releases)

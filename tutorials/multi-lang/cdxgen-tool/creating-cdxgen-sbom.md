@@ -160,7 +160,9 @@ Where ```type``` is one of the potential programming languages/frameworks (pytho
 
 * Without specifying the type, cdxgen may sometimes create inaccurate outputs.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX JSON SBOM of the cdxgen codebase, created with cdxgen.
 
 <html lang="en">
 <head>

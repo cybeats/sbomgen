@@ -89,7 +89,9 @@ Without these additions, the SBOM may be valid, but incomplete.
   gem install activesupport -v 7.0.8
 ```
 
-## SBOM
+## Example SBOM
+
+This section illustrates CycloneDX JSON and XML SBOMS of the Whisper codebase, produced by CycloneDX-Cocoapods.
 
 <html lang="en">
 <head>
@@ -158,5 +160,7 @@ Without these additions, the SBOM may be valid, but incomplete.
 * CycloneDX. (2023). CycloneDX-Cocoapods. [https://github.com/CycloneDX/cyclonedx-cocoapods](https://github.com/CycloneDX/cyclonedx-cocoapods)
 
 * After updating cocoapods to 1.13.0 it throws error. Stack Overflow. (1AD). [https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error](https://stackoverflow.com/questions/77236339/after-updating-cocoapods-to-1-13-0-it-throws-error)
+
+* Hyperoslo. (n.d.). GitHub - hyperoslo/Whisper: :mega: Whisper is a component that will make the task of display messages and in-app notifications simple. It has three different views inside. GitHub. [https://github.com/hyperoslo/Whisper](https://github.com/hyperoslo/Whisper)
 
 

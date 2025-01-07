@@ -104,7 +104,9 @@ An SBOM file of your specified name and format will be created.
 
 In Linux, sudo may be required.
 
-## SBOM
+## Example SBOM
+
+This section illustrates CycloneDX and SPDX JSON SBOMs of an Nginx image, produced via Syft.
 
 <html lang="en">
 <head>

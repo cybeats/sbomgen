@@ -78,7 +78,10 @@ An SBOM file with your given name should appear in your working directory.
 
 * This tool's performance on the Raspberry Pi, appears to be buggy.
 
-## SBOM
+## Example SBOM
+
+This section illustrates a CycloneDX JSON of the Ubuntu distribution, created via distro2sbom. 
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">

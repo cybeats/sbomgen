@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SBOMs can be created from npm based projects. This tutorial illustrates how to create a CycloneDX  SBOM from an npm project using the cyclonedx- node-npm cli.
+SBOMs can be created from npm based projects. This tutorial illustrates how to create a CycloneDX  SBOM from an npm project using the CycloneDX-Node-NPM cli.
 
 ## Note(s)
 
@@ -55,9 +55,11 @@ e.g.
 cyclonedx-npm –output-file /home/directory-for-sboms/project-sbom.json –output-format json
 ```
 
-Note that cyclonedx-node-npm requires a manifest file, i.e. a package.json file.
+Note that Cyclonedx-Node-NPM requires a manifest file, i.e. a package.json file.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX JSON SBOM of the project CycloneDX-Node-NPM codebase, created by Cyclonedx-Node-NPM.
 
 <html lang="en">
 <head>

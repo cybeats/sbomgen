@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tutorial illustrates how to produce an SBOM using Rust projects using the Cargo-Sbom and Cyclonedx-Rust-Cargo CLIs.
+This tutorial illustrates how to produce an SBOM using Rust projects using the Cargo-Sbom and CycloneDX-Rust-Cargo CLIs.
 
 ## Requirements
 
@@ -126,7 +126,9 @@ You should see an output "bom.json" in any folder containing rust source files.
 
 * Error messages may be seen, however an sbom is still built. This appears to be a [known issue](https://github.com/CycloneDX/cyclonedx-rust-cargo/compare/main...ctron:cyclonedx-rust-cargo:feature/improve_logs_1).
 
-## SBOM
+## Example SBOM
+
+This section illustrates CycloneDX JSON and XML SBOMs, from the Cargo-SBOM and CycloneDX-Rust-Cargo codebases, created from Cargo-SBOM and CycloneDX-Rust-Cargo.
 
 <html lang="en">
 <head>
@@ -208,3 +210,4 @@ You should see an output "bom.json" in any folder containing rust source files.
 * CycloneDX. (2023). cyclonedx-rust-cargo. [https://github.com/CycloneDX/cyclonedx-rust-cargo](https://github.com/CycloneDX/cyclonedx-rust-cargo)
 
 * Psastras. (2023). cargo-sbom. [https://github.com/psastras/sbom-rs](https://github.com/psastras/sbom-rs)
+

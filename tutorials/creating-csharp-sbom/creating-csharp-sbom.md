@@ -98,7 +98,9 @@ The resultant output will be a folder in the path that you specified, containing
 
 * Depending on the manifest file used (noted above), different, or less fully featured, dependency information may be saved to the SBOM generated, which may have implications for vulnerability analysis.
 
-## SBOM
+## Example SBOM
+
+This section illustrates a CycloneDX JSON SBOM of the CycloneDX-Dotnet codebase, created using CycloneDX-Dotnet. 
 
 <html lang="en">
 <head>
@@ -164,4 +166,4 @@ The resultant output will be a folder in the path that you specified, containing
 
 ## References
 
-CycloneDX. (2023). CycloneDX-Dotnet. https://github.com/CycloneDX/cyclonedx-dotnet
+CycloneDX. (2023). CycloneDX-Dotnet. [https://github.com/CycloneDX/cyclonedx-dotnet](https://github.com/CycloneDX/cyclonedx-dotnet)

@@ -163,7 +163,9 @@ With:
 
 A folder named ```_manifest``` will be created in the ```drop path``` containing the spdx JSON SBOM and the SBOM file hash.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates an SPDX JSON SBOM of the Microsoft SBOM Tool codebase, created via the Microsoft SBOM Tool.
 
 <html lang="en">
 <head>

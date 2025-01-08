@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tutorial illustrates how to produce an SBOM from PHP Composer projects using the Cyclonedx-Php-Composer CLI.
+This tutorial illustrates how to produce an SBOM from PHP Composer projects using the Cyclonedx-PHP-Composer CLI.
 
 
 ## Requirements
@@ -88,7 +88,9 @@ The resulting SBOM of your set filename, format and cyclonedx specversion will a
 
   * In case of installation error, try installing php8.2-xml
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX JSON SBOM of the project FreshRSS, created by CycloneDX-PHP-Composer.
 
 <html lang="en">
 <head>
@@ -132,3 +134,4 @@ The resulting SBOM of your set filename, format and cyclonedx specversion will a
 
 * CycloneDX. (2023). CycloneDX-Php-Composer. [https://github.com/CycloneDX/cyclonedx-php-composer](https://github.com/CycloneDX/cyclonedx-php-composer)
 
+* FreshRSS. (n.d.). GitHub - FreshRSS/FreshRSS: A free, self-hostable news aggregator. . .. GitHub. [https://github.com/FreshRSS/FreshRSS](https://github.com/FreshRSS/FreshRSS)

@@ -99,7 +99,9 @@ Where the format is one of:
 
 An sbom with the designated name and format will be created.
 
-## SBOM
+## Example SBOM
+
+This section illustrates an SPDX JSON SBOM of a Debian image, produced via Kubernetes bom.
 
 <html lang="en">
 <head>
@@ -158,6 +160,6 @@ An sbom with the designated name and format will be created.
 
 ## References
 
-* https://github.com/kubernetes-sigs/bom
+* Kubernetes-Sigs. (n.d.). GitHub - kubernetes-sigs/bom: A utility to generate SPDX-compliant Bill of Materials manifests. GitHub. [https://github.com/kubernetes-sigs/bom](https://github.com/kubernetes-sigs/bom)
 
-* https://kubernetes.io/
+* Production-Grade Container orchestration. (n.d.). Kubernetes. [https://kubernetes.io/](https://kubernetes.io/)

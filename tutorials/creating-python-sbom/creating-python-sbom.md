@@ -189,7 +189,9 @@ jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name
 
 * Some information such as the project name, version, and type appears to be absent in the Jake generated SBOM.
 
-## SBOM
+## Example SBOM
+
+This section illustrates a CycloneDX JSON SBOM of the PlatformIO codebase, created from CycloneDX-Python.
 
 <html lang="en">
 <head>
@@ -237,4 +239,6 @@ jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name
 * CycloneDX. (2023). CycloneDX-Python. [https://github.com/CycloneDX/cyclonedx-python](https://github.com/CycloneDX/cyclonedx-python)
 
 * CycloneDX. (2023). cyclonedx-cli. [https://github.com/CycloneDX/cyclonedx-cli](https://github.com/CycloneDX/cyclonedx-cli)
+
+* Platformio. (n.d.). GitHub - platformio/platformio-core: Your Gateway to Embedded Software Development Excellence :alien: GitHub. [https://github.com/platformio/platformio-core](https://github.com/platformio/platformio-core)
 

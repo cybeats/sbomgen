@@ -59,7 +59,9 @@ The generated ```cbom.json``` file will be downloaded to your system's default d
 
 * The requirement ```docker-compose``` is separate to the subcommand, ```docker compose```. 
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX Cryptographic Bill of Materials (CBOM) of the keycloak codebase, created with IBM CBOMkit.
 
 <html lang="en">
 <head>
@@ -119,3 +121,5 @@ The generated ```cbom.json``` file will be downloaded to your system's default d
 ## References
 
 * IBM. (2024, November 21). GitHub - IBM/cbomkit: A toolset for dealing with Cryptography Bill of Materials (CBOM). GitHub. [https://github.com/IBM/cbomkit](https://github.com/IBM/cbomkit).
+
+* Keycloak. (n.d.). GitHub - keycloak/keycloak: Open Source Identity and Access Management For Modern Applications and Services. GitHub. [https://github.com/keycloak/keycloak](https://github.com/keycloak/keycloak).

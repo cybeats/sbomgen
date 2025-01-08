@@ -80,7 +80,9 @@ blint sbom -i </path/to/binary> -o <sbom_output_filename> --deep
     ```
     While this format is not invalid in regards to the CycloneDX JSON Schema, note that "file" is not a known PURL type. This may affect SBOM analysis.
 
-## SBOM
+## Example SBOM
+
+This section illustrates CycloneDX JSON SBOMs, one regular, one extensive, created from the Systemd binary, created via Blint.
 
 <html lang="en">
 <head>
@@ -143,12 +145,12 @@ blint sbom -i </path/to/binary> -o <sbom_output_filename> --deep
 </body>
 </html>
 
-## References
+## References 
 
-* https://github.com/owasp-dep-scan/blint
+* Owasp-Dep-Scan. (n.d.). GitHub - owasp-dep-scan/blint: BLint is a Binary Linter to check the security properties, and capabilities in your executables. Since v2, blint is also an SBOM generator for binaries. GitHub. [https://github.com/owasp-dep-scan/blint](https://github.com/owasp-dep-scan/blint)
 
-* https://cyclonedx.org/docs/1.5/json/#components_items_bom-ref
+* Package-Url. (n.d.). purl-spec/PURL-TYPES.rst at master · package-url/purl-spec. GitHub. [https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst](https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst)
 
-* https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst 
+* CycloneDX v1.5 JSON Reference. (n.d.). CycloneDX. [https://cyclonedx.org/docs/1.5/json/#components_items_bom-ref](https://cyclonedx.org/docs/1.5/json/#components_items_bom-ref)
 
 

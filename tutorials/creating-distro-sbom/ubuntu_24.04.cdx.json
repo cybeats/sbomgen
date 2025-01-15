@@ -1,0 +1,3447 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:13c2d343-6b7c-4444-8cc2-bbd5b6635157",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-14T22:21:48Z",
+    "lifecycles": [
+      {
+        "phase": "operations"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "name": "distro2sbom",
+          "version": "0.5.2",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "Distro-Ubuntu"
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "1-ubuntu",
+      "name": "ubuntu",
+      "version": "24.04",
+      "supplier": {
+        "name": "ubuntu"
+      },
+      "cpe": "cpe:/o:ubuntu:ubuntu:24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "2-adduser",
+      "name": "adduser",
+      "version": "3.137ubuntu1",
+      "description": "add and remove users and groups",
+      "purl": "pkg:deb/adduser@3.137ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "3-apt",
+      "name": "apt",
+      "version": "2.7.14build2",
+      "description": "commandline package manager",
+      "purl": "pkg:deb/apt@2.7.14build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "4-base-files",
+      "name": "base-files",
+      "version": "13ubuntu10.1",
+      "description": "Debian base system miscellaneous files",
+      "purl": "pkg:deb/base-files@13ubuntu10.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "5-base-passwd",
+      "name": "base-passwd",
+      "version": "3.6.3build1",
+      "description": "Debian base system master password and group files",
+      "purl": "pkg:deb/base-passwd@3.6.3build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "6-bash",
+      "name": "bash",
+      "version": "5.2.21-2ubuntu4",
+      "description": "GNU Bourne Again SHell",
+      "purl": "pkg:deb/bash@5.2.21-2ubuntu4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "7-binutils",
+      "name": "binutils",
+      "version": "2.42-4ubuntu2.3",
+      "description": "GNU assembler, linker and binary utilities",
+      "purl": "pkg:deb/binutils@2.42-4ubuntu2.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "8-binutils-common",
+      "name": "binutils-common",
+      "version": "2.42-4ubuntu2.3",
+      "description": "Common files for the GNU assembler, linker and binary utilities",
+      "purl": "pkg:deb/binutils-common@2.42-4ubuntu2.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "9-binutils-x86-64-linux-gnu",
+      "name": "binutils-x86-64-linux-gnu",
+      "version": "2.42-4ubuntu2.3",
+      "description": "GNU binary utilities, for x86-64-linux-gnu target",
+      "purl": "pkg:deb/binutils-x86-64-linux-gnu@2.42-4ubuntu2.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "10-bsdutils",
+      "name": "bsdutils",
+      "version": "1:2.39.3-9ubuntu6.1",
+      "description": "basic utilities from 4.4BSD-Lite",
+      "purl": "pkg:deb/bsdutils@1:2.39.3-9ubuntu6.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "11-build-essential",
+      "name": "build-essential",
+      "version": "12.10ubuntu1",
+      "description": "Informational list of build-essential packages",
+      "purl": "pkg:deb/build-essential@12.10ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "12-bzip2",
+      "name": "bzip2",
+      "version": "1.0.8-5.1build0.1",
+      "description": "high-quality block-sorting file compressor - utilities",
+      "purl": "pkg:deb/bzip2@1.0.8-5.1build0.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "13-ca-certificates",
+      "name": "ca-certificates",
+      "version": "20240203",
+      "description": "Common CA certificates",
+      "purl": "pkg:deb/ca-certificates@20240203"
+    },
+    {
+      "type": "application",
+      "bom-ref": "14-caca-utils",
+      "name": "caca-utils",
+      "version": "0.99.beta20-4build2",
+      "description": "text mode graphics utilities",
+      "purl": "pkg:deb/caca-utils@0.99.beta20-4build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "15-chafa",
+      "name": "chafa",
+      "version": "1.14.0-1.1build1",
+      "description": "Image-to-text converter supporting a wide range of symbols, etc.",
+      "purl": "pkg:deb/chafa@1.14.0-1.1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "16-coreutils",
+      "name": "coreutils",
+      "version": "9.4-3ubuntu6",
+      "description": "GNU core utilities",
+      "purl": "pkg:deb/coreutils@9.4-3ubuntu6"
+    },
+    {
+      "type": "application",
+      "bom-ref": "17-cpp",
+      "name": "cpp",
+      "version": "4:13.2.0-7ubuntu1",
+      "description": "GNU C preprocessor (cpp)",
+      "purl": "pkg:deb/cpp@4:13.2.0-7ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "18-cpp-13",
+      "name": "cpp-13",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU C preprocessor",
+      "purl": "pkg:deb/cpp-13@13.3.0-6ubuntu2~24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "19-cpp-13-x86-64-linux-gnu",
+      "name": "cpp-13-x86-64-linux-gnu",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU C preprocessor for x86_64-linux-gnu",
+      "purl": "pkg:deb/cpp-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "20-cpp-x86-64-linux-gnu",
+      "name": "cpp-x86-64-linux-gnu",
+      "version": "4:13.2.0-7ubuntu1",
+      "description": "GNU C preprocessor (cpp) for the amd64 architecture",
+      "purl": "pkg:deb/cpp-x86-64-linux-gnu@4:13.2.0-7ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "21-dash",
+      "name": "dash",
+      "version": "0.5.12-6ubuntu5",
+      "description": "POSIX-compliant shell",
+      "purl": "pkg:deb/dash@0.5.12-6ubuntu5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "22-dbus",
+      "name": "dbus",
+      "version": "1.14.10-4ubuntu4.1",
+      "description": "simple interprocess messaging system (system message bus)",
+      "purl": "pkg:deb/dbus@1.14.10-4ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "23-dbus-bin",
+      "name": "dbus-bin",
+      "version": "1.14.10-4ubuntu4.1",
+      "description": "simple interprocess messaging system (command line utilities)",
+      "purl": "pkg:deb/dbus-bin@1.14.10-4ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "24-dbus-daemon",
+      "name": "dbus-daemon",
+      "version": "1.14.10-4ubuntu4.1",
+      "description": "simple interprocess messaging system (reference message bus)",
+      "purl": "pkg:deb/dbus-daemon@1.14.10-4ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "25-dbus-session-bus-common",
+      "name": "dbus-session-bus-common",
+      "version": "1.14.10-4ubuntu4.1",
+      "description": "simple interprocess messaging system (session bus configuration)",
+      "purl": "pkg:deb/dbus-session-bus-common@1.14.10-4ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "26-dbus-system-bus-common",
+      "name": "dbus-system-bus-common",
+      "version": "1.14.10-4ubuntu4.1",
+      "description": "simple interprocess messaging system (system bus configuration)",
+      "purl": "pkg:deb/dbus-system-bus-common@1.14.10-4ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "27-debconf",
+      "name": "debconf",
+      "version": "1.5.86ubuntu1",
+      "description": "Debian configuration management system",
+      "purl": "pkg:deb/debconf@1.5.86ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "28-debianutils",
+      "name": "debianutils",
+      "version": "5.17build1",
+      "description": "Miscellaneous utilities specific to Debian",
+      "purl": "pkg:deb/debianutils@5.17build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "29-diffutils",
+      "name": "diffutils",
+      "version": "1:3.10-1build1",
+      "description": "File comparison utilities",
+      "purl": "pkg:deb/diffutils@1:3.10-1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "30-dirmngr",
+      "name": "dirmngr",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - network certificate management service",
+      "purl": "pkg:deb/dirmngr@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "31-dpkg",
+      "name": "dpkg",
+      "version": "1.22.6ubuntu6.1",
+      "description": "Debian package management system",
+      "purl": "pkg:deb/dpkg@1.22.6ubuntu6.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "32-dpkg-dev",
+      "name": "dpkg-dev",
+      "version": "1.22.6ubuntu6.1",
+      "description": "Debian package development tools",
+      "purl": "pkg:deb/dpkg-dev@1.22.6ubuntu6.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "33-e2fsprogs",
+      "name": "e2fsprogs",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "description": "ext2/ext3/ext4 file system utilities",
+      "purl": "pkg:deb/e2fsprogs@1.47.0-2.4~exp1ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "34-fakeroot",
+      "name": "fakeroot",
+      "version": "1.33-1",
+      "description": "tool for simulating superuser privileges",
+      "purl": "pkg:deb/fakeroot@1.33-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "35-findutils",
+      "name": "findutils",
+      "version": "4.9.0-5build1",
+      "description": "utilities for finding files--find, xargs",
+      "purl": "pkg:deb/findutils@4.9.0-5build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "36-fontconfig",
+      "name": "fontconfig",
+      "version": "2.15.0-1.1ubuntu2",
+      "description": "generic font configuration library - support binaries",
+      "purl": "pkg:deb/fontconfig@2.15.0-1.1ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "37-fontconfig-config",
+      "name": "fontconfig-config",
+      "version": "2.15.0-1.1ubuntu2",
+      "description": "generic font configuration library - configuration",
+      "purl": "pkg:deb/fontconfig-config@2.15.0-1.1ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "38-fonts-dejavu-core",
+      "name": "fonts-dejavu-core",
+      "version": "2.37-8",
+      "description": "Vera font family derivate with additional characters",
+      "purl": "pkg:deb/fonts-dejavu-core@2.37-8"
+    },
+    {
+      "type": "application",
+      "bom-ref": "39-fonts-dejavu-mono",
+      "name": "fonts-dejavu-mono",
+      "version": "2.37-8",
+      "description": "Vera font family derivate with additional characters",
+      "purl": "pkg:deb/fonts-dejavu-mono@2.37-8"
+    },
+    {
+      "type": "application",
+      "bom-ref": "40-fonts-droid-fallback",
+      "name": "fonts-droid-fallback",
+      "version": "1:6.0.1r16-1.1build1",
+      "description": "handheld device font with extensive style and language support (fallback)",
+      "purl": "pkg:deb/fonts-droid-fallback@1:6.0.1r16-1.1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "41-fonts-noto-mono",
+      "name": "fonts-noto-mono",
+      "version": "20201225-2",
+      "description": "\"No Tofu\" monospaced font family with large Unicode coverage",
+      "purl": "pkg:deb/fonts-noto-mono@20201225-2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "42-fonts-urw-base35",
+      "name": "fonts-urw-base35",
+      "version": "20200910-8",
+      "description": "font set metric-compatible with the 35 PostScript Level 2 Base Fonts",
+      "purl": "pkg:deb/fonts-urw-base35@20200910-8"
+    },
+    {
+      "type": "application",
+      "bom-ref": "43-g++",
+      "name": "g++",
+      "version": "4:13.2.0-7ubuntu1",
+      "description": "GNU C++ compiler",
+      "purl": "pkg:deb/g++@4:13.2.0-7ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "44-g++-13",
+      "name": "g++-13",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU C++ compiler",
+      "purl": "pkg:deb/g++-13@13.3.0-6ubuntu2~24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "45-g++-13-x86-64-linux-gnu",
+      "name": "g++-13-x86-64-linux-gnu",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU C++ compiler for x86_64-linux-gnu architecture",
+      "purl": "pkg:deb/g++-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "46-g++-x86-64-linux-gnu",
+      "name": "g++-x86-64-linux-gnu",
+      "version": "4:13.2.0-7ubuntu1",
+      "description": "GNU C++ compiler for the amd64 architecture",
+      "purl": "pkg:deb/g++-x86-64-linux-gnu@4:13.2.0-7ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "47-gcc",
+      "name": "gcc",
+      "version": "4:13.2.0-7ubuntu1",
+      "description": "GNU C compiler",
+      "purl": "pkg:deb/gcc@4:13.2.0-7ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "48-gcc-13",
+      "name": "gcc-13",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU C compiler",
+      "purl": "pkg:deb/gcc-13@13.3.0-6ubuntu2~24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "49-gcc-13-base",
+      "name": "gcc-13-base",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GCC, the GNU Compiler Collection (base package)",
+      "purl": "pkg:deb/gcc-13-base@13.3.0-6ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "50-gcc-13-x86-64-linux-gnu",
+      "name": "gcc-13-x86-64-linux-gnu",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU C compiler for the x86_64-linux-gnu architecture",
+      "purl": "pkg:deb/gcc-13-x86-64-linux-gnu@13.3.0-6ubuntu2~24.04"
+    },
+    {
+      "type": "application",
+      "bom-ref": "51-gcc-14-base",
+      "name": "gcc-14-base",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GCC, the GNU Compiler Collection (base package)",
+      "purl": "pkg:deb/gcc-14-base@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "52-gcc-x86-64-linux-gnu",
+      "name": "gcc-x86-64-linux-gnu",
+      "version": "4:13.2.0-7ubuntu1",
+      "description": "GNU C compiler for the amd64 architecture",
+      "purl": "pkg:deb/gcc-x86-64-linux-gnu@4:13.2.0-7ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "53-ghostscript",
+      "name": "ghostscript",
+      "version": "10.02.1~dfsg1-0ubuntu7.4",
+      "description": "interpreter for the PostScript language and for PDF",
+      "purl": "pkg:deb/ghostscript@10.02.1~dfsg1-0ubuntu7.4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "54-gnupg",
+      "name": "gnupg",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - a free PGP replacement",
+      "purl": "pkg:deb/gnupg@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "55-gnupg-l10n",
+      "name": "gnupg-l10n",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - localization files",
+      "purl": "pkg:deb/gnupg-l10n@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "56-gnupg-utils",
+      "name": "gnupg-utils",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - utility programs",
+      "purl": "pkg:deb/gnupg-utils@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "57-gpg",
+      "name": "gpg",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU Privacy Guard -- minimalist public key operations",
+      "purl": "pkg:deb/gpg@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "58-gpg-agent",
+      "name": "gpg-agent",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - cryptographic agent",
+      "purl": "pkg:deb/gpg-agent@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "59-gpg-wks-client",
+      "name": "gpg-wks-client",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - Web Key Service client",
+      "purl": "pkg:deb/gpg-wks-client@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "60-gpgconf",
+      "name": "gpgconf",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - core configuration utilities",
+      "purl": "pkg:deb/gpgconf@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "61-gpgsm",
+      "name": "gpgsm",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - S/MIME version",
+      "purl": "pkg:deb/gpgsm@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "62-gpgv",
+      "name": "gpgv",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - signature verification tool",
+      "purl": "pkg:deb/gpgv@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "63-grep",
+      "name": "grep",
+      "version": "3.11-4build1",
+      "description": "GNU grep, egrep and fgrep",
+      "purl": "pkg:deb/grep@3.11-4build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "64-gzip",
+      "name": "gzip",
+      "version": "1.12-1ubuntu3",
+      "description": "GNU compression utilities",
+      "purl": "pkg:deb/gzip@1.12-1ubuntu3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "65-hicolor-icon-theme",
+      "name": "hicolor-icon-theme",
+      "version": "0.17-2",
+      "description": "default fallback theme for FreeDesktop.org icon themes",
+      "purl": "pkg:deb/hicolor-icon-theme@0.17-2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "66-hostname",
+      "name": "hostname",
+      "version": "3.23+nmu2ubuntu2",
+      "description": "utility to set/show the host name or domain name",
+      "purl": "pkg:deb/hostname@3.23+nmu2ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "67-imagemagick",
+      "name": "imagemagick",
+      "version": "8:6.9.12.98+dfsg1-5.2build2",
+      "description": "image manipulation programs -- binaries",
+      "purl": "pkg:deb/imagemagick@8:6.9.12.98+dfsg1-5.2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "68-imagemagick-6-common",
+      "name": "imagemagick-6-common",
+      "version": "8:6.9.12.98+dfsg1-5.2build2",
+      "description": "image manipulation programs -- infrastructure",
+      "purl": "pkg:deb/imagemagick-6-common@8:6.9.12.98+dfsg1-5.2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "69-imagemagick-6.q16",
+      "name": "imagemagick-6.q16",
+      "version": "8:6.9.12.98+dfsg1-5.2build2",
+      "description": "image manipulation programs -- quantum depth Q16",
+      "purl": "pkg:deb/imagemagick-6.q16@8:6.9.12.98+dfsg1-5.2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "70-init-system-helpers",
+      "name": "init-system-helpers",
+      "version": "1.66ubuntu1",
+      "description": "helper tools for all init systems",
+      "purl": "pkg:deb/init-system-helpers@1.66ubuntu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "71-javascript-common",
+      "name": "javascript-common",
+      "version": "11+nmu1",
+      "description": "Base support for JavaScript library packages",
+      "purl": "pkg:deb/javascript-common@11+nmu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "72-jp2a",
+      "name": "jp2a",
+      "version": "1.1.1-2ubuntu2",
+      "description": "converts jpg and png images to ascii",
+      "purl": "pkg:deb/jp2a@1.1.1-2ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "73-keyboxd",
+      "name": "keyboxd",
+      "version": "2.4.4-2ubuntu17",
+      "description": "GNU privacy guard - public key material service",
+      "purl": "pkg:deb/keyboxd@2.4.4-2ubuntu17"
+    },
+    {
+      "type": "application",
+      "bom-ref": "74-krb5-locales",
+      "name": "krb5-locales",
+      "version": "1.20.1-6ubuntu2.2",
+      "description": "internationalization support for MIT Kerberos",
+      "purl": "pkg:deb/krb5-locales@1.20.1-6ubuntu2.2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "75-libabsl20220623t64",
+      "name": "libabsl20220623t64",
+      "version": "20220623.1-3.1ubuntu3",
+      "description": "extensions to the C++ standard library",
+      "purl": "pkg:deb/libabsl20220623t64@20220623.1-3.1ubuntu3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "76-libacl1",
+      "name": "libacl1",
+      "version": "2.3.2-1build1.1",
+      "description": "access control list - shared library",
+      "purl": "pkg:deb/libacl1@2.3.2-1build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "77-libalgorithm-diff-perl",
+      "name": "libalgorithm-diff-perl",
+      "version": "1.201-1",
+      "description": "module to find differences between files",
+      "purl": "pkg:deb/libalgorithm-diff-perl@1.201-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "78-libalgorithm-diff-xs-perl",
+      "name": "libalgorithm-diff-xs-perl",
+      "version": "0.04-8build3",
+      "description": "module to find differences between files (XS accelerated)",
+      "purl": "pkg:deb/libalgorithm-diff-xs-perl@0.04-8build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "79-libalgorithm-merge-perl",
+      "name": "libalgorithm-merge-perl",
+      "version": "0.08-5",
+      "description": "Perl module for three-way merge of textual data",
+      "purl": "pkg:deb/libalgorithm-merge-perl@0.08-5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "80-libaom3",
+      "name": "libaom3",
+      "version": "3.8.2-2ubuntu0.1",
+      "description": "AV1 Video Codec Library",
+      "purl": "pkg:deb/libaom3@3.8.2-2ubuntu0.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "81-libapparmor1",
+      "name": "libapparmor1",
+      "version": "4.0.1really4.0.1-0ubuntu0.24.04.3",
+      "description": "changehat AppArmor library",
+      "purl": "pkg:deb/libapparmor1@4.0.1really4.0.1-0ubuntu0.24.04.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "82-libapt-pkg6.0t64",
+      "name": "libapt-pkg6.0t64",
+      "version": "2.7.14build2",
+      "description": "package management runtime library",
+      "purl": "pkg:deb/libapt-pkg6.0t64@2.7.14build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "83-libasan8",
+      "name": "libasan8",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "AddressSanitizer -- a fast memory error detector",
+      "purl": "pkg:deb/libasan8@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "84-libassuan0",
+      "name": "libassuan0",
+      "version": "2.5.6-1build1",
+      "description": "IPC library for the GnuPG components",
+      "purl": "pkg:deb/libassuan0@2.5.6-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "85-libatomic1",
+      "name": "libatomic1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "support library providing __atomic built-in functions",
+      "purl": "pkg:deb/libatomic1@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "86-libattr1",
+      "name": "libattr1",
+      "version": "1:2.5.2-1build1",
+      "description": "extended attribute handling - shared library",
+      "purl": "pkg:deb/libattr1@1:2.5.2-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "87-libaudit-common",
+      "name": "libaudit-common",
+      "version": "1:3.1.2-2.1build1.1",
+      "description": "Dynamic library for security auditing - common files",
+      "purl": "pkg:deb/libaudit-common@1:3.1.2-2.1build1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "88-libaudit1",
+      "name": "libaudit1",
+      "version": "1:3.1.2-2.1build1.1",
+      "description": "Dynamic library for security auditing",
+      "purl": "pkg:deb/libaudit1@1:3.1.2-2.1build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "89-libavahi-client3",
+      "name": "libavahi-client3",
+      "version": "0.8-13ubuntu6",
+      "description": "Avahi client library",
+      "purl": "pkg:deb/libavahi-client3@0.8-13ubuntu6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "90-libavahi-common-data",
+      "name": "libavahi-common-data",
+      "version": "0.8-13ubuntu6",
+      "description": "Avahi common data files",
+      "purl": "pkg:deb/libavahi-common-data@0.8-13ubuntu6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "91-libavahi-common3",
+      "name": "libavahi-common3",
+      "version": "0.8-13ubuntu6",
+      "description": "Avahi common library",
+      "purl": "pkg:deb/libavahi-common3@0.8-13ubuntu6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "92-libavif16",
+      "name": "libavif16",
+      "version": "1.0.4-1ubuntu3",
+      "description": "Library for handling .avif files",
+      "purl": "pkg:deb/libavif16@1.0.4-1ubuntu3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "93-libbinutils",
+      "name": "libbinutils",
+      "version": "2.42-4ubuntu2.3",
+      "description": "GNU binary utilities (private shared library)",
+      "purl": "pkg:deb/libbinutils@2.42-4ubuntu2.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "94-libblkid1",
+      "name": "libblkid1",
+      "version": "2.39.3-9ubuntu6.1",
+      "description": "block device ID library",
+      "purl": "pkg:deb/libblkid1@2.39.3-9ubuntu6.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "95-libbrotli1",
+      "name": "libbrotli1",
+      "version": "1.1.0-2build2",
+      "description": "library implementing brotli encoder and decoder (shared libraries)",
+      "purl": "pkg:deb/libbrotli1@1.1.0-2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "96-libbsd0",
+      "name": "libbsd0",
+      "version": "0.12.1-1build1",
+      "description": "utility functions from BSD systems - shared library",
+      "purl": "pkg:deb/libbsd0@0.12.1-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "97-libbz2-1.0",
+      "name": "libbz2-1.0",
+      "version": "1.0.8-5.1build0.1",
+      "description": "high-quality block-sorting file compressor library - runtime",
+      "purl": "pkg:deb/libbz2-1.0@1.0.8-5.1build0.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "98-libc-bin",
+      "name": "libc-bin",
+      "version": "2.39-0ubuntu8.3",
+      "description": "GNU C Library: Binaries",
+      "purl": "pkg:deb/libc-bin@2.39-0ubuntu8.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "99-libc-dev-bin",
+      "name": "libc-dev-bin",
+      "version": "2.39-0ubuntu8.3",
+      "description": "GNU C Library: Development binaries",
+      "purl": "pkg:deb/libc-dev-bin@2.39-0ubuntu8.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "100-libc-devtools",
+      "name": "libc-devtools",
+      "version": "2.39-0ubuntu8.3",
+      "description": "GNU C Library: Development tools",
+      "purl": "pkg:deb/libc-devtools@2.39-0ubuntu8.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "101-libc6",
+      "name": "libc6",
+      "version": "2.39-0ubuntu8.3",
+      "description": "GNU C Library: Shared libraries",
+      "purl": "pkg:deb/libc6@2.39-0ubuntu8.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "102-libc6-dev",
+      "name": "libc6-dev",
+      "version": "2.39-0ubuntu8.3",
+      "description": "GNU C Library: Development Libraries and Header Files",
+      "purl": "pkg:deb/libc6-dev@2.39-0ubuntu8.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "103-libcaca0",
+      "name": "libcaca0",
+      "version": "0.99.beta20-4build2",
+      "description": "colour ASCII art library",
+      "purl": "pkg:deb/libcaca0@0.99.beta20-4build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "104-libcairo-gobject2",
+      "name": "libcairo-gobject2",
+      "version": "1.18.0-3build1",
+      "description": "Cairo 2D vector graphics library (GObject library)",
+      "purl": "pkg:deb/libcairo-gobject2@1.18.0-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "105-libcairo2",
+      "name": "libcairo2",
+      "version": "1.18.0-3build1",
+      "description": "Cairo 2D vector graphics library",
+      "purl": "pkg:deb/libcairo2@1.18.0-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "106-libcap-ng0",
+      "name": "libcap-ng0",
+      "version": "0.8.4-2build2",
+      "description": "alternate POSIX capabilities library",
+      "purl": "pkg:deb/libcap-ng0@0.8.4-2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "107-libcap2",
+      "name": "libcap2",
+      "version": "1:2.66-5ubuntu2",
+      "description": "POSIX 1003.1e capabilities (library)",
+      "purl": "pkg:deb/libcap2@1:2.66-5ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "108-libcc1-0",
+      "name": "libcc1-0",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GCC cc1 plugin for GDB",
+      "purl": "pkg:deb/libcc1-0@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "109-libchafa0t64",
+      "name": "libchafa0t64",
+      "version": "1.14.0-1.1build1",
+      "description": "library for image-to-text converter chafa",
+      "purl": "pkg:deb/libchafa0t64@1.14.0-1.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "110-libcom-err2",
+      "name": "libcom-err2",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "description": "common error description library",
+      "purl": "pkg:deb/libcom-err2@1.47.0-2.4~exp1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "111-libcrypt-dev",
+      "name": "libcrypt-dev",
+      "version": "1:4.4.36-4build1",
+      "description": "libcrypt development files",
+      "purl": "pkg:deb/libcrypt-dev@1:4.4.36-4build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "112-libcrypt1",
+      "name": "libcrypt1",
+      "version": "1:4.4.36-4build1",
+      "description": "libcrypt shared library",
+      "purl": "pkg:deb/libcrypt1@1:4.4.36-4build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "113-libctf-nobfd0",
+      "name": "libctf-nobfd0",
+      "version": "2.42-4ubuntu2.3",
+      "description": "Compact C Type Format library (runtime, no BFD dependency)",
+      "purl": "pkg:deb/libctf-nobfd0@2.42-4ubuntu2.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "114-libctf0",
+      "name": "libctf0",
+      "version": "2.42-4ubuntu2.3",
+      "description": "Compact C Type Format library (runtime, BFD dependency)",
+      "purl": "pkg:deb/libctf0@2.42-4ubuntu2.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "115-libcups2t64",
+      "name": "libcups2t64",
+      "version": "2.4.7-1.2ubuntu7.3",
+      "description": "Common UNIX Printing System(tm) - Core library",
+      "purl": "pkg:deb/libcups2t64@2.4.7-1.2ubuntu7.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "116-libcurl3t64-gnutls",
+      "name": "libcurl3t64-gnutls",
+      "version": "8.5.0-2ubuntu10.6",
+      "description": "easy-to-use client-side URL transfer library (GnuTLS flavour)",
+      "purl": "pkg:deb/libcurl3t64-gnutls@8.5.0-2ubuntu10.6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "117-libdatrie1",
+      "name": "libdatrie1",
+      "version": "0.2.13-3build1",
+      "description": "Double-array trie library",
+      "purl": "pkg:deb/libdatrie1@0.2.13-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "118-libdav1d7",
+      "name": "libdav1d7",
+      "version": "1.4.1-1build1",
+      "description": "fast and small AV1 video stream decoder (shared library)",
+      "purl": "pkg:deb/libdav1d7@1.4.1-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "119-libdb5.3t64",
+      "name": "libdb5.3t64",
+      "version": "5.3.28+dfsg2-7",
+      "description": "Berkeley v5.3 Database Libraries [runtime]",
+      "purl": "pkg:deb/libdb5.3t64@5.3.28+dfsg2-7?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "120-libdbus-1-3",
+      "name": "libdbus-1-3",
+      "version": "1.14.10-4ubuntu4.1",
+      "description": "simple interprocess messaging system (library)",
+      "purl": "pkg:deb/libdbus-1-3@1.14.10-4ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "121-libde265-0",
+      "name": "libde265-0",
+      "version": "1.0.15-1build3",
+      "description": "Open H.265 video codec implementation",
+      "purl": "pkg:deb/libde265-0@1.0.15-1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "122-libdebconfclient0",
+      "name": "libdebconfclient0",
+      "version": "0.271ubuntu3",
+      "description": "Debian Configuration Management System (C-implementation library)",
+      "purl": "pkg:deb/libdebconfclient0@0.271ubuntu3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "123-libdeflate0",
+      "name": "libdeflate0",
+      "version": "1.19-1build1.1",
+      "description": "fast, whole-buffer DEFLATE-based compression and decompression",
+      "purl": "pkg:deb/libdeflate0@1.19-1build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "124-libdjvulibre-text",
+      "name": "libdjvulibre-text",
+      "version": "3.5.28-2build4",
+      "description": "Linguistic support files for libdjvulibre",
+      "purl": "pkg:deb/libdjvulibre-text@3.5.28-2build4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "125-libdjvulibre21",
+      "name": "libdjvulibre21",
+      "version": "3.5.28-2build4",
+      "description": "Runtime support for the DjVu image format",
+      "purl": "pkg:deb/libdjvulibre21@3.5.28-2build4?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "126-libdpkg-perl",
+      "name": "libdpkg-perl",
+      "version": "1.22.6ubuntu6.1",
+      "description": "Dpkg perl modules",
+      "purl": "pkg:deb/libdpkg-perl@1.22.6ubuntu6.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "127-libexpat1",
+      "name": "libexpat1",
+      "version": "2.6.1-2ubuntu0.2",
+      "description": "XML parsing C library - runtime library",
+      "purl": "pkg:deb/libexpat1@2.6.1-2ubuntu0.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "128-libexpat1-dev",
+      "name": "libexpat1-dev",
+      "version": "2.6.1-2ubuntu0.2",
+      "description": "XML parsing C library - development kit",
+      "purl": "pkg:deb/libexpat1-dev@2.6.1-2ubuntu0.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "129-libext2fs2t64",
+      "name": "libext2fs2t64",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "description": "ext2/ext3/ext4 file system libraries",
+      "purl": "pkg:deb/libext2fs2t64@1.47.0-2.4~exp1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "130-libfakeroot",
+      "name": "libfakeroot",
+      "version": "1.33-1",
+      "description": "tool for simulating superuser privileges - shared libraries",
+      "purl": "pkg:deb/libfakeroot@1.33-1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "131-libffi8",
+      "name": "libffi8",
+      "version": "3.4.6-1build1",
+      "description": "Foreign Function Interface library runtime",
+      "purl": "pkg:deb/libffi8@3.4.6-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "132-libfftw3-double3",
+      "name": "libfftw3-double3",
+      "version": "3.3.10-1ubuntu3",
+      "description": "Library for computing Fast Fourier Transforms - Double precision",
+      "purl": "pkg:deb/libfftw3-double3@3.3.10-1ubuntu3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "133-libfile-fcntllock-perl",
+      "name": "libfile-fcntllock-perl",
+      "version": "0.22-4ubuntu5",
+      "description": "Perl module for file locking with fcntl(2)",
+      "purl": "pkg:deb/libfile-fcntllock-perl@0.22-4ubuntu5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "134-libfontconfig1",
+      "name": "libfontconfig1",
+      "version": "2.15.0-1.1ubuntu2",
+      "description": "generic font configuration library - runtime",
+      "purl": "pkg:deb/libfontconfig1@2.15.0-1.1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "135-libfontenc1",
+      "name": "libfontenc1",
+      "version": "1:1.1.8-1build1",
+      "description": "X11 font encoding library",
+      "purl": "pkg:deb/libfontenc1@1:1.1.8-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "136-libfreetype6",
+      "name": "libfreetype6",
+      "version": "2.13.2+dfsg-1build3",
+      "description": "FreeType 2 font engine, shared library files",
+      "purl": "pkg:deb/libfreetype6@2.13.2+dfsg-1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "137-libfribidi0",
+      "name": "libfribidi0",
+      "version": "1.0.13-3build1",
+      "description": "Free Implementation of the Unicode BiDi algorithm",
+      "purl": "pkg:deb/libfribidi0@1.0.13-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "138-libgav1-1",
+      "name": "libgav1-1",
+      "version": "0.18.0-1build3",
+      "description": "AV1 decoder developed by Google -- runtime library",
+      "purl": "pkg:deb/libgav1-1@0.18.0-1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "139-libgc1",
+      "name": "libgc1",
+      "version": "1:8.2.6-1build1",
+      "description": "conservative garbage collector for C and C++",
+      "purl": "pkg:deb/libgc1@1:8.2.6-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "140-libgcc-13-dev",
+      "name": "libgcc-13-dev",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GCC support library (development files)",
+      "purl": "pkg:deb/libgcc-13-dev@13.3.0-6ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "141-libgcc-s1",
+      "name": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GCC support library",
+      "purl": "pkg:deb/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "142-libgcrypt20",
+      "name": "libgcrypt20",
+      "version": "1.10.3-2build1",
+      "description": "LGPL Crypto library - runtime library",
+      "purl": "pkg:deb/libgcrypt20@1.10.3-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "143-libgd3",
+      "name": "libgd3",
+      "version": "2.3.3-9ubuntu5",
+      "description": "GD Graphics Library",
+      "purl": "pkg:deb/libgd3@2.3.3-9ubuntu5?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "144-libgdbm-compat4t64",
+      "name": "libgdbm-compat4t64",
+      "version": "1.23-5.1build1",
+      "description": "GNU dbm database routines (legacy support runtime version)",
+      "purl": "pkg:deb/libgdbm-compat4t64@1.23-5.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "145-libgdbm6t64",
+      "name": "libgdbm6t64",
+      "version": "1.23-5.1build1",
+      "description": "GNU dbm database routines (runtime version)",
+      "purl": "pkg:deb/libgdbm6t64@1.23-5.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "146-libgdk-pixbuf-2.0-0",
+      "name": "libgdk-pixbuf-2.0-0",
+      "version": "2.42.10+dfsg-3ubuntu3.1",
+      "description": "GDK Pixbuf library",
+      "purl": "pkg:deb/libgdk-pixbuf-2.0-0@2.42.10+dfsg-3ubuntu3.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "147-libgdk-pixbuf2.0-bin",
+      "name": "libgdk-pixbuf2.0-bin",
+      "version": "2.42.10+dfsg-3ubuntu3.1",
+      "description": "GDK Pixbuf library (thumbnailer)",
+      "purl": "pkg:deb/libgdk-pixbuf2.0-bin@2.42.10+dfsg-3ubuntu3.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "148-libgdk-pixbuf2.0-common",
+      "name": "libgdk-pixbuf2.0-common",
+      "version": "2.42.10+dfsg-3ubuntu3.1",
+      "description": "GDK Pixbuf library - data files",
+      "purl": "pkg:deb/libgdk-pixbuf2.0-common@2.42.10+dfsg-3ubuntu3.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "149-libgif7",
+      "name": "libgif7",
+      "version": "5.2.2-1ubuntu1",
+      "description": "library for GIF images (library)",
+      "purl": "pkg:deb/libgif7@5.2.2-1ubuntu1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "150-libglib2.0-0t64",
+      "name": "libglib2.0-0t64",
+      "version": "2.80.0-6ubuntu3.2",
+      "description": "GLib library of C routines",
+      "purl": "pkg:deb/libglib2.0-0t64@2.80.0-6ubuntu3.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "151-libglib2.0-data",
+      "name": "libglib2.0-data",
+      "version": "2.80.0-6ubuntu3.2",
+      "description": "Common files for GLib library",
+      "purl": "pkg:deb/libglib2.0-data@2.80.0-6ubuntu3.2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "152-libgmp10",
+      "name": "libgmp10",
+      "version": "2:6.3.0+dfsg-2ubuntu6",
+      "description": "Multiprecision arithmetic library",
+      "purl": "pkg:deb/libgmp10@2:6.3.0+dfsg-2ubuntu6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "153-libgnutls30t64",
+      "name": "libgnutls30t64",
+      "version": "3.8.3-1.1ubuntu3.2",
+      "description": "GNU TLS library - main runtime library",
+      "purl": "pkg:deb/libgnutls30t64@3.8.3-1.1ubuntu3.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "154-libgomp1",
+      "name": "libgomp1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GCC OpenMP (GOMP) support library",
+      "purl": "pkg:deb/libgomp1@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "155-libgpg-error0",
+      "name": "libgpg-error0",
+      "version": "1.47-3build2",
+      "description": "GnuPG development runtime library",
+      "purl": "pkg:deb/libgpg-error0@1.47-3build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "156-libgpm2",
+      "name": "libgpm2",
+      "version": "1.20.7-11",
+      "description": "General Purpose Mouse - shared library",
+      "purl": "pkg:deb/libgpm2@1.20.7-11?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "157-libgprofng0",
+      "name": "libgprofng0",
+      "version": "2.42-4ubuntu2.3",
+      "description": "GNU Next Generation profiler (runtime library)",
+      "purl": "pkg:deb/libgprofng0@2.42-4ubuntu2.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "158-libgraphite2-3",
+      "name": "libgraphite2-3",
+      "version": "1.3.14-2build1",
+      "description": "Font rendering engine for Complex Scripts -- library",
+      "purl": "pkg:deb/libgraphite2-3@1.3.14-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "159-libgs-common",
+      "name": "libgs-common",
+      "version": "10.02.1~dfsg1-0ubuntu7.4",
+      "description": "interpreter for the PostScript language and for PDF - ICC profiles",
+      "purl": "pkg:deb/libgs-common@10.02.1~dfsg1-0ubuntu7.4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "160-libgs10",
+      "name": "libgs10",
+      "version": "10.02.1~dfsg1-0ubuntu7.4",
+      "description": "interpreter for the PostScript language and for PDF - Library",
+      "purl": "pkg:deb/libgs10@10.02.1~dfsg1-0ubuntu7.4?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "161-libgs10-common",
+      "name": "libgs10-common",
+      "version": "10.02.1~dfsg1-0ubuntu7.4",
+      "description": "interpreter for the PostScript language and for PDF - common files",
+      "purl": "pkg:deb/libgs10-common@10.02.1~dfsg1-0ubuntu7.4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "162-libgssapi-krb5-2",
+      "name": "libgssapi-krb5-2",
+      "version": "1.20.1-6ubuntu2.2",
+      "description": "MIT Kerberos runtime libraries - krb5 GSS-API Mechanism",
+      "purl": "pkg:deb/libgssapi-krb5-2@1.20.1-6ubuntu2.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "163-libharfbuzz0b",
+      "name": "libharfbuzz0b",
+      "version": "8.3.0-2build2",
+      "description": "OpenType text shaping engine (shared library)",
+      "purl": "pkg:deb/libharfbuzz0b@8.3.0-2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "164-libheif-plugin-aomdec",
+      "name": "libheif-plugin-aomdec",
+      "version": "1.17.6-1ubuntu4.1",
+      "description": "ISO/IEC 23008-12:2017 HEIF file format decoder - aomdec plugin",
+      "purl": "pkg:deb/libheif-plugin-aomdec@1.17.6-1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "165-libheif-plugin-aomenc",
+      "name": "libheif-plugin-aomenc",
+      "version": "1.17.6-1ubuntu4.1",
+      "description": "ISO/IEC 23008-12:2017 HEIF file format decoder - aomenc plugin",
+      "purl": "pkg:deb/libheif-plugin-aomenc@1.17.6-1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "166-libheif-plugin-libde265",
+      "name": "libheif-plugin-libde265",
+      "version": "1.17.6-1ubuntu4.1",
+      "description": "ISO/IEC 23008-12:2017 HEIF file format decoder - libde265 plugin",
+      "purl": "pkg:deb/libheif-plugin-libde265@1.17.6-1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "167-libheif1",
+      "name": "libheif1",
+      "version": "1.17.6-1ubuntu4.1",
+      "description": "ISO/IEC 23008-12:2017 HEIF file format decoder - shared library",
+      "purl": "pkg:deb/libheif1@1.17.6-1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "168-libhogweed6t64",
+      "name": "libhogweed6t64",
+      "version": "3.9.1-2.2build1.1",
+      "description": "low level cryptographic library (public-key cryptos)",
+      "purl": "pkg:deb/libhogweed6t64@3.9.1-2.2build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "169-libhwasan0",
+      "name": "libhwasan0",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "AddressSanitizer -- a fast memory error detector",
+      "purl": "pkg:deb/libhwasan0@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "170-libhwy1t64",
+      "name": "libhwy1t64",
+      "version": "1.0.7-8.1build1",
+      "description": "Efficient and performance-portable SIMD wrapper (runtime files)",
+      "purl": "pkg:deb/libhwy1t64@1.0.7-8.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "171-libice6",
+      "name": "libice6",
+      "version": "2:1.0.10-1build3",
+      "description": "X11 Inter-Client Exchange library",
+      "purl": "pkg:deb/libice6@2:1.0.10-1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "172-libicu74",
+      "name": "libicu74",
+      "version": "74.2-1ubuntu3.1",
+      "description": "International Components for Unicode",
+      "purl": "pkg:deb/libicu74@74.2-1ubuntu3.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "173-libid3tag0",
+      "name": "libid3tag0",
+      "version": "0.15.1b-14build1",
+      "description": "ID3 tag reading library from the MAD project",
+      "purl": "pkg:deb/libid3tag0@0.15.1b-14build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "174-libidn12",
+      "name": "libidn12",
+      "version": "1.42-1build1",
+      "description": "GNU Libidn library, implementation of IETF IDN specifications",
+      "purl": "pkg:deb/libidn12@1.42-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "175-libidn2-0",
+      "name": "libidn2-0",
+      "version": "2.3.7-2build1",
+      "description": "Internationalized domain names (IDNA2008/TR46) library",
+      "purl": "pkg:deb/libidn2-0@2.3.7-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "176-libijs-0.35",
+      "name": "libijs-0.35",
+      "version": "0.35-15.1build1",
+      "description": "IJS raster image transport protocol: shared library",
+      "purl": "pkg:deb/libijs-0.35@0.35-15.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "177-libimath-3-1-29t64",
+      "name": "libimath-3-1-29t64",
+      "version": "3.1.9-3.1ubuntu2",
+      "description": "Utility libraries from ASF used by OpenEXR - runtime",
+      "purl": "pkg:deb/libimath-3-1-29t64@3.1.9-3.1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "178-libimlib2t64",
+      "name": "libimlib2t64",
+      "version": "1.12.1-1.1build2",
+      "description": "image loading, rendering, saving library",
+      "purl": "pkg:deb/libimlib2t64@1.12.1-1.1build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "179-libisl23",
+      "name": "libisl23",
+      "version": "0.26-3build1",
+      "description": "manipulating sets and relations of integer points bounded by linear constraints",
+      "purl": "pkg:deb/libisl23@0.26-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "180-libitm1",
+      "name": "libitm1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GNU Transactional Memory Library",
+      "purl": "pkg:deb/libitm1@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "181-libjansson4",
+      "name": "libjansson4",
+      "version": "2.14-2build2",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "purl": "pkg:deb/libjansson4@2.14-2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "182-libjbig0",
+      "name": "libjbig0",
+      "version": "2.1-6.1ubuntu2",
+      "description": "JBIGkit libraries",
+      "purl": "pkg:deb/libjbig0@2.1-6.1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "183-libjbig2dec0",
+      "name": "libjbig2dec0",
+      "version": "0.20-1build3",
+      "description": "JBIG2 decoder library - shared libraries",
+      "purl": "pkg:deb/libjbig2dec0@0.20-1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "184-libjpeg-turbo8",
+      "name": "libjpeg-turbo8",
+      "version": "2.1.5-2ubuntu2",
+      "description": "libjpeg-turbo JPEG runtime library",
+      "purl": "pkg:deb/libjpeg-turbo8@2.1.5-2ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "185-libjpeg8",
+      "name": "libjpeg8",
+      "version": "8c-2ubuntu11",
+      "description": "Independent JPEG Group's JPEG runtime library (dependency package)",
+      "purl": "pkg:deb/libjpeg8@8c-2ubuntu11?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "186-libjs-jquery",
+      "name": "libjs-jquery",
+      "version": "3.6.1+dfsg+~3.5.14-1",
+      "description": "JavaScript library for dynamic web applications",
+      "purl": "pkg:deb/libjs-jquery@3.6.1+dfsg+~3.5.14-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "187-libjs-sphinxdoc",
+      "name": "libjs-sphinxdoc",
+      "version": "7.2.6-6",
+      "description": "JavaScript support for Sphinx documentation",
+      "purl": "pkg:deb/libjs-sphinxdoc@7.2.6-6"
+    },
+    {
+      "type": "application",
+      "bom-ref": "188-libjs-underscore",
+      "name": "libjs-underscore",
+      "version": "1.13.4~dfsg+~1.11.4-3",
+      "description": "JavaScript's functional programming helper library",
+      "purl": "pkg:deb/libjs-underscore@1.13.4~dfsg+~1.11.4-3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "189-libjxl0.7",
+      "name": "libjxl0.7",
+      "version": "0.7.0-10.2ubuntu6",
+      "description": "JPEG XL Image Coding System - \"JXL\" (shared libraries)",
+      "purl": "pkg:deb/libjxl0.7@0.7.0-10.2ubuntu6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "190-libjxr-tools",
+      "name": "libjxr-tools",
+      "version": "1.2~git20170615.f752187-5.1ubuntu2",
+      "description": "JPEG-XR lib - command line apps",
+      "purl": "pkg:deb/libjxr-tools@1.2~git20170615.f752187-5.1ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "191-libjxr0t64",
+      "name": "libjxr0t64",
+      "version": "1.2~git20170615.f752187-5.1ubuntu2",
+      "description": "JPEG-XR lib - libraries",
+      "purl": "pkg:deb/libjxr0t64@1.2~git20170615.f752187-5.1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "192-libk5crypto3",
+      "name": "libk5crypto3",
+      "version": "1.20.1-6ubuntu2.2",
+      "description": "MIT Kerberos runtime libraries - Crypto Library",
+      "purl": "pkg:deb/libk5crypto3@1.20.1-6ubuntu2.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "193-libkeyutils1",
+      "name": "libkeyutils1",
+      "version": "1.6.3-3build1",
+      "description": "Linux Key Management Utilities (library)",
+      "purl": "pkg:deb/libkeyutils1@1.6.3-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "194-libkmod2",
+      "name": "libkmod2",
+      "version": "31+20240202-2ubuntu7",
+      "description": "libkmod shared library",
+      "purl": "pkg:deb/libkmod2@31+20240202-2ubuntu7?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "195-libkrb5-3",
+      "name": "libkrb5-3",
+      "version": "1.20.1-6ubuntu2.2",
+      "description": "MIT Kerberos runtime libraries",
+      "purl": "pkg:deb/libkrb5-3@1.20.1-6ubuntu2.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "196-libkrb5support0",
+      "name": "libkrb5support0",
+      "version": "1.20.1-6ubuntu2.2",
+      "description": "MIT Kerberos runtime libraries - Support library",
+      "purl": "pkg:deb/libkrb5support0@1.20.1-6ubuntu2.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "197-libksba8",
+      "name": "libksba8",
+      "version": "1.6.6-1build1",
+      "description": "X.509 and CMS support library",
+      "purl": "pkg:deb/libksba8@1.6.6-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "198-liblcms2-2",
+      "name": "liblcms2-2",
+      "version": "2.14-2build1",
+      "description": "Little CMS 2 color management library",
+      "purl": "pkg:deb/liblcms2-2@2.14-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "199-libldap-common",
+      "name": "libldap-common",
+      "version": "2.6.7+dfsg-1~exp1ubuntu8.1",
+      "description": "OpenLDAP common files for libraries",
+      "purl": "pkg:deb/libldap-common@2.6.7+dfsg-1~exp1ubuntu8.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "200-libldap2",
+      "name": "libldap2",
+      "version": "2.6.7+dfsg-1~exp1ubuntu8.1",
+      "description": "OpenLDAP libraries",
+      "purl": "pkg:deb/libldap2@2.6.7+dfsg-1~exp1ubuntu8.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "201-liblerc4",
+      "name": "liblerc4",
+      "version": "4.0.0+ds-4ubuntu2",
+      "description": "Limited Error Raster Compression library",
+      "purl": "pkg:deb/liblerc4@4.0.0+ds-4ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "202-liblocale-gettext-perl",
+      "name": "liblocale-gettext-perl",
+      "version": "1.07-6ubuntu5",
+      "description": "module using libc functions for internationalization in Perl",
+      "purl": "pkg:deb/liblocale-gettext-perl@1.07-6ubuntu5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "203-liblqr-1-0",
+      "name": "liblqr-1-0",
+      "version": "0.4.2-2.1build2",
+      "description": "converts plain array images into multi-size representation",
+      "purl": "pkg:deb/liblqr-1-0@0.4.2-2.1build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "204-liblsan0",
+      "name": "liblsan0",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "LeakSanitizer -- a memory leak detector (runtime)",
+      "purl": "pkg:deb/liblsan0@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "205-libltdl7",
+      "name": "libltdl7",
+      "version": "2.4.7-7build1",
+      "description": "System independent dlopen wrapper for GNU libtool",
+      "purl": "pkg:deb/libltdl7@2.4.7-7build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "206-liblz4-1",
+      "name": "liblz4-1",
+      "version": "1.9.4-1build1.1",
+      "description": "Fast LZ compression algorithm library - runtime",
+      "purl": "pkg:deb/liblz4-1@1.9.4-1build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "207-liblzma5",
+      "name": "liblzma5",
+      "version": "5.6.1+really5.4.5-1build0.1",
+      "description": "XZ-format compression library",
+      "purl": "pkg:deb/liblzma5@5.6.1+really5.4.5-1build0.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "208-libmagickcore-6.q16-7-extra",
+      "name": "libmagickcore-6.q16-7-extra",
+      "version": "8:6.9.12.98+dfsg1-5.2build2",
+      "description": "low-level image manipulation library - extra codecs (Q16)",
+      "purl": "pkg:deb/libmagickcore-6.q16-7-extra@8:6.9.12.98+dfsg1-5.2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "209-libmagickcore-6.q16-7t64",
+      "name": "libmagickcore-6.q16-7t64",
+      "version": "8:6.9.12.98+dfsg1-5.2build2",
+      "description": "low-level image manipulation library -- quantum depth Q16",
+      "purl": "pkg:deb/libmagickcore-6.q16-7t64@8:6.9.12.98+dfsg1-5.2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "210-libmagickwand-6.q16-7t64",
+      "name": "libmagickwand-6.q16-7t64",
+      "version": "8:6.9.12.98+dfsg1-5.2build2",
+      "description": "image manipulation library -- quantum depth Q16",
+      "purl": "pkg:deb/libmagickwand-6.q16-7t64@8:6.9.12.98+dfsg1-5.2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "211-libmd0",
+      "name": "libmd0",
+      "version": "1.1.0-2build1",
+      "description": "message digest functions from BSD systems - shared library",
+      "purl": "pkg:deb/libmd0@1.1.0-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "212-libmount1",
+      "name": "libmount1",
+      "version": "2.39.3-9ubuntu6.1",
+      "description": "device mounting library",
+      "purl": "pkg:deb/libmount1@2.39.3-9ubuntu6.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "213-libmpc3",
+      "name": "libmpc3",
+      "version": "1.3.1-1build1",
+      "description": "multiple precision complex floating-point library",
+      "purl": "pkg:deb/libmpc3@1.3.1-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "214-libmpfr6",
+      "name": "libmpfr6",
+      "version": "4.2.1-1build1",
+      "description": "multiple precision floating-point computation",
+      "purl": "pkg:deb/libmpfr6@4.2.1-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "215-libncursesw6",
+      "name": "libncursesw6",
+      "version": "6.4+20240113-1ubuntu2",
+      "description": "shared libraries for terminal handling (wide character support)",
+      "purl": "pkg:deb/libncursesw6@6.4+20240113-1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "216-libnetpbm11t64",
+      "name": "libnetpbm11t64",
+      "version": "2:11.05.02-1.1build1",
+      "description": "Graphics conversion tools shared libraries",
+      "purl": "pkg:deb/libnetpbm11t64@2:11.05.02-1.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "217-libnettle8t64",
+      "name": "libnettle8t64",
+      "version": "3.9.1-2.2build1.1",
+      "description": "low level cryptographic library (symmetric and one-way cryptos)",
+      "purl": "pkg:deb/libnettle8t64@3.9.1-2.2build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "218-libnghttp2-14",
+      "name": "libnghttp2-14",
+      "version": "1.59.0-1ubuntu0.1",
+      "description": "library implementing HTTP/2 protocol (shared library)",
+      "purl": "pkg:deb/libnghttp2-14@1.59.0-1ubuntu0.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "219-libnpth0t64",
+      "name": "libnpth0t64",
+      "version": "1.6-3.1build1",
+      "description": "replacement for GNU Pth using system threads",
+      "purl": "pkg:deb/libnpth0t64@1.6-3.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "220-libopenexr-3-1-30",
+      "name": "libopenexr-3-1-30",
+      "version": "3.1.5-5.1build3",
+      "description": "runtime files for the OpenEXR image library",
+      "purl": "pkg:deb/libopenexr-3-1-30@3.1.5-5.1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "221-libopenjp2-7",
+      "name": "libopenjp2-7",
+      "version": "2.5.0-2ubuntu0.2",
+      "description": "JPEG 2000 image compression/decompression library",
+      "purl": "pkg:deb/libopenjp2-7@2.5.0-2ubuntu0.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "222-libp11-kit0",
+      "name": "libp11-kit0",
+      "version": "0.25.3-4ubuntu2.1",
+      "description": "library for loading and coordinating access to PKCS#11 modules - runtime",
+      "purl": "pkg:deb/libp11-kit0@0.25.3-4ubuntu2.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "223-libpam-modules",
+      "name": "libpam-modules",
+      "version": "1.5.3-5ubuntu5.1",
+      "description": "Pluggable Authentication Modules for PAM",
+      "purl": "pkg:deb/libpam-modules@1.5.3-5ubuntu5.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "224-libpam-modules-bin",
+      "name": "libpam-modules-bin",
+      "version": "1.5.3-5ubuntu5.1",
+      "description": "Pluggable Authentication Modules for PAM - helper binaries",
+      "purl": "pkg:deb/libpam-modules-bin@1.5.3-5ubuntu5.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "225-libpam-runtime",
+      "name": "libpam-runtime",
+      "version": "1.5.3-5ubuntu5.1",
+      "description": "Runtime support for the PAM library",
+      "purl": "pkg:deb/libpam-runtime@1.5.3-5ubuntu5.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "226-libpam0g",
+      "name": "libpam0g",
+      "version": "1.5.3-5ubuntu5.1",
+      "description": "Pluggable Authentication Modules library",
+      "purl": "pkg:deb/libpam0g@1.5.3-5ubuntu5.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "227-libpango-1.0-0",
+      "name": "libpango-1.0-0",
+      "version": "1.52.1+ds-1build1",
+      "description": "Layout and rendering of internationalized text",
+      "purl": "pkg:deb/libpango-1.0-0@1.52.1+ds-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "228-libpangocairo-1.0-0",
+      "name": "libpangocairo-1.0-0",
+      "version": "1.52.1+ds-1build1",
+      "description": "Layout and rendering of internationalized text",
+      "purl": "pkg:deb/libpangocairo-1.0-0@1.52.1+ds-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "229-libpangoft2-1.0-0",
+      "name": "libpangoft2-1.0-0",
+      "version": "1.52.1+ds-1build1",
+      "description": "Layout and rendering of internationalized text",
+      "purl": "pkg:deb/libpangoft2-1.0-0@1.52.1+ds-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "230-libpaper-utils",
+      "name": "libpaper-utils",
+      "version": "1.1.29build1",
+      "description": "library for handling paper characteristics (utilities)",
+      "purl": "pkg:deb/libpaper-utils@1.1.29build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "231-libpaper1",
+      "name": "libpaper1",
+      "version": "1.1.29build1",
+      "description": "library for handling paper characteristics",
+      "purl": "pkg:deb/libpaper1@1.1.29build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "232-libpci3",
+      "name": "libpci3",
+      "version": "1:3.10.0-2build1",
+      "description": "PCI utilities (shared library)",
+      "purl": "pkg:deb/libpci3@1:3.10.0-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "233-libpcre2-8-0",
+      "name": "libpcre2-8-0",
+      "version": "10.42-4ubuntu2",
+      "description": "New Perl Compatible Regular Expression Library- 8 bit runtime files",
+      "purl": "pkg:deb/libpcre2-8-0@10.42-4ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "234-libperl5.38t64",
+      "name": "libperl5.38t64",
+      "version": "5.38.2-3.2build2",
+      "description": "shared Perl library",
+      "purl": "pkg:deb/libperl5.38t64@5.38.2-3.2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "235-libpixman-1-0",
+      "name": "libpixman-1-0",
+      "version": "0.42.2-1build1",
+      "description": "pixel-manipulation library for X and cairo",
+      "purl": "pkg:deb/libpixman-1-0@0.42.2-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "236-libpng16-16t64",
+      "name": "libpng16-16t64",
+      "version": "1.6.43-5build1",
+      "description": "PNG library - runtime (version 1.6)",
+      "purl": "pkg:deb/libpng16-16t64@1.6.43-5build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "237-libproc2-0",
+      "name": "libproc2-0",
+      "version": "2:4.0.4-4ubuntu3.2",
+      "description": "library for accessing process information from /proc",
+      "purl": "pkg:deb/libproc2-0@2:4.0.4-4ubuntu3.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "238-libpsl5t64",
+      "name": "libpsl5t64",
+      "version": "0.21.2-1.1build1",
+      "description": "Library for Public Suffix List (shared libraries)",
+      "purl": "pkg:deb/libpsl5t64@0.21.2-1.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "239-libpython3-dev",
+      "name": "libpython3-dev",
+      "version": "3.12.3-0ubuntu2",
+      "description": "header files and a static library for Python (default)",
+      "purl": "pkg:deb/libpython3-dev@3.12.3-0ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "240-libpython3-stdlib",
+      "name": "libpython3-stdlib",
+      "version": "3.12.3-0ubuntu2",
+      "description": "interactive high-level object-oriented language (default python3 version)",
+      "purl": "pkg:deb/libpython3-stdlib@3.12.3-0ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "241-libpython3.12-dev",
+      "name": "libpython3.12-dev",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Header files and a static library for Python (v3.12)",
+      "purl": "pkg:deb/libpython3.12-dev@3.12.3-1ubuntu0.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "242-libpython3.12-minimal",
+      "name": "libpython3.12-minimal",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Minimal subset of the Python language (version 3.12)",
+      "purl": "pkg:deb/libpython3.12-minimal@3.12.3-1ubuntu0.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "243-libpython3.12-stdlib",
+      "name": "libpython3.12-stdlib",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Interactive high-level object-oriented language (standard library, version 3.12)",
+      "purl": "pkg:deb/libpython3.12-stdlib@3.12.3-1ubuntu0.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "244-libpython3.12t64",
+      "name": "libpython3.12t64",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Shared Python runtime library (version 3.12)",
+      "purl": "pkg:deb/libpython3.12t64@3.12.3-1ubuntu0.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "245-libquadmath0",
+      "name": "libquadmath0",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GCC Quad-Precision Math Library",
+      "purl": "pkg:deb/libquadmath0@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "246-librav1e0",
+      "name": "librav1e0",
+      "version": "0.7.1-2",
+      "description": "Fastest and safest AV1 encoder - shared library",
+      "purl": "pkg:deb/librav1e0@0.7.1-2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "247-libraw23t64",
+      "name": "libraw23t64",
+      "version": "0.21.2-2.1build1",
+      "description": "raw image decoder library",
+      "purl": "pkg:deb/libraw23t64@0.21.2-2.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "248-libreadline8t64",
+      "name": "libreadline8t64",
+      "version": "8.2-4build1",
+      "description": "GNU readline and history libraries, run-time libraries",
+      "purl": "pkg:deb/libreadline8t64@8.2-4build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "249-librsvg2-2",
+      "name": "librsvg2-2",
+      "version": "2.58.0+dfsg-1build1",
+      "description": "SAX-based renderer library for SVG files (runtime)",
+      "purl": "pkg:deb/librsvg2-2@2.58.0+dfsg-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "250-librsvg2-common",
+      "name": "librsvg2-common",
+      "version": "2.58.0+dfsg-1build1",
+      "description": "SAX-based renderer library for SVG files (extra runtime)",
+      "purl": "pkg:deb/librsvg2-common@2.58.0+dfsg-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "251-librtmp1",
+      "name": "librtmp1",
+      "version": "2.4+20151223.gitfa8646d.1-2build7",
+      "description": "toolkit for RTMP streams (shared library)",
+      "purl": "pkg:deb/librtmp1@2.4+20151223.gitfa8646d.1-2build7?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "252-libsasl2-2",
+      "name": "libsasl2-2",
+      "version": "2.1.28+dfsg1-5ubuntu3.1",
+      "description": "Cyrus SASL - authentication abstraction library",
+      "purl": "pkg:deb/libsasl2-2@2.1.28+dfsg1-5ubuntu3.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "253-libsasl2-modules",
+      "name": "libsasl2-modules",
+      "version": "2.1.28+dfsg1-5ubuntu3.1",
+      "description": "Cyrus SASL - pluggable authentication modules",
+      "purl": "pkg:deb/libsasl2-modules@2.1.28+dfsg1-5ubuntu3.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "254-libsasl2-modules-db",
+      "name": "libsasl2-modules-db",
+      "version": "2.1.28+dfsg1-5ubuntu3.1",
+      "description": "Cyrus SASL - pluggable authentication modules (DB)",
+      "purl": "pkg:deb/libsasl2-modules-db@2.1.28+dfsg1-5ubuntu3.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "255-libseccomp2",
+      "name": "libseccomp2",
+      "version": "2.5.5-1ubuntu3.1",
+      "description": "high level interface to Linux seccomp filter",
+      "purl": "pkg:deb/libseccomp2@2.5.5-1ubuntu3.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "256-libselinux1",
+      "name": "libselinux1",
+      "version": "3.5-2ubuntu2",
+      "description": "SELinux runtime shared libraries",
+      "purl": "pkg:deb/libselinux1@3.5-2ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "257-libsemanage-common",
+      "name": "libsemanage-common",
+      "version": "3.5-1build5",
+      "description": "Common files for SELinux policy management libraries",
+      "purl": "pkg:deb/libsemanage-common@3.5-1build5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "258-libsemanage2",
+      "name": "libsemanage2",
+      "version": "3.5-1build5",
+      "description": "SELinux policy management library",
+      "purl": "pkg:deb/libsemanage2@3.5-1build5?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "259-libsepol2",
+      "name": "libsepol2",
+      "version": "3.5-2build1",
+      "description": "SELinux library for manipulating binary security policies",
+      "purl": "pkg:deb/libsepol2@3.5-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "260-libsframe1",
+      "name": "libsframe1",
+      "version": "2.42-4ubuntu2.3",
+      "description": "Library to handle the SFrame format (runtime library)",
+      "purl": "pkg:deb/libsframe1@2.42-4ubuntu2.3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "261-libsharpyuv0",
+      "name": "libsharpyuv0",
+      "version": "1.3.2-0.4build3",
+      "description": "Library for sharp RGB to YUV conversion",
+      "purl": "pkg:deb/libsharpyuv0@1.3.2-0.4build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "262-libsixel-bin",
+      "name": "libsixel-bin",
+      "version": "1.10.3-3build1",
+      "description": "DEC SIXEL graphics codec implementation (binary)",
+      "purl": "pkg:deb/libsixel-bin@1.10.3-3build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "263-libsixel1",
+      "name": "libsixel1",
+      "version": "1.10.3-3build1",
+      "description": "DEC SIXEL graphics codec implementation (runtime)",
+      "purl": "pkg:deb/libsixel1@1.10.3-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "264-libslang2",
+      "name": "libslang2",
+      "version": "2.3.3-3build2",
+      "description": "S-Lang programming library - runtime version",
+      "purl": "pkg:deb/libslang2@2.3.3-3build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "265-libsm6",
+      "name": "libsm6",
+      "version": "2:1.2.3-1build3",
+      "description": "X11 Session Management library",
+      "purl": "pkg:deb/libsm6@2:1.2.3-1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "266-libsmartcols1",
+      "name": "libsmartcols1",
+      "version": "2.39.3-9ubuntu6.1",
+      "description": "smart column output alignment library",
+      "purl": "pkg:deb/libsmartcols1@2.39.3-9ubuntu6.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "267-libspectre1",
+      "name": "libspectre1",
+      "version": "0.2.12-1build2",
+      "description": "Library for rendering PostScript documents",
+      "purl": "pkg:deb/libspectre1@0.2.12-1build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "268-libsqlite3-0",
+      "name": "libsqlite3-0",
+      "version": "3.45.1-1ubuntu2",
+      "description": "SQLite 3 shared library",
+      "purl": "pkg:deb/libsqlite3-0@3.45.1-1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "269-libss2",
+      "name": "libss2",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "description": "command-line interface parsing library",
+      "purl": "pkg:deb/libss2@1.47.0-2.4~exp1ubuntu4.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "270-libssh-4",
+      "name": "libssh-4",
+      "version": "0.10.6-2build2",
+      "description": "tiny C SSH library (OpenSSL flavor)",
+      "purl": "pkg:deb/libssh-4@0.10.6-2build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "271-libssl3t64",
+      "name": "libssl3t64",
+      "version": "3.0.13-0ubuntu3.4",
+      "description": "Secure Sockets Layer toolkit - shared libraries",
+      "purl": "pkg:deb/libssl3t64@3.0.13-0ubuntu3.4?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "272-libstdc++-13-dev",
+      "name": "libstdc++-13-dev",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "GNU Standard C++ Library v3 (development files)",
+      "purl": "pkg:deb/libstdc++-13-dev@13.3.0-6ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "273-libstdc++6",
+      "name": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "GNU Standard C++ Library v3",
+      "purl": "pkg:deb/libstdc++6@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "274-libsvtav1enc1d1",
+      "name": "libsvtav1enc1d1",
+      "version": "1.7.0+dfsg-2build1",
+      "description": "Scalable Video Technology for AV1 (libsvtav1enc shared library)",
+      "purl": "pkg:deb/libsvtav1enc1d1@1.7.0+dfsg-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "275-libsystemd0",
+      "name": "libsystemd0",
+      "version": "255.4-1ubuntu8.4",
+      "description": "systemd utility library",
+      "purl": "pkg:deb/libsystemd0@255.4-1ubuntu8.4?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "276-libtasn1-6",
+      "name": "libtasn1-6",
+      "version": "4.19.0-3build1",
+      "description": "Manage ASN.1 structures (runtime)",
+      "purl": "pkg:deb/libtasn1-6@4.19.0-3build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "277-libthai-data",
+      "name": "libthai-data",
+      "version": "0.1.29-2build1",
+      "description": "Data files for Thai language support library",
+      "purl": "pkg:deb/libthai-data@0.1.29-2build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "278-libthai0",
+      "name": "libthai0",
+      "version": "0.1.29-2build1",
+      "description": "Thai language support library",
+      "purl": "pkg:deb/libthai0@0.1.29-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "279-libtiff6",
+      "name": "libtiff6",
+      "version": "4.5.1+git230720-4ubuntu2.2",
+      "description": "Tag Image File Format (TIFF) library",
+      "purl": "pkg:deb/libtiff6@4.5.1+git230720-4ubuntu2.2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "280-libtinfo6",
+      "name": "libtinfo6",
+      "version": "6.4+20240113-1ubuntu2",
+      "description": "shared low-level terminfo library for terminal handling",
+      "purl": "pkg:deb/libtinfo6@6.4+20240113-1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "281-libtsan2",
+      "name": "libtsan2",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "ThreadSanitizer -- a Valgrind-based detector of data races (runtime)",
+      "purl": "pkg:deb/libtsan2@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "282-libubsan1",
+      "name": "libubsan1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "description": "UBSan -- undefined behaviour sanitizer (runtime)",
+      "purl": "pkg:deb/libubsan1@14.2.0-4ubuntu2~24.04?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "283-libudev1",
+      "name": "libudev1",
+      "version": "255.4-1ubuntu8.4",
+      "description": "libudev shared library",
+      "purl": "pkg:deb/libudev1@255.4-1ubuntu8.4?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "284-libunistring5",
+      "name": "libunistring5",
+      "version": "1.1-2build1",
+      "description": "Unicode string library for C",
+      "purl": "pkg:deb/libunistring5@1.1-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "285-libuuid1",
+      "name": "libuuid1",
+      "version": "2.39.3-9ubuntu6.1",
+      "description": "Universally Unique ID library",
+      "purl": "pkg:deb/libuuid1@2.39.3-9ubuntu6.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "286-libwebp7",
+      "name": "libwebp7",
+      "version": "1.3.2-0.4build3",
+      "description": "Lossy compression of digital photographic images",
+      "purl": "pkg:deb/libwebp7@1.3.2-0.4build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "287-libwebpdemux2",
+      "name": "libwebpdemux2",
+      "version": "1.3.2-0.4build3",
+      "description": "Lossy compression of digital photographic images.",
+      "purl": "pkg:deb/libwebpdemux2@1.3.2-0.4build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "288-libwebpmux3",
+      "name": "libwebpmux3",
+      "version": "1.3.2-0.4build3",
+      "description": "Lossy compression of digital photographic images",
+      "purl": "pkg:deb/libwebpmux3@1.3.2-0.4build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "289-libwmflite-0.2-7",
+      "name": "libwmflite-0.2-7",
+      "version": "0.2.13-1.1build3",
+      "description": "Windows metafile conversion lite library",
+      "purl": "pkg:deb/libwmflite-0.2-7@0.2.13-1.1build3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "290-libx11-6",
+      "name": "libx11-6",
+      "version": "2:1.8.7-1build1",
+      "description": "X11 client-side library",
+      "purl": "pkg:deb/libx11-6@2:1.8.7-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "291-libx11-data",
+      "name": "libx11-data",
+      "version": "2:1.8.7-1build1",
+      "description": "X11 client-side library",
+      "purl": "pkg:deb/libx11-data@2:1.8.7-1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "292-libx11-xcb1",
+      "name": "libx11-xcb1",
+      "version": "2:1.8.7-1build1",
+      "description": "Xlib/XCB interface library",
+      "purl": "pkg:deb/libx11-xcb1@2:1.8.7-1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "293-libxau6",
+      "name": "libxau6",
+      "version": "1:1.0.9-1build6",
+      "description": "X11 authorisation library",
+      "purl": "pkg:deb/libxau6@1:1.0.9-1build6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "294-libxcb-render0",
+      "name": "libxcb-render0",
+      "version": "1.15-1ubuntu2",
+      "description": "X C Binding, render extension",
+      "purl": "pkg:deb/libxcb-render0@1.15-1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "295-libxcb-shm0",
+      "name": "libxcb-shm0",
+      "version": "1.15-1ubuntu2",
+      "description": "X C Binding, shm extension",
+      "purl": "pkg:deb/libxcb-shm0@1.15-1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "296-libxcb1",
+      "name": "libxcb1",
+      "version": "1.15-1ubuntu2",
+      "description": "X C Binding",
+      "purl": "pkg:deb/libxcb1@1.15-1ubuntu2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "297-libxdmcp6",
+      "name": "libxdmcp6",
+      "version": "1:1.1.3-0ubuntu6",
+      "description": "X11 Display Manager Control Protocol library",
+      "purl": "pkg:deb/libxdmcp6@1:1.1.3-0ubuntu6?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "298-libxext6",
+      "name": "libxext6",
+      "version": "2:1.3.4-1build2",
+      "description": "X11 miscellaneous extension library",
+      "purl": "pkg:deb/libxext6@2:1.3.4-1build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "299-libxml2",
+      "name": "libxml2",
+      "version": "2.9.14+dfsg-1.3ubuntu3",
+      "description": "GNOME XML library",
+      "purl": "pkg:deb/libxml2@2.9.14+dfsg-1.3ubuntu3?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "300-libxpm4",
+      "name": "libxpm4",
+      "version": "1:3.5.17-1build2",
+      "description": "X11 pixmap library",
+      "purl": "pkg:deb/libxpm4@1:3.5.17-1build2?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "301-libxrender1",
+      "name": "libxrender1",
+      "version": "1:0.9.10-1.1build1",
+      "description": "X Rendering Extension client library",
+      "purl": "pkg:deb/libxrender1@1:0.9.10-1.1build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "302-libxt6t64",
+      "name": "libxt6t64",
+      "version": "1:1.2.1-1.2build1",
+      "description": "X11 toolkit intrinsics library",
+      "purl": "pkg:deb/libxt6t64@1:1.2.1-1.2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "303-libxxhash0",
+      "name": "libxxhash0",
+      "version": "0.8.2-2build1",
+      "description": "shared library for xxhash",
+      "purl": "pkg:deb/libxxhash0@0.8.2-2build1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "304-libyuv0",
+      "name": "libyuv0",
+      "version": "0.0~git202401110.af6ac82-1",
+      "description": "Library for YUV scaling (shared library)",
+      "purl": "pkg:deb/libyuv0@0.0~git202401110.af6ac82-1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "305-libzstd1",
+      "name": "libzstd1",
+      "version": "1.5.5+dfsg2-2build1.1",
+      "description": "fast lossless compression algorithm",
+      "purl": "pkg:deb/libzstd1@1.5.5+dfsg2-2build1.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "306-linux-libc-dev",
+      "name": "linux-libc-dev",
+      "version": "6.8.0-51.52",
+      "description": "Linux Kernel Headers for development",
+      "purl": "pkg:deb/linux-libc-dev@6.8.0-51.52?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "307-login",
+      "name": "login",
+      "version": "1:4.13+dfsg1-4ubuntu3.2",
+      "description": "system login tools",
+      "purl": "pkg:deb/login@1:4.13+dfsg1-4ubuntu3.2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "308-logsave",
+      "name": "logsave",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "description": "save the output of a command in a log file",
+      "purl": "pkg:deb/logsave@1.47.0-2.4~exp1ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "309-lto-disabled-list",
+      "name": "lto-disabled-list",
+      "version": "47",
+      "description": "list of packages not to build with LTO",
+      "purl": "pkg:deb/lto-disabled-list@47"
+    },
+    {
+      "type": "application",
+      "bom-ref": "310-make",
+      "name": "make",
+      "version": "4.3-4.1build2",
+      "description": "utility for directing compilation",
+      "purl": "pkg:deb/make@4.3-4.1build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "311-manpages",
+      "name": "manpages",
+      "version": "6.7-2",
+      "description": "Manual pages about using a GNU/Linux system",
+      "purl": "pkg:deb/manpages@6.7-2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "312-manpages-dev",
+      "name": "manpages-dev",
+      "version": "6.7-2",
+      "description": "Manual pages about using GNU/Linux for development",
+      "purl": "pkg:deb/manpages-dev@6.7-2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "313-mawk",
+      "name": "mawk",
+      "version": "1.3.4.20240123-1build1",
+      "description": "Pattern scanning and text processing language",
+      "purl": "pkg:deb/mawk@1.3.4.20240123-1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "314-media-types",
+      "name": "media-types",
+      "version": "10.1.0",
+      "description": "List of standard media types and their usual file extension",
+      "purl": "pkg:deb/media-types@10.1.0"
+    },
+    {
+      "type": "application",
+      "bom-ref": "315-mount",
+      "name": "mount",
+      "version": "2.39.3-9ubuntu6.1",
+      "description": "tools for mounting and manipulating filesystems",
+      "purl": "pkg:deb/mount@2.39.3-9ubuntu6.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "316-ncurses-base",
+      "name": "ncurses-base",
+      "version": "6.4+20240113-1ubuntu2",
+      "description": "basic terminal type definitions",
+      "purl": "pkg:deb/ncurses-base@6.4+20240113-1ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "317-ncurses-bin",
+      "name": "ncurses-bin",
+      "version": "6.4+20240113-1ubuntu2",
+      "description": "terminal-related programs and man pages",
+      "purl": "pkg:deb/ncurses-bin@6.4+20240113-1ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "318-neofetch",
+      "name": "neofetch",
+      "version": "7.1.0-4",
+      "description": "Shows Linux System Information with Distribution Logo",
+      "purl": "pkg:deb/neofetch@7.1.0-4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "319-netbase",
+      "name": "netbase",
+      "version": "6.4",
+      "description": "Basic TCP/IP networking system",
+      "purl": "pkg:deb/netbase@6.4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "320-netpbm",
+      "name": "netpbm",
+      "version": "2:11.05.02-1.1build1",
+      "description": "Graphics conversion tools between image formats",
+      "purl": "pkg:deb/netpbm@2:11.05.02-1.1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "321-openssl",
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.4",
+      "description": "Secure Sockets Layer toolkit - cryptographic utility",
+      "purl": "pkg:deb/openssl@3.0.13-0ubuntu3.4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "322-passwd",
+      "name": "passwd",
+      "version": "1:4.13+dfsg1-4ubuntu3.2",
+      "description": "change and administer password and group data",
+      "purl": "pkg:deb/passwd@1:4.13+dfsg1-4ubuntu3.2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "323-patch",
+      "name": "patch",
+      "version": "2.7.6-7build3",
+      "description": "Apply a diff file to an original",
+      "purl": "pkg:deb/patch@2.7.6-7build3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "324-pci.ids",
+      "name": "pci.ids",
+      "version": "0.0~2024.03.31-1",
+      "description": "PCI ID Repository",
+      "purl": "pkg:deb/pci.ids@0.0~2024.03.31-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "325-pciutils",
+      "name": "pciutils",
+      "version": "1:3.10.0-2build1",
+      "description": "PCI utilities",
+      "purl": "pkg:deb/pciutils@1:3.10.0-2build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "326-perl",
+      "name": "perl",
+      "version": "5.38.2-3.2build2",
+      "description": "Larry Wall's Practical Extraction and Report Language",
+      "purl": "pkg:deb/perl@5.38.2-3.2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "327-perl-base",
+      "name": "perl-base",
+      "version": "5.38.2-3.2build2",
+      "description": "minimal Perl system",
+      "purl": "pkg:deb/perl-base@5.38.2-3.2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "328-perl-modules-5.38",
+      "name": "perl-modules-5.38",
+      "version": "5.38.2-3.2build2",
+      "description": "Core Perl modules",
+      "purl": "pkg:deb/perl-modules-5.38@5.38.2-3.2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "329-pinentry-curses",
+      "name": "pinentry-curses",
+      "version": "1.2.1-3ubuntu5",
+      "description": "curses-based PIN or pass-phrase entry dialog for GnuPG",
+      "purl": "pkg:deb/pinentry-curses@1.2.1-3ubuntu5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "330-pipx",
+      "name": "pipx",
+      "version": "1.4.3-1",
+      "description": "execute binaries from Python packages in isolated environments",
+      "purl": "pkg:deb/pipx@1.4.3-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "331-poppler-data",
+      "name": "poppler-data",
+      "version": "0.4.12-1",
+      "description": "encoding data for the poppler PDF rendering library",
+      "purl": "pkg:deb/poppler-data@0.4.12-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "332-procps",
+      "name": "procps",
+      "version": "2:4.0.4-4ubuntu3.2",
+      "description": "/proc file system utilities",
+      "purl": "pkg:deb/procps@2:4.0.4-4ubuntu3.2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "333-publicsuffix",
+      "name": "publicsuffix",
+      "version": "20231001.0357-0.1",
+      "description": "accurate, machine-readable list of domain name suffixes",
+      "purl": "pkg:deb/publicsuffix@20231001.0357-0.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "334-python3",
+      "name": "python3",
+      "version": "3.12.3-0ubuntu2",
+      "description": "interactive high-level object-oriented language (default python3 version)",
+      "purl": "pkg:deb/python3@3.12.3-0ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "335-python3-argcomplete",
+      "name": "python3-argcomplete",
+      "version": "3.1.4-1ubuntu0.1",
+      "description": "bash tab completion for argparse (for Python 3)",
+      "purl": "pkg:deb/python3-argcomplete@3.1.4-1ubuntu0.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "336-python3-click",
+      "name": "python3-click",
+      "version": "8.1.6-2",
+      "description": "Wrapper around optparse for command line utilities - Python 3.x",
+      "purl": "pkg:deb/python3-click@8.1.6-2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "337-python3-colorama",
+      "name": "python3-colorama",
+      "version": "0.4.6-4",
+      "description": "Cross-platform colored terminal text in Python - Python 3.x",
+      "purl": "pkg:deb/python3-colorama@0.4.6-4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "338-python3-dev",
+      "name": "python3-dev",
+      "version": "3.12.3-0ubuntu2",
+      "description": "header files and a static library for Python (default)",
+      "purl": "pkg:deb/python3-dev@3.12.3-0ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "339-python3-minimal",
+      "name": "python3-minimal",
+      "version": "3.12.3-0ubuntu2",
+      "description": "minimal subset of the Python language (default python3 version)",
+      "purl": "pkg:deb/python3-minimal@3.12.3-0ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "340-python3-packaging",
+      "name": "python3-packaging",
+      "version": "24.0-1",
+      "description": "core utilities for python3 packages",
+      "purl": "pkg:deb/python3-packaging@24.0-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "341-python3-pip",
+      "name": "python3-pip",
+      "version": "24.0+dfsg-1ubuntu1.1",
+      "description": "Python package installer",
+      "purl": "pkg:deb/python3-pip@24.0+dfsg-1ubuntu1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "342-python3-pip-whl",
+      "name": "python3-pip-whl",
+      "version": "24.0+dfsg-1ubuntu1.1",
+      "description": "Python package installer (pip wheel)",
+      "purl": "pkg:deb/python3-pip-whl@24.0+dfsg-1ubuntu1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "343-python3-pkg-resources",
+      "name": "python3-pkg-resources",
+      "version": "68.1.2-2ubuntu1.1",
+      "description": "Package Discovery and Resource Access using pkg_resources",
+      "purl": "pkg:deb/python3-pkg-resources@68.1.2-2ubuntu1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "344-python3-platformdirs",
+      "name": "python3-platformdirs",
+      "version": "4.2.0-1",
+      "description": "determining appropriate platform-specific directories (Python 3)",
+      "purl": "pkg:deb/python3-platformdirs@4.2.0-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "345-python3-psutil",
+      "name": "python3-psutil",
+      "version": "5.9.8-2build2",
+      "description": "module providing convenience functions for managing processes (Python3)",
+      "purl": "pkg:deb/python3-psutil@5.9.8-2build2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "346-python3-setuptools",
+      "name": "python3-setuptools",
+      "version": "68.1.2-2ubuntu1.1",
+      "description": "Python3 Distutils Enhancements",
+      "purl": "pkg:deb/python3-setuptools@68.1.2-2ubuntu1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "347-python3-setuptools-whl",
+      "name": "python3-setuptools-whl",
+      "version": "68.1.2-2ubuntu1.1",
+      "description": "Python Distutils Enhancements (wheel package)",
+      "purl": "pkg:deb/python3-setuptools-whl@68.1.2-2ubuntu1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "348-python3-userpath",
+      "name": "python3-userpath",
+      "version": "1.9.1-1",
+      "description": "tool for adding locations to the user PATH - Python3 library",
+      "purl": "pkg:deb/python3-userpath@1.9.1-1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "349-python3-venv",
+      "name": "python3-venv",
+      "version": "3.12.3-0ubuntu2",
+      "description": "venv module for python3 (default python3 version)",
+      "purl": "pkg:deb/python3-venv@3.12.3-0ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "350-python3-wheel",
+      "name": "python3-wheel",
+      "version": "0.42.0-2",
+      "description": "built-package format for Python",
+      "purl": "pkg:deb/python3-wheel@0.42.0-2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "351-python3.12",
+      "name": "python3.12",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Interactive high-level object-oriented language (version 3.12)",
+      "purl": "pkg:deb/python3.12@3.12.3-1ubuntu0.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "352-python3.12-dev",
+      "name": "python3.12-dev",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Header files and a static library for Python (v3.12)",
+      "purl": "pkg:deb/python3.12-dev@3.12.3-1ubuntu0.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "353-python3.12-minimal",
+      "name": "python3.12-minimal",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Minimal subset of the Python language (version 3.12)",
+      "purl": "pkg:deb/python3.12-minimal@3.12.3-1ubuntu0.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "354-python3.12-venv",
+      "name": "python3.12-venv",
+      "version": "3.12.3-1ubuntu0.3",
+      "description": "Interactive high-level object-oriented language (pyvenv binary, version 3.12)",
+      "purl": "pkg:deb/python3.12-venv@3.12.3-1ubuntu0.3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "355-readline-common",
+      "name": "readline-common",
+      "version": "8.2-4build1",
+      "description": "GNU readline and history libraries, common files",
+      "purl": "pkg:deb/readline-common@8.2-4build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "356-rpcsvc-proto",
+      "name": "rpcsvc-proto",
+      "version": "1.4.2-0ubuntu7",
+      "description": "RPC protocol compiler and definitions",
+      "purl": "pkg:deb/rpcsvc-proto@1.4.2-0ubuntu7"
+    },
+    {
+      "type": "application",
+      "bom-ref": "357-sed",
+      "name": "sed",
+      "version": "4.9-2build1",
+      "description": "GNU stream editor for filtering/transforming text",
+      "purl": "pkg:deb/sed@4.9-2build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "358-sensible-utils",
+      "name": "sensible-utils",
+      "version": "0.0.22",
+      "description": "Utilities for sensible alternative selection",
+      "purl": "pkg:deb/sensible-utils@0.0.22"
+    },
+    {
+      "type": "application",
+      "bom-ref": "359-shared-mime-info",
+      "name": "shared-mime-info",
+      "version": "2.4-4",
+      "description": "FreeDesktop.org shared MIME database and spec",
+      "purl": "pkg:deb/shared-mime-info@2.4-4"
+    },
+    {
+      "type": "application",
+      "bom-ref": "360-sysvinit-utils",
+      "name": "sysvinit-utils",
+      "version": "3.08-6ubuntu3",
+      "description": "System-V-like utilities",
+      "purl": "pkg:deb/sysvinit-utils@3.08-6ubuntu3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "361-tar",
+      "name": "tar",
+      "version": "1.35+dfsg-3build1",
+      "description": "GNU version of the tar archiving utility",
+      "purl": "pkg:deb/tar@1.35+dfsg-3build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "362-toilet",
+      "name": "toilet",
+      "version": "0.3-1.4build1",
+      "description": "display large colourful characters in text mode",
+      "purl": "pkg:deb/toilet@0.3-1.4build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "363-toilet-fonts",
+      "name": "toilet-fonts",
+      "version": "0.3-1.4build1",
+      "description": "collection of TOIlet fonts",
+      "purl": "pkg:deb/toilet-fonts@0.3-1.4build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "364-tzdata",
+      "name": "tzdata",
+      "version": "2024a-3ubuntu1.1",
+      "description": "time zone and daylight-saving time data",
+      "purl": "pkg:deb/tzdata@2024a-3ubuntu1.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "365-ubuntu-keyring",
+      "name": "ubuntu-keyring",
+      "version": "2023.11.28.1",
+      "description": "GnuPG keys of the Ubuntu archive",
+      "purl": "pkg:deb/ubuntu-keyring@2023.11.28.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "366-ucf",
+      "name": "ucf",
+      "version": "3.0043+nmu1",
+      "description": "Update Configuration File(s): preserve user changes to config files",
+      "purl": "pkg:deb/ucf@3.0043+nmu1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "367-unzip",
+      "name": "unzip",
+      "version": "6.0-28ubuntu4.1",
+      "description": "De-archiver for .zip files",
+      "purl": "pkg:deb/unzip@6.0-28ubuntu4.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "368-util-linux",
+      "name": "util-linux",
+      "version": "2.39.3-9ubuntu6.1",
+      "description": "miscellaneous system utilities",
+      "purl": "pkg:deb/util-linux@2.39.3-9ubuntu6.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "369-w3m",
+      "name": "w3m",
+      "version": "0.5.3+git20230121-2ubuntu5",
+      "description": "WWW browsable pager with excellent tables/frames support",
+      "purl": "pkg:deb/w3m@0.5.3+git20230121-2ubuntu5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "370-w3m-img",
+      "name": "w3m-img",
+      "version": "0.5.3+git20230121-2ubuntu5",
+      "description": "inline image extension support utilities for w3m",
+      "purl": "pkg:deb/w3m-img@0.5.3+git20230121-2ubuntu5"
+    },
+    {
+      "type": "application",
+      "bom-ref": "371-x11-common",
+      "name": "x11-common",
+      "version": "1:7.7+23ubuntu3",
+      "description": "X Window System (X.Org) infrastructure",
+      "purl": "pkg:deb/x11-common@1:7.7+23ubuntu3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "372-xdg-user-dirs",
+      "name": "xdg-user-dirs",
+      "version": "0.18-1build1",
+      "description": "tool to manage well known user directories",
+      "purl": "pkg:deb/xdg-user-dirs@0.18-1build1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "373-xfonts-encodings",
+      "name": "xfonts-encodings",
+      "version": "1:1.0.5-0ubuntu2",
+      "description": "Encodings for X.Org fonts",
+      "purl": "pkg:deb/xfonts-encodings@1:1.0.5-0ubuntu2"
+    },
+    {
+      "type": "application",
+      "bom-ref": "374-xfonts-utils",
+      "name": "xfonts-utils",
+      "version": "1:7.7+6build3",
+      "description": "X Window System font utility programs",
+      "purl": "pkg:deb/xfonts-utils@1:7.7+6build3"
+    },
+    {
+      "type": "application",
+      "bom-ref": "375-xz-utils",
+      "name": "xz-utils",
+      "version": "5.6.1+really5.4.5-1build0.1",
+      "description": "XZ-format compression utilities",
+      "purl": "pkg:deb/xz-utils@5.6.1+really5.4.5-1build0.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "376-zip",
+      "name": "zip",
+      "version": "3.0-13ubuntu0.1",
+      "description": "Archiver for .zip files",
+      "purl": "pkg:deb/zip@3.0-13ubuntu0.1"
+    },
+    {
+      "type": "application",
+      "bom-ref": "377-zlib1g",
+      "name": "zlib1g",
+      "version": "1:1.3.dfsg-3.1ubuntu2.1",
+      "description": "compression library - runtime",
+      "purl": "pkg:deb/zlib1g@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64"
+    },
+    {
+      "type": "application",
+      "bom-ref": "378-zlib1g-dev",
+      "name": "zlib1g-dev",
+      "version": "1:1.3.dfsg-3.1ubuntu2.1",
+      "description": "compression library - development",
+      "purl": "pkg:deb/zlib1g-dev@1:1.3.dfsg-3.1ubuntu2.1?arch=amd64"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-ubuntu"
+      ]
+    },
+    {
+      "ref": "1-ubuntu",
+      "dependsOn": [
+        "2-adduser",
+        "3-apt",
+        "4-base-files",
+        "5-base-passwd",
+        "6-bash",
+        "7-binutils",
+        "8-binutils-common",
+        "9-binutils-x86-64-linux-gnu",
+        "10-bsdutils",
+        "11-build-essential",
+        "12-bzip2",
+        "13-ca-certificates",
+        "14-caca-utils",
+        "15-chafa",
+        "16-coreutils",
+        "17-cpp",
+        "18-cpp-13",
+        "19-cpp-13-x86-64-linux-gnu",
+        "20-cpp-x86-64-linux-gnu",
+        "21-dash",
+        "22-dbus",
+        "23-dbus-bin",
+        "24-dbus-daemon",
+        "25-dbus-session-bus-common",
+        "26-dbus-system-bus-common",
+        "27-debconf",
+        "28-debianutils",
+        "29-diffutils",
+        "30-dirmngr",
+        "31-dpkg",
+        "32-dpkg-dev",
+        "33-e2fsprogs",
+        "34-fakeroot",
+        "35-findutils",
+        "36-fontconfig",
+        "37-fontconfig-config",
+        "38-fonts-dejavu-core",
+        "39-fonts-dejavu-mono",
+        "40-fonts-droid-fallback",
+        "41-fonts-noto-mono",
+        "42-fonts-urw-base35",
+        "43-g++",
+        "44-g++-13",
+        "45-g++-13-x86-64-linux-gnu",
+        "46-g++-x86-64-linux-gnu",
+        "47-gcc",
+        "48-gcc-13",
+        "49-gcc-13-base",
+        "50-gcc-13-x86-64-linux-gnu",
+        "51-gcc-14-base",
+        "52-gcc-x86-64-linux-gnu",
+        "53-ghostscript",
+        "54-gnupg",
+        "55-gnupg-l10n",
+        "56-gnupg-utils",
+        "57-gpg",
+        "58-gpg-agent",
+        "59-gpg-wks-client",
+        "60-gpgconf",
+        "61-gpgsm",
+        "62-gpgv",
+        "63-grep",
+        "64-gzip",
+        "65-hicolor-icon-theme",
+        "66-hostname",
+        "67-imagemagick",
+        "68-imagemagick-6-common",
+        "69-imagemagick-6.q16",
+        "70-init-system-helpers",
+        "71-javascript-common",
+        "72-jp2a",
+        "73-keyboxd",
+        "74-krb5-locales",
+        "75-libabsl20220623t64",
+        "76-libacl1",
+        "77-libalgorithm-diff-perl",
+        "78-libalgorithm-diff-xs-perl",
+        "79-libalgorithm-merge-perl",
+        "80-libaom3",
+        "81-libapparmor1",
+        "82-libapt-pkg6.0t64",
+        "83-libasan8",
+        "84-libassuan0",
+        "85-libatomic1",
+        "86-libattr1",
+        "87-libaudit-common",
+        "88-libaudit1",
+        "89-libavahi-client3",
+        "90-libavahi-common-data",
+        "91-libavahi-common3",
+        "92-libavif16",
+        "93-libbinutils",
+        "94-libblkid1",
+        "95-libbrotli1",
+        "96-libbsd0",
+        "97-libbz2-1.0",
+        "98-libc-bin",
+        "99-libc-dev-bin",
+        "100-libc-devtools",
+        "101-libc6",
+        "102-libc6-dev",
+        "103-libcaca0",
+        "104-libcairo-gobject2",
+        "105-libcairo2",
+        "106-libcap-ng0",
+        "107-libcap2",
+        "108-libcc1-0",
+        "109-libchafa0t64",
+        "110-libcom-err2",
+        "111-libcrypt-dev",
+        "112-libcrypt1",
+        "113-libctf-nobfd0",
+        "114-libctf0",
+        "115-libcups2t64",
+        "116-libcurl3t64-gnutls",
+        "117-libdatrie1",
+        "118-libdav1d7",
+        "119-libdb5.3t64",
+        "120-libdbus-1-3",
+        "121-libde265-0",
+        "122-libdebconfclient0",
+        "123-libdeflate0",
+        "124-libdjvulibre-text",
+        "125-libdjvulibre21",
+        "126-libdpkg-perl",
+        "127-libexpat1",
+        "128-libexpat1-dev",
+        "129-libext2fs2t64",
+        "130-libfakeroot",
+        "131-libffi8",
+        "132-libfftw3-double3",
+        "133-libfile-fcntllock-perl",
+        "134-libfontconfig1",
+        "135-libfontenc1",
+        "136-libfreetype6",
+        "137-libfribidi0",
+        "138-libgav1-1",
+        "139-libgc1",
+        "140-libgcc-13-dev",
+        "141-libgcc-s1",
+        "142-libgcrypt20",
+        "143-libgd3",
+        "144-libgdbm-compat4t64",
+        "145-libgdbm6t64",
+        "146-libgdk-pixbuf-2.0-0",
+        "147-libgdk-pixbuf2.0-bin",
+        "148-libgdk-pixbuf2.0-common",
+        "149-libgif7",
+        "150-libglib2.0-0t64",
+        "151-libglib2.0-data",
+        "152-libgmp10",
+        "153-libgnutls30t64",
+        "154-libgomp1",
+        "155-libgpg-error0",
+        "156-libgpm2",
+        "157-libgprofng0",
+        "158-libgraphite2-3",
+        "159-libgs-common",
+        "160-libgs10",
+        "161-libgs10-common",
+        "162-libgssapi-krb5-2",
+        "163-libharfbuzz0b",
+        "164-libheif-plugin-aomdec",
+        "165-libheif-plugin-aomenc",
+        "166-libheif-plugin-libde265",
+        "167-libheif1",
+        "168-libhogweed6t64",
+        "169-libhwasan0",
+        "170-libhwy1t64",
+        "171-libice6",
+        "172-libicu74",
+        "173-libid3tag0",
+        "174-libidn12",
+        "175-libidn2-0",
+        "176-libijs-0.35",
+        "177-libimath-3-1-29t64",
+        "178-libimlib2t64",
+        "179-libisl23",
+        "180-libitm1",
+        "181-libjansson4",
+        "182-libjbig0",
+        "183-libjbig2dec0",
+        "184-libjpeg-turbo8",
+        "185-libjpeg8",
+        "186-libjs-jquery",
+        "187-libjs-sphinxdoc",
+        "188-libjs-underscore",
+        "189-libjxl0.7",
+        "190-libjxr-tools",
+        "191-libjxr0t64",
+        "192-libk5crypto3",
+        "193-libkeyutils1",
+        "194-libkmod2",
+        "195-libkrb5-3",
+        "196-libkrb5support0",
+        "197-libksba8",
+        "198-liblcms2-2",
+        "199-libldap-common",
+        "200-libldap2",
+        "201-liblerc4",
+        "202-liblocale-gettext-perl",
+        "203-liblqr-1-0",
+        "204-liblsan0",
+        "205-libltdl7",
+        "206-liblz4-1",
+        "207-liblzma5",
+        "208-libmagickcore-6.q16-7-extra",
+        "209-libmagickcore-6.q16-7t64",
+        "210-libmagickwand-6.q16-7t64",
+        "211-libmd0",
+        "212-libmount1",
+        "213-libmpc3",
+        "214-libmpfr6",
+        "215-libncursesw6",
+        "216-libnetpbm11t64",
+        "217-libnettle8t64",
+        "218-libnghttp2-14",
+        "219-libnpth0t64",
+        "220-libopenexr-3-1-30",
+        "221-libopenjp2-7",
+        "222-libp11-kit0",
+        "223-libpam-modules",
+        "224-libpam-modules-bin",
+        "225-libpam-runtime",
+        "226-libpam0g",
+        "227-libpango-1.0-0",
+        "228-libpangocairo-1.0-0",
+        "229-libpangoft2-1.0-0",
+        "230-libpaper-utils",
+        "231-libpaper1",
+        "232-libpci3",
+        "233-libpcre2-8-0",
+        "234-libperl5.38t64",
+        "235-libpixman-1-0",
+        "236-libpng16-16t64",
+        "237-libproc2-0",
+        "238-libpsl5t64",
+        "239-libpython3-dev",
+        "240-libpython3-stdlib",
+        "241-libpython3.12-dev",
+        "242-libpython3.12-minimal",
+        "243-libpython3.12-stdlib",
+        "244-libpython3.12t64",
+        "245-libquadmath0",
+        "246-librav1e0",
+        "247-libraw23t64",
+        "248-libreadline8t64",
+        "249-librsvg2-2",
+        "250-librsvg2-common",
+        "251-librtmp1",
+        "252-libsasl2-2",
+        "253-libsasl2-modules",
+        "254-libsasl2-modules-db",
+        "255-libseccomp2",
+        "256-libselinux1",
+        "257-libsemanage-common",
+        "258-libsemanage2",
+        "259-libsepol2",
+        "260-libsframe1",
+        "261-libsharpyuv0",
+        "262-libsixel-bin",
+        "263-libsixel1",
+        "264-libslang2",
+        "265-libsm6",
+        "266-libsmartcols1",
+        "267-libspectre1",
+        "268-libsqlite3-0",
+        "269-libss2",
+        "270-libssh-4",
+        "271-libssl3t64",
+        "272-libstdc++-13-dev",
+        "273-libstdc++6",
+        "274-libsvtav1enc1d1",
+        "275-libsystemd0",
+        "276-libtasn1-6",
+        "277-libthai-data",
+        "278-libthai0",
+        "279-libtiff6",
+        "280-libtinfo6",
+        "281-libtsan2",
+        "282-libubsan1",
+        "283-libudev1",
+        "284-libunistring5",
+        "285-libuuid1",
+        "286-libwebp7",
+        "287-libwebpdemux2",
+        "288-libwebpmux3",
+        "289-libwmflite-0.2-7",
+        "290-libx11-6",
+        "291-libx11-data",
+        "292-libx11-xcb1",
+        "293-libxau6",
+        "294-libxcb-render0",
+        "295-libxcb-shm0",
+        "296-libxcb1",
+        "297-libxdmcp6",
+        "298-libxext6",
+        "299-libxml2",
+        "300-libxpm4",
+        "301-libxrender1",
+        "302-libxt6t64",
+        "303-libxxhash0",
+        "304-libyuv0",
+        "305-libzstd1",
+        "306-linux-libc-dev",
+        "307-login",
+        "308-logsave",
+        "309-lto-disabled-list",
+        "310-make",
+        "311-manpages",
+        "312-manpages-dev",
+        "313-mawk",
+        "314-media-types",
+        "315-mount",
+        "316-ncurses-base",
+        "317-ncurses-bin",
+        "318-neofetch",
+        "319-netbase",
+        "320-netpbm",
+        "321-openssl",
+        "322-passwd",
+        "323-patch",
+        "324-pci.ids",
+        "325-pciutils",
+        "326-perl",
+        "327-perl-base",
+        "328-perl-modules-5.38",
+        "329-pinentry-curses",
+        "330-pipx",
+        "331-poppler-data",
+        "332-procps",
+        "333-publicsuffix",
+        "334-python3",
+        "335-python3-argcomplete",
+        "336-python3-click",
+        "337-python3-colorama",
+        "338-python3-dev",
+        "339-python3-minimal",
+        "340-python3-packaging",
+        "341-python3-pip",
+        "342-python3-pip-whl",
+        "343-python3-pkg-resources",
+        "344-python3-platformdirs",
+        "345-python3-psutil",
+        "346-python3-setuptools",
+        "347-python3-setuptools-whl",
+        "348-python3-userpath",
+        "349-python3-venv",
+        "350-python3-wheel",
+        "351-python3.12",
+        "352-python3.12-dev",
+        "353-python3.12-minimal",
+        "354-python3.12-venv",
+        "355-readline-common",
+        "356-rpcsvc-proto",
+        "357-sed",
+        "358-sensible-utils",
+        "359-shared-mime-info",
+        "360-sysvinit-utils",
+        "361-tar",
+        "362-toilet",
+        "363-toilet-fonts",
+        "364-tzdata",
+        "365-ubuntu-keyring",
+        "366-ucf",
+        "367-unzip",
+        "368-util-linux",
+        "369-w3m",
+        "370-w3m-img",
+        "371-x11-common",
+        "372-xdg-user-dirs",
+        "373-xfonts-encodings",
+        "374-xfonts-utils",
+        "375-xz-utils",
+        "376-zip",
+        "377-zlib1g",
+        "378-zlib1g-dev"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:0dd7cc4d-7931-4f74-9686-efde09815ad2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-14T23:56:18Z",
+    "lifecycles": [
+      {
+        "phase": "operations"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "name": "distro2sbom",
+          "version": "0.5.2",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "Ubuntu-24.04-Package-zip"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "1-zip",
+      "name": "zip",
+      "version": "3.0-13ubuntu0.1",
+      "supplier": {
+        "name": "Ubuntu Developers",
+        "contact": [
+          {
+            "email": "ubuntu-devel-discuss@lists.ubuntu.com"
+          }
+        ]
+      },
+      "cpe": "cpe:2.3:a:ubuntu_developers:zip:3.0-13ubuntu0.1:*:*:*:*:*:*:*",
+      "description": "Archiver for .zip files",
+      "externalReferences": [
+        {
+          "url": "https://infozip.sourceforge.net/Zip.html",
+          "type": "website",
+          "comment": "Home page for project"
+        }
+      ],
+      "purl": "pkg:deb/zip@3.0-13ubuntu0.1?amd64"
+    },
+    {
+      "type": "library",
+      "bom-ref": "2-libbz2-1.0",
+      "name": "libbz2-1.0",
+      "version": "1.0.8-5.1build0.1",
+      "supplier": {
+        "name": "Ubuntu Developers",
+        "contact": [
+          {
+            "email": "ubuntu-devel-discuss@lists.ubuntu.com"
+          }
+        ]
+      },
+      "cpe": "cpe:2.3:a:ubuntu_developers:libbz2-1.0:1.0.8-5.1build0.1:*:*:*:*:*:*:*",
+      "description": "high-quality block-sorting file compressor library - runtime",
+      "copyright": "Copyright: 1996-2010 Julian R Seward <jseward@bzip.org>",
+      "externalReferences": [
+        {
+          "url": "https://sourceware.org/bzip2/",
+          "type": "website",
+          "comment": "Home page for project"
+        }
+      ],
+      "purl": "pkg:deb/libbz2-1.0@1.0.8-5.1build0.1?amd64"
+    },
+    {
+      "type": "library",
+      "bom-ref": "3-libc6",
+      "name": "libc6",
+      "version": "2.39-0ubuntu8.3",
+      "supplier": {
+        "name": "Ubuntu Developers",
+        "contact": [
+          {
+            "email": "ubuntu-devel-discuss@lists.ubuntu.com"
+          }
+        ]
+      },
+      "cpe": "cpe:2.3:a:ubuntu_developers:libc6:2.39-0ubuntu8.3:*:*:*:*:*:*:*",
+      "description": "GNU C Library: Shared libraries",
+      "externalReferences": [
+        {
+          "url": "https://www.gnu.org/software/libc/libc.html",
+          "type": "website",
+          "comment": "Home page for project"
+        }
+      ],
+      "purl": "pkg:deb/libc6@2.39-0ubuntu8.3?amd64"
+    },
+    {
+      "type": "library",
+      "bom-ref": "4-libgcc-s1",
+      "name": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "supplier": {
+        "name": "Ubuntu Core developers",
+        "contact": [
+          {
+            "email": "ubuntu-devel-discuss@lists.ubuntu.com"
+          }
+        ]
+      },
+      "cpe": "cpe:2.3:a:ubuntu_core_developers:libgcc-s1:14.2.0-4ubuntu2\\~24.04:*:*:*:*:*:*:*",
+      "description": "GCC support library",
+      "externalReferences": [
+        {
+          "url": "http://gcc.gnu.org/",
+          "type": "website",
+          "comment": "Home page for project"
+        }
+      ],
+      "purl": "pkg:deb/libgcc-s1@14.2.0-4ubuntu2~24.04?amd64"
+    },
+    {
+      "type": "library",
+      "bom-ref": "5-gcc-14-base",
+      "name": "gcc-14-base",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "supplier": {
+        "name": "Ubuntu Core developers",
+        "contact": [
+          {
+            "email": "ubuntu-devel-discuss@lists.ubuntu.com"
+          }
+        ]
+      },
+      "cpe": "cpe:2.3:a:ubuntu_core_developers:gcc-14-base:14.2.0-4ubuntu2\\~24.04:*:*:*:*:*:*:*",
+      "description": "GCC, the GNU Compiler Collection (base package)",
+      "externalReferences": [
+        {
+          "url": "http://gcc.gnu.org/",
+          "type": "website",
+          "comment": "Home page for project"
+        }
+      ],
+      "purl": "pkg:deb/gcc-14-base@14.2.0-4ubuntu2~24.04?amd64"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-zip"
+      ]
+    },
+    {
+      "ref": "1-zip",
+      "dependsOn": [
+        "2-libbz2-1.0",
+        "3-libc6"
+      ]
+    },
+    {
+      "ref": "2-libbz2-1.0",
+      "dependsOn": [
+        "3-libc6"
+      ]
+    },
+    {
+      "ref": "3-libc6",
+      "dependsOn": [
+        "4-libgcc-s1"
+      ]
+    },
+    {
+      "ref": "4-libgcc-s1",
+      "dependsOn": [
+        "5-gcc-14-base",
+        "3-libc6"
+      ]
+    }
+  ]
+}

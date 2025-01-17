@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.1" version="1" serialNumber="urn:uuid:eecc0d90-bc78-48b8-9148-e4d6deecce78">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.1" version="1" serialNumber="urn:uuid:adedbc99-ed41-4560-9054-f9655c2a55ad">
   <components>
     <component type="library">
       <name>CFPropertyList</name>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
       <description>Read, write and manipulate both binary and XML property lists as defined by apple</description>
       <hashes>
-        <hash alg="SHA-256">78097539f2c69424d8a29ca725584469fbe1de4611a8799dc62b7a7f8efd66a8</hash>
+        <hash alg="SHA-256">c45721614aca8d5eb6fa216f2ec28ec38de1a94505e9766a20e98745492c3c4c</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/CFPropertyList@3.0.6</purl>
+      <purl>pkg:gem/CFPropertyList@3.0.7</purl>
     </component>
     <component type="library">
       <name>activesupport</name>
-      <version>6.1.7.6</version>
+      <version>6.1.7.10</version>
       <description>A toolkit of support libraries and Ruby core extensions extracted from the Rails framework.</description>
       <hashes>
-        <hash alg="SHA-256">b3b7a04426d32cad7aa2ee15fa877030c87afd82d89e6e348886cc0c606c19da</hash>
+        <hash alg="SHA-256">3f8e1f787a7bfbf765959ba509ef70af8293b35cb864078919365a12bf33d470</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/activesupport@6.1.7.6</purl>
+      <purl>pkg:gem/activesupport@6.1.7.10</purl>
     </component>
     <component type="library">
       <name>addressable</name>
-      <version>2.8.5</version>
+      <version>2.8.7</version>
       <description>URI Implementation</description>
       <hashes>
-        <hash alg="SHA-256">63f0fbcde42edf116d6da98a9437f19dd1692152f1efa3fcc4741e443c772117</hash>
+        <hash alg="SHA-256">462986537cf3735ab5f3c0f557f14155d778f4b43ea4f485a9deb9c8f7c58232</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:gem/addressable@2.8.5</purl>
+      <purl>pkg:gem/addressable@2.8.7</purl>
     </component>
     <component type="library">
       <name>algoliasearch</name>
@@ -109,18 +109,32 @@
       <purl>pkg:gem/bacon@1.2.0</purl>
     </component>
     <component type="library">
-      <name>bigdecimal</name>
-      <version>3.1.3</version>
-      <description>Arbitrary-precision decimal floating-point number library.</description>
+      <name>base64</name>
+      <version>0.2.0</version>
+      <description>Support for encoding and decoding binary data using a Base64 representation.</description>
       <hashes>
-        <hash alg="SHA-256">3b4c2149f4fee5f42d7ef79cd0c24aafd32bd9888f84f0ecea5672946d646f58</hash>
+        <hash alg="SHA-256">0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507</hash>
       </hashes>
       <licenses>
         <license>
           <id>Ruby</id>
         </license>
       </licenses>
-      <purl>pkg:gem/bigdecimal@3.1.3</purl>
+      <purl>pkg:gem/base64@0.2.0</purl>
+    </component>
+    <component type="library">
+      <name>bigdecimal</name>
+      <version>3.1.8</version>
+      <description>Arbitrary-precision decimal floating-point number library.</description>
+      <hashes>
+        <hash alg="SHA-256">b9e94c14623fff8575f17a10320852219bbba92ecff4977571503d942687326e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Ruby</id>
+        </license>
+      </licenses>
+      <purl>pkg:gem/bigdecimal@3.1.8</purl>
     </component>
     <component type="library">
       <name>claide</name>
@@ -166,31 +180,31 @@
     </component>
     <component type="library">
       <name>cocoapods</name>
-      <version>1.13.0</version>
+      <version>1.16.2</version>
       <description>The Cocoa library package manager.</description>
       <hashes>
-        <hash alg="SHA-256">92f0ee91024f87afb5f2972330196af8e31d1aace46a868593460412c36b8cd7</hash>
+        <hash alg="SHA-256">0ff1c860f32df3db8b16df09b58da1a6bb2a12fe55f6d5e8be994a74fadd1e5e</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/cocoapods@1.13.0</purl>
+      <purl>pkg:gem/cocoapods@1.16.2</purl>
     </component>
     <component type="library">
       <name>cocoapods-core</name>
-      <version>1.13.0</version>
+      <version>1.16.2</version>
       <description>The models of CocoaPods</description>
       <hashes>
-        <hash alg="SHA-256">2d92bec22a8a61d08fd9c9a7a777892fd92918a0cf2d192982945601d92624bd</hash>
+        <hash alg="SHA-256">4bb1b5c420691e60cf36fa227dec6bc48c096c34c97bb7aa512ea7f3246fc12b</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/cocoapods-core@1.13.0</purl>
+      <purl>pkg:gem/cocoapods-core@1.16.2</purl>
     </component>
     <component type="library">
       <name>cocoapods-deintegrate</name>
@@ -222,17 +236,17 @@
     </component>
     <component type="library">
       <name>cocoapods-downloader</name>
-      <version>1.6.3</version>
+      <version>2.1</version>
       <description>A small library for downloading files from remotes in a folder.</description>
       <hashes>
-        <hash alg="SHA-256">f0ebe76e6b4ecb5c660a833555da562d862ad6600a9baed2c2e60fa8e2bcf149</hash>
+        <hash alg="SHA-256">bb6ebe1b3966dc4055de54f7a28b773485ac724fdf575d9bee2212d235e7b6d1</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/cocoapods-downloader@1.6.3</purl>
+      <purl>pkg:gem/cocoapods-downloader@2.1</purl>
     </component>
     <component type="library">
       <name>cocoapods-plugins</name>
@@ -334,17 +348,17 @@
     </component>
     <component type="library">
       <name>concurrent-ruby</name>
-      <version>1.2.2</version>
+      <version>1.3.4</version>
       <description>Modern concurrency tools for Ruby. Inspired by Erlang, Clojure, Scala, Haskell, F#, C#, Java, and classic concurrency patterns.</description>
       <hashes>
-        <hash alg="SHA-256">3879119b8b75e3b62616acc256c64a134d0b0a7a9a3fcba5a233025bcde22c4f</hash>
+        <hash alg="SHA-256">d4aa926339b0a86b5b5054a0a8c580163e6f5dcbdfd0f4bb916b1a2570731c32</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/concurrent-ruby@1.2.2</purl>
+      <purl>pkg:gem/concurrent-ruby@1.3.4</purl>
     </component>
     <component type="library">
       <name>cork</name>
@@ -362,59 +376,59 @@
     </component>
     <component type="library">
       <name>crack</name>
-      <version>0.4.5</version>
+      <version>1.0.0</version>
       <description>Really simple JSON and XML parsing, ripped from Merb and Rails.</description>
       <hashes>
-        <hash alg="SHA-256">798416fb29b8c9f655d139d5559169b39c4a0a3b8f8f39b7f670eec1af9b21b3</hash>
+        <hash alg="SHA-256">c83aefdb428cdc7b66c7f287e488c796f055c0839e6e545fec2c7047743c4a49</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/crack@0.4.5</purl>
+      <purl>pkg:gem/crack@1.0.0</purl>
     </component>
     <component type="library">
       <name>danger</name>
-      <version>8.5.0</version>
+      <version>8.6.1</version>
       <description>Like Unit Tests, but for your Team Culture.</description>
       <hashes>
-        <hash alg="SHA-256">4fd606bcf117f4079d0d8a30a731eb7c69aa02a0d96a1373ea47ec40e89aac76</hash>
+        <hash alg="SHA-256">d95eb58b41f68d3aaa9bbef697916b6b4d161a38819517c98562531be75cdfd8</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/danger@8.5.0</purl>
+      <purl>pkg:gem/danger@8.6.1</purl>
     </component>
     <component type="library">
       <name>diffy</name>
-      <version>3.4.0</version>
+      <version>3.4.3</version>
       <description>A convenient way to diff string in ruby</description>
       <hashes>
-        <hash alg="SHA-256">340cc7e53db308b305a7c9eed37655d347a78b72422a2df60b9699ffee3c2f5b</hash>
+        <hash alg="SHA-256">4264b9e7db00d1cd426fcd32e36565779163cedc2340a95b0e6f025e71f9aaa7</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/diffy@3.4.0</purl>
+      <purl>pkg:gem/diffy@3.4.3</purl>
     </component>
     <component type="library">
       <name>docile</name>
-      <version>1.4.0</version>
+      <version>1.4.1</version>
       <description>Docile keeps your Ruby DSLs tame and well-behaved.</description>
       <hashes>
-        <hash alg="SHA-256">5f1734bde23721245c20c3d723e76c104208e1aa01277a69901ce770f0ebb8d3</hash>
+        <hash alg="SHA-256">96159be799bfa73cdb721b840e9802126e4e03dfc26863db73647204c727f21e</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/docile@1.4.0</purl>
+      <purl>pkg:gem/docile@1.4.1</purl>
     </component>
     <component type="library">
       <name>escape</name>
@@ -441,17 +455,17 @@
     </component>
     <component type="library">
       <name>faraday</name>
-      <version>1.10.0</version>
+      <version>1.10.4</version>
       <description>HTTP/REST API client library.</description>
       <hashes>
-        <hash alg="SHA-256">a42158d5c1932c16fd483c512f7e0797b4916096bcf0eb5fb927a1c915a7ea02</hash>
+        <hash alg="SHA-256">a384c541cde688d68bf85055723aecb4100c3fa41b53beb2011b245960ab2f19</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/faraday@1.10.0</purl>
+      <purl>pkg:gem/faraday@1.10.4</purl>
     </component>
     <component type="library">
       <name>faraday-em_http</name>
@@ -497,17 +511,17 @@
     </component>
     <component type="library">
       <name>faraday-http-cache</name>
-      <version>2.2.0</version>
+      <version>2.5.1</version>
       <description>A Faraday middleware that stores and validates cache expiration.</description>
       <hashes>
-        <hash alg="SHA-256">e799c16344d573149ccfb24f198a3ebc904ef01254b747db4dbcc24a26e50e52</hash>
+        <hash alg="SHA-256">cbfc129a85e1ad8580130189832cf59e7e117d94fe277547d61fc531f7689483</hash>
       </hashes>
       <licenses>
         <license>
-          <name>Apache 2.0</name>
+          <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:gem/faraday-http-cache@2.2.0</purl>
+      <purl>pkg:gem/faraday-http-cache@2.5.1</purl>
     </component>
     <component type="library">
       <name>faraday-httpclient</name>
@@ -525,31 +539,31 @@
     </component>
     <component type="library">
       <name>faraday-multipart</name>
-      <version>1.0.3</version>
+      <version>1.0.4</version>
       <description>Perform multipart-post requests using Faraday.</description>
       <hashes>
-        <hash alg="SHA-256">72c82136270b0930efb03162f2dce19bd22a9a0e00abd8263cce7a20408a0e0f</hash>
+        <hash alg="SHA-256">9012021ab57790f7d712f590b48d5f948b19b43cfa11ca83e6459f06090b0725</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/faraday-multipart@1.0.3</purl>
+      <purl>pkg:gem/faraday-multipart@1.0.4</purl>
     </component>
     <component type="library">
       <name>faraday-net_http</name>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
       <description>Faraday adapter for Net::HTTP</description>
       <hashes>
-        <hash alg="SHA-256">3245ce406ebb77b40e17a77bfa66191dda04be2fd4e13a78d8a4305854d328ba</hash>
+        <hash alg="SHA-256">63992efea42c925a20818cf3c0830947948541fdcf345842755510d266e4c682</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/faraday-net_http@1.0.1</purl>
+      <purl>pkg:gem/faraday-net_http@1.0.2</purl>
     </component>
     <component type="library">
       <name>faraday-net_http_persistent</name>
@@ -609,17 +623,17 @@
     </component>
     <component type="library">
       <name>ffi</name>
-      <version>1.15.5</version>
+      <version>1.17.0</version>
       <description>Ruby FFI</description>
       <hashes>
-        <hash alg="SHA-256">6f2ed2fa68047962d6072b964420cba91d82ce6fa8ee251950c17fca6af3c2a0</hash>
+        <hash alg="SHA-256">51630e43425078311c056ca75f961bb3bda1641ab36e44ad4c455e0b0e4a231c</hash>
       </hashes>
       <licenses>
         <license>
           <id>BSD-3-Clause</id>
         </license>
       </licenses>
-      <purl>pkg:gem/ffi@1.15.5</purl>
+      <purl>pkg:gem/ffi@1.17.0</purl>
     </component>
     <component type="library">
       <name>fourflusher</name>
@@ -660,31 +674,31 @@
     </component>
     <component type="library">
       <name>git</name>
-      <version>1.10.2</version>
+      <version>1.19.1</version>
       <description>An API to create, read, and manipulate Git repositories</description>
       <hashes>
-        <hash alg="SHA-256">f3d01c5292dc42b75d578a7d210a111d3605da60fb063a4de6c8b76400883dc5</hash>
+        <hash alg="SHA-256">b0a422d9f6517353c48a330d6114de4db9e0c82dbe7202964a1d9f1fbc827d70</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/git@1.10.2</purl>
+      <purl>pkg:gem/git@1.19.1</purl>
     </component>
     <component type="library">
       <name>hashdiff</name>
-      <version>1.0.1</version>
+      <version>1.1.1</version>
       <description>Hashdiff is a diff lib to compute the smallest difference between two hashes.</description>
       <hashes>
-        <hash alg="SHA-256">2cd4d04f5080314ecc8403c4e2e00dbaa282dff395e2d031bc16c8d501bdd6db</hash>
+        <hash alg="SHA-256">c7966316726e0ceefe9f5c6aef107ebc3ccfef8b6db55fe3934f046b2cf0936a</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/hashdiff@1.0.1</purl>
+      <purl>pkg:gem/hashdiff@1.1.1</purl>
     </component>
     <component type="library">
       <name>httpclient</name>
@@ -702,17 +716,17 @@
     </component>
     <component type="library">
       <name>i18n</name>
-      <version>1.14.1</version>
+      <version>1.14.6</version>
       <description>New wave Internationalization support for Ruby</description>
       <hashes>
-        <hash alg="SHA-256">9d03698903547c060928e70a9bc8b6b87fda674453cda918fc7ab80235ae4a61</hash>
+        <hash alg="SHA-256">dc229a74f5d181f09942dd60ab5d6e667f7392c4ee826f35096db36d1fe3614c</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/i18n@1.14.1</purl>
+      <purl>pkg:gem/i18n@1.14.6</purl>
     </component>
     <component type="library">
       <name>inch</name>
@@ -744,17 +758,17 @@
     </component>
     <component type="library">
       <name>json</name>
-      <version>2.6.3</version>
+      <version>2.7.5</version>
       <description>JSON Implementation for Ruby</description>
       <hashes>
-        <hash alg="SHA-256">ea8c47427a2c876121b9a0ab53043ca390013a76374330eabd923bd81914e563</hash>
+        <hash alg="SHA-256">eb3448f3884cb7c6d5a550db47fca9153dfbb2a941d1ac0ff245ffacf6df6c5e</hash>
       </hashes>
       <licenses>
         <license>
           <id>Ruby</id>
         </license>
       </licenses>
-      <purl>pkg:gem/json@2.6.3</purl>
+      <purl>pkg:gem/json@2.7.5</purl>
     </component>
     <component type="library">
       <name>kicker</name>
@@ -772,17 +786,17 @@
     </component>
     <component type="library">
       <name>kramdown</name>
-      <version>2.3.2</version>
+      <version>2.4.0</version>
       <description>kramdown is a fast, pure-Ruby Markdown-superset converter.</description>
       <hashes>
-        <hash alg="SHA-256">cb4530c2e9d16481591df2c9336723683c354e5416a5dd3e447fa48215a6a71c</hash>
+        <hash alg="SHA-256">b62e5bcbd6ea20c7a6730ebbb2a107237856e14f29cebf5b10c876cc1a2481c5</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/kramdown@2.3.2</purl>
+      <purl>pkg:gem/kramdown@2.4.0</purl>
     </component>
     <component type="library">
       <name>kramdown-parser-gfm</name>
@@ -837,17 +851,17 @@
     </component>
     <component type="library">
       <name>minitest</name>
-      <version>5.20.0</version>
+      <version>5.25.1</version>
       <description>minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking</description>
       <hashes>
-        <hash alg="SHA-256">a3faf26a757ced073aaae0bd10481340f53e221a4f50d8a6033591555374752e</hash>
+        <hash alg="SHA-256">3db6795a80634def1cf86fda79d2d83b59b25ce5e186fa675f73c565589d2ad8</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/minitest@5.20.0</purl>
+      <purl>pkg:gem/minitest@5.25.1</purl>
     </component>
     <component type="library">
       <name>mocha</name>
@@ -888,31 +902,31 @@
     </component>
     <component type="library">
       <name>multipart-post</name>
-      <version>2.1.1</version>
+      <version>2.4.1</version>
       <description>A multipart form post accessory for Net::HTTP.</description>
       <hashes>
-        <hash alg="SHA-256">d2dd7aa957650e0d99e0513cd388401b069f09528441b87d884609c8e94ffcfd</hash>
+        <hash alg="SHA-256">9872d03a8e552020ca096adadbf5e3cb1cd1cdd6acd3c161136b8a5737cdb4a8</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/multipart-post@2.1.1</purl>
+      <purl>pkg:gem/multipart-post@2.4.1</purl>
     </component>
     <component type="library">
       <name>nanaimo</name>
-      <version>0.3.0</version>
+      <version>0.4.0</version>
       <description>A library for (de)serialization of ASCII Plists.</description>
       <hashes>
-        <hash alg="SHA-256">aaaedc60497070b864a7e220f7c4b4cad3a0daddda2c30055ba8dae306342376</hash>
+        <hash alg="SHA-256">faf069551bab17f15169c1f74a1c73c220657e71b6e900919897a10d991d0723</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/nanaimo@0.3.0</purl>
+      <purl>pkg:gem/nanaimo@0.4.0</purl>
     </component>
     <component type="library">
       <name>nap</name>
@@ -941,6 +955,20 @@
         </license>
       </licenses>
       <purl>pkg:gem/netrc@0.11.0</purl>
+    </component>
+    <component type="library">
+      <name>nkf</name>
+      <version>0.2.0</version>
+      <description>Ruby extension for Network Kanji Filter</description>
+      <hashes>
+        <hash alg="SHA-256">3e6f022d1743a863bf05e936c7c2110be07ba1c593ea974df75d89e8bf7cc967</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Ruby</id>
+        </license>
+      </licenses>
+      <purl>pkg:gem/nkf@0.2.0</purl>
     </component>
     <component type="library">
       <name>no_proxy_fix</name>
@@ -1000,17 +1028,17 @@
     </component>
     <component type="library">
       <name>parallel</name>
-      <version>1.21.0</version>
+      <version>1.26.3</version>
       <description>Run any kind of code in parallel processes</description>
       <hashes>
-        <hash alg="SHA-256">e4a92d75cf9d0e3d50f396f5180f827dcb985f98436d4b170e7a0b864ebd6ec2</hash>
+        <hash alg="SHA-256">d86babb7a2b814be9f4b81587bf0b6ce2da7d45969fab24d8ae4bf2bb4d4c7ef</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/parallel@1.21.0</purl>
+      <purl>pkg:gem/parallel@1.26.3</purl>
     </component>
     <component type="library">
       <name>parser</name>
@@ -1112,31 +1140,31 @@
     </component>
     <component type="library">
       <name>rb-fsevent</name>
-      <version>0.11.1</version>
+      <version>0.11.2</version>
       <description>Very simple &amp; usable FSEvents API</description>
       <hashes>
-        <hash alg="SHA-256">d585e0211cacbb793b4444e911212b3733f7dfb1c3016cb6c5fcacd8f7058519</hash>
+        <hash alg="SHA-256">43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/rb-fsevent@0.11.1</purl>
+      <purl>pkg:gem/rb-fsevent@0.11.2</purl>
     </component>
     <component type="library">
       <name>rb-inotify</name>
-      <version>0.10.1</version>
+      <version>0.11.1</version>
       <description>A Ruby wrapper for Linux inotify, using FFI</description>
       <hashes>
-        <hash alg="SHA-256">050062d4f31d307cca52c3f6a7f4b946df8de25fc4bd373e1a5142e41034a7ca</hash>
+        <hash alg="SHA-256">a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/rb-inotify@0.10.1</purl>
+      <purl>pkg:gem/rb-inotify@0.11.1</purl>
     </component>
     <component type="library">
       <name>rb-kqueue</name>
@@ -1168,17 +1196,17 @@
     </component>
     <component type="library">
       <name>rexml</name>
-      <version>3.2.6</version>
+      <version>3.3.9</version>
       <description>An XML toolkit for Ruby</description>
       <hashes>
-        <hash alg="SHA-256">e0669a2d4e9f109951cb1fde723d8acd285425d81594a2ea929304af50282816</hash>
+        <hash alg="SHA-256">d71875b85299f341edf47d44df0212e7658cbdf35aeb69cefdb63f57af3137c9</hash>
       </hashes>
       <licenses>
         <license>
           <id>BSD-2-Clause</id>
         </license>
       </licenses>
-      <purl>pkg:gem/rexml@3.2.6</purl>
+      <purl>pkg:gem/rexml@3.3.9</purl>
     </component>
     <component type="library">
       <name>rubocop</name>
@@ -1210,45 +1238,45 @@
     </component>
     <component type="library">
       <name>ruby-macho</name>
-      <version>2.5.1</version>
+      <version>4.1.0</version>
       <description>ruby-macho - Mach-O file analyzer.</description>
       <hashes>
-        <hash alg="SHA-256">9075e52e0f9270b552a90b24fcc6219ad149b0d15eae1bc364ecd0ac8984f5c9</hash>
+        <hash alg="SHA-256">23dab37f7de0fe1e14f3bfa73bebc423ae8cd1d4fdb3e5585abc45a841eca920</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/ruby-macho@2.5.1</purl>
+      <purl>pkg:gem/ruby-macho@4.1.0</purl>
     </component>
     <component type="library">
       <name>ruby-prof</name>
-      <version>1.4.3</version>
+      <version>1.7.1</version>
       <description>Fast Ruby profiler</description>
       <hashes>
-        <hash alg="SHA-256">04d6d76d3d7019005b9c7e6b139648076b278b9a4f023de9559232291f4a132c</hash>
+        <hash alg="SHA-256">ab31862922c129092764c2301e65f72f1df279d0382d79a127e79c392f5dad03</hash>
       </hashes>
       <licenses>
         <license>
           <id>BSD-2-Clause</id>
         </license>
       </licenses>
-      <purl>pkg:gem/ruby-prof@1.4.3</purl>
+      <purl>pkg:gem/ruby-prof@1.7.1</purl>
     </component>
     <component type="library">
       <name>ruby-progressbar</name>
-      <version>1.11.0</version>
+      <version>1.13.0</version>
       <description>Ruby/ProgressBar is a flexible text progress bar library for Ruby.</description>
       <hashes>
-        <hash alg="SHA-256">cc127db3866dc414ffccbf92928a241e585b3aa2b758a5563e74a6ee0f57d50a</hash>
+        <hash alg="SHA-256">80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/ruby-progressbar@1.11.0</purl>
+      <purl>pkg:gem/ruby-progressbar@1.13.0</purl>
     </component>
     <component type="library">
       <name>ruby2_keywords</name>
@@ -1280,31 +1308,45 @@
     </component>
     <component type="library">
       <name>simplecov</name>
-      <version>0.17.1</version>
-      <description>Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites</description>
+      <version>0.22.0</version>
+      <description>Code coverage for Ruby</description>
       <hashes>
-        <hash alg="SHA-256">bce55e0993375166c203006cc402f8115362045add83b154d305cc680d996584</hash>
+        <hash alg="SHA-256">fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/simplecov@0.17.1</purl>
+      <purl>pkg:gem/simplecov@0.22.0</purl>
     </component>
     <component type="library">
       <name>simplecov-html</name>
-      <version>0.10.2</version>
-      <description>Default HTML formatter for SimpleCov code coverage tool for ruby 1.9+</description>
+      <version>0.13.1</version>
+      <description>Default HTML formatter for SimpleCov code coverage tool for ruby 2.4+</description>
       <hashes>
-        <hash alg="SHA-256">f65306e2695913c007ddc8d31d6318f37ae074f2ee1cea1647b3bf4c94ca30d2</hash>
+        <hash alg="SHA-256">5dab0b7ee612e60e9887ad57693832fdf4695b4c0c859eaea5f95c18791ef10b</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/simplecov-html@0.10.2</purl>
+      <purl>pkg:gem/simplecov-html@0.13.1</purl>
+    </component>
+    <component type="library">
+      <name>simplecov_json_formatter</name>
+      <version>0.1.4</version>
+      <description>JSON formatter for SimpleCov</description>
+      <hashes>
+        <hash alg="SHA-256">529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:gem/simplecov_json_formatter@0.1.4</purl>
     </component>
     <component type="library">
       <name>slop</name>
@@ -1350,17 +1392,17 @@
     </component>
     <component type="library">
       <name>term-ansicolor</name>
-      <version>1.7.1</version>
+      <version>1.11.2</version>
       <description>Ruby library that colors strings using ANSI escape sequences</description>
       <hashes>
-        <hash alg="SHA-256">92339ffec77c4bddc786a29385c91601dd52fc68feda23609bba0491229b05f7</hash>
+        <hash alg="SHA-256">4b00c63f21d496055045240907da30de077e8c6502b2ba7e8638509d689e5083</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:gem/term-ansicolor@1.7.1</purl>
+      <purl>pkg:gem/term-ansicolor@1.11.2</purl>
     </component>
     <component type="library">
       <name>terminal-table</name>
@@ -1378,31 +1420,31 @@
     </component>
     <component type="library">
       <name>tins</name>
-      <version>1.31.0</version>
+      <version>1.37.0</version>
       <description>Useful stuff.</description>
       <hashes>
-        <hash alg="SHA-256">20b5ea997dc046358fd05f15d39636bd7946798591b9c5741cc41f69853c7894</hash>
+        <hash alg="SHA-256">28bdf4b3d0eae8da3d369169fdf6a48cad2067befdd4ef99c5f10a3942529dd5</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/tins@1.31.0</purl>
+      <purl>pkg:gem/tins@1.37.0</purl>
     </component>
     <component type="library">
       <name>typhoeus</name>
-      <version>1.4.0</version>
+      <version>1.4.1</version>
       <description>Parallel HTTP library on top of libcurl multi.</description>
       <hashes>
-        <hash alg="SHA-256">fff9880d5dc35950e7706cf132fd297f377c049101794be1cf01c95567f642d4</hash>
+        <hash alg="SHA-256">1c17db8364bd45ab302dc61e460173c3e69835896be88a3df07c206d5c55ef7c</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/typhoeus@1.4.0</purl>
+      <purl>pkg:gem/typhoeus@1.4.1</purl>
     </component>
     <component type="library">
       <name>tzinfo</name>
@@ -1434,73 +1476,59 @@
     </component>
     <component type="library">
       <name>webmock</name>
-      <version>3.14.0</version>
+      <version>3.24.0</version>
       <description>Library for stubbing HTTP requests in Ruby.</description>
       <hashes>
-        <hash alg="SHA-256">b317a4f6fa7ebcc1e6e2cba29f01fccc12a5e9aa4365b037c34ca4072e821bd1</hash>
+        <hash alg="SHA-256">be01357f6fc773606337ca79f3ba332b7d52cbe5c27587671abc0572dbec7122</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/webmock@3.14.0</purl>
-    </component>
-    <component type="library">
-      <name>webrick</name>
-      <version>1.7.0</version>
-      <description>HTTP server toolkit</description>
-      <hashes>
-        <hash alg="SHA-256">87e9b8e39947b7925338a5eb55427b11ce1f2b25a3645770ec9f39d8ebdb8cb4</hash>
-      </hashes>
-      <licenses>
-        <license>
-          <id>Ruby</id>
-        </license>
-      </licenses>
-      <purl>pkg:gem/webrick@1.7.0</purl>
+      <purl>pkg:gem/webmock@3.24.0</purl>
     </component>
     <component type="library">
       <name>xcodeproj</name>
-      <version>1.23.0</version>
+      <version>1.27.0</version>
       <description>Create and modify Xcode projects from Ruby.</description>
       <hashes>
-        <hash alg="SHA-256">16224a3104e0c8286f9bb9e9bcc956413fcb8ddfe6044c40f75abbc2a06ad69c</hash>
+        <hash alg="SHA-256">8cc7a73b4505c227deab044dce118ede787041c702bc47636856a2e566f854d3</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/xcodeproj@1.23.0</purl>
+      <purl>pkg:gem/xcodeproj@1.27.0</purl>
     </component>
     <component type="library">
       <name>yard</name>
-      <version>0.9.27</version>
+      <version>0.9.37</version>
       <description>Documentation tool for consistent and usable documentation in Ruby.</description>
       <hashes>
-        <hash alg="SHA-256">56a786485da23fa878dd9f56279c2a92c38426d5ab21e8efddb4c6a0e37c0834</hash>
+        <hash alg="SHA-256">a6e910399e78e613f80ba9add9ba7c394b1a935f083cccbef82903a3d2a26992</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/yard@0.9.27</purl>
+      <purl>pkg:gem/yard@0.9.37</purl>
     </component>
     <component type="library">
       <name>zeitwerk</name>
-      <version>2.6.11</version>
+      <version>2.6.18</version>
       <description>Efficient and thread-safe constant autoloader</description>
       <hashes>
-        <hash alg="SHA-256">ade72f223a75c91f3b02b2c941a57fb697bc443d615f38c28773185e08698dd7</hash>
+        <hash alg="SHA-256">bd2d213996ff7b3b364cd342a585fbee9797dbc1c0c6d868dc4150cc75739781</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
         </license>
       </licenses>
-      <purl>pkg:gem/zeitwerk@2.6.11</purl>
+      <purl>pkg:gem/zeitwerk@2.6.18</purl>
     </component>
   </components>
 </bom>

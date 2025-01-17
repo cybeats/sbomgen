@@ -13,6 +13,7 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 * [Go](#go)
 * [Rust](#rust)
 * [Erlang](#erlang)
+* [Ruby](#ruby)
 * [Package or System](#package-or-system)
 * [Multi-Language](#multi-language)
 * [Cryptographic Bill of Materials](#cryptographic-bill-of-materials)
@@ -87,6 +88,10 @@ To generate SBOMs for Rust projects, you can use:
 ### Rebar3
 
 * To generate SBOM for Erlang Rebar3 projects, use the [Rebar3_SBOM](tutorials/creating-erlang-sbom/creating-erlang-sbom.md) tool.
+
+## Ruby
+
+* To generate SBOM for Ruby projects, use [CycloneDX-Ruby-Gem](tutorials/creating-ruby-sbom/creating-ruby-sbom.md)
 
 ## Package or System
 

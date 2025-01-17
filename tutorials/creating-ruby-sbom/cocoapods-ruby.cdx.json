@@ -1,77 +1,75 @@
 {
   "bomFormat": "CycloneDX",
-  "specVersion": "1.5",
-  "serialNumber": "urn:uuid:eecc0d90-bc78-48b8-9148-e4d6deecce78",
+  "specVersion": "1.1",
+  "serialNumber": "urn:uuid:497b4a9c-5cf1-4a7e-bcce-cf3b6b92ffd0",
   "version": 1,
   "components": [
     {
       "type": "library",
       "name": "CFPropertyList",
-      "version": "3.0.6",
+      "version": "3.0.7",
       "description": "Read, write and manipulate both binary and XML property lists as defined by apple",
+      "purl": "pkg:gem/CFPropertyList@3.0.7",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "78097539f2c69424d8a29ca725584469fbe1de4611a8799dc62b7a7f8efd66a8"
+          "content": "c45721614aca8d5eb6fa216f2ec28ec38de1a94505e9766a20e98745492c3c4c"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/CFPropertyList@3.0.6"
+      ]
     },
     {
       "type": "library",
       "name": "activesupport",
-      "version": "6.1.7.6",
+      "version": "6.1.7.10",
       "description": "A toolkit of support libraries and Ruby core extensions extracted from the Rails framework.",
+      "purl": "pkg:gem/activesupport@6.1.7.10",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "b3b7a04426d32cad7aa2ee15fa877030c87afd82d89e6e348886cc0c606c19da"
+          "content": "3f8e1f787a7bfbf765959ba509ef70af8293b35cb864078919365a12bf33d470"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/activesupport@6.1.7.6"
+      ]
     },
     {
       "type": "library",
       "name": "addressable",
-      "version": "2.8.5",
+      "version": "2.8.7",
       "description": "URI Implementation",
+      "purl": "pkg:gem/addressable@2.8.7",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "63f0fbcde42edf116d6da98a9437f19dd1692152f1efa3fcc4741e443c772117"
+          "content": "462986537cf3735ab5f3c0f557f14155d778f4b43ea4f485a9deb9c8f7c58232"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0",
-            "properties": []
+            "id": "Apache-2.0"
           }
         }
-      ],
-      "purl": "pkg:gem/addressable@2.8.5"
+      ]
     },
     {
       "type": "library",
       "name": "algoliasearch",
       "version": "1.27.5",
       "description": "A simple Ruby client for the algolia.com REST API",
+      "purl": "pkg:gem/algoliasearch@1.27.5",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -81,18 +79,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/algoliasearch@1.27.5"
+      ]
     },
     {
       "type": "library",
       "name": "ast",
       "version": "2.4.2",
       "description": "A library for working with Abstract Syntax Trees.",
+      "purl": "pkg:gem/ast@2.4.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -102,18 +99,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/ast@2.4.2"
+      ]
     },
     {
       "type": "library",
       "name": "atomos",
       "version": "0.1.3",
       "description": "A simple gem to atomically write files",
+      "purl": "pkg:gem/atomos@0.1.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -123,18 +119,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/atomos@0.1.3"
+      ]
     },
     {
       "type": "library",
       "name": "awesome_print",
       "version": "1.9.2",
       "description": "Pretty print Ruby objects with proper indentation and colors",
+      "purl": "pkg:gem/awesome_print@1.9.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -144,53 +139,70 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/awesome_print@1.9.2"
+      ]
     },
     {
       "type": "library",
       "name": "bacon",
       "version": "1.2.0",
       "description": "a small RSpec clone",
+      "purl": "pkg:gem/bacon@1.2.0",
       "hashes": [
         {
           "alg": "SHA-256",
           "content": "51d52d72a61729668ade581fe68fb10b9654027d2ac73203fbbcae73647b06b8"
         }
-      ],
-      "licenses": [],
-      "purl": "pkg:gem/bacon@1.2.0"
+      ]
     },
     {
       "type": "library",
-      "name": "bigdecimal",
-      "version": "3.1.3",
-      "description": "Arbitrary-precision decimal floating-point number library.",
+      "name": "base64",
+      "version": "0.2.0",
+      "description": "Support for encoding and decoding binary data using a Base64 representation.",
+      "purl": "pkg:gem/base64@0.2.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "3b4c2149f4fee5f42d7ef79cd0c24aafd32bd9888f84f0ecea5672946d646f58"
+          "content": "0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "Ruby",
-            "properties": []
+            "id": "Ruby"
           }
         }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "bigdecimal",
+      "version": "3.1.8",
+      "description": "Arbitrary-precision decimal floating-point number library.",
+      "purl": "pkg:gem/bigdecimal@3.1.8",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b9e94c14623fff8575f17a10320852219bbba92ecff4977571503d942687326e"
+        }
       ],
-      "purl": "pkg:gem/bigdecimal@3.1.3"
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby"
+          }
+        }
+      ]
     },
     {
       "type": "library",
       "name": "claide",
       "version": "1.1.0",
       "description": "A small command-line interface framework.",
+      "purl": "pkg:gem/claide@1.1.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -200,18 +212,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/claide@1.1.0"
+      ]
     },
     {
       "type": "library",
       "name": "claide-plugins",
       "version": "0.9.2",
       "description": "CLAide plugin which shows info about available CLAide plugins.",
+      "purl": "pkg:gem/claide-plugins@0.9.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -221,18 +232,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/claide-plugins@0.9.2"
+      ]
     },
     {
       "type": "library",
       "name": "clintegracon",
       "version": "0.9.0",
       "description": "Integration specs for your CLI",
+      "purl": "pkg:gem/clintegracon@0.9.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -242,60 +252,57 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/clintegracon@0.9.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods",
-      "version": "1.13.0",
+      "version": "1.16.2",
       "description": "The Cocoa library package manager.",
+      "purl": "pkg:gem/cocoapods@1.16.2",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "92f0ee91024f87afb5f2972330196af8e31d1aace46a868593460412c36b8cd7"
+          "content": "0ff1c860f32df3db8b16df09b58da1a6bb2a12fe55f6d5e8be994a74fadd1e5e"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods@1.13.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-core",
-      "version": "1.13.0",
+      "version": "1.16.2",
       "description": "The models of CocoaPods",
+      "purl": "pkg:gem/cocoapods-core@1.16.2",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "2d92bec22a8a61d08fd9c9a7a777892fd92918a0cf2d192982945601d92624bd"
+          "content": "4bb1b5c420691e60cf36fa227dec6bc48c096c34c97bb7aa512ea7f3246fc12b"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-core@1.13.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-deintegrate",
       "version": "1.0.5",
       "description": "A CocoaPods plugin to remove and de-integrate CocoaPods from your project.",
+      "purl": "pkg:gem/cocoapods-deintegrate@1.0.5",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -305,18 +312,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-deintegrate@1.0.5"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-dependencies",
       "version": "1.3.0",
-      "description": "Shows a project\u0027s CocoaPods dependency graph.",
+      "description": "Shows a project's CocoaPods dependency graph.",
+      "purl": "pkg:gem/cocoapods-dependencies@1.3.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -326,39 +332,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-dependencies@1.3.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-downloader",
-      "version": "1.6.3",
+      "version": "2.1",
       "description": "A small library for downloading files from remotes in a folder.",
+      "purl": "pkg:gem/cocoapods-downloader@2.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "f0ebe76e6b4ecb5c660a833555da562d862ad6600a9baed2c2e60fa8e2bcf149"
+          "content": "bb6ebe1b3966dc4055de54f7a28b773485ac724fdf575d9bee2212d235e7b6d1"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-downloader@1.6.3"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-plugins",
       "version": "1.0.0",
       "description": "CocoaPods plugin which shows info about available CocoaPods plugins.",
+      "purl": "pkg:gem/cocoapods-plugins@1.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -368,18 +372,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-plugins@1.0.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-search",
       "version": "1.0.1",
-      "description": "Searches for pods, ignoring case, whose name matches \u0060QUERY\u0060. If the \u0060--full\u0060 option is specified, this will also search in the summary and description of the pods.",
+      "description": "Searches for pods, ignoring case, whose name matches `QUERY`. If the `--full` option is specified, this will also search in the summary and description of the pods.",
+      "purl": "pkg:gem/cocoapods-search@1.0.1",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -389,18 +392,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-search@1.0.1"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-trunk",
       "version": "1.6.0",
       "description": "Interact with trunk.cocoapods.org",
+      "purl": "pkg:gem/cocoapods-trunk@1.6.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -410,18 +412,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-trunk@1.6.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods-try",
       "version": "1.2.0",
       "description": "CocoaPods plugin which allows to quickly try the demo project of a Pod.",
+      "purl": "pkg:gem/cocoapods-try@1.2.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -431,18 +432,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods-try@1.2.0"
+      ]
     },
     {
       "type": "library",
       "name": "cocoapods_debug",
       "version": "0.1.0",
       "description": "A simple plugin to ease debugging CocoaPods.",
+      "purl": "pkg:gem/cocoapods_debug@0.1.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -452,18 +452,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cocoapods_debug@0.1.0"
+      ]
     },
     {
       "type": "library",
       "name": "coderay",
       "version": "1.1.3",
       "description": "Fast syntax highlighting for selected languages.",
+      "purl": "pkg:gem/coderay@1.1.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -473,18 +472,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/coderay@1.1.3"
+      ]
     },
     {
       "type": "library",
       "name": "colored2",
       "version": "3.1.2",
       "description": "Add even more color to your life.",
+      "purl": "pkg:gem/colored2@3.1.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -494,39 +492,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/colored2@3.1.2"
+      ]
     },
     {
       "type": "library",
       "name": "concurrent-ruby",
-      "version": "1.2.2",
+      "version": "1.3.4",
       "description": "Modern concurrency tools for Ruby. Inspired by Erlang, Clojure, Scala, Haskell, F#, C#, Java, and classic concurrency patterns.",
+      "purl": "pkg:gem/concurrent-ruby@1.3.4",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "3879119b8b75e3b62616acc256c64a134d0b0a7a9a3fcba5a233025bcde22c4f"
+          "content": "d4aa926339b0a86b5b5054a0a8c580163e6f5dcbdfd0f4bb916b1a2570731c32"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/concurrent-ruby@1.2.2"
+      ]
     },
     {
       "type": "library",
       "name": "cork",
       "version": "0.3.0",
       "description": "A delightful CLI UI module.",
+      "purl": "pkg:gem/cork@0.3.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -536,116 +532,110 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/cork@0.3.0"
+      ]
     },
     {
       "type": "library",
       "name": "crack",
-      "version": "0.4.5",
+      "version": "1.0.0",
       "description": "Really simple JSON and XML parsing, ripped from Merb and Rails.",
+      "purl": "pkg:gem/crack@1.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "798416fb29b8c9f655d139d5559169b39c4a0a3b8f8f39b7f670eec1af9b21b3"
+          "content": "c83aefdb428cdc7b66c7f287e488c796f055c0839e6e545fec2c7047743c4a49"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/crack@0.4.5"
+      ]
     },
     {
       "type": "library",
       "name": "danger",
-      "version": "8.5.0",
+      "version": "8.6.1",
       "description": "Like Unit Tests, but for your Team Culture.",
+      "purl": "pkg:gem/danger@8.6.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "4fd606bcf117f4079d0d8a30a731eb7c69aa02a0d96a1373ea47ec40e89aac76"
+          "content": "d95eb58b41f68d3aaa9bbef697916b6b4d161a38819517c98562531be75cdfd8"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/danger@8.5.0"
+      ]
     },
     {
       "type": "library",
       "name": "diffy",
-      "version": "3.4.0",
+      "version": "3.4.3",
       "description": "A convenient way to diff string in ruby",
+      "purl": "pkg:gem/diffy@3.4.3",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "340cc7e53db308b305a7c9eed37655d347a78b72422a2df60b9699ffee3c2f5b"
+          "content": "4264b9e7db00d1cd426fcd32e36565779163cedc2340a95b0e6f025e71f9aaa7"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/diffy@3.4.0"
+      ]
     },
     {
       "type": "library",
       "name": "docile",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "description": "Docile keeps your Ruby DSLs tame and well-behaved.",
+      "purl": "pkg:gem/docile@1.4.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "5f1734bde23721245c20c3d723e76c104208e1aa01277a69901ce770f0ebb8d3"
+          "content": "96159be799bfa73cdb721b840e9802126e4e03dfc26863db73647204c727f21e"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/docile@1.4.0"
+      ]
     },
     {
       "type": "library",
       "name": "escape",
       "version": "0.0.4",
       "description": "...",
+      "purl": "pkg:gem/escape@0.0.4",
       "hashes": [
         {
           "alg": "SHA-256",
           "content": "e49f44ae2b4f47c6a3abd544ae77fe4157802794e32f19b8e773cbc4dcec4169"
         }
-      ],
-      "licenses": [],
-      "purl": "pkg:gem/escape@0.0.4"
+      ]
     },
     {
       "type": "library",
       "name": "ethon",
       "version": "0.16.0",
       "description": "Libcurl wrapper.",
+      "purl": "pkg:gem/ethon@0.16.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -655,39 +645,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/ethon@0.16.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday",
-      "version": "1.10.0",
+      "version": "1.10.4",
       "description": "HTTP/REST API client library.",
+      "purl": "pkg:gem/faraday@1.10.4",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a42158d5c1932c16fd483c512f7e0797b4916096bcf0eb5fb927a1c915a7ea02"
+          "content": "a384c541cde688d68bf85055723aecb4100c3fa41b53beb2011b245960ab2f19"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday@1.10.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-em_http",
       "version": "1.0.0",
       "description": "Faraday adapter for Em::Http",
+      "purl": "pkg:gem/faraday-em_http@1.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -697,18 +685,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-em_http@1.0.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-em_synchrony",
       "version": "1.0.0",
       "description": "Faraday adapter for EM::Synchrony",
+      "purl": "pkg:gem/faraday-em_synchrony@1.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -718,18 +705,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-em_synchrony@1.0.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-excon",
       "version": "1.1.0",
       "description": "Faraday adapter for Excon",
+      "purl": "pkg:gem/faraday-excon@1.1.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -739,39 +725,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-excon@1.1.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-http-cache",
-      "version": "2.2.0",
+      "version": "2.5.1",
       "description": "A Faraday middleware that stores and validates cache expiration.",
+      "purl": "pkg:gem/faraday-http-cache@2.5.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "e799c16344d573149ccfb24f198a3ebc904ef01254b747db4dbcc24a26e50e52"
+          "content": "cbfc129a85e1ad8580130189832cf59e7e117d94fe277547d61fc531f7689483"
         }
       ],
       "licenses": [
         {
           "license": {
-            "name": "Apache 2.0",
-            "properties": []
+            "id": "Apache-2.0"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-http-cache@2.2.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-httpclient",
       "version": "1.0.1",
       "description": "Faraday adapter for HTTPClient",
+      "purl": "pkg:gem/faraday-httpclient@1.0.1",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -781,60 +765,57 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-httpclient@1.0.1"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-multipart",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Perform multipart-post requests using Faraday.",
+      "purl": "pkg:gem/faraday-multipart@1.0.4",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "72c82136270b0930efb03162f2dce19bd22a9a0e00abd8263cce7a20408a0e0f"
+          "content": "9012021ab57790f7d712f590b48d5f948b19b43cfa11ca83e6459f06090b0725"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-multipart@1.0.3"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-net_http",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Faraday adapter for Net::HTTP",
+      "purl": "pkg:gem/faraday-net_http@1.0.2",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "3245ce406ebb77b40e17a77bfa66191dda04be2fd4e13a78d8a4305854d328ba"
+          "content": "63992efea42c925a20818cf3c0830947948541fdcf345842755510d266e4c682"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-net_http@1.0.1"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-net_http_persistent",
       "version": "1.2.0",
       "description": "Faraday adapter for NetHttpPersistent",
+      "purl": "pkg:gem/faraday-net_http_persistent@1.2.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -844,18 +825,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-net_http_persistent@1.2.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-patron",
       "version": "1.0.0",
       "description": "Faraday adapter for Patron",
+      "purl": "pkg:gem/faraday-patron@1.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -865,18 +845,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-patron@1.0.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-rack",
       "version": "1.0.0",
       "description": "Faraday adapter for Rack",
+      "purl": "pkg:gem/faraday-rack@1.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -886,18 +865,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-rack@1.0.0"
+      ]
     },
     {
       "type": "library",
       "name": "faraday-retry",
       "version": "1.0.3",
       "description": "Catches exceptions and retries each request a limited number of times",
+      "purl": "pkg:gem/faraday-retry@1.0.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -907,39 +885,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/faraday-retry@1.0.3"
+      ]
     },
     {
       "type": "library",
       "name": "ffi",
-      "version": "1.15.5",
+      "version": "1.17.0",
       "description": "Ruby FFI",
+      "purl": "pkg:gem/ffi@1.17.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "6f2ed2fa68047962d6072b964420cba91d82ce6fa8ee251950c17fca6af3c2a0"
+          "content": "51630e43425078311c056ca75f961bb3bda1641ab36e44ad4c455e0b0e4a231c"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "BSD-3-Clause",
-            "properties": []
+            "id": "BSD-3-Clause"
           }
         }
-      ],
-      "purl": "pkg:gem/ffi@1.15.5"
+      ]
     },
     {
       "type": "library",
       "name": "fourflusher",
       "version": "2.3.1",
       "description": "A library for interacting with Xcode simulators.",
+      "purl": "pkg:gem/fourflusher@2.3.1",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -949,32 +925,30 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/fourflusher@2.3.1"
+      ]
     },
     {
       "type": "library",
       "name": "fuzzy_match",
       "version": "2.0.4",
       "description": "Find a needle in a haystack using string similarity and (optionally) regexp rules. Replaces loose_tight_dictionary.",
+      "purl": "pkg:gem/fuzzy_match@2.0.4",
       "hashes": [
         {
           "alg": "SHA-256",
           "content": "b5de4f95816589c5b5c3ad13770c0af539b75131c158135b3f3bbba75d0cfca5"
         }
-      ],
-      "licenses": [],
-      "purl": "pkg:gem/fuzzy_match@2.0.4"
+      ]
     },
     {
       "type": "library",
       "name": "gh_inspector",
       "version": "1.1.3",
       "description": "Search through GitHub issues for your project for existing issues about a Ruby Error.",
+      "purl": "pkg:gem/gh_inspector@1.1.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -984,60 +958,57 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/gh_inspector@1.1.3"
+      ]
     },
     {
       "type": "library",
       "name": "git",
-      "version": "1.10.2",
+      "version": "1.19.1",
       "description": "An API to create, read, and manipulate Git repositories",
+      "purl": "pkg:gem/git@1.19.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "f3d01c5292dc42b75d578a7d210a111d3605da60fb063a4de6c8b76400883dc5"
+          "content": "b0a422d9f6517353c48a330d6114de4db9e0c82dbe7202964a1d9f1fbc827d70"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/git@1.10.2"
+      ]
     },
     {
       "type": "library",
       "name": "hashdiff",
-      "version": "1.0.1",
+      "version": "1.1.1",
       "description": "Hashdiff is a diff lib to compute the smallest difference between two hashes.",
+      "purl": "pkg:gem/hashdiff@1.1.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "2cd4d04f5080314ecc8403c4e2e00dbaa282dff395e2d031bc16c8d501bdd6db"
+          "content": "c7966316726e0ceefe9f5c6aef107ebc3ccfef8b6db55fe3934f046b2cf0936a"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/hashdiff@1.0.1"
+      ]
     },
     {
       "type": "library",
       "name": "httpclient",
       "version": "2.8.3",
       "description": "gives something like the functionality of libwww-perl (LWP) in Ruby",
+      "purl": "pkg:gem/httpclient@2.8.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1047,39 +1018,37 @@
       "licenses": [
         {
           "license": {
-            "name": "ruby",
-            "properties": []
+            "name": "ruby"
           }
         }
-      ],
-      "purl": "pkg:gem/httpclient@2.8.3"
+      ]
     },
     {
       "type": "library",
       "name": "i18n",
-      "version": "1.14.1",
+      "version": "1.14.6",
       "description": "New wave Internationalization support for Ruby",
+      "purl": "pkg:gem/i18n@1.14.6",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "9d03698903547c060928e70a9bc8b6b87fda674453cda918fc7ab80235ae4a61"
+          "content": "dc229a74f5d181f09942dd60ab5d6e667f7392c4ee826f35096db36d1fe3614c"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/i18n@1.14.1"
+      ]
     },
     {
       "type": "library",
       "name": "inch",
       "version": "0.8.0",
       "description": "Documentation measurement tool for Ruby",
+      "purl": "pkg:gem/inch@0.8.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1089,18 +1058,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/inch@0.8.0"
+      ]
     },
     {
       "type": "library",
       "name": "inch_by_inch",
       "version": "1.0.1",
       "description": "A rake task to pretty-print documentation violations.",
+      "purl": "pkg:gem/inch_by_inch@1.0.1",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1110,39 +1078,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/inch_by_inch@1.0.1"
+      ]
     },
     {
       "type": "library",
       "name": "json",
-      "version": "2.6.3",
+      "version": "2.7.5",
       "description": "JSON Implementation for Ruby",
+      "purl": "pkg:gem/json@2.7.5",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "ea8c47427a2c876121b9a0ab53043ca390013a76374330eabd923bd81914e563"
+          "content": "eb3448f3884cb7c6d5a550db47fca9153dfbb2a941d1ac0ff245ffacf6df6c5e"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "Ruby",
-            "properties": []
+            "id": "Ruby"
           }
         }
-      ],
-      "purl": "pkg:gem/json@2.6.3"
+      ]
     },
     {
       "type": "library",
       "name": "kicker",
       "version": "3.0.0",
       "description": "A lean, agnostic, flexible file-change watcher.",
+      "purl": "pkg:gem/kicker@3.0.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1152,39 +1118,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/kicker@3.0.0"
+      ]
     },
     {
       "type": "library",
       "name": "kramdown",
-      "version": "2.3.2",
+      "version": "2.4.0",
       "description": "kramdown is a fast, pure-Ruby Markdown-superset converter.",
+      "purl": "pkg:gem/kramdown@2.4.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "cb4530c2e9d16481591df2c9336723683c354e5416a5dd3e447fa48215a6a71c"
+          "content": "b62e5bcbd6ea20c7a6730ebbb2a107237856e14f29cebf5b10c876cc1a2481c5"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/kramdown@2.3.2"
+      ]
     },
     {
       "type": "library",
       "name": "kramdown-parser-gfm",
       "version": "1.1.0",
       "description": "kramdown-parser-gfm provides a kramdown parser for the GFM dialect of Markdown",
+      "purl": "pkg:gem/kramdown-parser-gfm@1.1.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1194,18 +1158,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/kramdown-parser-gfm@1.1.0"
+      ]
     },
     {
       "type": "library",
       "name": "listen",
       "version": "1.3.1",
       "description": "Listen to file modifications",
+      "purl": "pkg:gem/listen@1.3.1",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1215,18 +1178,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/listen@1.3.1"
+      ]
     },
     {
       "type": "library",
       "name": "metaclass",
       "version": "0.0.4",
       "description": "Adds a metaclass method to all Ruby objects",
+      "purl": "pkg:gem/metaclass@0.0.4",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1236,53 +1198,50 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/metaclass@0.0.4"
+      ]
     },
     {
       "type": "library",
       "name": "method_source",
       "version": "0.8.2",
       "description": "retrieve the sourcecode for a method",
+      "purl": "pkg:gem/method_source@0.8.2",
       "hashes": [
         {
           "alg": "SHA-256",
           "content": "c2e9d0f4ebefd6b37efe38fe2964337b1d315fe198cad850681fd2da0027b1bc"
         }
-      ],
-      "licenses": [],
-      "purl": "pkg:gem/method_source@0.8.2"
+      ]
     },
     {
       "type": "library",
       "name": "minitest",
-      "version": "5.20.0",
+      "version": "5.25.1",
       "description": "minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking",
+      "purl": "pkg:gem/minitest@5.25.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a3faf26a757ced073aaae0bd10481340f53e221a4f50d8a6033591555374752e"
+          "content": "3db6795a80634def1cf86fda79d2d83b59b25ce5e186fa675f73c565589d2ad8"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/minitest@5.20.0"
+      ]
     },
     {
       "type": "library",
       "name": "mocha",
       "version": "1.4.0",
       "description": "Mocking and stubbing library",
+      "purl": "pkg:gem/mocha@1.4.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1292,32 +1251,30 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/mocha@1.4.0"
+      ]
     },
     {
       "type": "library",
       "name": "mocha-on-bacon",
       "version": "0.2.3",
       "description": "A Mocha adapter for Bacon",
+      "purl": "pkg:gem/mocha-on-bacon@0.2.3",
       "hashes": [
         {
           "alg": "SHA-256",
           "content": "97e5c6e210d213efb9688407284d503b24fa995fe9f2d1918509219cc75889c0"
         }
-      ],
-      "licenses": [],
-      "purl": "pkg:gem/mocha-on-bacon@0.2.3"
+      ]
     },
     {
       "type": "library",
       "name": "molinillo",
       "version": "0.8.0",
       "description": "Provides support for dependency resolution",
+      "purl": "pkg:gem/molinillo@0.8.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1327,60 +1284,57 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/molinillo@0.8.0"
+      ]
     },
     {
       "type": "library",
       "name": "multipart-post",
-      "version": "2.1.1",
+      "version": "2.4.1",
       "description": "A multipart form post accessory for Net::HTTP.",
+      "purl": "pkg:gem/multipart-post@2.4.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "d2dd7aa957650e0d99e0513cd388401b069f09528441b87d884609c8e94ffcfd"
+          "content": "9872d03a8e552020ca096adadbf5e3cb1cd1cdd6acd3c161136b8a5737cdb4a8"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/multipart-post@2.1.1"
+      ]
     },
     {
       "type": "library",
       "name": "nanaimo",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "A library for (de)serialization of ASCII Plists.",
+      "purl": "pkg:gem/nanaimo@0.4.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "aaaedc60497070b864a7e220f7c4b4cad3a0daddda2c30055ba8dae306342376"
+          "content": "faf069551bab17f15169c1f74a1c73c220657e71b6e900919897a10d991d0723"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/nanaimo@0.3.0"
+      ]
     },
     {
       "type": "library",
       "name": "nap",
       "version": "1.1.0",
       "description": "Nap is a really simple REST library.",
+      "purl": "pkg:gem/nap@1.1.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1390,18 +1344,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/nap@1.1.0"
+      ]
     },
     {
       "type": "library",
       "name": "netrc",
       "version": "0.11.0",
       "description": "Library to read and write netrc files.",
+      "purl": "pkg:gem/netrc@0.11.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1411,18 +1364,37 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "nkf",
+      "version": "0.2.0",
+      "description": "Ruby extension for Network Kanji Filter",
+      "purl": "pkg:gem/nkf@0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e6f022d1743a863bf05e936c7c2110be07ba1c593ea974df75d89e8bf7cc967"
+        }
       ],
-      "purl": "pkg:gem/netrc@0.11.0"
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby"
+          }
+        }
+      ]
     },
     {
       "type": "library",
       "name": "no_proxy_fix",
       "version": "0.1.2",
       "description": "A fix for a no_proxy bug on ruby 2.4.0 and 2.4.1",
+      "purl": "pkg:gem/no_proxy_fix@0.1.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1432,18 +1404,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/no_proxy_fix@0.1.2"
+      ]
     },
     {
       "type": "library",
       "name": "notify",
       "version": "0.5.2",
       "description": "Desctop notify for many platform",
+      "purl": "pkg:gem/notify@0.5.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1453,18 +1424,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/notify@0.5.2"
+      ]
     },
     {
       "type": "library",
       "name": "octokit",
       "version": "4.18.0",
       "description": "Ruby toolkit for working with the GitHub API",
+      "purl": "pkg:gem/octokit@4.18.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1474,18 +1444,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/octokit@4.18.0"
+      ]
     },
     {
       "type": "library",
       "name": "open4",
       "version": "1.3.4",
       "description": "open4",
+      "purl": "pkg:gem/open4@1.3.4",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1495,39 +1464,37 @@
       "licenses": [
         {
           "license": {
-            "id": "Ruby",
-            "properties": []
+            "id": "Ruby"
           }
         }
-      ],
-      "purl": "pkg:gem/open4@1.3.4"
+      ]
     },
     {
       "type": "library",
       "name": "parallel",
-      "version": "1.21.0",
+      "version": "1.26.3",
       "description": "Run any kind of code in parallel processes",
+      "purl": "pkg:gem/parallel@1.26.3",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "e4a92d75cf9d0e3d50f396f5180f827dcb985f98436d4b170e7a0b864ebd6ec2"
+          "content": "d86babb7a2b814be9f4b81587bf0b6ce2da7d45969fab24d8ae4bf2bb4d4c7ef"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/parallel@1.21.0"
+      ]
     },
     {
       "type": "library",
       "name": "parser",
       "version": "2.7.2.0",
       "description": "A Ruby parser written in pure Ruby.",
+      "purl": "pkg:gem/parser@2.7.2.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1537,18 +1504,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/parser@2.7.2.0"
+      ]
     },
     {
       "type": "library",
       "name": "powerpack",
       "version": "0.1.3",
       "description": "A few useful extensions to core Ruby classes.",
+      "purl": "pkg:gem/powerpack@0.1.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1558,18 +1524,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/powerpack@0.1.3"
+      ]
     },
     {
       "type": "library",
       "name": "prettybacon",
       "version": "0.0.2",
       "description": "Prettifies Bacon output.",
+      "purl": "pkg:gem/prettybacon@0.0.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1579,18 +1544,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/prettybacon@0.0.2"
+      ]
     },
     {
       "type": "library",
       "name": "pry",
       "version": "0.10.3",
       "description": "An IRB alternative and runtime developer console",
+      "purl": "pkg:gem/pry@0.10.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1600,18 +1564,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/pry@0.10.3"
+      ]
     },
     {
       "type": "library",
       "name": "public_suffix",
       "version": "4.0.7",
       "description": "Domain name parser based on the Public Suffix List.",
+      "purl": "pkg:gem/public_suffix@4.0.7",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1621,18 +1584,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/public_suffix@4.0.7"
+      ]
     },
     {
       "type": "library",
       "name": "rainbow",
       "version": "2.2.2",
       "description": "Colorize printed text on ANSI terminals",
+      "purl": "pkg:gem/rainbow@2.2.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1642,18 +1604,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/rainbow@2.2.2"
+      ]
     },
     {
       "type": "library",
       "name": "rake",
       "version": "12.3.3",
       "description": "Rake is a Make-like program implemented in Ruby",
+      "purl": "pkg:gem/rake@12.3.3",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1663,60 +1624,57 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/rake@12.3.3"
+      ]
     },
     {
       "type": "library",
       "name": "rb-fsevent",
-      "version": "0.11.1",
-      "description": "Very simple \u0026 usable FSEvents API",
+      "version": "0.11.2",
+      "description": "Very simple & usable FSEvents API",
+      "purl": "pkg:gem/rb-fsevent@0.11.2",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "d585e0211cacbb793b4444e911212b3733f7dfb1c3016cb6c5fcacd8f7058519"
+          "content": "43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/rb-fsevent@0.11.1"
+      ]
     },
     {
       "type": "library",
       "name": "rb-inotify",
-      "version": "0.10.1",
+      "version": "0.11.1",
       "description": "A Ruby wrapper for Linux inotify, using FFI",
+      "purl": "pkg:gem/rb-inotify@0.11.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "050062d4f31d307cca52c3f6a7f4b946df8de25fc4bd373e1a5142e41034a7ca"
+          "content": "a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/rb-inotify@0.10.1"
+      ]
     },
     {
       "type": "library",
       "name": "rb-kqueue",
       "version": "0.2.8",
-      "description": "A Ruby wrapper for BSD\u0027s kqueue, using FFI",
+      "description": "A Ruby wrapper for BSD's kqueue, using FFI",
+      "purl": "pkg:gem/rb-kqueue@0.2.8",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1726,18 +1684,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/rb-kqueue@0.2.8"
+      ]
     },
     {
       "type": "library",
       "name": "rchardet",
       "version": "1.8.0",
       "description": "Character encoding auto-detection in Ruby. As smart as your browser. Open source.",
+      "purl": "pkg:gem/rchardet@1.8.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1747,39 +1704,37 @@
       "licenses": [
         {
           "license": {
-            "name": "LGPL",
-            "properties": []
+            "name": "LGPL"
           }
         }
-      ],
-      "purl": "pkg:gem/rchardet@1.8.0"
+      ]
     },
     {
       "type": "library",
       "name": "rexml",
-      "version": "3.2.6",
+      "version": "3.3.9",
       "description": "An XML toolkit for Ruby",
+      "purl": "pkg:gem/rexml@3.3.9",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "e0669a2d4e9f109951cb1fde723d8acd285425d81594a2ea929304af50282816"
+          "content": "d71875b85299f341edf47d44df0212e7658cbdf35aeb69cefdb63f57af3137c9"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "BSD-2-Clause",
-            "properties": []
+            "id": "BSD-2-Clause"
           }
         }
-      ],
-      "purl": "pkg:gem/rexml@3.2.6"
+      ]
     },
     {
       "type": "library",
       "name": "rubocop",
       "version": "0.50.0",
       "description": "Automatic Ruby code style checking tool.",
+      "purl": "pkg:gem/rubocop@0.50.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1789,18 +1744,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/rubocop@0.50.0"
+      ]
     },
     {
       "type": "library",
       "name": "ruby-graphviz",
       "version": "1.2.4",
       "description": "Interface to the GraphViz graphing tool",
+      "purl": "pkg:gem/ruby-graphviz@1.2.4",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1810,81 +1764,77 @@
       "licenses": [
         {
           "license": {
-            "id": "GPL-2.0",
-            "properties": []
+            "id": "GPL-2.0"
           }
         }
-      ],
-      "purl": "pkg:gem/ruby-graphviz@1.2.4"
+      ]
     },
     {
       "type": "library",
       "name": "ruby-macho",
-      "version": "2.5.1",
+      "version": "4.1.0",
       "description": "ruby-macho - Mach-O file analyzer.",
+      "purl": "pkg:gem/ruby-macho@4.1.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "9075e52e0f9270b552a90b24fcc6219ad149b0d15eae1bc364ecd0ac8984f5c9"
+          "content": "23dab37f7de0fe1e14f3bfa73bebc423ae8cd1d4fdb3e5585abc45a841eca920"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/ruby-macho@2.5.1"
+      ]
     },
     {
       "type": "library",
       "name": "ruby-prof",
-      "version": "1.4.3",
+      "version": "1.7.1",
       "description": "Fast Ruby profiler",
+      "purl": "pkg:gem/ruby-prof@1.7.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "04d6d76d3d7019005b9c7e6b139648076b278b9a4f023de9559232291f4a132c"
+          "content": "ab31862922c129092764c2301e65f72f1df279d0382d79a127e79c392f5dad03"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "BSD-2-Clause",
-            "properties": []
+            "id": "BSD-2-Clause"
           }
         }
-      ],
-      "purl": "pkg:gem/ruby-prof@1.4.3"
+      ]
     },
     {
       "type": "library",
       "name": "ruby-progressbar",
-      "version": "1.11.0",
+      "version": "1.13.0",
       "description": "Ruby/ProgressBar is a flexible text progress bar library for Ruby.",
+      "purl": "pkg:gem/ruby-progressbar@1.13.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "cc127db3866dc414ffccbf92928a241e585b3aa2b758a5563e74a6ee0f57d50a"
+          "content": "80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/ruby-progressbar@1.11.0"
+      ]
     },
     {
       "type": "library",
       "name": "ruby2_keywords",
       "version": "0.0.5",
       "description": "Shim library for Module#ruby2_keywords",
+      "purl": "pkg:gem/ruby2_keywords@0.0.5",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1894,18 +1844,17 @@
       "licenses": [
         {
           "license": {
-            "id": "Ruby",
-            "properties": []
+            "id": "Ruby"
           }
         }
-      ],
-      "purl": "pkg:gem/ruby2_keywords@0.0.5"
+      ]
     },
     {
       "type": "library",
       "name": "sawyer",
       "version": "0.8.2",
       "description": "Secret User Agent of HTTP",
+      "purl": "pkg:gem/sawyer@0.8.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1915,60 +1864,77 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/sawyer@0.8.2"
+      ]
     },
     {
       "type": "library",
       "name": "simplecov",
-      "version": "0.17.1",
-      "description": "Code coverage for Ruby 1.9\u002B with a powerful configuration library and automatic merging of coverage across test suites",
+      "version": "0.22.0",
+      "description": "Code coverage for Ruby",
+      "purl": "pkg:gem/simplecov@0.22.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "bce55e0993375166c203006cc402f8115362045add83b154d305cc680d996584"
+          "content": "fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/simplecov@0.17.1"
+      ]
     },
     {
       "type": "library",
       "name": "simplecov-html",
-      "version": "0.10.2",
-      "description": "Default HTML formatter for SimpleCov code coverage tool for ruby 1.9\u002B",
+      "version": "0.13.1",
+      "description": "Default HTML formatter for SimpleCov code coverage tool for ruby 2.4+",
+      "purl": "pkg:gem/simplecov-html@0.13.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "f65306e2695913c007ddc8d31d6318f37ae074f2ee1cea1647b3bf4c94ca30d2"
+          "content": "5dab0b7ee612e60e9887ad57693832fdf4695b4c0c859eaea5f95c18791ef10b"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "simplecov_json_formatter",
+      "version": "0.1.4",
+      "description": "JSON formatter for SimpleCov",
+      "purl": "pkg:gem/simplecov_json_formatter@0.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428"
+        }
       ],
-      "purl": "pkg:gem/simplecov-html@0.10.2"
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
     },
     {
       "type": "library",
       "name": "slop",
       "version": "3.6.0",
       "description": "Simple Lightweight Option Parsing",
+      "purl": "pkg:gem/slop@3.6.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1978,18 +1944,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/slop@3.6.0"
+      ]
     },
     {
       "type": "library",
       "name": "sparkr",
       "version": "0.4.1",
-      "description": "[\u0022ASCII\u0022, \u0022Sparklines\u0022, \u0022in\u0022, \u0022Ruby\u0022]",
+      "description": "[\"ASCII\", \"Sparklines\", \"in\", \"Ruby\"]",
+      "purl": "pkg:gem/sparkr@0.4.1",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -1999,18 +1964,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/sparkr@0.4.1"
+      ]
     },
     {
       "type": "library",
       "name": "sync",
       "version": "0.5.0",
       "description": "A module that provides a two-phase lock with a counter.",
+      "purl": "pkg:gem/sync@0.5.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -2020,39 +1984,37 @@
       "licenses": [
         {
           "license": {
-            "id": "BSD-2-Clause",
-            "properties": []
+            "id": "BSD-2-Clause"
           }
         }
-      ],
-      "purl": "pkg:gem/sync@0.5.0"
+      ]
     },
     {
       "type": "library",
       "name": "term-ansicolor",
-      "version": "1.7.1",
+      "version": "1.11.2",
       "description": "Ruby library that colors strings using ANSI escape sequences",
+      "purl": "pkg:gem/term-ansicolor@1.11.2",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "92339ffec77c4bddc786a29385c91601dd52fc68feda23609bba0491229b05f7"
+          "content": "4b00c63f21d496055045240907da30de077e8c6502b2ba7e8638509d689e5083"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0",
-            "properties": []
+            "id": "Apache-2.0"
           }
         }
-      ],
-      "purl": "pkg:gem/term-ansicolor@1.7.1"
+      ]
     },
     {
       "type": "library",
       "name": "terminal-table",
       "version": "3.0.2",
       "description": "Simple, feature rich ascii table generation library",
+      "purl": "pkg:gem/terminal-table@3.0.2",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -2062,60 +2024,57 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/terminal-table@3.0.2"
+      ]
     },
     {
       "type": "library",
       "name": "tins",
-      "version": "1.31.0",
+      "version": "1.37.0",
       "description": "Useful stuff.",
+      "purl": "pkg:gem/tins@1.37.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "20b5ea997dc046358fd05f15d39636bd7946798591b9c5741cc41f69853c7894"
+          "content": "28bdf4b3d0eae8da3d369169fdf6a48cad2067befdd4ef99c5f10a3942529dd5"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/tins@1.31.0"
+      ]
     },
     {
       "type": "library",
       "name": "typhoeus",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "description": "Parallel HTTP library on top of libcurl multi.",
+      "purl": "pkg:gem/typhoeus@1.4.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "fff9880d5dc35950e7706cf132fd297f377c049101794be1cf01c95567f642d4"
+          "content": "1c17db8364bd45ab302dc61e460173c3e69835896be88a3df07c206d5c55ef7c"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/typhoeus@1.4.0"
+      ]
     },
     {
       "type": "library",
       "name": "tzinfo",
       "version": "2.0.6",
       "description": "Time Zone Library",
+      "purl": "pkg:gem/tzinfo@2.0.6",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -2125,18 +2084,17 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/tzinfo@2.0.6"
+      ]
     },
     {
       "type": "library",
       "name": "unicode-display_width",
       "version": "1.8.0",
       "description": "Determines the monospace display width of a string in Ruby.",
+      "purl": "pkg:gem/unicode-display_width@1.8.0",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -2146,121 +2104,90 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/unicode-display_width@1.8.0"
+      ]
     },
     {
       "type": "library",
       "name": "webmock",
-      "version": "3.14.0",
+      "version": "3.24.0",
       "description": "Library for stubbing HTTP requests in Ruby.",
+      "purl": "pkg:gem/webmock@3.24.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "b317a4f6fa7ebcc1e6e2cba29f01fccc12a5e9aa4365b037c34ca4072e821bd1"
+          "content": "be01357f6fc773606337ca79f3ba332b7d52cbe5c27587671abc0572dbec7122"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/webmock@3.14.0"
-    },
-    {
-      "type": "library",
-      "name": "webrick",
-      "version": "1.7.0",
-      "description": "HTTP server toolkit",
-      "hashes": [
-        {
-          "alg": "SHA-256",
-          "content": "87e9b8e39947b7925338a5eb55427b11ce1f2b25a3645770ec9f39d8ebdb8cb4"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "id": "Ruby",
-            "properties": []
-          }
-        }
-      ],
-      "purl": "pkg:gem/webrick@1.7.0"
+      ]
     },
     {
       "type": "library",
       "name": "xcodeproj",
-      "version": "1.23.0",
+      "version": "1.27.0",
       "description": "Create and modify Xcode projects from Ruby.",
+      "purl": "pkg:gem/xcodeproj@1.27.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "16224a3104e0c8286f9bb9e9bcc956413fcb8ddfe6044c40f75abbc2a06ad69c"
+          "content": "8cc7a73b4505c227deab044dce118ede787041c702bc47636856a2e566f854d3"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/xcodeproj@1.23.0"
+      ]
     },
     {
       "type": "library",
       "name": "yard",
-      "version": "0.9.27",
+      "version": "0.9.37",
       "description": "Documentation tool for consistent and usable documentation in Ruby.",
+      "purl": "pkg:gem/yard@0.9.37",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "56a786485da23fa878dd9f56279c2a92c38426d5ab21e8efddb4c6a0e37c0834"
+          "content": "a6e910399e78e613f80ba9add9ba7c394b1a935f083cccbef82903a3d2a26992"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/yard@0.9.27"
+      ]
     },
     {
       "type": "library",
       "name": "zeitwerk",
-      "version": "2.6.11",
+      "version": "2.6.18",
       "description": "Efficient and thread-safe constant autoloader",
+      "purl": "pkg:gem/zeitwerk@2.6.18",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "ade72f223a75c91f3b02b2c941a57fb697bc443d615f38c28773185e08698dd7"
+          "content": "bd2d213996ff7b3b364cd342a585fbee9797dbc1c0c6d868dc4150cc75739781"
         }
       ],
       "licenses": [
         {
           "license": {
-            "id": "MIT",
-            "properties": []
+            "id": "MIT"
           }
         }
-      ],
-      "purl": "pkg:gem/zeitwerk@2.6.11"
+      ]
     }
-  ],
-  "vulnerabilities": [],
-  "annotations": [],
-  "properties": [],
-  "formulation": []
+  ]
 }

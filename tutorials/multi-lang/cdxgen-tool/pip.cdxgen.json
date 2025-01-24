@@ -1,0 +1,1114 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:7ad36592-44a1-4a5e-8355-b094c6428d49",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-24T01:05:18Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "11.1.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@11.1.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.1.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "pip",
+      "description": "The PyPA recommended tool for installing Python packages.",
+      "authors": [
+        {
+          "name": "The pip developers",
+          "email": "distutils-sig@python.org"
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "type": "application",
+      "bom-ref": "pkg:pypi/pip@latest",
+      "purl": "pkg:pypi/pip@latest",
+      "version": "latest"
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "pypi"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "simplewheel",
+      "version": "2.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/simplewheel@2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/simplewheel@2.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "simplewheel",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/simplewheel@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/simplewheel@1.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "simple-namespace",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/simple-namespace@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/simple-namespace@1.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "simple.dist",
+      "version": "0.1",
+      "description": "A testing distribution ☃",
+      "purl": "pkg:pypi/simple.dist@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/simple.dist@0.1"
+    },
+    {
+      "publisher": "Python Packaging Authority",
+      "group": "",
+      "name": "setuptools",
+      "version": "0.9.8",
+      "description": "Easily download, build, install, upgrade, and uninstall Python packages",
+      "purl": "pkg:pypi/setuptools@0.9.8",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pypi.python.org/pypi/setuptools"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/setuptools@0.9.8"
+    },
+    {
+      "publisher": "PyPA",
+      "group": "",
+      "name": "script.wheel3",
+      "version": "0.1",
+      "description": "Test Wheel",
+      "purl": "pkg:pypi/script.wheel3@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/script.wheel3@0.1"
+    },
+    {
+      "publisher": "PyPA",
+      "group": "",
+      "name": "script.wheel2a",
+      "version": "0.1",
+      "description": "Test Wheel",
+      "purl": "pkg:pypi/script.wheel2a@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/script.wheel2a@0.1"
+    },
+    {
+      "publisher": "PyPA",
+      "group": "",
+      "name": "script.wheel2",
+      "version": "0.1",
+      "description": "Test Wheel",
+      "purl": "pkg:pypi/script.wheel2@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/script.wheel2@0.1"
+    },
+    {
+      "publisher": "PyPA",
+      "group": "",
+      "name": "script.wheel1a",
+      "version": "0.1",
+      "description": "Test Wheel",
+      "purl": "pkg:pypi/script.wheel1a@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/script.wheel1a@0.1"
+    },
+    {
+      "publisher": "PyPA",
+      "group": "",
+      "name": "script.wheel1",
+      "version": "0.1",
+      "description": "Test Wheel",
+      "purl": "pkg:pypi/script.wheel1@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/script.wheel1@0.1"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "requires-source",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/requires-source@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requires-source@1.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "requires-simple-extra",
+      "version": "0.1",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/requires-simple-extra@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requires-simple-extra@0.1"
+    },
+    {
+      "group": "",
+      "name": "require-invalid-version",
+      "version": "1.0",
+      "purl": "pkg:pypi/require-invalid-version@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/require-invalid-version@1.0"
+    },
+    {
+      "group": "",
+      "name": "require-invalid-version",
+      "version": "0.1",
+      "purl": "pkg:pypi/require-invalid-version@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/require-invalid-version@0.1"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "prjwithdatafile",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/prjwithdatafile@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/prjwithdatafile@1.0"
+    },
+    {
+      "publisher": "Jukka Lehtosalo",
+      "group": "",
+      "name": "mypy",
+      "version": "0.782",
+      "description": "Optional static typing for Python",
+      "purl": "pkg:pypi/mypy@0.782",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://www.mypy-lang.org/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy@0.782"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "meta",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/meta@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/meta@1.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "license.dist",
+      "version": "0.2",
+      "description": "A testing distribution ☃",
+      "purl": "pkg:pypi/license.dist@0.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/license.dist@0.2"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "license.dist",
+      "version": "0.1",
+      "description": "A testing distribution ☃",
+      "purl": "pkg:pypi/license.dist@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/license.dist@0.1"
+    },
+    {
+      "group": "",
+      "name": "invalid-version",
+      "version": "2010i",
+      "purl": "pkg:pypi/invalid-version@2010i",
+      "type": "library",
+      "bom-ref": "pkg:pypi/invalid-version@2010i"
+    },
+    {
+      "group": "",
+      "name": "invalid-version",
+      "version": "1.0",
+      "purl": "pkg:pypi/invalid-version@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/invalid-version@1.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "has.script",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/has.script@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/has.script@1.0"
+    },
+    {
+      "publisher": "Jeff Barber",
+      "group": "",
+      "name": "console-scripts-uppercase",
+      "version": "1.0",
+      "description": "Test console-script uppercase entry points",
+      "purl": "pkg:pypi/console-scripts-uppercase@1.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pip.pypa.io/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/console-scripts-uppercase@1.0"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "complex-dist",
+      "version": "0.1",
+      "description": "Another testing distribution ☃",
+      "purl": "pkg:pypi/complex-dist@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/complex-dist@0.1"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "compilewheel",
+      "version": "1.0",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/compilewheel@1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/compilewheel@1.0"
+    },
+    {
+      "publisher": "Agendaless Consulting",
+      "group": "",
+      "name": "colander",
+      "version": "0.9.9",
+      "description": "A simple schema-based serialization and deserialization library",
+      "purl": "pkg:pypi/colander@0.9.9",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://docs.pylonsproject.org/projects/colander/en/latest/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/colander@0.9.9",
+      "tags": [
+        "serialization"
+      ]
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "test-backend",
+      "version": "0.1",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/test-backend@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/test-backend@0.1"
+    },
+    {
+      "publisher": "UNKNOWN",
+      "group": "",
+      "name": "dummy-backend",
+      "version": "0.1",
+      "description": "UNKNOWN",
+      "purl": "pkg:pypi/dummy-backend@0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/dummy-backend@0.1"
+    },
+    {
+      "authors": [
+        {
+          "name": "The cryptography developers <cryptography-dev@python.org> <The Python Cryptographic Authority and individual contributors <cryptography-dev@python.org>>"
+        }
+      ],
+      "group": "",
+      "name": "cryptography",
+      "version": "44.0.0",
+      "description": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "84111ad4ff3f6253820e6d3e58be2cc2a00adb29335d4cacb5ab4d4d34f2a123"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "Apache-2.0 OR BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:pypi/cryptography@44.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cryptography@44.0.0",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: cryptography"
+              }
+            ],
+            "concludedValue": "PyPI package: cryptography"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Steve Pulec <spulec@gmail.com>"
+        }
+      ],
+      "group": "",
+      "name": "freezegun",
+      "version": "1.5.1",
+      "description": "Let your Python tests travel through time",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bf111d7138a8abe55ab48a71755673dbaa4ab87f4cff5634a4442dfec34c15f1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/freezegun@1.5.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spulec/freezegun"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/freezegun@1.5.1",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: freezegun"
+              }
+            ],
+            "concludedValue": "PyPI package: freezegun"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Pradyun Gedam <pradyunsg@gmail.com>"
+        }
+      ],
+      "group": "",
+      "name": "installer",
+      "version": "0.7.0",
+      "description": "A library for installing Python wheels.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "05d1933f0a5ba7d8d6296bb6d5018e7c94fa473ceb10cf198a92ccea19c27b53"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/installer@0.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/installer@0.7.0",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: installer"
+              }
+            ],
+            "concludedValue": "PyPI package: installer"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Holger Krekel"
+        },
+        {
+          "name": " Bruno Oliveira"
+        },
+        {
+          "name": " Ronny Pfannschmidt"
+        },
+        {
+          "name": " Floris Bruynooghe"
+        },
+        {
+          "name": " Brianna Laugher"
+        },
+        {
+          "name": " Florian Bruhin"
+        },
+        {
+          "name": " Others (See AUTHORS)"
+        }
+      ],
+      "group": "",
+      "name": "pytest",
+      "version": "8.3.4",
+      "description": "pytest: simple powerful testing with Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "50e16d954148559c9a74109af1eaf0c945ba2d8f30f0a3d3335edde19788b6f6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pytest@8.3.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@8.3.4",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: pytest"
+              }
+            ],
+            "concludedValue": "PyPI package: pytest"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Marc Schlaich <marc.schlaich@gmail.com>"
+        }
+      ],
+      "group": "",
+      "name": "pytest-cov",
+      "version": "6.0.0",
+      "description": "Pytest plugin for measuring coverage.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "eee6f1b9e61008bd34975a4d5bab25801eb31898b032dd55addc93e96fcaaa35"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pytest-cov@6.0.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/pytest-dev/pytest-cov"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest-cov@6.0.0",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: pytest-cov"
+              }
+            ],
+            "concludedValue": "PyPI package: pytest-cov"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Leah Klearman <lklrmn@gmail.com>"
+        }
+      ],
+      "group": "",
+      "name": "pytest-rerunfailures",
+      "version": "15.0",
+      "description": "pytest plugin to re-run tests to eliminate flaky failures",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dd150c4795c229ef44320adc9a0c0532c51b78bb7a6843a8c53556b9a611df1a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0",
+            "url": "https://opensource.org/licenses/MPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pytest-rerunfailures@15.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest-rerunfailures@15.0",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: pytest-rerunfailures"
+              }
+            ],
+            "concludedValue": "PyPI package: pytest-rerunfailures"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "holger krekel and contributors <pytest-dev@python.org>"
+        },
+        {
+          "name": " holger@merlinux.eu"
+        }
+      ],
+      "group": "",
+      "name": "pytest-xdist",
+      "version": "3.6.1",
+      "description": "pytest xdist plugin for distributed testing, most importantly across multiple CPUs",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9ed4adfb68a016610848639bb7e02c9352d5d9f03d04809919e2dafc3be4cca7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pytest-xdist@3.6.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest-xdist@3.6.1",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: pytest-xdist"
+              }
+            ],
+            "concludedValue": "PyPI package: pytest-xdist"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Ian Bicking <ianb@colorstudy.com>"
+        }
+      ],
+      "group": "",
+      "name": "scripttest",
+      "version": "1.3",
+      "description": "Helper to test command-line scripts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "951cfc25219b0cd003493a565f2e621fd791beaae9f9a3bdd7024d8626419c38"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/scripttest@1.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://pythonpaste.org/scripttest/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/scripttest@1.3",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: scripttest"
+              }
+            ],
+            "concludedValue": "PyPI package: scripttest"
+          }
+        ]
+      },
+      "tags": [
+        "test"
+      ]
+    },
+    {
+      "group": "",
+      "name": "virtualenv",
+      "version": "20.29.1",
+      "description": "Virtual Python Environment builder",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4e4cb403c0b0da39e13b46b1b2476e505cb0046b25f242bee80f62bf990b2779"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/virtualenv@20.29.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/virtualenv@20.29.1",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: virtualenv"
+              }
+            ],
+            "concludedValue": "PyPI package: virtualenv"
+          }
+        ]
+      },
+      "tags": [
+        "devel"
+      ]
+    },
+    {
+      "group": "",
+      "name": "Werkzeug",
+      "version": "3.1.3",
+      "description": "The comprehensive WSGI web application library.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "54b78bf3716d19a65be4fceccc0d1d7b89e608834989dfae50ea87564639213e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD",
+            "url": "https://opensource.org/licenses/0BSD"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/werkzeug@3.1.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/werkzeug@3.1.3",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: Werkzeug"
+              }
+            ],
+            "concludedValue": "PyPI package: Werkzeug"
+          }
+        ]
+      },
+      "tags": [
+        "web"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Daniel Holth <dholth@fastmail.fm>"
+        }
+      ],
+      "group": "",
+      "name": "wheel",
+      "version": "0.45.1",
+      "description": "A built-package format for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/wheel@0.45.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/wheel@0.45.1",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: wheel"
+              }
+            ],
+            "concludedValue": "PyPI package: wheel"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Taneli Hukkinen <hukkin@users.noreply.github.com>"
+        }
+      ],
+      "group": "",
+      "name": "tomli-w",
+      "version": "1.2.0",
+      "description": "A lil' TOML writer",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "188306098d013b691fcadc011abd66727d3c414c571bb01b1a174ba8c983cf90"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/tomli-w@1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli-w@1.2.0",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: tomli-w"
+              }
+            ],
+            "concludedValue": "PyPI package: tomli-w"
+          }
+        ]
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "Abhinav Singh <mailsforabhinav+proxy@gmail.com>"
+        }
+      ],
+      "group": "",
+      "name": "proxy.py",
+      "version": "2.4.9",
+      "description": "\\u26a1 Fast \\u2022 \\U0001fab6 Lightweight \\u2022 \\U0001f51f Dependency \\u2022 \\U0001f50c Pluggable \\u2022 \\U0001f608 TLS interception \\u2022 \\U0001f512 DNS-over-HTTPS \\u2022 \\U0001f525 Poor Mans VPN \\u2022 \\u23ea Reverse & \\u23e9 Forward \\u2022 \\U0001f46e\\U0001f3ff Proxy Server framework \\u2022 \\U0001f310 Web Server framework \\u2022 \\u27b5 \\u27b6 \\u27b7 \\u27a0 PubSub framework \\u2022 \\U0001f477 Work acceptor & executor framework.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8d865af87c7baf8bbf8770b8928202c62f3a2e19de1ba4f2d1f9fe3b4f84ea5f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD",
+            "url": "https://opensource.org/licenses/0BSD"
+          }
+        },
+        {
+          "license": {
+            "name": "'BSD'"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/proxy.py@2.4.9",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/abhinavsingh/proxy.py"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:pypi/proxy.py@2.4.9",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: proxy.py"
+              }
+            ],
+            "concludedValue": "PyPI package: proxy.py"
+          }
+        ]
+      },
+      "tags": [
+        "framework",
+        "tls",
+        "web"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Ned Batchelder and 235 others <ned@nedbatchelder.com>"
+        }
+      ],
+      "group": "",
+      "name": "coverage",
+      "version": "7.6.10",
+      "description": "Code coverage measurement for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5c912978f7fbf47ef99cec50c4401340436d200d41d714c7a4766f377c5b7b78"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/coverage@7.6.10",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/nedbat/coveragepy"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/coverage@7.6.10",
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "version",
+            "confidence": 0.5,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0.5,
+                "value": "PyPI package: coverage"
+              }
+            ],
+            "concludedValue": "PyPI package: coverage"
+          }
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/pip@latest",
+      "dependsOn": []
+    }
+  ],
+  "annotations": []
+}

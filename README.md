@@ -13,6 +13,7 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 * [Go](#go)
 * [Rust](#rust)
 * [Erlang](#erlang)
+* [Ruby](#ruby)
 * [Package or System](#package-or-system)
 * [Multi-Language](#multi-language)
 * [Cryptographic Bill of Materials](#cryptographic-bill-of-materials)
@@ -88,11 +89,19 @@ To generate SBOMs for Rust projects, you can use:
 
 * To generate SBOM for Erlang Rebar3 projects, use the [Rebar3_SBOM](tutorials/creating-erlang-sbom/creating-erlang-sbom.md) tool.
 
+## Ruby
+
+* To generate SBOM for Ruby projects, use [CycloneDX-Ruby-Gem](tutorials/creating-ruby-sbom/creating-ruby-sbom.md)
+
 ## Package or System
 
 ### distro2sbom
 
 * To generate SBOM for package or system, use the [Distro2SBOM](tutorials/creating-distro-sbom/creating-distro-sbom.md) tool.
+
+### meta-wr-sbom
+
+* To generate SBOM for Yocto projects, use the [meta-wr-sbom](tutorials/creating-yocto-sbom/creating-yocto-sbom.md) tool.
 
 ## Multi-Language
 
@@ -104,6 +113,7 @@ To generate SBOMs for Rust projects, you can use:
 
 * A Cryptographic Bill of Materials (CBOM) can be created using the [cryptobom-forge](tutorials/cbom/creating-cbom/creating-cryptographic-bill-of-materials.md) CLI.
 * A CBOM can be created using the SonarQube [Sonar Cryptography Plugin](tutorials/cbom/creating-sonar-cbom/creating-sonarqube-cbom.md).
+* A CBOM can be created from GitHub repositories, using the IBM [CBOMkit](tutorials/cbom/creating-cbomkit-cbom/creating-cbomkit-cbom.md).
 
 ## SBOM Validation
 

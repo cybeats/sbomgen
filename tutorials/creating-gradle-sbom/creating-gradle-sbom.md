@@ -82,7 +82,9 @@ tasks.cyclonedxBom {
 
 * Some licenses of the SBOMs generated may be out of specification.
 
-## SBOM
+## Example SBOM
+
+The following SBOM is of the CycloneDX Gradle Plugin source code, in JSON format.
 
 <html lang="en">
 <head>

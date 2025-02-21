@@ -90,7 +90,9 @@ rm -rf path/to/.m2
     mvn clean -Dmaven.clean.failOnError=false
     ```
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX JSON SBOM of the project OneDev, created by the CycloneDX Maven Plugin.
 
 <html lang="en">
 <head>

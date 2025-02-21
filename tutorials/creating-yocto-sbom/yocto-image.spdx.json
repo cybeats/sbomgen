@@ -1,0 +1,743 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "comment": "DISTRO: Yocto-Kirkstone-4.0.25  ARCH: qemux86_64  PROJECT_LABELS: None  PROJECT_RELEASETIME: None",
+  "creationInfo": {
+    "comment": "This document was created by collecting packages built into image.",
+    "created": "2025-02-19T21:04:26Z",
+    "creators": [
+      "Tool: meta-wr-sbom",
+      "Organization: Wind River Systems, Inc."
+    ],
+    "licenseListVersion": "3.14"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentDescribes": [
+    "SPDXRef-Image-core-image-minimal-qemux86-64-20250219173308"
+  ],
+  "documentNamespace": "http://spdx.org/spdxdoc/core-image-minimal-qemux86-64-20250219173308-5173c240-8dc4-5950-88dc-48f9f179173e",
+  "hasExtractedLicensingInfos": [
+    {
+      "extractedText": "None",
+      "licenseId": "LicenseRef-bzip2-1.0.4",
+      "name": "bzip2-1.0.4"
+    },
+    {
+      "extractedText": "Software released to the public domain",
+      "licenseId": "LicenseRef-PD",
+      "name": "PD"
+    }
+  ],
+  "name": "core-image-minimal-qemux86-64-20250219173308",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Image-core-image-minimal-qemux86-64-20250219173308",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "core-image-minimal",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "poky",
+      "supplier": "NOASSERTION",
+      "versionInfo": "4.0.25"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-base-files",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/base-files@3.0.14-r89?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "base-files",
+      "sourceInfo": "built package from: base-files 3.0.14-r89",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.0.14-r89"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-base-passwd",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/base-passwd@3.5.52-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "base-passwd",
+      "sourceInfo": "built package from: base-passwd 3.5.52-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.5.52-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-busybox",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/busybox@1.35.0-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only AND LicenseRef-bzip2-1.0.4",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "busybox",
+      "sourceInfo": "built package from: busybox 1.35.0-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.35.0-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-busybox-hwclock",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/busybox-hwclock@1.35.0-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only AND LicenseRef-bzip2-1.0.4",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "busybox-hwclock",
+      "sourceInfo": "built package from: busybox 1.35.0-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.35.0-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-busybox-syslog",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/busybox-syslog@1.35.0-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only AND LicenseRef-bzip2-1.0.4",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "busybox-syslog",
+      "sourceInfo": "built package from: busybox 1.35.0-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.35.0-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-busybox-udhcpc",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/busybox-udhcpc@1.35.0-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only AND LicenseRef-bzip2-1.0.4",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "busybox-udhcpc",
+      "sourceInfo": "built package from: busybox 1.35.0-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.35.0-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-eudev",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/eudev@3.2.10-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "eudev",
+      "sourceInfo": "built package from: eudev 3.2.10-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.2.10-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-init-ifupdown",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/init-ifupdown@1.0-r7?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "init-ifupdown",
+      "sourceInfo": "built package from: init-ifupdown 1.0-r7",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0-r7"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-init-system-helpers-service",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/init-system-helpers-service@1.62-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause AND GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "init-system-helpers-service",
+      "sourceInfo": "built package from: init-system-helpers 1.62-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.62-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-initscripts",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/initscripts@1.0-r155?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "initscripts",
+      "sourceInfo": "built package from: initscripts 1.0-r155",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0-r155"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-initscripts-functions",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/initscripts-functions@1.0-r155?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "initscripts-functions",
+      "sourceInfo": "built package from: initscripts 1.0-r155",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0-r155"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ldconfig",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/ldconfig@2.35-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only AND LGPL-2.1-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "ldconfig",
+      "sourceInfo": "built package from: glibc 2.35-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.35-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-libblkid1",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/libblkid1@2.37.4-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "libblkid1",
+      "sourceInfo": "built package from: util-linux 2.37.4-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.37.4-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-libc6",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/libc6@2.35-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only AND LGPL-2.1-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "libc6",
+      "sourceInfo": "built package from: glibc 2.35-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.35-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-libkmod2",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/libkmod2@29-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "libkmod2",
+      "sourceInfo": "built package from: kmod 29-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "29-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-liblzma5",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/liblzma5@5.2.6-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-PD",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "liblzma5",
+      "sourceInfo": "built package from: xz 5.2.6-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "5.2.6-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-libz1",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/libz1@1.2.11-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Zlib",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "libz1",
+      "sourceInfo": "built package from: zlib 1.2.11-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.2.11-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-modutils-initscripts",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/modutils-initscripts@1.0-r7?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "modutils-initscripts",
+      "sourceInfo": "built package from: modutils-initscripts 1.0-r7",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0-r7"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-netbase",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/netbase@6.3-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "netbase",
+      "sourceInfo": "built package from: netbase 6.3-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "6.3-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-packagegroup-core-boot",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/packagegroup-core-boot@1.0-r17?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "packagegroup-core-boot",
+      "sourceInfo": "built package from: packagegroup-core-boot 1.0-r17",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0-r17"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sysvinit",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/sysvinit@3.01-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "sysvinit",
+      "sourceInfo": "built package from: sysvinit 3.01-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.01-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sysvinit-inittab",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/sysvinit-inittab@2.88dsf-r10?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "sysvinit-inittab",
+      "sourceInfo": "built package from: sysvinit-inittab 2.88dsf-r10",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.88dsf-r10"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sysvinit-pidof",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/sysvinit-pidof@3.01-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "sysvinit-pidof",
+      "sourceInfo": "built package from: sysvinit 3.01-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.01-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-update-alternatives-opkg",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/update-alternatives-opkg@0.5.0-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "update-alternatives-opkg",
+      "sourceInfo": "built package from: opkg-utils 0.5.0-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.5.0-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-update-rc.d",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/update-rc.d@0.8-r0?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "update-rc.d",
+      "sourceInfo": "built package from: update-rc.d 0.8-r0",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.8-r0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-v86d",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/poky/v86d@0.1.10-r2?arch=qemux86_64&distro=poky-4.0.25",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-only",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "v86d",
+      "sourceInfo": "built package from: v86d 0.1.10-r2",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.1.10-r2"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Image-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-base-files",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-base-passwd",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-busybox",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-busybox-hwclock",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-busybox-syslog",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-busybox-udhcpc",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-eudev",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-init-ifupdown",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-init-system-helpers-service",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-initscripts",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-initscripts-functions",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-ldconfig",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-libblkid1",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-libc6",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-libkmod2",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-liblzma5",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-libz1",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-modutils-initscripts",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-netbase",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-packagegroup-core-boot",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-sysvinit",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-sysvinit-inittab",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-sysvinit-pidof",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-update-alternatives-opkg",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-update-rc.d",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-Package-v86d",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-OperatingSystem-core-image-minimal-qemux86-64-20250219173308"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2"
+}

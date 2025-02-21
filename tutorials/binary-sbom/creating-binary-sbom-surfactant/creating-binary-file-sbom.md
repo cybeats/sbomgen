@@ -76,7 +76,9 @@ An SBOM of your designated format will be created.
 
 * The SPDX generation functionality of this tool may not be reliable.
 
-## SBOM
+## Example SBOM
+
+This section illustrates CycloneDX and Cytrics JSON SBOMs, one regular, one extensive, created from the Systemd binary, created via Surfactant.
 
 <html lang="en">
 <head>
@@ -141,6 +143,6 @@ An SBOM of your designated format will be created.
 
 ## References
 
-* https://github.com/LLNL/Surfactant 
+* Llnl. (n.d.). GitHub - LLNL/Surfactant: Modular framework for file information extraction and dependency analysis to generate accurate SBOMs. GitHub. [https://github.com/LLNL/Surfactant](https://github.com/LLNL/Surfactant)
 
-* https://www.energy.gov/ceser/cybersecurity-testing-resilient-industrial-control-systems 
+* Cybersecurity testing for resilient industrial control systems. (n.d.). Energy.gov. [https://www.energy.gov/ceser/cybersecurity-testing-resilient-industrial-control-systems](https://www.energy.gov/ceser/cybersecurity-testing-resilient-industrial-control-systems)

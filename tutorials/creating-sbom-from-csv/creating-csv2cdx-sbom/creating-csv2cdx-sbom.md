@@ -298,9 +298,9 @@ These example files illustrate a csv file, configuration file and SBOM created b
 
 ## References
 
-* Cybeats. (n.d.). Cybeats/csv2cdx: Script to transfrom CSV SBOM documents to CycloneDX SBOM documents. GitHub. https://github.com/cybeats/csv2cdx.
+* Cybeats. (n.d.). Cybeats/csv2cdx: Script to transfrom CSV SBOM documents to CycloneDX SBOM documents. GitHub. [https://github.com/cybeats/csv2cdx](https://github.com/cybeats/csv2cdx)
 
-* Install and run python applications in isolated environments. pipx. (n.d.). https://pipx.pypa.io/stable/.
+* Install and run python applications in isolated environments. pipx. (n.d.). [https://pipx.pypa.io/stable/](https://pipx.pypa.io/stable/)
 
-* Welcome to Faker’s documentation!. Welcome to Faker’s documentation! - Faker 33.0.0 documentation. (n.d.). https://faker.readthedocs.io/en/master/index.html.
+* Welcome to Faker’s documentation!. Welcome to Faker’s documentation! - Faker 33.0.0 documentation. (n.d.). [https://faker.readthedocs.io/en/master/index.html](https://faker.readthedocs.io/en/master/index.html)
 

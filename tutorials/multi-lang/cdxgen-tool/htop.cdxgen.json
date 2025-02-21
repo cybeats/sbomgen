@@ -1,0 +1,6174 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:faf9be69-fc50-4704-9de0-de57dba62d52",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-24T04:35:05Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "11.1.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@11.1.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.1.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "htop",
+      "version": "latest",
+      "type": "application",
+      "bom-ref": "pkg:generic/htop@latest",
+      "purl": "pkg:generic/htop@latest"
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "deb\\ngeneric"
+      },
+      {
+        "name": "cdx:bom:componentNamespaces",
+        "value": "CoreFoundation\\nIOKit\\nIOKit/ps\\nIOKit/storage\\nhwloc\\nmach\\nncurses\\nncursesw\\nnet\\npcp\\nprop\\nsys\\nuvm\\nvm"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libc6-dev-armhf-cross",
+      "version": "2.39-0ubuntu8cross1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libc6-dev-armhf-cross@2.39-0ubuntu8cross1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libc6-dev-armhf-cross@2.39-0ubuntu8cross1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides Object.h"
+              }
+            ],
+            "concludedValue": "PkgProvides Object.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libclang-common-18-dev",
+      "version": "1:18.1.3-1ubuntu1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libclang-common-18-dev@1:18.1.3-1ubuntu1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libclang-common-18-dev@1:18.1.3-1ubuntu1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides stddef.h"
+              }
+            ],
+            "concludedValue": "PkgProvides stddef.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libexpat1-dev",
+      "version": "2.6.1-2ubuntu0.2",
+      "description": "libdevel",
+      "purl": "pkg:deb/libexpat1-dev@2.6.1-2ubuntu0.2#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libexpat1-dev@2.6.1-2ubuntu0.2#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides config.h"
+              }
+            ],
+            "concludedValue": "PkgProvides config.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libgcc-11-dev",
+      "version": "11.4.0-9ubuntu1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libgcc-11-dev@11.4.0-9ubuntu1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libgcc-11-dev@11.4.0-9ubuntu1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides stdbool.h"
+              }
+            ],
+            "concludedValue": "PkgProvides stdbool.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libgcc-13-dev-arm64-cross",
+      "version": "13.3.0-6ubuntu2~24.04cross1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libgcc-13-dev-arm64-cross@13.3.0-6ubuntu2~24.04cross1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libgcc-13-dev-arm64-cross@13.3.0-6ubuntu2~24.04cross1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides stdarg.h"
+              }
+            ],
+            "concludedValue": "PkgProvides stdarg.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libgcc-13-dev-armhf-cross",
+      "version": "13.3.0-6ubuntu2~24.04cross1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libgcc-13-dev-armhf-cross@13.3.0-6ubuntu2~24.04cross1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libgcc-13-dev-armhf-cross@13.3.0-6ubuntu2~24.04cross1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides stdint.h"
+              }
+            ],
+            "concludedValue": "PkgProvides stdint.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libgcc-13-dev",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "libdevel",
+      "purl": "pkg:deb/libgcc-13-dev@13.3.0-6ubuntu2~24.04#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libgcc-13-dev@13.3.0-6ubuntu2~24.04#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides math.h"
+              }
+            ],
+            "concludedValue": "PkgProvides math.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libltdl-dev",
+      "version": "2.4.7-7build1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libltdl-dev@2.4.7-7build1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libltdl-dev@2.4.7-7build1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides dirent.h"
+              }
+            ],
+            "concludedValue": "PkgProvides dirent.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libncurses-dev",
+      "version": "6.4+20240113-1ubuntu2",
+      "description": "libdevel",
+      "purl": "pkg:deb/libncurses-dev@6.4%2B20240113-1ubuntu2#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libncurses-dev@6.4+20240113-1ubuntu2#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides Panel.h"
+              }
+            ],
+            "concludedValue": "PkgProvides Panel.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libnewlib-dev",
+      "version": "4.4.0.20231231-2",
+      "description": "libdevel",
+      "purl": "pkg:deb/libnewlib-dev@4.4.0.20231231-2#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libnewlib-dev@4.4.0.20231231-2#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides stdio.h"
+              }
+            ],
+            "concludedValue": "PkgProvides stdio.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libobjc-13-dev",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "description": "libdevel",
+      "purl": "pkg:deb/libobjc-13-dev@13.3.0-6ubuntu2~24.04#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libobjc-13-dev@13.3.0-6ubuntu2~24.04#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides time.h"
+              }
+            ],
+            "concludedValue": "PkgProvides time.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libpython3.12-dev",
+      "version": "3.12.3-1ubuntu0.4",
+      "description": "libdevel",
+      "purl": "pkg:deb/libpython3.12-dev@3.12.3-1ubuntu0.4#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libpython3.12-dev@3.12.3-1ubuntu0.4#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides Hashtable.h"
+              }
+            ],
+            "concludedValue": "PkgProvides Hashtable.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "libz3-dev",
+      "version": "4.8.12-3.1build1",
+      "description": "libdevel",
+      "purl": "pkg:deb/libz3-dev@4.8.12-3.1build1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/libz3-dev@4.8.12-3.1build1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides Macros.h"
+              }
+            ],
+            "concludedValue": "PkgProvides Macros.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>",
+      "group": "",
+      "name": "linux-headers-6.8.0-50-generic",
+      "version": "6.8.0-50.51",
+      "description": "devel",
+      "purl": "pkg:deb/linux-headers-6.8.0-50-generic@6.8.0-50.51#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/linux-headers-6.8.0-50-generic@6.8.0-50.51#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides Process.c"
+              }
+            ],
+            "concludedValue": "PkgProvides Process.c"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>",
+      "group": "",
+      "name": "linux-headers-6.8.0-51-generic",
+      "version": "6.8.0-51.52",
+      "description": "devel",
+      "purl": "pkg:deb/linux-headers-6.8.0-51-generic@6.8.0-51.52#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/linux-headers-6.8.0-51-generic@6.8.0-51.52#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides Table.c"
+              }
+            ],
+            "concludedValue": "PkgProvides Table.c"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "linux-libc-dev-arm64-cross",
+      "version": "6.8.0-25.25cross1",
+      "description": "devel",
+      "purl": "pkg:deb/linux-libc-dev-arm64-cross@6.8.0-25.25cross1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/linux-libc-dev-arm64-cross@6.8.0-25.25cross1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides errno.h"
+              }
+            ],
+            "concludedValue": "PkgProvides errno.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "linux-libc-dev-armhf-cross",
+      "version": "6.8.0-25.25cross1",
+      "description": "devel",
+      "purl": "pkg:deb/linux-libc-dev-armhf-cross@6.8.0-25.25cross1#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/linux-libc-dev-armhf-cross@6.8.0-25.25cross1#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides fcntl.h"
+              }
+            ],
+            "concludedValue": "PkgProvides fcntl.h"
+          }
+        ]
+      }
+    },
+    {
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "group": "",
+      "name": "llvm-14-dev",
+      "version": "1:14.0.6-19build4",
+      "description": "devel",
+      "purl": "pkg:deb/llvm-14-dev@1:14.0.6-19build4#/var/lib/dpkg",
+      "type": "library",
+      "bom-ref": "pkg:deb/llvm-14-dev@1:14.0.6-19build4#/var/lib/dpkg",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0.8,
+            "methods": [
+              {
+                "technique": "filename",
+                "confidence": 0.8,
+                "value": "PkgProvides CRT.c"
+              }
+            ],
+            "concludedValue": "PkgProvides CRT.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Action",
+      "version": "",
+      "purl": "pkg:generic/Action#Action.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Action#Action.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Action_follow, Action_pickFromVector, Action_readableProcess, Action_runSetup, Action_setBindings, Action_setScreenTab, Action_setSortKey, Action_setUserOnly, Action_writeableProcess, actionCollapseIntoParent, actionExpandCollapseOrSortColumn, actionExpandOrCollapse, actionExpandOrCollapseAllBranches, actionFilterByUser, actionHelp, actionHigherPriority, actionIncFilter, actionIncSearch, actionInvertSortOrder, actionKill, actionLowerPriority, actionLsof, actionNextScreen, actionPrevScreen, actionQuit, actionRedraw, actionSetAffinity, actionSetSortColumn, actionSetup, actionShowCommandScreen, actionShowEnvScreen, actionShowLocks, actionSortByCPU, actionSortByMemory, actionSortByPID, actionSortByTime, actionStrace, actionTag, actionTagAllChildren, actionToggleHideMeters, actionToggleKernelThreads, actionToggleMergedCommand, actionTogglePauseUpdate, actionToggleProgramPath, actionToggleRunningInContainer, actionToggleTreeView, actionToggleUserlandThreads, actionUntagAll, addUserToVector, addattrstr, changePriority, collapseIntoParent, expandCollapse, setActiveScreen, tagAllChildren"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Action.c"
+              }
+            ],
+            "concludedValue": "Filename Action.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Affinity",
+      "version": "",
+      "purl": "pkg:generic/Affinity#Affinity.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Affinity#Affinity.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Affinity_add, Affinity_delete, Affinity_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Affinity.c"
+              }
+            ],
+            "concludedValue": "Filename Affinity.c"
+          }
+        ]
+      },
+      "tags": [
+        "native"
+      ]
+    },
+    {
+      "group": "",
+      "name": "AffinityPanel",
+      "version": "",
+      "purl": "pkg:generic/AffinityPanel#AffinityPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/AffinityPanel#AffinityPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "AffinityPanel_delete, AffinityPanel_eventHandler, AffinityPanel_getAffinity, AffinityPanel_new, AffinityPanel_update, MaskItem_delete, MaskItem_display, MaskItem_newSingleton"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename AffinityPanel.c"
+              }
+            ],
+            "concludedValue": "Filename AffinityPanel.c"
+          }
+        ]
+      },
+      "tags": [
+        "native"
+      ]
+    },
+    {
+      "group": "",
+      "name": "assert",
+      "version": "",
+      "purl": "pkg:generic/assert#assert.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/assert#assert.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename assert.h"
+              }
+            ],
+            "concludedValue": "Filename assert.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "AvailableColumnsPanel",
+      "version": "",
+      "purl": "pkg:generic/AvailableColumnsPanel#AvailableColumnsPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/AvailableColumnsPanel#AvailableColumnsPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "AvailableColumnsPanel_addDynamicColumn, AvailableColumnsPanel_addDynamicColumns, AvailableColumnsPanel_addDynamicScreens, AvailableColumnsPanel_addPlatformColumns, AvailableColumnsPanel_delete, AvailableColumnsPanel_eventHandler, AvailableColumnsPanel_fill, AvailableColumnsPanel_insert, AvailableColumnsPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename AvailableColumnsPanel.c"
+              }
+            ],
+            "concludedValue": "Filename AvailableColumnsPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "AvailableMetersPanel",
+      "version": "",
+      "purl": "pkg:generic/AvailableMetersPanel#AvailableMetersPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/AvailableMetersPanel#AvailableMetersPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "AvailableMetersPanel_addCPUMeters, AvailableMetersPanel_addDynamicMeter, AvailableMetersPanel_addDynamicMeters, AvailableMetersPanel_addMeter, AvailableMetersPanel_addPlatformMeter, AvailableMetersPanel_delete, AvailableMetersPanel_eventHandler, AvailableMetersPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename AvailableMetersPanel.c"
+              }
+            ],
+            "concludedValue": "Filename AvailableMetersPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "BatteryMeter",
+      "version": "",
+      "purl": "pkg:generic/BatteryMeter#BatteryMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/BatteryMeter#BatteryMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "BatteryMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename BatteryMeter.c"
+              }
+            ],
+            "concludedValue": "Filename BatteryMeter.c"
+          }
+        ]
+      },
+      "tags": [
+        "battery"
+      ]
+    },
+    {
+      "group": "",
+      "name": "CategoriesPanel",
+      "version": "",
+      "purl": "pkg:generic/CategoriesPanel#CategoriesPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/CategoriesPanel#CategoriesPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "CategoriesPanel_delete, CategoriesPanel_eventHandler, CategoriesPanel_makeColorsPage, CategoriesPanel_makeDisplayOptionsPage, CategoriesPanel_makeHeaderOptionsPage, CategoriesPanel_makeMetersPage, CategoriesPanel_makeScreensPage, CategoriesPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CategoriesPanel.c"
+              }
+            ],
+            "concludedValue": "Filename CategoriesPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "CGroupUtils",
+      "version": "",
+      "purl": "pkg:generic/CGroupUtils#linux/CGroupUtils.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/CGroupUtils#linux/CGroupUtils.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "CGroup_filterContainer, CGroup_filterContainer_internal, CGroup_filterName, CGroup_filterName_internal, Label_checkEqual, Label_checkPrefix, Label_checkSuffix, StrBuf_putc_count, StrBuf_putc_write, StrBuf_putsn, StrBuf_putsz"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/CGroupUtils.c"
+              }
+            ],
+            "concludedValue": "Filename linux/CGroupUtils.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ClockMeter",
+      "version": "",
+      "purl": "pkg:generic/ClockMeter#ClockMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ClockMeter#ClockMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ClockMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ClockMeter.c"
+              }
+            ],
+            "concludedValue": "Filename ClockMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ColorsPanel",
+      "version": "",
+      "purl": "pkg:generic/ColorsPanel#ColorsPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ColorsPanel#ColorsPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ColorsPanel_delete, ColorsPanel_eventHandler, ColorsPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ColorsPanel.c"
+              }
+            ],
+            "concludedValue": "Filename ColorsPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ColumnsPanel",
+      "version": "",
+      "purl": "pkg:generic/ColumnsPanel#ColumnsPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ColumnsPanel#ColumnsPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ColumnsPanel_add, ColumnsPanel_delete, ColumnsPanel_eventHandler, ColumnsPanel_fill, ColumnsPanel_new, ColumnsPanel_update"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ColumnsPanel.c"
+              }
+            ],
+            "concludedValue": "Filename ColumnsPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "CommandLine",
+      "version": "",
+      "purl": "pkg:generic/CommandLine#CommandLine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/CommandLine#CommandLine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "CommandLine_delay, CommandLine_run, parseArguments, printHelpFlag, printVersionFlag, setCommFilter"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CommandLine.c"
+              }
+            ],
+            "concludedValue": "Filename CommandLine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "CommandScreen",
+      "version": "",
+      "purl": "pkg:generic/CommandScreen#CommandScreen.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/CommandScreen#CommandScreen.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CommandScreen.h"
+              }
+            ],
+            "concludedValue": "Filename CommandScreen.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Compat",
+      "version": "",
+      "purl": "pkg:generic/Compat#Compat.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Compat#Compat.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Compat_faccessat, Compat_fstatat, Compat_openat, Compat_readlink, Compat_readlinkat"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Compat.c"
+              }
+            ],
+            "concludedValue": "Filename Compat.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "CoreFoundation",
+      "name": "CFBase",
+      "version": "",
+      "purl": "pkg:generic/CoreFoundation/CFBase#CoreFoundation/CFBase.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/CoreFoundation/CFBase#CoreFoundation/CFBase.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CoreFoundation/CFBase.h"
+              }
+            ],
+            "concludedValue": "Filename CoreFoundation/CFBase.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "CoreFoundation",
+      "name": "CFDictionary",
+      "version": "",
+      "purl": "pkg:generic/CoreFoundation/CFDictionary#CoreFoundation/CFDictionary.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/CoreFoundation/CFDictionary#CoreFoundation/CFDictionary.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CoreFoundation/CFDictionary.h"
+              }
+            ],
+            "concludedValue": "Filename CoreFoundation/CFDictionary.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "CoreFoundation",
+      "name": "CFNumber",
+      "version": "",
+      "purl": "pkg:generic/CoreFoundation/CFNumber#CoreFoundation/CFNumber.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/CoreFoundation/CFNumber#CoreFoundation/CFNumber.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CoreFoundation/CFNumber.h"
+              }
+            ],
+            "concludedValue": "Filename CoreFoundation/CFNumber.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "CoreFoundation",
+      "name": "CFString",
+      "version": "",
+      "purl": "pkg:generic/CoreFoundation/CFString#CoreFoundation/CFString.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/CoreFoundation/CFString#CoreFoundation/CFString.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CoreFoundation/CFString.h"
+              }
+            ],
+            "concludedValue": "Filename CoreFoundation/CFString.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "CoreFoundation",
+      "name": "CoreFoundation",
+      "version": "",
+      "purl": "pkg:generic/CoreFoundation/CoreFoundation#CoreFoundation/CoreFoundation.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/CoreFoundation/CoreFoundation#CoreFoundation/CoreFoundation.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CoreFoundation/CoreFoundation.h"
+              }
+            ],
+            "concludedValue": "Filename CoreFoundation/CoreFoundation.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "CPUMeter",
+      "version": "",
+      "purl": "pkg:generic/CPUMeter#CPUMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/CPUMeter#CPUMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "AllCPUsMeter_done, AllCPUsMeter_getRange, AllCPUsMeter_updateValues, CPUMeterCommonDraw, CPUMeterCommonInit, CPUMeterCommonUpdateMode, CPUMeter_display, CPUMeter_getUiName, CPUMeter_init, CPUMeter_updateValues, DualColCPUsMeter_draw, DualColCPUsMeter_updateMode, OctoColCPUsMeter_draw, OctoColCPUsMeter_updateMode, QuadColCPUsMeter_draw, QuadColCPUsMeter_updateMode, SingleColCPUsMeter_draw, SingleColCPUsMeter_updateMode"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename CPUMeter.c"
+              }
+            ],
+            "concludedValue": "Filename CPUMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ctype",
+      "version": "",
+      "purl": "pkg:generic/ctype#ctype.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ctype#ctype.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ctype.h"
+              }
+            ],
+            "concludedValue": "Filename ctype.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DarwinMachine",
+      "version": "",
+      "purl": "pkg:generic/DarwinMachine#darwin/DarwinMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DarwinMachine#darwin/DarwinMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DarwinMachine_allocateCPULoadInfo, DarwinMachine_freeCPULoadInfo, DarwinMachine_getHostInfo, DarwinMachine_getVMStats, Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename darwin/DarwinMachine.c"
+              }
+            ],
+            "concludedValue": "Filename darwin/DarwinMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DarwinProcess",
+      "version": "",
+      "purl": "pkg:generic/DarwinProcess#darwin/DarwinProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DarwinProcess#darwin/DarwinProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DarwinProcess_compareByKey, DarwinProcess_getDevname, DarwinProcess_new, DarwinProcess_rowWriteField, DarwinProcess_scanThreads, DarwinProcess_setFromKInfoProc, DarwinProcess_setFromLibprocPidinfo, DarwinProcess_updateCmdLine, DarwinProcess_updateCwd, DarwinProcess_updateExe, Process_delete, nanosecondsToCentiseconds, stateToChar"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename darwin/DarwinProcess.c"
+              }
+            ],
+            "concludedValue": "Filename darwin/DarwinProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DarwinProcessTable",
+      "version": "",
+      "purl": "pkg:generic/DarwinProcessTable#darwin/DarwinProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DarwinProcessTable#darwin/DarwinProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ProcessTable_delete, ProcessTable_getKInfoProcs, ProcessTable_goThroughEntries, ProcessTable_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename darwin/DarwinProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename darwin/DarwinProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DateMeter",
+      "version": "",
+      "purl": "pkg:generic/DateMeter#DateMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DateMeter#DateMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DateMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DateMeter.c"
+              }
+            ],
+            "concludedValue": "Filename DateMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DateTimeMeter",
+      "version": "",
+      "purl": "pkg:generic/DateTimeMeter#DateTimeMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DateTimeMeter#DateTimeMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DateTimeMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DateTimeMeter.c"
+              }
+            ],
+            "concludedValue": "Filename DateTimeMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "devstat",
+      "version": "",
+      "purl": "pkg:generic/devstat#devstat.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/devstat#devstat.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename devstat.h"
+              }
+            ],
+            "concludedValue": "Filename devstat.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DiskIOMeter",
+      "version": "",
+      "purl": "pkg:generic/DiskIOMeter#DiskIOMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DiskIOMeter#DiskIOMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DiskIOMeter_display, DiskIOMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DiskIOMeter.c"
+              }
+            ],
+            "concludedValue": "Filename DiskIOMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DisplayOptionsPanel",
+      "version": "",
+      "purl": "pkg:generic/DisplayOptionsPanel#DisplayOptionsPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DisplayOptionsPanel#DisplayOptionsPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DisplayOptionsPanel_delete, DisplayOptionsPanel_eventHandler, DisplayOptionsPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DisplayOptionsPanel.c"
+              }
+            ],
+            "concludedValue": "Filename DisplayOptionsPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "dlfcn",
+      "version": "",
+      "purl": "pkg:generic/dlfcn#dlfcn.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/dlfcn#dlfcn.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename dlfcn.h"
+              }
+            ],
+            "concludedValue": "Filename dlfcn.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DragonFlyBSDMachine",
+      "version": "",
+      "purl": "pkg:generic/DragonFlyBSDMachine#dragonflybsd/DragonFlyBSDMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DragonFlyBSDMachine#dragonflybsd/DragonFlyBSDMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DragonFlyBSDMachine_readJailName, DragonFlyBSDMachine_scanCPUTime, DragonFlyBSDMachine_scanJails, DragonFlyBSDMachine_scanMemoryInfo, Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename dragonflybsd/DragonFlyBSDMachine.c"
+              }
+            ],
+            "concludedValue": "Filename dragonflybsd/DragonFlyBSDMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DragonFlyBSDProcess",
+      "version": "",
+      "purl": "pkg:generic/DragonFlyBSDProcess#dragonflybsd/DragonFlyBSDProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DragonFlyBSDProcess#dragonflybsd/DragonFlyBSDProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DragonFlyBSDProcess_compareByKey, DragonFlyBSDProcess_new, DragonFlyBSDProcess_rowWriteField, Process_delete"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename dragonflybsd/DragonFlyBSDProcess.c"
+              }
+            ],
+            "concludedValue": "Filename dragonflybsd/DragonFlyBSDProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DragonFlyBSDProcessTable",
+      "version": "",
+      "purl": "pkg:generic/DragonFlyBSDProcessTable#dragonflybsd/DragonFlyBSDProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DragonFlyBSDProcessTable#dragonflybsd/DragonFlyBSDProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DragonFlyBSDProcessTable_updateCwd, DragonFlyBSDProcessTable_updateExe, DragonFlyBSDProcessTable_updateProcessName, ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename dragonflybsd/DragonFlyBSDProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename dragonflybsd/DragonFlyBSDProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DynamicColumn",
+      "version": "",
+      "purl": "pkg:generic/DynamicColumn#DynamicColumn.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DynamicColumn#DynamicColumn.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DynamicColumn_compare, DynamicColumn_done, DynamicColumn_lookup, DynamicColumn_name, DynamicColumn_search, DynamicColumn_writeField, DynamicColumns_delete, DynamicColumns_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DynamicColumn.c"
+              }
+            ],
+            "concludedValue": "Filename DynamicColumn.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DynamicMeter",
+      "version": "",
+      "purl": "pkg:generic/DynamicMeter#DynamicMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DynamicMeter#DynamicMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DynamicMeter_compare, DynamicMeter_display, DynamicMeter_getCaption, DynamicMeter_getUiName, DynamicMeter_init, DynamicMeter_lookup, DynamicMeter_search, DynamicMeter_updateValues, DynamicMeters_delete, DynamicMeters_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DynamicMeter.c"
+              }
+            ],
+            "concludedValue": "Filename DynamicMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "DynamicScreen",
+      "version": "",
+      "purl": "pkg:generic/DynamicScreen#DynamicScreen.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/DynamicScreen#DynamicScreen.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "DynamicScreen_compare, DynamicScreen_done, DynamicScreen_lookup, DynamicScreen_search, DynamicScreens_delete, DynamicScreens_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename DynamicScreen.c"
+              }
+            ],
+            "concludedValue": "Filename DynamicScreen.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "EnvScreen",
+      "version": "",
+      "purl": "pkg:generic/EnvScreen#EnvScreen.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/EnvScreen#EnvScreen.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename EnvScreen.h"
+              }
+            ],
+            "concludedValue": "Filename EnvScreen.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "execinfo",
+      "version": "",
+      "purl": "pkg:generic/execinfo#execinfo.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/execinfo#execinfo.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename execinfo.h"
+              }
+            ],
+            "concludedValue": "Filename execinfo.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "fdstat_sysctl",
+      "version": "",
+      "purl": "pkg:generic/fdstat_sysctl#generic/fdstat_sysctl.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/fdstat_sysctl#generic/fdstat_sysctl.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename generic/fdstat_sysctl.h"
+              }
+            ],
+            "concludedValue": "Filename generic/fdstat_sysctl.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "FileDescriptorMeter",
+      "version": "",
+      "purl": "pkg:generic/FileDescriptorMeter#FileDescriptorMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/FileDescriptorMeter#FileDescriptorMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "FileDescriptorMeter_display, FileDescriptorMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename FileDescriptorMeter.c"
+              }
+            ],
+            "concludedValue": "Filename FileDescriptorMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "FreeBSDMachine",
+      "version": "",
+      "purl": "pkg:generic/FreeBSDMachine#freebsd/FreeBSDMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/FreeBSDMachine#freebsd/FreeBSDMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "FreeBSDMachine_scanCPU, FreeBSDMachine_scanMemoryInfo, Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename freebsd/FreeBSDMachine.c"
+              }
+            ],
+            "concludedValue": "Filename freebsd/FreeBSDMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "FreeBSDProcess",
+      "version": "",
+      "purl": "pkg:generic/FreeBSDProcess#freebsd/FreeBSDProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/FreeBSDProcess#freebsd/FreeBSDProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "FreeBSDProcess_compareByKey, FreeBSDProcess_new, FreeBSDProcess_rowWriteField, Process_delete"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename freebsd/FreeBSDProcess.c"
+              }
+            ],
+            "concludedValue": "Filename freebsd/FreeBSDProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "FreeBSDProcessTable",
+      "version": "",
+      "purl": "pkg:generic/FreeBSDProcessTable#freebsd/FreeBSDProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/FreeBSDProcessTable#freebsd/FreeBSDProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "FreeBSDProcessTable_readJailName, FreeBSDProcessTable_updateCwd, FreeBSDProcessTable_updateExe, FreeBSDProcessTable_updateProcessName, ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename freebsd/FreeBSDProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename freebsd/FreeBSDProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "FunctionBar",
+      "version": "",
+      "purl": "pkg:generic/FunctionBar#FunctionBar.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/FunctionBar#FunctionBar.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename FunctionBar.h"
+              }
+            ],
+            "concludedValue": "Filename FunctionBar.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "getopt",
+      "version": "",
+      "purl": "pkg:generic/getopt#getopt.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/getopt#getopt.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename getopt.h"
+              }
+            ],
+            "concludedValue": "Filename getopt.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "gettime",
+      "version": "",
+      "purl": "pkg:generic/gettime#generic/gettime.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/gettime#generic/gettime.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename generic/gettime.h"
+              }
+            ],
+            "concludedValue": "Filename generic/gettime.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "GPU",
+      "version": "",
+      "purl": "pkg:generic/GPU#linux/GPU.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/GPU#linux/GPU.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "GPU_readProcessData, is_duplicate_client, update_machine_gpu"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/GPU.c"
+              }
+            ],
+            "concludedValue": "Filename linux/GPU.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "GPUMeter",
+      "version": "",
+      "purl": "pkg:generic/GPUMeter#linux/GPUMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/GPUMeter#linux/GPUMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "GPUMeter_active, GPUMeter_display, GPUMeter_done, GPUMeter_init, GPUMeter_updateValues, humanTimeUnit"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/GPUMeter.c"
+              }
+            ],
+            "concludedValue": "Filename linux/GPUMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Header",
+      "version": "",
+      "purl": "pkg:generic/Header#Header.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Header#Header.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Header_addMeterByClass, Header_addMeterByName, Header_calculateHeight, Header_delete, Header_draw, Header_new, Header_populateFromSettings, Header_reinit, Header_setLayout, Header_updateData, Header_writeBackToSettings, calcColumnWidthCount"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Header.c"
+              }
+            ],
+            "concludedValue": "Filename Header.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "HeaderLayout",
+      "version": "",
+      "purl": "pkg:generic/HeaderLayout#HeaderLayout.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/HeaderLayout#HeaderLayout.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename HeaderLayout.h"
+              }
+            ],
+            "concludedValue": "Filename HeaderLayout.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "HeaderOptionsPanel",
+      "version": "",
+      "purl": "pkg:generic/HeaderOptionsPanel#HeaderOptionsPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/HeaderOptionsPanel#HeaderOptionsPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "HeaderOptionsPanel_delete, HeaderOptionsPanel_eventHandler, HeaderOptionsPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename HeaderOptionsPanel.c"
+              }
+            ],
+            "concludedValue": "Filename HeaderOptionsPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "hostname",
+      "version": "",
+      "purl": "pkg:generic/hostname#generic/hostname.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/hostname#generic/hostname.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Generic_hostname"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename generic/hostname.c"
+              }
+            ],
+            "concludedValue": "Filename generic/hostname.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "HostnameMeter",
+      "version": "",
+      "purl": "pkg:generic/HostnameMeter#HostnameMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/HostnameMeter#HostnameMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "HostnameMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename HostnameMeter.c"
+              }
+            ],
+            "concludedValue": "Filename HostnameMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "htop",
+      "version": "",
+      "purl": "pkg:generic/htop#htop.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/htop#htop.c",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename htop.c"
+              }
+            ],
+            "concludedValue": "Filename htop.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "HugePageMeter",
+      "version": "",
+      "purl": "pkg:generic/HugePageMeter#linux/HugePageMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/HugePageMeter#linux/HugePageMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "HugePageMeter_display, HugePageMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/HugePageMeter.c"
+              }
+            ],
+            "concludedValue": "Filename linux/HugePageMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "hwloc",
+      "name": "bitmap",
+      "version": "",
+      "purl": "pkg:generic/hwloc/bitmap#hwloc/bitmap.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/hwloc/bitmap#hwloc/bitmap.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename hwloc/bitmap.h"
+              }
+            ],
+            "concludedValue": "Filename hwloc/bitmap.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "hwloc",
+      "version": "",
+      "purl": "pkg:generic/hwloc#hwloc.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/hwloc#hwloc.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename hwloc.h"
+              }
+            ],
+            "concludedValue": "Filename hwloc.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ifaddrs",
+      "version": "",
+      "purl": "pkg:generic/ifaddrs#ifaddrs.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ifaddrs#ifaddrs.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ifaddrs.h"
+              }
+            ],
+            "concludedValue": "Filename ifaddrs.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "IncSet",
+      "version": "",
+      "purl": "pkg:generic/IncSet#IncSet.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/IncSet#IncSet.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "IncMode_done, IncMode_find, IncMode_initFilter, IncMode_initSearch, IncMode_reset, IncSet_activate, IncSet_deactivate, IncSet_delete, IncSet_drawBar, IncSet_getListItemValue, IncSet_handleKey, IncSet_new, IncSet_reset, IncSet_setFilter, IncSet_synthesizeEvent, search, updateWeakPanel"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename IncSet.c"
+              }
+            ],
+            "concludedValue": "Filename IncSet.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "InDomTable",
+      "version": "",
+      "purl": "pkg:generic/InDomTable#pcp/InDomTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/InDomTable#pcp/InDomTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "InDomTable_delete, InDomTable_done, InDomTable_getInstance, InDomTable_goThroughEntries, InDomTable_iterateEntries, InDomTable_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/InDomTable.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/InDomTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "InfoScreen",
+      "version": "",
+      "purl": "pkg:generic/InfoScreen#InfoScreen.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/InfoScreen#InfoScreen.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "InfoScreen_addLine, InfoScreen_appendLine, InfoScreen_done, InfoScreen_drawTitled, InfoScreen_init, InfoScreen_run"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename InfoScreen.c"
+              }
+            ],
+            "concludedValue": "Filename InfoScreen.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Instance",
+      "version": "",
+      "purl": "pkg:generic/Instance#pcp/Instance.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Instance#pcp/Instance.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Instance_compare, Instance_compareByKey, Instance_delete, Instance_done, Instance_externalName, Instance_new, Instance_writeField"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/Instance.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/Instance.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "inttypes",
+      "version": "",
+      "purl": "pkg:generic/inttypes#inttypes.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/inttypes#inttypes.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename inttypes.h"
+              }
+            ],
+            "concludedValue": "Filename inttypes.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "IOKit",
+      "name": "IOKitLib",
+      "version": "",
+      "purl": "pkg:generic/IOKit/IOKitLib#IOKit/IOKitLib.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOKit/IOKitLib#IOKit/IOKitLib.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename IOKit/IOKitLib.h"
+              }
+            ],
+            "concludedValue": "Filename IOKit/IOKitLib.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "IOKit",
+      "name": "IOTypes",
+      "version": "",
+      "purl": "pkg:generic/IOKit/IOTypes#IOKit/IOTypes.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOKit/IOTypes#IOKit/IOTypes.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename IOKit/IOTypes.h"
+              }
+            ],
+            "concludedValue": "Filename IOKit/IOTypes.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "IOKit/ps",
+      "name": "IOPowerSources",
+      "version": "",
+      "purl": "pkg:generic/IOKit/ps/IOPowerSources#IOKit/ps/IOPowerSources.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOKit/ps/IOPowerSources#IOKit/ps/IOPowerSources.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename IOKit/ps/IOPowerSources.h"
+              }
+            ],
+            "concludedValue": "Filename IOKit/ps/IOPowerSources.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "IOKit/ps",
+      "name": "IOPSKeys",
+      "version": "",
+      "purl": "pkg:generic/IOKit/ps/IOPSKeys#IOKit/ps/IOPSKeys.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOKit/ps/IOPSKeys#IOKit/ps/IOPSKeys.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename IOKit/ps/IOPSKeys.h"
+              }
+            ],
+            "concludedValue": "Filename IOKit/ps/IOPSKeys.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "IOKit/storage",
+      "name": "IOBlockStorageDriver",
+      "version": "",
+      "purl": "pkg:generic/IOKit/storage/IOBlockStorageDriver#IOKit/storage/IOBlockStorageDriver.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOKit/storage/IOBlockStorageDriver#IOKit/storage/IOBlockStorageDriver.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename IOKit/storage/IOBlockStorageDriver.h"
+              }
+            ],
+            "concludedValue": "Filename IOKit/storage/IOBlockStorageDriver.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "IOPriority",
+      "version": "",
+      "purl": "pkg:generic/IOPriority#linux/IOPriority.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOPriority#linux/IOPriority.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/IOPriority.h"
+              }
+            ],
+            "concludedValue": "Filename linux/IOPriority.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "IOPriorityPanel",
+      "version": "",
+      "purl": "pkg:generic/IOPriorityPanel#linux/IOPriorityPanel.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/IOPriorityPanel#linux/IOPriorityPanel.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/IOPriorityPanel.h"
+              }
+            ],
+            "concludedValue": "Filename linux/IOPriorityPanel.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "kstat",
+      "version": "",
+      "purl": "pkg:generic/kstat#kstat.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/kstat#kstat.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename kstat.h"
+              }
+            ],
+            "concludedValue": "Filename kstat.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "kvm",
+      "version": "",
+      "purl": "pkg:generic/kvm#kvm.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/kvm#kvm.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename kvm.h"
+              }
+            ],
+            "concludedValue": "Filename kvm.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "langinfo",
+      "version": "",
+      "purl": "pkg:generic/langinfo#langinfo.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/langinfo#langinfo.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename langinfo.h"
+              }
+            ],
+            "concludedValue": "Filename langinfo.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "LibNl",
+      "version": "",
+      "purl": "pkg:generic/LibNl#linux/LibNl.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/LibNl#linux/LibNl.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/LibNl.h"
+              }
+            ],
+            "concludedValue": "Filename linux/LibNl.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "libproc",
+      "version": "",
+      "purl": "pkg:generic/libproc#libproc.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/libproc#libproc.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename libproc.h"
+              }
+            ],
+            "concludedValue": "Filename libproc.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "LibSensors",
+      "version": "",
+      "purl": "pkg:generic/LibSensors#linux/LibSensors.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/LibSensors#linux/LibSensors.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/LibSensors.h"
+              }
+            ],
+            "concludedValue": "Filename linux/LibSensors.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "libunwind",
+      "version": "",
+      "purl": "pkg:generic/libunwind#libunwind.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/libunwind#libunwind.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename libunwind.h"
+              }
+            ],
+            "concludedValue": "Filename libunwind.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "LinuxMachine",
+      "version": "",
+      "purl": "pkg:generic/LinuxMachine#linux/LinuxMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/LinuxMachine#linux/LinuxMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "LinuxMachine_scanCPUFrequency, LinuxMachine_scanCPUTime, LinuxMachine_scanHugePages, LinuxMachine_scanMemoryInfo, LinuxMachine_scanZfsArcstats, LinuxMachine_scanZramInfo, LinuxMachine_updateCPUcount, Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan, scanCPUFrequencyFromCPUinfo, scanCPUFrequencyFromSysCPUFreq"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/LinuxMachine.c"
+              }
+            ],
+            "concludedValue": "Filename linux/LinuxMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "LinuxProcess",
+      "version": "",
+      "purl": "pkg:generic/LinuxProcess#linux/LinuxProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/LinuxProcess#linux/LinuxProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "LinuxProcess_changeAutogroupPriorityBy, LinuxProcess_compareByKey, LinuxProcess_effectiveIOPriority, LinuxProcess_isAutogroupEnabled, LinuxProcess_new, LinuxProcess_rowChangeAutogroupPriorityBy, LinuxProcess_rowSetIOPriority, LinuxProcess_rowWriteField, LinuxProcess_setIOPriority, LinuxProcess_totalIORate, LinuxProcess_updateIOPriority, Process_delete"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/LinuxProcess.c"
+              }
+            ],
+            "concludedValue": "Filename linux/LinuxProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "LinuxProcessTable",
+      "version": "",
+      "purl": "pkg:generic/LinuxProcessTable#linux/LinuxProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/LinuxProcessTable#linux/LinuxProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "LinuxProcessList_readComm, LinuxProcessList_readExe, LinuxProcessTable_adjustTime, LinuxProcessTable_calcLibSize_helper, LinuxProcessTable_getProcessState, LinuxProcessTable_initTtyDrivers, LinuxProcessTable_readAutogroup, LinuxProcessTable_readCGroupFile, LinuxProcessTable_readCmdlineFile, LinuxProcessTable_readCwd, LinuxProcessTable_readIoFile, LinuxProcessTable_readMaps, LinuxProcessTable_readOomData, LinuxProcessTable_readSecattrData, LinuxProcessTable_readSmapsFile, LinuxProcessTable_readStatFile, LinuxProcessTable_readStatmFile, LinuxProcessTable_readStatusFile, LinuxProcessTable_recurseProcTree, LinuxProcessTable_updateTtyDevice, LinuxProcessTable_updateUser, ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new, fast_strtol_dec, fast_strtoll_dec, fast_strtoul_dec, fast_strtoull_dec, fast_strtoull_hex, fopenat, isOlderThan, sortTtyDrivers"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/LinuxProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename linux/LinuxProcessTable.c"
+          }
+        ]
+      },
+      "tags": [
+        "driver"
+      ]
+    },
+    {
+      "group": "",
+      "name": "ListItem",
+      "version": "",
+      "purl": "pkg:generic/ListItem#ListItem.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ListItem#ListItem.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ListItem_append, ListItem_compare, ListItem_delete, ListItem_display, ListItem_init, ListItem_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ListItem.c"
+              }
+            ],
+            "concludedValue": "Filename ListItem.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "LoadAverageMeter",
+      "version": "",
+      "purl": "pkg:generic/LoadAverageMeter#LoadAverageMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/LoadAverageMeter#LoadAverageMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "LoadAverageMeter_display, LoadAverageMeter_updateValues, LoadMeter_display, LoadMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename LoadAverageMeter.c"
+              }
+            ],
+            "concludedValue": "Filename LoadAverageMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "mach",
+      "name": "clock",
+      "version": "",
+      "purl": "pkg:generic/mach/clock#mach/clock.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/mach/clock#mach/clock.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename mach/clock.h"
+              }
+            ],
+            "concludedValue": "Filename mach/clock.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "mach",
+      "name": "mach_host",
+      "version": "",
+      "purl": "pkg:generic/mach/mach_host#mach/mach_host.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/mach/mach_host#mach/mach_host.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename mach/mach_host.h"
+              }
+            ],
+            "concludedValue": "Filename mach/mach_host.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "mach",
+      "name": "mach_time",
+      "version": "",
+      "purl": "pkg:generic/mach/mach_time#mach/mach_time.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/mach/mach_time#mach/mach_time.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename mach/mach_time.h"
+              }
+            ],
+            "concludedValue": "Filename mach/mach_time.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "mach",
+      "name": "mach",
+      "version": "",
+      "purl": "pkg:generic/mach/mach#mach/mach.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/mach/mach#mach/mach.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename mach/mach.h"
+              }
+            ],
+            "concludedValue": "Filename mach/mach.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "mach",
+      "name": "port",
+      "version": "",
+      "purl": "pkg:generic/mach/port#mach/port.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/mach/port#mach/port.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename mach/port.h"
+              }
+            ],
+            "concludedValue": "Filename mach/port.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Machine",
+      "version": "",
+      "purl": "pkg:generic/Machine#Machine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Machine#Machine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Machine_addTable, Machine_done, Machine_init, Machine_populateTablesFromSettings, Machine_scanTables, Machine_setTablesPanel"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Machine.c"
+              }
+            ],
+            "concludedValue": "Filename Machine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "MainPanel",
+      "version": "",
+      "purl": "pkg:generic/MainPanel#MainPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/MainPanel#MainPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "MainPanel_delete, MainPanel_drawFunctionBar, MainPanel_eventHandler, MainPanel_foreachRow, MainPanel_getValue, MainPanel_idSearch, MainPanel_new, MainPanel_printHeader, MainPanel_selectedRow, MainPanel_setFunctionBar, MainPanel_setState, MainPanel_updateLabels"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename MainPanel.c"
+              }
+            ],
+            "concludedValue": "Filename MainPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "MemoryMeter",
+      "version": "",
+      "purl": "pkg:generic/MemoryMeter#MemoryMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/MemoryMeter#MemoryMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "MemoryMeter_display, MemoryMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename MemoryMeter.c"
+              }
+            ],
+            "concludedValue": "Filename MemoryMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "MemorySwapMeter",
+      "version": "",
+      "purl": "pkg:generic/MemorySwapMeter#MemorySwapMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/MemorySwapMeter#MemorySwapMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "MemorySwapMeter_done, MemorySwapMeter_draw, MemorySwapMeter_init, MemorySwapMeter_updateMode, MemorySwapMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename MemorySwapMeter.c"
+              }
+            ],
+            "concludedValue": "Filename MemorySwapMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Meter",
+      "version": "",
+      "purl": "pkg:generic/Meter#Meter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Meter#Meter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "BarMeterMode_draw, BlankMeter_display, BlankMeter_updateValues, GraphMeterMode_draw, LEDMeterMode_draw, LEDMeterMode_drawDigit, Meter_delete, Meter_displayBuffer, Meter_humanUnit, Meter_new, Meter_nextSupportedMode, Meter_setCaption, Meter_setMode, Meter_toListItem, TextMeterMode_draw"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Meter.c"
+              }
+            ],
+            "concludedValue": "Filename Meter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "MeterMode",
+      "version": "",
+      "purl": "pkg:generic/MeterMode#MeterMode.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/MeterMode#MeterMode.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename MeterMode.h"
+              }
+            ],
+            "concludedValue": "Filename MeterMode.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "MetersPanel",
+      "version": "",
+      "purl": "pkg:generic/MetersPanel#MetersPanel.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/MetersPanel#MetersPanel.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename MetersPanel.h"
+              }
+            ],
+            "concludedValue": "Filename MetersPanel.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Metric",
+      "version": "",
+      "purl": "pkg:generic/Metric#pcp/Metric.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/Metric#pcp/Metric.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/Metric.h"
+              }
+            ],
+            "concludedValue": "Filename pcp/Metric.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "ncurses",
+      "name": "ncurses",
+      "version": "",
+      "purl": "pkg:generic/ncurses/ncurses#ncurses/ncurses.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ncurses/ncurses#ncurses/ncurses.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ncurses/ncurses.h"
+              }
+            ],
+            "concludedValue": "Filename ncurses/ncurses.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "ncursesw",
+      "name": "curses",
+      "version": "",
+      "purl": "pkg:generic/ncursesw/curses#ncursesw/curses.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ncursesw/curses#ncursesw/curses.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ncursesw/curses.h"
+              }
+            ],
+            "concludedValue": "Filename ncursesw/curses.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "ncursesw",
+      "name": "term",
+      "version": "",
+      "purl": "pkg:generic/ncursesw/term#ncursesw/term.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ncursesw/term#ncursesw/term.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ncursesw/term.h"
+              }
+            ],
+            "concludedValue": "Filename ncursesw/term.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "net",
+      "name": "if_mib",
+      "version": "",
+      "purl": "pkg:generic/net/if_mib#net/if_mib.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/net/if_mib#net/if_mib.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename net/if_mib.h"
+              }
+            ],
+            "concludedValue": "Filename net/if_mib.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "net",
+      "name": "if_types",
+      "version": "",
+      "purl": "pkg:generic/net/if_types#net/if_types.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/net/if_types#net/if_types.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename net/if_types.h"
+              }
+            ],
+            "concludedValue": "Filename net/if_types.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "net",
+      "name": "if",
+      "version": "",
+      "purl": "pkg:generic/net/if#net/if.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/net/if#net/if.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename net/if.h"
+              }
+            ],
+            "concludedValue": "Filename net/if.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "net",
+      "name": "route",
+      "version": "",
+      "purl": "pkg:generic/net/route#net/route.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/net/route#net/route.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename net/route.h"
+              }
+            ],
+            "concludedValue": "Filename net/route.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "NetBSDMachine",
+      "version": "",
+      "purl": "pkg:generic/NetBSDMachine#netbsd/NetBSDMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/NetBSDMachine#netbsd/NetBSDMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan, NetBSDMachine_scanCPUFrequency, NetBSDMachine_scanCPUTime, NetBSDMachine_scanMemoryInfo, NetBSDMachine_updateCPUcount, getKernelCPUTimes, kernelCPUTimesToHtop"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename netbsd/NetBSDMachine.c"
+              }
+            ],
+            "concludedValue": "Filename netbsd/NetBSDMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "NetBSDProcess",
+      "version": "",
+      "purl": "pkg:generic/NetBSDProcess#netbsd/NetBSDProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/NetBSDProcess#netbsd/NetBSDProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "NetBSDProcess_compareByKey, NetBSDProcess_new, NetBSDProcess_rowWriteField, Process_delete"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename netbsd/NetBSDProcess.c"
+              }
+            ],
+            "concludedValue": "Filename netbsd/NetBSDProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "NetBSDProcessTable",
+      "version": "",
+      "purl": "pkg:generic/NetBSDProcessTable#netbsd/NetBSDProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/NetBSDProcessTable#netbsd/NetBSDProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "NetBSDProcessTable_updateCwd, NetBSDProcessTable_updateExe, NetBSDProcessTable_updateProcessName, ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new, getpcpu"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename netbsd/NetBSDProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename netbsd/NetBSDProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "NetworkIOMeter",
+      "version": "",
+      "purl": "pkg:generic/NetworkIOMeter#NetworkIOMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/NetworkIOMeter#NetworkIOMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "NetworkIOMeter_display, NetworkIOMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename NetworkIOMeter.c"
+              }
+            ],
+            "concludedValue": "Filename NetworkIOMeter.c"
+          }
+        ]
+      },
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "group": "",
+      "name": "OpenBSDMachine",
+      "version": "",
+      "purl": "pkg:generic/OpenBSDMachine#openbsd/OpenBSDMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/OpenBSDMachine#openbsd/OpenBSDMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan, OpenBSDMachine_scanCPUTime, OpenBSDMachine_scanMemoryInfo, OpenBSDMachine_updateCPUcount, getKernelCPUTimes, kernelCPUTimesToHtop"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename openbsd/OpenBSDMachine.c"
+              }
+            ],
+            "concludedValue": "Filename openbsd/OpenBSDMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "OpenBSDProcess",
+      "version": "",
+      "purl": "pkg:generic/OpenBSDProcess#openbsd/OpenBSDProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/OpenBSDProcess#openbsd/OpenBSDProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "OpenBSDProcess_compareByKey, OpenBSDProcess_new, OpenBSDProcess_rowWriteField, Process_delete"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename openbsd/OpenBSDProcess.c"
+              }
+            ],
+            "concludedValue": "Filename openbsd/OpenBSDProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "OpenBSDProcessTable",
+      "version": "",
+      "purl": "pkg:generic/OpenBSDProcessTable#openbsd/OpenBSDProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/OpenBSDProcessTable#openbsd/OpenBSDProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "OpenBSDProcessTable_scanProcs, OpenBSDProcessTable_updateCwd, OpenBSDProcessTable_updateProcessName, ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new, getpcpu"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename openbsd/OpenBSDProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename openbsd/OpenBSDProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "OpenFilesScreen",
+      "version": "",
+      "purl": "pkg:generic/OpenFilesScreen#OpenFilesScreen.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/OpenFilesScreen#OpenFilesScreen.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "OpenFilesScreen_delete, OpenFilesScreen_draw, OpenFilesScreen_getProcessData, OpenFilesScreen_new, OpenFilesScreen_scan, OpenFiles_Data_clear, getDataForType, getIndexForType"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename OpenFilesScreen.c"
+              }
+            ],
+            "concludedValue": "Filename OpenFilesScreen.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "openzfs_sysctl",
+      "version": "",
+      "purl": "pkg:generic/openzfs_sysctl#generic/openzfs_sysctl.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/openzfs_sysctl#generic/openzfs_sysctl.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "openzfs_sysctl_init, openzfs_sysctl_updateArcStats"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename generic/openzfs_sysctl.c"
+              }
+            ],
+            "concludedValue": "Filename generic/openzfs_sysctl.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "OptionItem",
+      "version": "",
+      "purl": "pkg:generic/OptionItem#OptionItem.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/OptionItem#OptionItem.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "CheckItem_display, CheckItem_get, CheckItem_newByRef, CheckItem_newByVal, CheckItem_set, CheckItem_toggle, NumberItem_decrease, NumberItem_display, NumberItem_get, NumberItem_increase, NumberItem_newByRef, NumberItem_newByVal, NumberItem_toggle, OptionItem_delete, TextItem_display, TextItem_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename OptionItem.c"
+              }
+            ],
+            "concludedValue": "Filename OptionItem.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "osreldate",
+      "version": "",
+      "purl": "pkg:generic/osreldate#osreldate.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/osreldate#osreldate.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename osreldate.h"
+              }
+            ],
+            "concludedValue": "Filename osreldate.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "paths",
+      "version": "",
+      "purl": "pkg:generic/paths#paths.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/paths#paths.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename paths.h"
+              }
+            ],
+            "concludedValue": "Filename paths.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pcp-htop",
+      "version": "",
+      "purl": "pkg:generic/pcp-htop#pcp-htop.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/pcp-htop#pcp-htop.c",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp-htop.c"
+              }
+            ],
+            "concludedValue": "Filename pcp-htop.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "pcp",
+      "name": "pmapi",
+      "version": "",
+      "purl": "pkg:generic/pcp/pmapi#pcp/pmapi.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/pcp/pmapi#pcp/pmapi.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/pmapi.h"
+              }
+            ],
+            "concludedValue": "Filename pcp/pmapi.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PCPDynamicColumn",
+      "version": "",
+      "purl": "pkg:generic/PCPDynamicColumn#pcp/PCPDynamicColumn.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PCPDynamicColumn#pcp/PCPDynamicColumn.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "PCPDynamicColumn_addMetric, PCPDynamicColumn_compareByKey, PCPDynamicColumn_done, PCPDynamicColumn_new, PCPDynamicColumn_normalize, PCPDynamicColumn_parseFile, PCPDynamicColumn_parseMetric, PCPDynamicColumn_scanDir, PCPDynamicColumn_setupWidth, PCPDynamicColumn_uniqueName, PCPDynamicColumn_validateColumnName, PCPDynamicColumn_writeAtomValue, PCPDynamicColumn_writeField, PCPDynamicColumns_done, PCPDynamicColumns_free, PCPDynamicColumns_init, PCPDynamicColumns_setupWidths"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/PCPDynamicColumn.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/PCPDynamicColumn.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PCPDynamicMeter",
+      "version": "",
+      "purl": "pkg:generic/PCPDynamicMeter#pcp/PCPDynamicMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PCPDynamicMeter#pcp/PCPDynamicMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "PCPDynamicMeter_display, PCPDynamicMeter_enable, PCPDynamicMeter_free, PCPDynamicMeter_lookupMetric, PCPDynamicMeter_new, PCPDynamicMeter_parseFile, PCPDynamicMeter_parseMetric, PCPDynamicMeter_scanDir, PCPDynamicMeter_uniqueName, PCPDynamicMeter_updateValues, PCPDynamicMeter_validateMeterName, PCPDynamicMeters_done, PCPDynamicMeters_init"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/PCPDynamicMeter.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/PCPDynamicMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PCPDynamicScreen",
+      "version": "",
+      "purl": "pkg:generic/PCPDynamicScreen#pcp/PCPDynamicScreen.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PCPDynamicScreen#pcp/PCPDynamicScreen.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "PCPDynamicScreen_addDynamicScreen, PCPDynamicScreen_appendScreens, PCPDynamicScreen_appendTables, PCPDynamicScreen_done, PCPDynamicScreen_lookupMetric, PCPDynamicScreen_new, PCPDynamicScreen_parseColumn, PCPDynamicScreen_parseFile, PCPDynamicScreen_scanDir, PCPDynamicScreen_uniqueName, PCPDynamicScreen_validateScreenName, PCPDynamicScreens_addAvailableColumns, PCPDynamicScreens_appendDynamicColumns, PCPDynamicScreens_done, PCPDynamicScreens_free, PCPDynamicScreens_init, formatFields"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/PCPDynamicScreen.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/PCPDynamicScreen.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PCPMachine",
+      "version": "",
+      "purl": "pkg:generic/PCPMachine#pcp/PCPMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PCPMachine#pcp/PCPMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan, PCPMachine_backupCPUTime, PCPMachine_deriveCPUTime, PCPMachine_saveCPUTimePeriod, PCPMachine_scan, PCPMachine_scanZfsArcstats, PCPMachine_scanZswapInfo, PCPMachine_updateAllCPUTime, PCPMachine_updateCPUcount, PCPMachine_updateMemoryInfo, PCPMachine_updatePerCPUReal, PCPMachine_updatePerCPUTime"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/PCPMachine.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/PCPMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PCPProcess",
+      "version": "",
+      "purl": "pkg:generic/PCPProcess#pcp/PCPProcess.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PCPProcess#pcp/PCPProcess.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "PCPProcess_compareByKey, PCPProcess_new, PCPProcess_printDelay, PCPProcess_rowWriteField, PCPProcess_totalIORate, Process_delete"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/PCPProcess.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/PCPProcess.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PCPProcessTable",
+      "version": "",
+      "purl": "pkg:generic/PCPProcessTable#pcp/PCPProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PCPProcessTable#pcp/PCPProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Metric_instance_ONE_K, Metric_instance_char, Metric_instance_s32, Metric_instance_s64, Metric_instance_time, Metric_instance_u32, Metric_instance_u64, PCPProcessTable_getProcessState, PCPProcessTable_readAutogroup, PCPProcessTable_readCGroups, PCPProcessTable_readCtxtData, PCPProcessTable_readCwd, PCPProcessTable_readOomData, PCPProcessTable_readSecattrData, PCPProcessTable_updateCmdline, PCPProcessTable_updateID, PCPProcessTable_updateIO, PCPProcessTable_updateInfo, PCPProcessTable_updateMemory, PCPProcessTable_updateProcesses, PCPProcessTable_updateSmaps, PCPProcessTable_updateTTY, PCPProcessTable_updateUsername, ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new, setString, setUser"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pcp/PCPProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename pcp/PCPProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Platform",
+      "version": "",
+      "purl": "pkg:generic/Platform#linux/Platform.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Platform#linux/Platform.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Platform_Battery_getProcBatInfo, Platform_Battery_getProcData, Platform_Battery_getSysData, Platform_actionHigherAutogroupPriority, Platform_actionLowerAutogroupPriority, Platform_actionSetIOPriority, Platform_changeAutogroupPriority, Platform_done, Platform_getBattery, Platform_getDiskIO, Platform_getFileDescriptors, Platform_getLoadAverage, Platform_getLongOption, Platform_getMaxPid, Platform_getNetworkIO, Platform_getPressureStall, Platform_getProcessEnv, Platform_getProcessLocks, Platform_getUptime, Platform_init, Platform_longOptionsUsage, Platform_setBindings, Platform_setCPUValues, Platform_setMemoryValues, Platform_setSwapValues, Platform_setZfsArcValues, Platform_setZfsCompressedArcValues, Platform_setZramValues, procAcpiCheck"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/Platform.c"
+              }
+            ],
+            "concludedValue": "Filename linux/Platform.c"
+          }
+        ]
+      },
+      "tags": [
+        "battery",
+        "network"
+      ]
+    },
+    {
+      "group": "",
+      "name": "PlatformHelpers",
+      "version": "",
+      "purl": "pkg:generic/PlatformHelpers#darwin/PlatformHelpers.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/PlatformHelpers#darwin/PlatformHelpers.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename darwin/PlatformHelpers.h"
+              }
+            ],
+            "concludedValue": "Filename darwin/PlatformHelpers.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "PressureStallMeter",
+      "version": "",
+      "purl": "pkg:generic/PressureStallMeter#linux/PressureStallMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/PressureStallMeter#linux/PressureStallMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "PressureStallMeter_display, PressureStallMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/PressureStallMeter.c"
+              }
+            ],
+            "concludedValue": "Filename linux/PressureStallMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ProcessField",
+      "version": "",
+      "purl": "pkg:generic/ProcessField#ProcessField.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ProcessField#ProcessField.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ProcessField.h"
+              }
+            ],
+            "concludedValue": "Filename ProcessField.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ProcessLocksScreen",
+      "version": "",
+      "purl": "pkg:generic/ProcessLocksScreen#ProcessLocksScreen.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ProcessLocksScreen#ProcessLocksScreen.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "FileLocks_Data_clear, ProcessLocksScreen_delete, ProcessLocksScreen_draw, ProcessLocksScreen_new, ProcessLocksScreen_scan"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ProcessLocksScreen.c"
+              }
+            ],
+            "concludedValue": "Filename ProcessLocksScreen.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ProcessTable",
+      "version": "",
+      "purl": "pkg:generic/ProcessTable#ProcessTable.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ProcessTable#ProcessTable.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ProcessTable.h"
+              }
+            ],
+            "concludedValue": "Filename ProcessTable.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "procfs",
+      "version": "",
+      "purl": "pkg:generic/procfs#procfs.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/procfs#procfs.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename procfs.h"
+              }
+            ],
+            "concludedValue": "Filename procfs.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "prop",
+      "name": "proplib",
+      "version": "",
+      "purl": "pkg:generic/prop/proplib#prop/proplib.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/prop/proplib#prop/proplib.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename prop/proplib.h"
+              }
+            ],
+            "concludedValue": "Filename prop/proplib.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ProvideCurses",
+      "version": "",
+      "purl": "pkg:generic/ProvideCurses#ProvideCurses.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ProvideCurses#ProvideCurses.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ProvideCurses.h"
+              }
+            ],
+            "concludedValue": "Filename ProvideCurses.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ProvideTerm",
+      "version": "",
+      "purl": "pkg:generic/ProvideTerm#ProvideTerm.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ProvideTerm#ProvideTerm.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ProvideTerm.h"
+              }
+            ],
+            "concludedValue": "Filename ProvideTerm.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pwd",
+      "version": "",
+      "purl": "pkg:generic/pwd#pwd.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/pwd#pwd.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename pwd.h"
+              }
+            ],
+            "concludedValue": "Filename pwd.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "RichString",
+      "version": "",
+      "purl": "pkg:generic/RichString#RichString.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/RichString#RichString.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "RichString_appendAscii, RichString_appendChr, RichString_appendWide, RichString_appendnAscii, RichString_appendnWide, RichString_appendnWideColumns, RichString_delete, RichString_extendLen, RichString_findChar, RichString_rewind, RichString_setAttr, RichString_setAttrn, RichString_setLen, RichString_writeAscii, RichString_writeFromAscii, RichString_writeFromWide, RichString_writeWide"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename RichString.c"
+              }
+            ],
+            "concludedValue": "Filename RichString.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Row",
+      "version": "",
+      "purl": "pkg:generic/Row#Row.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Row#Row.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "RowField_alignedTitle, RowField_keyAt, Row_compare, Row_compareByParent_Base, Row_display, Row_done, Row_init, Row_isNew, Row_isTomb, Row_printBytes, Row_printCount, Row_printKBytes, Row_printLeftAlignedField, Row_printNanoseconds, Row_printPercentage, Row_printRate, Row_printTime, Row_resetFieldWidths, Row_setPidColumnWidth, Row_setUidColumnWidth, Row_toggleTag, Row_updateFieldWidth, alignedTitleDynamicColumn, alignedTitleProcessField"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Row.c"
+              }
+            ],
+            "concludedValue": "Filename Row.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "RowField",
+      "version": "",
+      "purl": "pkg:generic/RowField#RowField.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/RowField#RowField.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename RowField.h"
+              }
+            ],
+            "concludedValue": "Filename RowField.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sched",
+      "version": "",
+      "purl": "pkg:generic/sched#sched.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sched#sched.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sched.h"
+              }
+            ],
+            "concludedValue": "Filename sched.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Scheduling",
+      "version": "",
+      "purl": "pkg:generic/Scheduling#Scheduling.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/Scheduling#Scheduling.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Scheduling.h"
+              }
+            ],
+            "concludedValue": "Filename Scheduling.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ScreenManager",
+      "version": "",
+      "purl": "pkg:generic/ScreenManager#ScreenManager.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ScreenManager#ScreenManager.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ScreenManager.h"
+              }
+            ],
+            "concludedValue": "Filename ScreenManager.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ScreensPanel",
+      "version": "",
+      "purl": "pkg:generic/ScreensPanel#ScreensPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ScreensPanel#ScreensPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ScreenListItem_delete, ScreenListItem_new, ScreensPanel_delete, ScreensPanel_eventHandler, ScreensPanel_eventHandlerNormal, ScreensPanel_eventHandlerRenaming, ScreensPanel_new, ScreensPanel_update, addNewScreen, rebuildSettingsArray, startRenaming"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ScreensPanel.c"
+              }
+            ],
+            "concludedValue": "Filename ScreensPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ScreenTabsPanel",
+      "version": "",
+      "purl": "pkg:generic/ScreenTabsPanel#ScreenTabsPanel.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ScreenTabsPanel#ScreenTabsPanel.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename ScreenTabsPanel.h"
+              }
+            ],
+            "concludedValue": "Filename ScreenTabsPanel.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SELinuxMeter",
+      "version": "",
+      "purl": "pkg:generic/SELinuxMeter#linux/SELinuxMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/SELinuxMeter#linux/SELinuxMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "SELinuxMeter_updateValues, hasSELinuxMount, isSelinuxEnabled, isSelinuxEnforcing"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/SELinuxMeter.c"
+              }
+            ],
+            "concludedValue": "Filename linux/SELinuxMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Settings",
+      "version": "",
+      "purl": "pkg:generic/Settings#Settings.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Settings#Settings.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ScreenSettings_delete, ScreenSettings_invertSortOrder, ScreenSettings_readFields, ScreenSettings_setSortKey, Settings_defaultMeters, Settings_defaultScreens, Settings_delete, Settings_deleteColumns, Settings_deleteScreens, Settings_enableReadonly, Settings_initScreenSettings, Settings_isReadonly, Settings_new, Settings_newDynamicScreen, Settings_newScreen, Settings_read, Settings_readMeterModes, Settings_readMeters, Settings_setHeaderLayout, Settings_splitLineToIDs, Settings_validateMeters, Settings_write, signal_safe_fprintf, toFieldIndex, toFieldName, writeFields, writeList, writeMeterModes, writeMeters"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Settings.c"
+              }
+            ],
+            "concludedValue": "Filename Settings.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "signal",
+      "version": "",
+      "purl": "pkg:generic/signal#signal.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/signal#signal.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename signal.h"
+              }
+            ],
+            "concludedValue": "Filename signal.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SignalsPanel",
+      "version": "",
+      "purl": "pkg:generic/SignalsPanel#SignalsPanel.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/SignalsPanel#SignalsPanel.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "SignalsPanel_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename SignalsPanel.c"
+              }
+            ],
+            "concludedValue": "Filename SignalsPanel.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SolarisMachine",
+      "version": "",
+      "purl": "pkg:generic/SolarisMachine#solaris/SolarisMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/SolarisMachine#solaris/SolarisMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan, SolarisMachine_scanCPUTime, SolarisMachine_scanMemoryInfo, SolarisMachine_scanZfsArcstats, SolarisMachine_updateCPUcount"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename solaris/SolarisMachine.c"
+              }
+            ],
+            "concludedValue": "Filename solaris/SolarisMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SolarisProcess",
+      "version": "",
+      "purl": "pkg:generic/SolarisProcess#solaris/SolarisProcess.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/SolarisProcess#solaris/SolarisProcess.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename solaris/SolarisProcess.h"
+              }
+            ],
+            "concludedValue": "Filename solaris/SolarisProcess.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SolarisProcessTable",
+      "version": "",
+      "purl": "pkg:generic/SolarisProcessTable#solaris/SolarisProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/SolarisProcessTable#solaris/SolarisProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new, SolarisProcessTable_getProcessState, SolarisProcessTable_readZoneName, SolarisProcessTable_updateCwd, SolarisProcessTable_updateExe, SolarisProcessTable_walkproc"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename solaris/SolarisProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename solaris/SolarisProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "stdlib",
+      "version": "",
+      "purl": "pkg:generic/stdlib#stdlib.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/stdlib#stdlib.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename stdlib.h"
+              }
+            ],
+            "concludedValue": "Filename stdlib.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "strings",
+      "version": "",
+      "purl": "pkg:generic/strings#strings.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/strings#strings.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename strings.h"
+              }
+            ],
+            "concludedValue": "Filename strings.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SwapMeter",
+      "version": "",
+      "purl": "pkg:generic/SwapMeter#SwapMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/SwapMeter#SwapMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "SwapMeter_display, SwapMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename SwapMeter.c"
+              }
+            ],
+            "concludedValue": "Filename SwapMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "_iovec",
+      "version": "",
+      "purl": "pkg:generic/sys/_iovec#sys/_iovec.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/_iovec#sys/_iovec.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/_iovec.h"
+              }
+            ],
+            "concludedValue": "Filename sys/_iovec.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "_types",
+      "version": "",
+      "purl": "pkg:generic/sys/_types#sys/_types.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/_types#sys/_types.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/_types.h"
+              }
+            ],
+            "concludedValue": "Filename sys/_types.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "capability",
+      "version": "",
+      "purl": "pkg:generic/sys/capability#sys/capability.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/capability#sys/capability.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/capability.h"
+              }
+            ],
+            "concludedValue": "Filename sys/capability.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "devicestat",
+      "version": "",
+      "purl": "pkg:generic/sys/devicestat#sys/devicestat.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/devicestat#sys/devicestat.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/devicestat.h"
+              }
+            ],
+            "concludedValue": "Filename sys/devicestat.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "envsys",
+      "version": "",
+      "purl": "pkg:generic/sys/envsys#sys/envsys.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/envsys#sys/envsys.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/envsys.h"
+              }
+            ],
+            "concludedValue": "Filename sys/envsys.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "iostat",
+      "version": "",
+      "purl": "pkg:generic/sys/iostat#sys/iostat.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/iostat#sys/iostat.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/iostat.h"
+              }
+            ],
+            "concludedValue": "Filename sys/iostat.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "jail",
+      "version": "",
+      "purl": "pkg:generic/sys/jail#sys/jail.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/jail#sys/jail.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/jail.h"
+              }
+            ],
+            "concludedValue": "Filename sys/jail.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "loadavg",
+      "version": "",
+      "purl": "pkg:generic/sys/loadavg#sys/loadavg.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/loadavg#sys/loadavg.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/loadavg.h"
+              }
+            ],
+            "concludedValue": "Filename sys/loadavg.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "mkdev",
+      "version": "",
+      "purl": "pkg:generic/sys/mkdev#sys/mkdev.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/mkdev#sys/mkdev.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/mkdev.h"
+              }
+            ],
+            "concludedValue": "Filename sys/mkdev.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "mman",
+      "version": "",
+      "purl": "pkg:generic/sys/mman#sys/mman.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/mman#sys/mman.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/mman.h"
+              }
+            ],
+            "concludedValue": "Filename sys/mman.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "mount",
+      "version": "",
+      "purl": "pkg:generic/sys/mount#sys/mount.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/mount#sys/mount.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/mount.h"
+              }
+            ],
+            "concludedValue": "Filename sys/mount.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "param",
+      "version": "",
+      "purl": "pkg:generic/sys/param#sys/param.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/param#sys/param.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/param.h"
+              }
+            ],
+            "concludedValue": "Filename sys/param.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "priority",
+      "version": "",
+      "purl": "pkg:generic/sys/priority#sys/priority.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/priority#sys/priority.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/priority.h"
+              }
+            ],
+            "concludedValue": "Filename sys/priority.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "proc",
+      "version": "",
+      "purl": "pkg:generic/sys/proc#sys/proc.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/proc#sys/proc.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/proc.h"
+              }
+            ],
+            "concludedValue": "Filename sys/proc.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "resource",
+      "version": "",
+      "purl": "pkg:generic/sys/resource#sys/resource.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/resource#sys/resource.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/resource.h"
+              }
+            ],
+            "concludedValue": "Filename sys/resource.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "select",
+      "version": "",
+      "purl": "pkg:generic/sys/select#sys/select.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/select#sys/select.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/select.h"
+              }
+            ],
+            "concludedValue": "Filename sys/select.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "sensors",
+      "version": "",
+      "purl": "pkg:generic/sys/sensors#sys/sensors.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/sensors#sys/sensors.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/sensors.h"
+              }
+            ],
+            "concludedValue": "Filename sys/sensors.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "socket",
+      "version": "",
+      "purl": "pkg:generic/sys/socket#sys/socket.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/socket#sys/socket.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/socket.h"
+              }
+            ],
+            "concludedValue": "Filename sys/socket.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "stat",
+      "version": "",
+      "purl": "pkg:generic/sys/stat#sys/stat.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/stat#sys/stat.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/stat.h"
+              }
+            ],
+            "concludedValue": "Filename sys/stat.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "statfs",
+      "version": "",
+      "purl": "pkg:generic/sys/statfs#sys/statfs.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/statfs#sys/statfs.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/statfs.h"
+              }
+            ],
+            "concludedValue": "Filename sys/statfs.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "statvfs",
+      "version": "",
+      "purl": "pkg:generic/sys/statvfs#sys/statvfs.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/statvfs#sys/statvfs.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/statvfs.h"
+              }
+            ],
+            "concludedValue": "Filename sys/statvfs.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "swap",
+      "version": "",
+      "purl": "pkg:generic/sys/swap#sys/swap.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/swap#sys/swap.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/swap.h"
+              }
+            ],
+            "concludedValue": "Filename sys/swap.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "syscall",
+      "version": "",
+      "purl": "pkg:generic/sys/syscall#sys/syscall.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/syscall#sys/syscall.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/syscall.h"
+              }
+            ],
+            "concludedValue": "Filename sys/syscall.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "sysconf",
+      "version": "",
+      "purl": "pkg:generic/sys/sysconf#sys/sysconf.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/sysconf#sys/sysconf.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/sysconf.h"
+              }
+            ],
+            "concludedValue": "Filename sys/sysconf.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "sysctl",
+      "version": "",
+      "purl": "pkg:generic/sys/sysctl#sys/sysctl.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/sysctl#sys/sysctl.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/sysctl.h"
+              }
+            ],
+            "concludedValue": "Filename sys/sysctl.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "sysinfo",
+      "version": "",
+      "purl": "pkg:generic/sys/sysinfo#sys/sysinfo.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/sysinfo#sys/sysinfo.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/sysinfo.h"
+              }
+            ],
+            "concludedValue": "Filename sys/sysinfo.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "sysmacros",
+      "version": "",
+      "purl": "pkg:generic/sys/sysmacros#sys/sysmacros.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/sysmacros#sys/sysmacros.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/sysmacros.h"
+              }
+            ],
+            "concludedValue": "Filename sys/sysmacros.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "types",
+      "version": "",
+      "purl": "pkg:generic/sys/types#sys/types.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/types#sys/types.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/types.h"
+              }
+            ],
+            "concludedValue": "Filename sys/types.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "uio",
+      "version": "",
+      "purl": "pkg:generic/sys/uio#sys/uio.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/uio#sys/uio.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/uio.h"
+              }
+            ],
+            "concludedValue": "Filename sys/uio.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "user",
+      "version": "",
+      "purl": "pkg:generic/sys/user#sys/user.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/user#sys/user.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/user.h"
+              }
+            ],
+            "concludedValue": "Filename sys/user.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "utsname",
+      "version": "",
+      "purl": "pkg:generic/sys/utsname#sys/utsname.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/utsname#sys/utsname.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/utsname.h"
+              }
+            ],
+            "concludedValue": "Filename sys/utsname.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "var",
+      "version": "",
+      "purl": "pkg:generic/sys/var#sys/var.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/var#sys/var.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/var.h"
+              }
+            ],
+            "concludedValue": "Filename sys/var.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "vmmeter",
+      "version": "",
+      "purl": "pkg:generic/sys/vmmeter#sys/vmmeter.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/vmmeter#sys/vmmeter.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/vmmeter.h"
+              }
+            ],
+            "concludedValue": "Filename sys/vmmeter.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "sys",
+      "name": "wait",
+      "version": "",
+      "purl": "pkg:generic/sys/wait#sys/wait.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/sys/wait#sys/wait.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename sys/wait.h"
+              }
+            ],
+            "concludedValue": "Filename sys/wait.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SysArchMeter",
+      "version": "",
+      "purl": "pkg:generic/SysArchMeter#SysArchMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/SysArchMeter#SysArchMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "SysArchMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename SysArchMeter.c"
+              }
+            ],
+            "concludedValue": "Filename SysArchMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "SystemdMeter",
+      "version": "",
+      "purl": "pkg:generic/SystemdMeter#linux/SystemdMeter.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/SystemdMeter#linux/SystemdMeter.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/SystemdMeter.h"
+              }
+            ],
+            "concludedValue": "Filename linux/SystemdMeter.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "TasksMeter",
+      "version": "",
+      "purl": "pkg:generic/TasksMeter#TasksMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/TasksMeter#TasksMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "TasksMeter_display, TasksMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename TasksMeter.c"
+              }
+            ],
+            "concludedValue": "Filename TasksMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "TraceScreen",
+      "version": "",
+      "purl": "pkg:generic/TraceScreen#TraceScreen.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/TraceScreen#TraceScreen.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename TraceScreen.h"
+              }
+            ],
+            "concludedValue": "Filename TraceScreen.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "uname",
+      "version": "",
+      "purl": "pkg:generic/uname#generic/uname.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/uname#generic/uname.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename generic/uname.h"
+              }
+            ],
+            "concludedValue": "Filename generic/uname.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "unistd",
+      "version": "",
+      "purl": "pkg:generic/unistd#unistd.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/unistd#unistd.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename unistd.h"
+              }
+            ],
+            "concludedValue": "Filename unistd.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "UnsupportedMachine",
+      "version": "",
+      "purl": "pkg:generic/UnsupportedMachine#unsupported/UnsupportedMachine.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/UnsupportedMachine#unsupported/UnsupportedMachine.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Machine_delete, Machine_isCPUonline, Machine_new, Machine_scan"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename unsupported/UnsupportedMachine.c"
+              }
+            ],
+            "concludedValue": "Filename unsupported/UnsupportedMachine.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "UnsupportedProcess",
+      "version": "",
+      "purl": "pkg:generic/UnsupportedProcess#unsupported/UnsupportedProcess.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/UnsupportedProcess#unsupported/UnsupportedProcess.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename unsupported/UnsupportedProcess.h"
+              }
+            ],
+            "concludedValue": "Filename unsupported/UnsupportedProcess.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "UnsupportedProcessTable",
+      "version": "",
+      "purl": "pkg:generic/UnsupportedProcessTable#unsupported/UnsupportedProcessTable.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/UnsupportedProcessTable#unsupported/UnsupportedProcessTable.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ProcessTable_delete, ProcessTable_goThroughEntries, ProcessTable_new"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename unsupported/UnsupportedProcessTable.c"
+              }
+            ],
+            "concludedValue": "Filename unsupported/UnsupportedProcessTable.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "UptimeMeter",
+      "version": "",
+      "purl": "pkg:generic/UptimeMeter#UptimeMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/UptimeMeter#UptimeMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "UptimeMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename UptimeMeter.c"
+              }
+            ],
+            "concludedValue": "Filename UptimeMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "UsersTable",
+      "version": "",
+      "purl": "pkg:generic/UsersTable#UsersTable.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/UsersTable#UsersTable.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename UsersTable.h"
+              }
+            ],
+            "concludedValue": "Filename UsersTable.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "utmpx",
+      "version": "",
+      "purl": "pkg:generic/utmpx#utmpx.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/utmpx#utmpx.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename utmpx.h"
+              }
+            ],
+            "concludedValue": "Filename utmpx.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "uvm",
+      "name": "uvm_extern",
+      "version": "",
+      "purl": "pkg:generic/uvm/uvm_extern#uvm/uvm_extern.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/uvm/uvm_extern#uvm/uvm_extern.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename uvm/uvm_extern.h"
+              }
+            ],
+            "concludedValue": "Filename uvm/uvm_extern.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "uvm",
+      "name": "uvmexp",
+      "version": "",
+      "purl": "pkg:generic/uvm/uvmexp#uvm/uvmexp.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/uvm/uvmexp#uvm/uvmexp.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename uvm/uvmexp.h"
+              }
+            ],
+            "concludedValue": "Filename uvm/uvmexp.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "Vector",
+      "version": "",
+      "purl": "pkg:generic/Vector#Vector.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/Vector#Vector.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "Vector_add, Vector_compact, Vector_countEquals, Vector_delete, Vector_get, Vector_indexOf, Vector_insert, Vector_insertionSort, Vector_isConsistent, Vector_isDirty, Vector_moveDown, Vector_moveUp, Vector_new, Vector_prune, Vector_quickSortCustomCompare, Vector_remove, Vector_resizeIfNecessary, Vector_set, Vector_size, Vector_softRemove, Vector_splice, Vector_take, insertionSort, partition, quickSort, swap"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename Vector.c"
+              }
+            ],
+            "concludedValue": "Filename Vector.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "vm",
+      "name": "vm_param",
+      "version": "",
+      "purl": "pkg:generic/vm/vm_param#vm/vm_param.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/vm/vm_param#vm/vm_param.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename vm/vm_param.h"
+              }
+            ],
+            "concludedValue": "Filename vm/vm_param.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "wchar",
+      "version": "",
+      "purl": "pkg:generic/wchar#wchar.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/wchar#wchar.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename wchar.h"
+              }
+            ],
+            "concludedValue": "Filename wchar.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "wctype",
+      "version": "",
+      "purl": "pkg:generic/wctype#wctype.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/wctype#wctype.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename wctype.h"
+              }
+            ],
+            "concludedValue": "Filename wctype.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "XUtils",
+      "version": "",
+      "purl": "pkg:generic/XUtils#XUtils.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/XUtils#XUtils.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "String_cat, String_contains_i, String_freeArray, String_readLine, String_safeStrncpy, String_split, String_trim, compareRealNumbers, countDigits, countTrailingZeros, fail, free_and_xStrdup, full_write, readfd_internal, sumPositiveValues, xAsprintf, xCalloc, xMalloc, xMallocArray, xReadfile, xReadfileat, xRealloc, xReallocArray, xReallocArrayZero, xSnprintf, xStrdup, xStrndup"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename XUtils.c"
+              }
+            ],
+            "concludedValue": "Filename XUtils.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ZfsArcMeter",
+      "version": "",
+      "purl": "pkg:generic/ZfsArcMeter#zfs/ZfsArcMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ZfsArcMeter#zfs/ZfsArcMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ZfsArcMeter_display, ZfsArcMeter_readStats, ZfsArcMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename zfs/ZfsArcMeter.c"
+              }
+            ],
+            "concludedValue": "Filename zfs/ZfsArcMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ZfsArcStats",
+      "version": "",
+      "purl": "pkg:generic/ZfsArcStats#zfs/ZfsArcStats.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ZfsArcStats#zfs/ZfsArcStats.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename zfs/ZfsArcStats.h"
+              }
+            ],
+            "concludedValue": "Filename zfs/ZfsArcStats.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ZfsCompressedArcMeter",
+      "version": "",
+      "purl": "pkg:generic/ZfsCompressedArcMeter#zfs/ZfsCompressedArcMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ZfsCompressedArcMeter#zfs/ZfsCompressedArcMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ZfsCompressedArcMeter_display, ZfsCompressedArcMeter_printRatioString, ZfsCompressedArcMeter_readStats, ZfsCompressedArcMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename zfs/ZfsCompressedArcMeter.c"
+              }
+            ],
+            "concludedValue": "Filename zfs/ZfsCompressedArcMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "zone",
+      "version": "",
+      "purl": "pkg:generic/zone#zone.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/zone#zone.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename zone.h"
+              }
+            ],
+            "concludedValue": "Filename zone.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ZramMeter",
+      "version": "",
+      "purl": "pkg:generic/ZramMeter#linux/ZramMeter.c",
+      "type": "library",
+      "bom-ref": "pkg:generic/ZramMeter#linux/ZramMeter.c",
+      "properties": [
+        {
+          "name": "ImportedSymbols",
+          "value": "ZramMeter_display, ZramMeter_updateValues"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/ZramMeter.c"
+              }
+            ],
+            "concludedValue": "Filename linux/ZramMeter.c"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ZramStats",
+      "version": "",
+      "purl": "pkg:generic/ZramStats#linux/ZramStats.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ZramStats#linux/ZramStats.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/ZramStats.h"
+              }
+            ],
+            "concludedValue": "Filename linux/ZramStats.h"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "ZswapStats",
+      "version": "",
+      "purl": "pkg:generic/ZswapStats#linux/ZswapStats.h",
+      "type": "library",
+      "bom-ref": "pkg:generic/ZswapStats#linux/ZswapStats.h",
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 0,
+            "methods": [
+              {
+                "technique": "source-code-analysis",
+                "confidence": 0,
+                "value": "Filename linux/ZswapStats.h"
+              }
+            ],
+            "concludedValue": "Filename linux/ZswapStats.h"
+          }
+        ]
+      }
+    }
+  ],
+  "dependencies": [],
+  "annotations": []
+}

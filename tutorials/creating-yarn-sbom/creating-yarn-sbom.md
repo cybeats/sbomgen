@@ -113,7 +113,9 @@ An SBOM with the given filename will be created in your working directory.
 
 * Errors may arise if a ```.pnp.cjs``` file has been created in your home directory. Deleting it appears to mitigate most errors.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX JSON SBOM of the project CycloneDX-Node-Yarn codebase created by CycloneDX-Node-Yarn.
 
 <html lang="en">
 <head>
@@ -155,4 +157,4 @@ An SBOM with the given filename will be created in your working directory.
 
 ## References
 
-* CycloneDX. (n.d.). CycloneDX/cyclonedx-node-yarn: Create cyclonedx software bill of materials (SBOM) from node.js yarn projects. GitHub. https://github.com/CycloneDX/cyclonedx-node-yarn
+* CycloneDX. (n.d.). CycloneDX/cyclonedx-node-yarn: Create cyclonedx software bill of materials (SBOM) from node.js yarn projects. GitHub. [https://github.com/CycloneDX/cyclonedx-node-yarn](https://github.com/CycloneDX/cyclonedx-node-yarn)

@@ -160,6 +160,6 @@ Failure will output the reason for the failure. 
 ## References
 
 
-* CycloneDX. (2023). cyclonedx-cli. https://github.com/CycloneDX/cyclonedx-cli
-* Spdx. (2023). tools-java. https://github.com/spdx/tools-java
+* CycloneDX. (2023). cyclonedx-cli. [https://github.com/CycloneDX/cyclonedx-cli](https://github.com/CycloneDX/cyclonedx-cli)
+* Spdx. (2023). tools-java. [https://github.com/spdx/tools-java](https://github.com/spdx/tools-java)
 

@@ -114,7 +114,9 @@ cyclonedx-gomod mod -json=true -output <sbom-name>.json <path-to-module (default
 
 * For applications, cyclonedx-gomod appears to want a "main" folder, and will throw errors otherwise. Usually, there is a go.mod file present so defaulting to using the mod pathway appears prudent.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates a CycloneDX JSON SBOM of the Arduino CLI codebase, creasted by CycloneDX-Gomod.
 
 <html lang="en">
 <head>
@@ -157,4 +159,6 @@ cyclonedx-gomod mod -json=true -output <sbom-name>.json <path-to-module (default
 ## References
 
 * CycloneDX. (2023). cyclonedx-gomod. [https://github.com/CycloneDX/cyclonedx-gomod](https://github.com/CycloneDX/cyclonedx-gomod)
+
+* Arduino. (n.d.). GitHub - arduino/arduino-cli: Arduino command line tool. GitHub. [https://github.com/arduino/arduino-cli](https://github.com/arduino/arduino-cli)
 

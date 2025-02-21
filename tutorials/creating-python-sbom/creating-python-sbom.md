@@ -12,6 +12,8 @@ This tutorial illustrates how to create an SBOM for Python projects using the Cy
 
 * Poetry (optional)
 
+* Pipenv (optional)
+
 
 ## Installation
 
@@ -23,12 +25,16 @@ To install run:
 pip install cyclonedx-bom
 ```
 
+or
+
+```bash
+pipx install cyclonedx-bom
+```
 or 
 
 ```bash
 poetry add cyclonedx-bom
 ```
-
 
 verify installation by running in the terminal:
 
@@ -39,49 +45,25 @@ cyclonedx-py --help
 The resultant output should be:
 
 ```bash
-usage: cyclonedx-py [-h] (-c | -cj | -e | -p | -pip | -r) [-i FILE_PATH] [--format {xml,json}]
-                    [--schema-version {1.4,1.3,1.2,1.1,1.0}] [-o FILE_PATH] [-F] [-pb] [-X]
+usage: cyclonedx-py [-h] [--version] <command> ...
 
-CycloneDX SBOM Generator
+Creates CycloneDX Software Bill of Materials (SBOM) from Python projects and environments.
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -c, --conda           Build a SBOM based on the output from `conda list --explicit` or `conda list --explicit
-                        --md5`
-  -cj, --conda-json     Build a SBOM based on the output from `conda list --json`
-  -e, --e, --environment
-                        Build a SBOM based on the packages installed in your current Python environment (default)
-  -p, --p, --poetry     Build a SBOM based on a Poetry poetry.lock's contents. Use with -i to specify absolute path
-                        to a `poetry.lock` you wish to use, else we'll look for one in the current working directory.
-  -pip, --pip           Build a SBOM based on a PipEnv Pipfile.lock's contents. Use with -i to specify absolute path
-                        to a `Pipfile.lock` you wish to use, else we'll look for one in the current working
-                        directory.
-  -r, --r, --requirements
-                        Build a SBOM based on a requirements.txt's contents. Use with -i to specify absolute path to
-                        a `requirements.txt` you wish to use, else we'll look for one in the current working
-                        directory.
-  -X                    Enable debug output
+positional arguments:
+  <command>
+    environment
+                Build an SBOM from Python (virtual) environment
+    requirements
+                Build an SBOM from Pip requirements
+    pipenv      Build an SBOM from Pipenv manifest
+    poetry      Build an SBOM from Poetry project
 
-Input Method:
-  Flags to determine how this tool obtains its input
-
-  -i FILE_PATH, --in-file FILE_PATH
-                        File to read input from. Use "-" to read from STDIN.
-
-SBOM Output Configuration:
-  Choose the output format and schema version
-
-  --format {xml,json}   The output format for your SBOM (default: xml)
-  --schema-version {1.4,1.3,1.2,1.1,1.0}
-                        The CycloneDX schema version for your SBOM (default: 1.4)
-  -o FILE_PATH, --o FILE_PATH, --output FILE_PATH
-                        Output file path for your SBOM (set to '-' to output to STDOUT)
-  -F, --force           If outputting to a file and the stated file already exists, it will be overwritten.
-  -pb, --purl-bom-ref   Use a component's PURL for the bom-ref value, instead of a random UUID
-
+options:
+  -h, --help    show this help message and exit
+  --version     show program's version number and exit  
 ```
 
-verifying correct installation
+verifying correct installation.
 
 ### Jake
 
@@ -95,6 +77,12 @@ or
 
 ```bash
 poetry add jake
+```
+
+or
+
+```bash
+pipx install jake
 ```
 
 verify installation by running in the terminal:
@@ -132,36 +120,38 @@ Navigate to the Python project in question:
 
 ### CycloneDX-Python
 
-To create an SBOM, run the following command:
+To create an SBOM, run one of the following commands:
+
+#### Environment (recommended)
+Creates SBOMs from Python (virtual) environments
 
 ```bash
-cyclonedx-py -e --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+cyclonedx-py environment --of <sbom-output-format (json or xml)> -o <sbom-output-name>.<sbom-output-format>
+```
+or in case on having a virtual environment folder
+
+```bash
+cyclonedx-py environment --of <sbom-output-format (json or xml)> -o <sbom-output-name>.<sbom-output-format> 'path/to/venv'
 ```
 
-Additionally, the CycloneDX-Python tool allows the user to specify the manifest input used to build the SBOM e.g.
-
 #### Requirements.txt
+Creates SBOMs from Python requirements.txt files
 
 ```bash
-cyclonedx-py -r --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+cyclonedx-py requirements --of <sbom-output-format (json or xml)> -o <sbom-output-name>.<sbom-output-format> <requirements.txt-file-name>
 ```
 
 #### Poetry
+Creates SBOMs from Poetry projects
 
 ```bash
-cyclonedx-py -p --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+cyclonedx-py poetry --of <sbom-output-format (json or xml)> -o <sbom-output-name>.<sbom-output-format>
 ```
 
-#### Pip
+#### Pipenv
 
 ```bash
-cyclonedx-py -pip --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
-```
-
-#### Conda
-
-```bash
-cyclonedx-py -c --format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+cyclonedx-py pipenv --of <sbom-output-format (json or xml)> -o <sbom-output-name>.<sbom-output-format>
 ```
 
 ### Jake
@@ -169,17 +159,15 @@ cyclonedx-py -c --format <sbom-output-format (json or xml) -o <sbom-output-name>
 To create an SBOM, run the following command:
 
 ```bash
-jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name>.<sbom-output-format>
+jake sbom --output-format <sbom-output-format (json or xml)> -o <sbom-output-name>.<sbom-output-format>
 ```
 
 
 ## Notes
 
-* Tests run on Ubuntu 20.04.
+* Tests run on Ubuntu 20.04 and Ubuntu 24.04.
 
 * SBOMs validated using [CycloneDX-CLI](https://github.com/CycloneDX/cyclonedx-cli). Both returned successful.
-
-* SBOMs tested in Cybeats Sbom Studio. Both returned identical vulnerability counts.
 
 ### CycloneDX-Python
 
@@ -189,7 +177,9 @@ jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name
 
 * Some information such as the project name, version, and type appears to be absent in the Jake generated SBOM.
 
-## SBOM
+## Example SBOM
+
+This section illustrates CycloneDX JSON SBOMs of the PlatformIO Core codebase, created from CycloneDX-Python and Jake.
 
 <html lang="en">
 <head>
@@ -198,6 +188,12 @@ jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name
     <title>Pretty JSON Display</title>
     <style>
         #json-container {
+            height: 400px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #ccc; /* Optional: add a border for visibility */
+            padding: 10px;
+        }
+        #xml-container {
             height: 400px; /* Set a fixed height */
             overflow-y: auto; /* Enable vertical scrolling */
             border: 2px solid #ccc; /* Optional: add a border for visibility */
@@ -212,18 +208,36 @@ jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name
 </head>
 <body>
     <h3>
-        <a href="./sbom-pio.json">platformio</a>
+        <a href="./pio-core.cdx.json">PlatformIO-Core (CycloneDX-Python)</a>
     </h3>
     <div id="json-container">
-        <pre id="json-display"></pre>
+        <pre id="json-display1"></pre>
+    </div>
+    <h3>
+        <a href="./pio-core.jake.cdx.json">PlatformIO-Core (Jake)</a>
+    </h3>
+    <div id="json-container">
+        <pre id="json-display2"></pre>
     </div>
     <script>
-        fetch('./sbom-pio.json')
+        function display_json(url, elementid){
+        fetch(url)
             .then(response => response.json())
             .then(data => {
-                document.getElementById('json-display').textContent = JSON.stringify(data, null, 2);
+                document.getElementById(elementid).textContent = JSON.stringify(data, null, 2);
             })
             .catch(error => console.error('Error fetching JSON:', error));
+        }
+        function display_xml(url, elementid){
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementid).textContent = data;
+            })
+            .catch(error => console.error('Error fetching XML:', error));
+        }
+    display_json('./pio-core.cdx.json', 'json-display1');
+    display_json('./pio-core.jake.cdx.json', 'json-display2');
     </script>
 </body>
 </html>
@@ -237,4 +251,6 @@ jake sbom --output-format <sbom-output-format (json or xml) -o <sbom-output-name
 * CycloneDX. (2023). CycloneDX-Python. [https://github.com/CycloneDX/cyclonedx-python](https://github.com/CycloneDX/cyclonedx-python)
 
 * CycloneDX. (2023). cyclonedx-cli. [https://github.com/CycloneDX/cyclonedx-cli](https://github.com/CycloneDX/cyclonedx-cli)
+
+* Platformio. (n.d.). GitHub - platformio/platformio-core: Your Gateway to Embedded Software Development Excellence :alien: GitHub. [https://github.com/platformio/platformio-core](https://github.com/platformio/platformio-core)
 

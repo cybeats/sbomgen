@@ -159,7 +159,9 @@ gh sbom | jq > <sbom-file-name>
 
 * When creating SBOMs in SPDX format, gh sbom may produce purls with the less common packages ```github``` and/or ```githubactions```.
 
-## SBOM
+## Example SBOM
+
+The following section illustrates CycloneDX and SPDX JSON SBOMs of the GitHub GH SBOM codebase, created via GH SBOM.
 
 <html lang="en">
 <head>

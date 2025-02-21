@@ -37,7 +37,9 @@ A bom.xml should appear in your directory.
 
 * This generator may create SBOMs with flawed serial numbers, rendering the SBOM invalid.
 
-## SBOM
+## Example SBOM
+
+This section illustrates a CycloneDX XML SBOM, from the Rebar3_Sbom codebase, created via Rebar3_Sbom.
 
 <html lang="en">
 <head>
@@ -95,10 +97,6 @@ A bom.xml should appear in your directory.
 
 
 ## References
-
-* Voltone. (2022). Rebar3_sbom. [https://github.com/voltone/rebar3_sbom](https://github.com/voltone/rebar3_sbom)
-
-* Erlang. (2023). Rebar3. [https://github.com/erlang/rebar3](https://github.com/erlang/rebar3) 
 
 * Erlang and elixir packages download. Erlang Solutions. (2023, September 13). [https://www.erlang-solutions.com/downloads/](https://www.erlang-solutions.com/downloads/) 
 

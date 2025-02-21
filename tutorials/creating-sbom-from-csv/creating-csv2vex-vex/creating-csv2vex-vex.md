@@ -297,11 +297,11 @@ These example files illustrate a csv file, configuration file and VEX created by
 
 ## References
 
-* Cybeats. (n.d.). Cybeats/csv2vex: CLI to convert csv to cyclonedx VEX documents. GitHub. https://github.com/cybeats/csv2vex.
+* Cybeats. (n.d.). Cybeats/csv2vex: CLI to convert csv to cyclonedx VEX documents. GitHub. [https://github.com/cybeats/csv2vex](https://github.com/cybeats/csv2vex)
 
-* Install and run python applications in isolated environments. pipx. (n.d.). https://pipx.pypa.io/stable/.
+* Install and run python applications in isolated environments. pipx. (n.d.). [https://pipx.pypa.io/stable/](https://pipx.pypa.io/stable/)
 
-* Welcome to Faker’s documentation!¶. Welcome to Faker’s documentation! - Faker 33.0.0 documentation. (n.d.). https://faker.readthedocs.io/en/master/index.html. 
+* Welcome to Faker’s documentation!¶. Welcome to Faker’s documentation! - Faker 33.0.0 documentation. (n.d.). [https://faker.readthedocs.io/en/master/index.html](https://faker.readthedocs.io/en/master/index.html)
 
 
 

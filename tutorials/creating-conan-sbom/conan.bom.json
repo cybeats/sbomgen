@@ -1,0 +1,129 @@
+{
+  "components": [
+    {
+      "author": "Conan",
+      "bom-ref": "pkg:conan/cmake@3.22.6?rref=32cced101c6df0fab43e8d00bd2483eb",
+      "description": "CMake, the cross-platform, open-source build system.",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Kitware/CMake"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "cmake",
+      "purl": "pkg:conan/cmake@3.22.6?rref=32cced101c6df0fab43e8d00bd2483eb",
+      "type": "application",
+      "version": "3.22.6"
+    },
+    {
+      "author": "Conan",
+      "bom-ref": "pkg:conan/zlib@1.2.11?rref=8ce05593cbf59d1508deac119de955f0",
+      "description": "A Massively Spiffy Yet Delicately Unobtrusive Compression Library (Also Free, Not to Mention Unencumbered by Patents)",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://zlib.net"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "name": "zlib",
+      "purl": "pkg:conan/zlib@1.2.11?rref=8ce05593cbf59d1508deac119de955f0",
+      "type": "library",
+      "version": "1.2.11"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:conan/cmake@3.22.6?rref=32cced101c6df0fab43e8d00bd2483eb"
+    },
+    {
+      "dependsOn": [
+        "pkg:conan/cmake@3.22.6?rref=32cced101c6df0fab43e8d00bd2483eb",
+        "pkg:conan/zlib@1.2.11?rref=8ce05593cbf59d1508deac119de955f0"
+      ],
+      "ref": "pkg:conan/conan_project@1.0.0"
+    },
+    {
+      "ref": "pkg:conan/zlib@1.2.11?rref=8ce05593cbf59d1508deac119de955f0"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "author": "Conan",
+      "bom-ref": "pkg:conan/conan_project@1.0.0",
+      "name": "conan_project",
+      "purl": "pkg:conan/conan_project@1.0.0",
+      "type": "library",
+      "version": "1.0.0"
+    },
+    "timestamp": "2025-02-25T21:43:24.968237+00:00",
+    "tools": [
+      {
+        "externalReferences": [
+          {
+            "type": "build-system",
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions"
+          },
+          {
+            "type": "distribution",
+            "url": "https://pypi.org/project/cyclonedx-python-lib/"
+          },
+          {
+            "type": "documentation",
+            "url": "https://cyclonedx-python-library.readthedocs.io/"
+          },
+          {
+            "type": "issue-tracker",
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues"
+          },
+          {
+            "type": "license",
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE"
+          },
+          {
+            "type": "release-notes",
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md"
+          },
+          {
+            "type": "vcs",
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib"
+          },
+          {
+            "type": "website",
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/#readme"
+          }
+        ],
+        "name": "cyclonedx-python-lib",
+        "vendor": "CycloneDX",
+        "version": "5.2.0"
+      },
+      {
+        "externalReferences": [
+          {
+            "type": "website",
+            "url": "https://github.com/conan-io/conan-extensions"
+          }
+        ],
+        "name": "conan extension sbom:cyclonedx"
+      }
+    ]
+  },
+  "serialNumber": "urn:uuid:0f5fb355-a5ec-4e79-8076-8e262363815a",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4"
+}

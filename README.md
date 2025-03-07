@@ -14,6 +14,7 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 * [Rust](#rust)
 * [Erlang](#erlang)
 * [Ruby](#ruby)
+* [C/C++](#cc)
 * [Package or System](#package-or-system)
 * [Multi-Language](#multi-language)
 * [Cryptographic Bill of Materials](#cryptographic-bill-of-materials)
@@ -44,6 +45,11 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 ### Yarn
  
 * To generate SBOM for Node.js Yarn projects, use [Cyclonedx Yarn Module](tutorials/creating-yarn-sbom/creating-yarn-sbom.md).
+
+
+### Webpack
+
+To generate SBOM for Webpack projects, use [CycloneDX-Webpack-Plugin](tutorials/creating-webpack-sbom/creating-webpack-sbom.md).
 
 ## Objective-C/Swift
 
@@ -91,7 +97,13 @@ To generate SBOMs for Rust projects, you can use:
 
 ## Ruby
 
-* To generate SBOM for Ruby projects, use [CycloneDX-Ruby-Gem](tutorials/creating-ruby-sbom/creating-ruby-sbom.md)
+* To generate SBOM for Ruby projects, use [CycloneDX-Ruby-Gem](tutorials/creating-ruby-sbom/creating-ruby-sbom.md).
+
+## C/C++
+
+### Conan
+
+* To generate SBOM for Conan C projects, use [CycloneDX Conan](tutorials/creating-conan-sbom/creating-conan-sbom.md).
 
 ## Package or System
 

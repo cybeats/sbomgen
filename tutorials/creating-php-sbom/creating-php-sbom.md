@@ -70,7 +70,7 @@ Options:
 
 Run the command:
 
-```bash
+```composer
 composer CycloneDX:make-sbom <composer.json-file> --output-format=<output-format> --output-file=<filepath-to-sbom-name>.<output-format> --spec-version=<cyclonedx-specversion>
 ```
 
@@ -91,7 +91,7 @@ The resulting SBOM of your set filename, format and cyclonedx specversion will a
 ## Example SBOM
 
 The following section illustrates a CycloneDX JSON SBOM of the project FreshRSS, created by CycloneDX-PHP-Composer.
-
+```HTML
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -128,7 +128,7 @@ The following section illustrates a CycloneDX JSON SBOM of the project FreshRSS,
     </script>
 </body>
 </html>
-
+```
 
 ## References
 

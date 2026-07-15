@@ -117,6 +117,7 @@ To generate SBOMs for Rust projects, you can use:
 
 ## Multi-Language
 
+* [BomLens](tutorials/multi-lang/bomlens/creating-bomlens-sbom.md) is a local-first SBOM generator and risk assessor covering Java, Python, Node.js, Go, Ruby, PHP, Rust, .NET, Swift, and C/C++, plus containers, binaries, firmware, and HuggingFace AI models (CycloneDX ML-BOM).
 * [Cdxgen](tutorials/multi-lang/cdxgen-tool/creating-cdxgen-sbom.md) is a tool used to create SBOMs from a variety of languages and frameworks including Python, Java, Node.js/Javascript, Rust, Elixir, etc.
 * Microsoft [Sbom-Tool](tutorials/multi-lang/microsoft-sbom-tool/creating-microsoft-sbom.md) is capable of auto-detecting NPM, NuGet, PyPI, CocoaPods, Maven, Golang, Rust Crates, RubyGems, Linux packages within containers, Gradle, Ivy, GitHub public repositories, and more through Component Detection and generates SBOMs for the project.
 * The GitHub [gh CLI SBOM Extension](tutorials/multi-lang/github-gh-sbom/creating-gh-sbom.md) is capable of creating SBOMs from a variety of languages, once the project is in a GitHub repository.

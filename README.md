@@ -41,6 +41,7 @@ Tutorials of these tools are featured in the ``tutorials/`` folder.
 ### NPM
 
 * To generate SBOM for Node.js NPM projects, use [Cyclonedx Node Module](tutorials/creating-npm-sbom/creating-npm-sbom.md).
+* To generate a deterministic — byte-for-byte reproducible — SBOM for Node.js NPM lockfiles (`package-lock.json` v1/v2/v3) with SnapSBOM, see [Creating deterministic SBOMs from npm projects with SnapSBOM](tutorials/creating-deterministic-npm-sbom/creating-deterministic-npm-sbom.md).
 
 ### Yarn
  
